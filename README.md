@@ -29,6 +29,19 @@ public/dali-ganji.ics
 python3 scripts/generate_ics.py --start-date 2026-06-23
 ```
 
+## 当前收录与核验说明
+
+当前样例数据收录 6 个点位：
+
+- 三月街赶集：农历初二、初九、十六、二十三。
+- 床单厂集市：每周六、周日，以当周活动为准。
+- 北门菜市场集市：每天开市，作为日常菜市场收录。
+- 银桥街集市：农历初五、十三、二十、二十八。
+- 湾桥镇集市：农历初四、十一、十八、二十六；旧公开表常见二十五，较新的本地信息提示为二十六，继续实地复核。
+- 凤仪街集市：每月公历逢五、逢十。
+
+赶集时间来自公开资料交叉核对，并保留实地验证入口。后续如果有当地人反馈，应优先更新 `data/markets.json` 的规则和 `source_note`。
+
 ## 数据结构
 
 赶集数据在 `data/markets.json`，每个集市是一条对象：
@@ -62,7 +75,7 @@ python3 scripts/generate_ics.py --start-date 2026-06-23
 
 ## 赶集规则
 
-支持两种 `schedule_type`。
+支持三种 `schedule_type`。
 
 农历固定日期：
 
@@ -85,6 +98,18 @@ python3 scripts/generate_ics.py --start-date 2026-06-23
 ```
 
 `weekdays` 使用 Python 的星期编号：周一是 `0`，周日是 `6`。
+
+每月公历固定日期：
+
+```json
+{
+  "schedule_type": "gregorian_month_days",
+  "month_days": [5, 10, 15, 20, 25, 30],
+  "schedule_text": "每月公历逢五、逢十赶集"
+}
+```
+
+这个规则适合“每月逢五逢十”这类按公历日期计算的集市。
 
 ## 补充坐标和地图链接
 

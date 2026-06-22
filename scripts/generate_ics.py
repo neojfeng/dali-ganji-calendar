@@ -61,6 +61,8 @@ def market_dates(market: dict[str, Any], start: date, end: date) -> list[date]:
         return lunar_market_dates(market, start, end)
     if schedule_type == "weekly":
         return weekly_market_dates(market, start, end)
+    if schedule_type == "gregorian_month_days":
+        return gregorian_month_dates(market, start, end)
     raise ValueError(f"{market.get('id', '<unknown>')}: unsupported schedule_type {schedule_type!r}")
 
 
@@ -95,6 +97,21 @@ def weekly_market_dates(market: dict[str, Any], start: date, end: date) -> list[
     dates: list[date] = []
     while current < end:
         if current.weekday() in wanted:
+            dates.append(current)
+        current += timedelta(days=1)
+    return dates
+
+
+def gregorian_month_dates(market: dict[str, Any], start: date, end: date) -> list[date]:
+    month_days = market.get("month_days", [])
+    if not isinstance(month_days, list) or not month_days:
+        raise ValueError(f"{market.get('id', '<unknown>')}: gregorian_month_days needs month_days.")
+
+    wanted = {int(day) for day in month_days}
+    current = start
+    dates: list[date] = []
+    while current < end:
+        if current.day in wanted:
             dates.append(current)
         current += timedelta(days=1)
     return dates
