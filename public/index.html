@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>大理赶集日历</title>
+    <meta
+      name="description"
+      content="订阅大理赶集日历，把三月街等赶集日自动加入 Apple 日历。"
+    >
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f4ef;
+        --text: #222426;
+        --muted: #63676b;
+        --line: #ded6cc;
+        --panel: #fffdf9;
+        --accent: #0f766e;
+        --accent-strong: #0b5f59;
+        --copy-bg: #f1eee8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background:
+          linear-gradient(180deg, rgba(247, 244, 239, 0.92), rgba(247, 244, 239, 1)),
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath d='M0 75 C24 56 42 56 66 75 S101 94 120 75 V120 H0 Z' fill='%23e8dfd3'/%3E%3Cpath d='M0 82 C24 63 42 63 66 82 S101 101 120 82' fill='none' stroke='%23d8cdbc' stroke-width='2'/%3E%3C/svg%3E");
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(720px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 64px 0 40px;
+      }
+
+      .hero {
+        padding: 42px 0 34px;
+      }
+
+      h1 {
+        margin: 0 0 14px;
+        font-size: clamp(34px, 8vw, 58px);
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+
+      .lead {
+        max-width: 620px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 18px;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 30px 0 0;
+      }
+
+      .button {
+        display: inline-flex;
+        min-height: 48px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        padding: 0 18px;
+        background: var(--accent);
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        transition: background 150ms ease, transform 150ms ease;
+      }
+
+      .button:hover {
+        background: var(--accent-strong);
+        transform: translateY(-1px);
+      }
+
+      .button.secondary {
+        background: transparent;
+        border-color: var(--line);
+        color: var(--text);
+      }
+
+      .button.secondary:hover {
+        background: #fff8ef;
+      }
+
+      section {
+        border-top: 1px solid var(--line);
+        padding: 26px 0;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 20px;
+        letter-spacing: 0;
+      }
+
+      .subscribe-box {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 10px;
+        align-items: stretch;
+      }
+
+      input {
+        width: 100%;
+        min-width: 0;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--copy-bg);
+        color: var(--text);
+        font: inherit;
+        padding: 12px 13px;
+      }
+
+      button {
+        min-height: 48px;
+        border: 0;
+        border-radius: 8px;
+        padding: 0 16px;
+        background: var(--text);
+        color: #fff;
+        cursor: pointer;
+        font: inherit;
+        font-weight: 700;
+      }
+
+      .note,
+      .status {
+        margin: 10px 0 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .markets {
+        display: grid;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .markets li {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        padding: 14px 15px;
+      }
+
+      .markets strong {
+        display: block;
+      }
+
+      footer {
+        color: var(--muted);
+        font-size: 13px;
+        padding: 18px 0 0;
+      }
+
+      @media (max-width: 560px) {
+        main {
+          width: min(100% - 24px, 720px);
+          padding-top: 34px;
+        }
+
+        .subscribe-box {
+          grid-template-columns: 1fr;
+        }
+
+        .button,
+        button {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="hero">
+        <h1>大理赶集日历</h1>
+        <p class="lead">
+          把大理赶集日加入 Apple 日历。订阅后，后续数据更新会自动同步到你的日历里。
+        </p>
+        <div class="actions">
+          <a class="button" id="webcalLink" href="webcal://example.com/dali-ganji.ics">一键订阅 Apple 日历</a>
+          <a class="button secondary" id="downloadLink" href="dali-ganji.ics">下载 ICS</a>
+        </div>
+      </div>
+
+      <section>
+        <h2>HTTPS 订阅链接</h2>
+        <div class="subscribe-box">
+          <input id="httpsLink" type="text" readonly value="https://example.com/dali-ganji.ics" aria-label="HTTPS 订阅链接">
+          <button id="copyButton" type="button">复制</button>
+        </div>
+        <p class="note">如果一键订阅没有唤起日历，可以复制这个链接，在 Apple 日历中选择“文件” -> “新建日历订阅”。</p>
+        <p class="status" id="copyStatus" role="status" aria-live="polite"></p>
+      </section>
+
+      <section>
+        <h2>当前收录</h2>
+        <ul class="markets">
+          <li>
+            <strong>三月街赶集</strong>
+            农历初二、初九、十六、二十三赶集；数据仍在实地验证中。
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        数据来自公开资料 + 实地验证中，如有误差欢迎反馈。
+      </footer>
+    </main>
+
+    <script>
+      const httpsInput = document.querySelector("#httpsLink");
+      const webcalLink = document.querySelector("#webcalLink");
+      const downloadLink = document.querySelector("#downloadLink");
+      const copyButton = document.querySelector("#copyButton");
+      const copyStatus = document.querySelector("#copyStatus");
+
+      const icsUrl = new URL("dali-ganji.ics", window.location.href);
+      const httpsUrl = icsUrl.protocol === "file:" ? "https://neojfeng.github.io/dali-ganji-calendar/dali-ganji.ics" : icsUrl.href;
+      const webcalUrl = httpsUrl.replace(/^https?:\/\//, "webcal://");
+
+      httpsInput.value = httpsUrl;
+      webcalLink.href = webcalUrl;
+      downloadLink.href = httpsUrl;
+
+      copyButton.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(httpsUrl);
+          copyStatus.textContent = "已复制订阅链接。";
+        } catch (error) {
+          httpsInput.focus();
+          httpsInput.select();
+          copyStatus.textContent = "请手动复制输入框中的链接。";
+        }
+      });
+    </script>
+  </body>
+</html>

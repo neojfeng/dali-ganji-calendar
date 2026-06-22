@@ -1,0 +1,17 @@
+[
+  {
+    "id": "sanyuejie",
+    "name": "三月街赶集",
+    "location_name": "三月街",
+    "address": "大理古城苍山门对面",
+    "lat": null,
+    "lng": null,
+    "intro": "三月街是大理古城附近最有名的传统集市之一，适合逛本地小吃、蔬菜水果、手作和日用品。",
+    "schedule_type": "lunar_days",
+    "lunar_days": [2, 9, 16, 23],
+    "schedule_text": "农历初二、初九、十六、二十三赶集",
+    "apple_maps_url": "",
+    "amap_url": "",
+    "source_note": "数据来自公开资料 + 实地验证中，如有误差欢迎反馈。"
+  }
+]
