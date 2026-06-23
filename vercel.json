@@ -1,6 +1,6 @@
 {
-  "installCommand": "python3 -m pip install -r requirements.txt",
-  "buildCommand": "npm run build",
+  "installCommand": "python3 -m pip install --target=.vercel/python -r requirements.txt",
+  "buildCommand": "PYTHONPATH=.vercel/python npm run build",
   "outputDirectory": "public",
   "functions": {
     "api/calendar.ics.js": {
