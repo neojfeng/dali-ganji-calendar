@@ -594,6 +594,126 @@
         margin-bottom: 12px;
       }
 
+      .calendar-preview {
+        margin-bottom: 12px;
+        border-radius: 20px;
+        background: rgba(29, 29, 31, 0.04);
+        padding: 10px;
+      }
+
+      .calendar-preview-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 8px;
+      }
+
+      .calendar-preview-title {
+        margin: 0;
+        font-size: 15px;
+        font-weight: 900;
+      }
+
+      .calendar-nav {
+        display: flex;
+        gap: 6px;
+      }
+
+      .calendar-nav button {
+        display: grid;
+        width: 30px;
+        height: 30px;
+        place-items: center;
+        border: 0;
+        border-radius: 50%;
+        background: rgba(29, 29, 31, 0.08);
+        color: var(--text);
+        font-size: 18px;
+        font-weight: 850;
+        line-height: 1;
+      }
+
+      .calendar-nav button:disabled {
+        color: var(--subtle);
+        cursor: not-allowed;
+        opacity: 0.46;
+      }
+
+      .calendar-weekdays,
+      .calendar-grid {
+        display: grid;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        gap: 4px;
+      }
+
+      .calendar-weekday {
+        color: var(--subtle);
+        font-size: 11px;
+        font-weight: 850;
+        text-align: center;
+      }
+
+      .calendar-day {
+        min-height: 48px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.72);
+        color: var(--text);
+        padding: 5px;
+        overflow: hidden;
+      }
+
+      .calendar-day.is-outside {
+        color: var(--subtle);
+        opacity: 0.46;
+      }
+
+      .calendar-day.is-today {
+        box-shadow: inset 0 0 0 1px rgba(10, 132, 255, 0.42);
+      }
+
+      .calendar-day.has-events {
+        background: #fff;
+        box-shadow: 0 5px 14px rgba(10, 132, 255, 0.10);
+      }
+
+      .calendar-date {
+        display: block;
+        margin-bottom: 3px;
+        font-size: 11px;
+        font-weight: 850;
+        line-height: 1;
+      }
+
+      .calendar-event {
+        display: block;
+        overflow: hidden;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: #0568d8;
+        font-size: 9px;
+        font-weight: 850;
+        line-height: 1.2;
+        margin-top: 2px;
+        padding: 2px 4px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .calendar-more {
+        display: block;
+        color: var(--muted);
+        font-size: 9px;
+        font-weight: 850;
+        margin-top: 1px;
+      }
+
+      .calendar-preview-empty {
+        margin: 8px 0 0;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
       .panel-actions {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -667,6 +787,12 @@
         .panel-actions {
           grid-template-columns: 1fr;
         }
+
+        .calendar-day {
+          min-height: 44px;
+          border-radius: 10px;
+          padding: 4px;
+        }
       }
     </style>
   </head>
@@ -707,6 +833,26 @@
           <button class="panel-close" id="closePanelButton" type="button" aria-label="收起订阅面板">×</button>
         </div>
         <div class="selected-list" id="selectedList"></div>
+        <div class="calendar-preview" aria-label="日历事件预览">
+          <div class="calendar-preview-head">
+            <p class="calendar-preview-title" id="calendarPreviewTitle">日历预览</p>
+            <div class="calendar-nav">
+              <button id="prevMonthButton" type="button" aria-label="上一个月">‹</button>
+              <button id="nextMonthButton" type="button" aria-label="下一个月">›</button>
+            </div>
+          </div>
+          <div class="calendar-weekdays" aria-hidden="true">
+            <span class="calendar-weekday">一</span>
+            <span class="calendar-weekday">二</span>
+            <span class="calendar-weekday">三</span>
+            <span class="calendar-weekday">四</span>
+            <span class="calendar-weekday">五</span>
+            <span class="calendar-weekday">六</span>
+            <span class="calendar-weekday">日</span>
+          </div>
+          <div class="calendar-grid" id="calendarPreviewGrid"></div>
+          <p class="calendar-preview-empty" id="calendarPreviewEmpty" hidden>这个月没有已加入集市的赶集日。</p>
+        </div>
         <div class="panel-actions">
           <button class="subscribe-button" id="subscribeButton" type="button">一键订阅 Apple 日历</button>
           <button class="plain-button" id="copyButton" type="button">复制订阅链接</button>
@@ -743,12 +889,18 @@
       const httpsInput = document.querySelector("#httpsLink");
       const copyStatus = document.querySelector("#copyStatus");
       const selectedList = document.querySelector("#selectedList");
+      const calendarPreviewTitle = document.querySelector("#calendarPreviewTitle");
+      const calendarPreviewGrid = document.querySelector("#calendarPreviewGrid");
+      const calendarPreviewEmpty = document.querySelector("#calendarPreviewEmpty");
+      const prevMonthButton = document.querySelector("#prevMonthButton");
+      const nextMonthButton = document.querySelector("#nextMonthButton");
 
       let markets = [];
       let events = [];
       let selected = new Set();
       let activeFilter = "全部";
       let hasLocation = false;
+      let previewMonthOffset = 0;
       let toastTimer;
 
       init();
@@ -776,10 +928,21 @@
         openPanelButton.addEventListener("click", () => {
           subscribePanel.hidden = false;
           bottomBar.hidden = true;
+          renderCalendarPreview();
         });
         closePanelButton.addEventListener("click", () => {
           subscribePanel.hidden = true;
           updateSubscription();
+        });
+        prevMonthButton.addEventListener("click", () => {
+          if (previewMonthOffset <= 0) return;
+          previewMonthOffset -= 1;
+          renderCalendarPreview();
+        });
+        nextMonthButton.addEventListener("click", () => {
+          if (previewMonthOffset >= 17) return;
+          previewMonthOffset += 1;
+          renderCalendarPreview();
         });
         subscribeButton.addEventListener("click", () => {
           const link = buildSubscriptionLink("webcal");
@@ -1126,6 +1289,73 @@
           const market = markets.find((item) => item.id === id);
           return market ? `<span class="tag">${escapeHtml(market.label || market.name)}</span>` : "";
         }).join("");
+        if (!subscribePanel.hidden) {
+          renderCalendarPreview();
+        }
+      }
+
+      function renderCalendarPreview() {
+        const ids = orderedSelectedIds();
+        const selectedIds = new Set(ids);
+        const monthStart = addMonths(startOfMonth(startOfToday()), previewMonthOffset);
+        const monthEnd = addMonths(monthStart, 1);
+        const todayIso = dateToIso(startOfToday());
+        const monthEvents = events.filter((event) => {
+          if (!selectedIds.has(event.market_id)) return false;
+          const eventDate = parseLocalDate(event.date);
+          return eventDate >= monthStart && eventDate < monthEnd;
+        });
+        const eventsByDate = new Map();
+        for (const event of monthEvents) {
+          if (!eventsByDate.has(event.date)) {
+            eventsByDate.set(event.date, []);
+          }
+          eventsByDate.get(event.date).push(event);
+        }
+
+        calendarPreviewTitle.textContent = `${monthStart.getFullYear()}年${monthStart.getMonth() + 1}月`;
+        prevMonthButton.disabled = previewMonthOffset === 0;
+        nextMonthButton.disabled = previewMonthOffset === 17;
+        calendarPreviewEmpty.hidden = monthEvents.length > 0;
+        calendarPreviewGrid.innerHTML = monthCells(monthStart, eventsByDate, todayIso);
+      }
+
+      function monthCells(monthStart, eventsByDate, todayIso) {
+        const firstDayOffset = (monthStart.getDay() + 6) % 7;
+        const gridStart = new Date(monthStart);
+        gridStart.setDate(monthStart.getDate() - firstDayOffset);
+        const cells = [];
+        for (let index = 0; index < 42; index += 1) {
+          const day = new Date(gridStart);
+          day.setDate(gridStart.getDate() + index);
+          const iso = dateToIso(day);
+          const dayEvents = eventsByDate.get(iso) || [];
+          const isOutside = day.getMonth() !== monthStart.getMonth();
+          const classes = [
+            "calendar-day",
+            isOutside ? "is-outside" : "",
+            iso === todayIso ? "is-today" : "",
+            dayEvents.length ? "has-events" : ""
+          ].filter(Boolean).join(" ");
+          cells.push(`
+            <div class="${classes}" aria-label="${escapeHtml(calendarCellLabel(day, dayEvents))}">
+              <span class="calendar-date">${day.getDate()}</span>
+              ${dayEvents.slice(0, 2).map((event) => `<span class="calendar-event">${escapeHtml(event.market_label || event.market_name)}</span>`).join("")}
+              ${dayEvents.length > 2 ? `<span class="calendar-more">+${dayEvents.length - 2}</span>` : ""}
+            </div>
+          `);
+        }
+        return cells.join("");
+      }
+
+      function calendarCellLabel(day, dayEvents) {
+        const dateText = new Intl.DateTimeFormat("zh-CN", {
+          month: "long",
+          day: "numeric",
+          weekday: "long"
+        }).format(day);
+        if (!dayEvents.length) return dateText;
+        return `${dateText}：${dayEvents.map((event) => event.market_name).join("、")}`;
       }
 
       function orderedSelectedIds() {
@@ -1288,6 +1518,21 @@
         const today = new Date();
         today.setHours(0, 0, 0, 0);
         return today;
+      }
+
+      function startOfMonth(day) {
+        return new Date(day.getFullYear(), day.getMonth(), 1);
+      }
+
+      function addMonths(day, months) {
+        return new Date(day.getFullYear(), day.getMonth() + months, 1);
+      }
+
+      function dateToIso(day) {
+        const year = day.getFullYear();
+        const month = String(day.getMonth() + 1).padStart(2, "0");
+        const date = String(day.getDate()).padStart(2, "0");
+        return `${year}-${month}-${date}`;
       }
 
       function formatDate(value) {
