@@ -127,6 +127,8 @@ def build_event_records(markets: list[dict[str, Any]], start: date, end: date) -
         if not market_id or not name:
             print("Skipping market without id or name.", file=sys.stderr)
             continue
+        if not is_calendar_market(market):
+            continue
 
         location = clean(market.get("location_name")) or clean(market.get("address"))
         for event_date in market_dates(market, start, end):
@@ -153,26 +155,68 @@ def build_event_records(markets: list[dict[str, Any]], start: date, end: date) -
 def public_market_records(markets: list[dict[str, Any]]) -> list[dict[str, Any]]:
     records: list[dict[str, Any]] = []
     for index, market in enumerate(markets):
+        name = clean(market.get("name"))
+        images = market.get("images") if isinstance(market.get("images"), list) else []
+        legacy_image = clean(market.get("image"))
+        primary_image = clean(images[0].get("src")) if images and isinstance(images[0], dict) else legacy_image
+        primary_alt = clean(images[0].get("alt")) if images and isinstance(images[0], dict) else clean(market.get("image_alt"))
         records.append(
             {
                 "id": clean(market.get("id")),
-                "name": clean(market.get("name")),
-                "label": calendar_label(clean(market.get("name"))),
+                "name": name,
+                "label": calendar_label(name),
                 "location_name": clean(market.get("location_name")),
                 "address": clean(market.get("address")),
                 "area": clean(market.get("area")) or "其他",
+                "market_type": clean(market.get("market_type")) or "periodic_fair",
+                "calendar_enabled": is_calendar_market(market),
+                "summary": clean(market.get("summary")) or clean(market.get("intro")),
+                "intro": clean(market.get("intro")) or clean(market.get("summary")),
+                "tags": clean_list(market.get("tags")),
+                "best_for": clean_list(market.get("best_for")),
+                "not_for": clean_list(market.get("not_for")),
                 "lat": market.get("lat"),
                 "lng": market.get("lng"),
-                "image": clean(market.get("image")),
-                "image_alt": clean(market.get("image_alt")),
+                "image": primary_image,
+                "image_alt": primary_alt,
                 "image_credit": clean(market.get("image_credit")),
-                "intro": clean(market.get("intro")),
+                "images": images,
                 "schedule_type": clean(market.get("schedule_type")),
                 "schedule_text": clean(market.get("schedule_text")),
+                "open_text": clean(market.get("open_text")),
+                "best_time": clean(market.get("best_time")),
+                "duration": clean(market.get("duration")),
+                "transport_tips": clean(market.get("transport_tips")),
+                "parking_tips": clean(market.get("parking_tips")),
+                "route_tips": clean(market.get("route_tips")),
+                "what_to_buy": clean_list(market.get("what_to_buy")),
+                "food_tips": clean_list(market.get("food_tips")),
+                "photo_tips": clean(market.get("photo_tips")),
+                "avoid_pitfalls": clean_list(market.get("avoid_pitfalls")),
+                "nearby_places": clean_list(market.get("nearby_places")),
+                "apple_maps_url": clean(market.get("apple_maps_url")),
+                "amap_url": clean(market.get("amap_url")),
+                "verification_status": clean(market.get("verification_status")),
+                "source_note": clean(market.get("source_note")),
+                "sources": market.get("sources") if isinstance(market.get("sources"), list) else [],
                 "order": index,
             }
         )
     return [record for record in records if record["id"] and record["name"]]
+
+
+def is_calendar_market(market: dict[str, Any]) -> bool:
+    return (
+        clean(market.get("market_type")) == "periodic_fair"
+        and bool(market.get("calendar_enabled"))
+        and clean(market.get("verification_status")) == "verified"
+    )
+
+
+def clean_list(value: Any) -> list[str]:
+    if not isinstance(value, list):
+        return []
+    return [clean(item) for item in value if clean(item)]
 
 
 def calendar_label(name: str) -> str:
@@ -184,11 +228,12 @@ def calendar_label(name: str) -> str:
 
 
 def description_for(market: dict[str, Any]) -> str:
-    intro = clean(market.get("intro"))
+    intro = clean(market.get("summary")) or clean(market.get("intro"))
     schedule_text = clean(market.get("schedule_text")) or "时间待补充"
     place = clean(market.get("address")) or clean(market.get("location_name")) or "地点待补充"
     source_note = clean(market.get("source_note")) or "数据来自公开资料 + 实地验证中，如有误差欢迎反馈。"
     nav_links = navigation_links(market)
+    reminders = clean_list(market.get("avoid_pitfalls"))
 
     lines = []
     if intro:
@@ -197,6 +242,8 @@ def description_for(market: dict[str, Any]) -> str:
     lines.append(f"地点：{place}")
     if nav_links:
         lines.append(f"导航：{' / '.join(nav_links)}")
+    if reminders:
+        lines.append(f"提醒：{'、'.join(reminders[:3])}")
     lines.append(f"说明：{source_note}")
     return "\n".join(lines)
 

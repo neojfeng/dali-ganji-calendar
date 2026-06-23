@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>大理赶集日历</title>
-    <meta name="description" content="选择你常去的大理集市，订阅到 iPhone 日历。">
+    <title>大理赶集攻略</title>
+    <meta name="description" content="查大理赶集时间、地点、距离和攻略，选择常去集市订阅到 iPhone 日历。">
     <style>
       :root {
         color-scheme: light;
         --bg: #f5f3ef;
-        --surface: rgba(255, 255, 255, 0.78);
-        --surface-solid: #fff;
+        --surface: rgba(255, 255, 255, 0.86);
+        --white: #fff;
         --text: #1d1d1f;
         --muted: #6e6e73;
         --subtle: #8f8f95;
         --line: rgba(29, 29, 31, 0.08);
-        --chip: rgba(255, 255, 255, 0.78);
         --accent: #0a84ff;
-        --accent-soft: #edf6ff;
-        --warning: #936006;
-        --shadow-card: 0 8px 28px rgba(40, 36, 32, 0.08);
-        --shadow-selected: 0 12px 34px rgba(10, 132, 255, 0.14);
+        --accent-soft: #eef6ff;
+        --green: #2f8a58;
+        --warning: #9a6500;
+        --shadow: 0 10px 30px rgba(40, 36, 32, 0.08);
+        --shadow-strong: 0 18px 46px rgba(29, 29, 31, 0.14);
       }
 
       * {
@@ -31,8 +31,8 @@
         margin: 0;
         min-height: 100vh;
         background:
-          radial-gradient(circle at 18% -8%, rgba(255, 255, 255, 0.95), transparent 22rem),
-          linear-gradient(180deg, #fbfaf7 0%, var(--bg) 52%, #ece7de 100%);
+          radial-gradient(circle at 18% -10%, rgba(255, 255, 255, 0.95), transparent 22rem),
+          linear-gradient(180deg, #fbfaf7 0%, var(--bg) 52%, #ebe6dd 100%);
         color: var(--text);
         font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
         line-height: 1.5;
@@ -49,30 +49,37 @@
       }
 
       main {
-        width: min(920px, 100%);
+        width: min(980px, 100%);
         margin: 0 auto;
-        padding: 16px 14px 96px;
+        padding: 14px 14px 104px;
       }
 
       .hero {
         display: grid;
-        gap: 10px;
-        min-height: 154px;
+        min-height: 142px;
         align-content: center;
-        padding: 8px 2px 10px;
+        gap: 9px;
+        padding: 4px 2px 8px;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
       }
 
       h1 {
-        margin: 0;
+        margin-bottom: 0;
         font-size: clamp(32px, 9vw, 44px);
         line-height: 1.05;
         letter-spacing: 0;
       }
 
       .lead {
-        margin: 0;
+        margin-bottom: 0;
         color: var(--muted);
-        font-size: 16px;
+        font-size: 15px;
       }
 
       .location-row {
@@ -82,24 +89,27 @@
         align-items: center;
       }
 
-      .location-button {
+      .pill-button {
         min-height: 36px;
         border: 0;
         border-radius: 999px;
-        padding: 0 13px;
+        padding: 0 14px;
         background: #1d1d1f;
         color: #fff;
         font-size: 14px;
-        font-weight: 800;
+        font-weight: 850;
         box-shadow: 0 8px 20px rgba(29, 29, 31, 0.14);
-        transition: transform 150ms ease, background 150ms ease, opacity 150ms ease;
+        transition: transform 150ms ease, opacity 150ms ease;
       }
 
-      .location-button:active {
+      .pill-button:active,
+      .plain-button:active,
+      .card-button:active,
+      .subscribe-button:active {
         transform: scale(0.98);
       }
 
-      .location-button:disabled {
+      .pill-button:disabled {
         opacity: 0.62;
       }
 
@@ -107,6 +117,120 @@
         margin: 0;
         color: var(--subtle);
         font-size: 12px;
+      }
+
+      .section {
+        margin-top: 18px;
+      }
+
+      .section-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 10px;
+      }
+
+      .section-title {
+        margin: 0;
+        font-size: 21px;
+        line-height: 1.2;
+        letter-spacing: 0;
+      }
+
+      .section-note {
+        margin: 0;
+        color: var(--muted);
+        font-size: 12px;
+        white-space: nowrap;
+      }
+
+      .week-list,
+      .market-list,
+      .permanent-list,
+      .guide-grid,
+      .detail-grid {
+        display: grid;
+        gap: 10px;
+      }
+
+      .week-card,
+      .market-card,
+      .permanent-card,
+      .guide-card,
+      .detail-card {
+        border: 1px solid rgba(255, 255, 255, 0.48);
+        border-radius: 22px;
+        background: var(--surface);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(18px);
+      }
+
+      .week-card {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 10px;
+        padding: 12px;
+      }
+
+      .week-title,
+      .market-name,
+      .permanent-title,
+      .detail-card h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 1.22;
+        letter-spacing: 0;
+      }
+
+      .meta {
+        margin: 4px 0 0;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 750;
+      }
+
+      .summary {
+        margin: 6px 0 0;
+        color: #3d3d42;
+        font-size: 13px;
+        line-height: 1.42;
+      }
+
+      .date-badge {
+        display: grid;
+        min-width: 54px;
+        height: 54px;
+        place-items: center;
+        border-radius: 18px;
+        background: #f1eee7;
+        color: var(--text);
+        font-size: 12px;
+        font-weight: 850;
+        text-align: center;
+      }
+
+      .guide-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .guide-card {
+        min-height: 108px;
+        padding: 13px;
+      }
+
+      .guide-card h3 {
+        margin: 0 0 6px;
+        font-size: 15px;
+        letter-spacing: 0;
+      }
+
+      .guide-card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.45;
       }
 
       .filters {
@@ -128,12 +252,11 @@
         border: 0;
         border-radius: 999px;
         padding: 0 14px;
-        background: var(--chip);
+        background: rgba(255, 255, 255, 0.82);
         color: var(--text);
         font-size: 14px;
-        font-weight: 800;
+        font-weight: 850;
         box-shadow: inset 0 0 0 1px var(--line);
-        backdrop-filter: blur(16px);
         transition: background 150ms ease, color 150ms ease, box-shadow 150ms ease;
       }
 
@@ -143,83 +266,42 @@
         box-shadow: none;
       }
 
-      .market-list {
-        display: grid;
-        gap: 10px;
-      }
-
       .market-card {
-        position: relative;
         display: grid;
-        grid-template-columns: 80px minmax(0, 1fr) 32px;
+        grid-template-columns: 82px minmax(0, 1fr);
         gap: 12px;
-        align-items: center;
-        border: 0;
-        border-radius: 22px;
-        background: var(--surface);
-        box-shadow: var(--shadow-card);
         padding: 10px;
-        text-align: left;
-        backdrop-filter: blur(20px);
-        transition: transform 150ms ease, background 150ms ease, box-shadow 150ms ease;
-      }
-
-      .market-card:active {
-        transform: scale(0.992);
-      }
-
-      .market-card.is-selected {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), var(--accent-soft));
-        box-shadow: var(--shadow-selected);
       }
 
       .thumb {
-        width: 80px;
-        height: 80px;
+        width: 82px;
+        height: 82px;
         overflow: hidden;
-        border-radius: 16px;
-        background: #e7e3da;
+        border-radius: 17px;
+        background: #e7e2d8;
       }
 
-      .thumb img {
+      .thumb img,
+      .detail-image img {
+        display: block;
         width: 100%;
         height: 100%;
-        display: block;
         object-fit: cover;
       }
 
-      .card-content {
+      .market-content {
         min-width: 0;
       }
 
-      .card-title-row {
-        display: flex;
-        gap: 8px;
-        align-items: baseline;
-        justify-content: space-between;
-      }
-
       .market-name {
-        margin: 0;
         overflow: hidden;
-        font-size: 17px;
-        font-weight: 900;
-        line-height: 1.2;
-        letter-spacing: 0;
         text-overflow: ellipsis;
         white-space: nowrap;
       }
 
-      .meta {
-        margin: 3px 0 0;
-        color: var(--muted);
-        font-size: 12px;
-        font-weight: 700;
-      }
-
-      .rule,
-      .place {
-        margin: 3px 0 0;
+      .schedule,
+      .address {
+        margin: 4px 0 0;
         overflow: hidden;
         color: #3d3d42;
         font-size: 13px;
@@ -228,48 +310,187 @@
         white-space: nowrap;
       }
 
-      .place {
+      .address {
         color: var(--muted);
       }
 
-      .select-mark {
-        display: grid;
-        width: 28px;
-        height: 28px;
-        place-items: center;
-        border-radius: 50%;
-        background: rgba(29, 29, 31, 0.07);
-        color: #4d4d52;
-        font-size: 20px;
-        font-weight: 800;
+      .tag-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: 8px;
       }
 
-      .market-card.is-selected .select-mark {
+      .tag {
+        border-radius: 999px;
+        background: rgba(29, 29, 31, 0.06);
+        color: #4b4b51;
+        font-size: 11px;
+        font-weight: 760;
+        padding: 3px 7px;
+      }
+
+      .actions {
+        display: flex;
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .card-button,
+      .plain-button,
+      .subscribe-button {
+        min-height: 34px;
+        border: 0;
+        border-radius: 999px;
+        padding: 0 12px;
+        font-size: 13px;
+        font-weight: 850;
+        transition: transform 150ms ease, background 150ms ease, opacity 150ms ease;
+      }
+
+      .card-button.primary {
         background: var(--accent);
         color: #fff;
-        font-size: 17px;
       }
 
-      .empty {
+      .card-button.secondary,
+      .plain-button {
+        background: rgba(29, 29, 31, 0.07);
+        color: var(--text);
+      }
+
+      .card-button.is-added {
+        background: var(--accent-soft);
+        color: #0568d8;
+      }
+
+      .card-button:disabled {
+        opacity: 0.48;
+        cursor: not-allowed;
+      }
+
+      .permanent-card {
+        padding: 13px;
+      }
+
+      .permanent-card .tag {
+        background: #eef8f1;
+        color: var(--green);
+      }
+
+      .empty,
+      .error {
         border-radius: 20px;
-        background: var(--surface-solid);
-        box-shadow: var(--shadow-card);
+        background: var(--white);
+        box-shadow: var(--shadow);
         color: var(--muted);
-        padding: 18px;
+        padding: 16px;
+        font-size: 14px;
+      }
+
+      .detail-top {
+        display: grid;
+        gap: 12px;
+      }
+
+      .detail-image {
+        height: 206px;
+        overflow: hidden;
+        border-radius: 28px;
+        background: #e7e2d8;
+        box-shadow: var(--shadow);
+      }
+
+      .back-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 10px;
+      }
+
+      .detail-title {
+        margin: 0;
+        font-size: clamp(28px, 8vw, 42px);
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+
+      .detail-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+        margin-top: 12px;
+      }
+
+      .detail-card {
+        padding: 15px;
+      }
+
+      .detail-card h3 {
+        margin-bottom: 9px;
+      }
+
+      .kv {
+        display: grid;
+        gap: 8px;
+      }
+
+      .kv-row {
+        display: grid;
+        grid-template-columns: 74px minmax(0, 1fr);
+        gap: 10px;
+        font-size: 14px;
+      }
+
+      .kv-label {
+        color: var(--muted);
+      }
+
+      .kv-value {
+        color: var(--text);
+        font-weight: 720;
+      }
+
+      .text-list {
+        display: grid;
+        gap: 7px;
+        margin: 0;
+        padding-left: 18px;
+        color: #3d3d42;
+        font-size: 14px;
+      }
+
+      .source-item {
+        margin-top: 9px;
+        border-top: 1px solid var(--line);
+        padding-top: 9px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .status-note {
+        display: inline-flex;
+        border-radius: 999px;
+        background: #fff6df;
+        color: var(--warning);
+        font-size: 12px;
+        font-weight: 850;
+        padding: 4px 8px;
       }
 
       .toast {
         position: fixed;
         top: calc(12px + env(safe-area-inset-top));
         left: 50%;
-        z-index: 40;
-        max-width: min(320px, calc(100% - 28px));
+        z-index: 50;
+        max-width: min(340px, calc(100% - 28px));
         border-radius: 999px;
         background: rgba(29, 29, 31, 0.88);
         color: #fff;
         box-shadow: 0 12px 32px rgba(29, 29, 31, 0.18);
         font-size: 13px;
-        font-weight: 800;
+        font-weight: 850;
         opacity: 0;
         padding: 10px 14px;
         pointer-events: none;
@@ -289,7 +510,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        z-index: 30;
+        z-index: 40;
         padding: 0 12px calc(10px + env(safe-area-inset-bottom));
         pointer-events: none;
       }
@@ -305,9 +526,9 @@
         margin: 0 auto;
         pointer-events: auto;
         border: 1px solid rgba(255, 255, 255, 0.45);
-        background: rgba(255, 255, 255, 0.88);
-        box-shadow: 0 -12px 36px rgba(29, 29, 31, 0.16);
-        backdrop-filter: blur(22px);
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 -14px 38px rgba(29, 29, 31, 0.16);
+        backdrop-filter: blur(24px);
       }
 
       .bar-inner {
@@ -320,39 +541,28 @@
         padding: 10px 12px 10px 16px;
       }
 
-      .bar-count {
+      .bar-count,
+      .panel-title {
         margin: 0;
-        font-size: 16px;
         font-weight: 900;
       }
 
-      .bar-sub {
-        margin: 1px 0 0;
+      .bar-sub,
+      .panel-help {
+        margin: 2px 0 0;
         color: var(--muted);
         font-size: 12px;
       }
 
-      .subscribe-toggle,
-      .panel-button {
+      .subscribe-button {
         min-height: 44px;
-        border: 0;
-        border-radius: 15px;
-        font-weight: 900;
-        transition: transform 150ms ease, background 150ms ease;
-      }
-
-      .subscribe-toggle {
-        min-width: 86px;
         background: var(--accent);
         color: #fff;
       }
 
-      .subscribe-toggle:active,
-      .panel-button:active {
-        transform: scale(0.98);
-      }
-
       .panel-inner {
+        max-height: min(78vh, 540px);
+        overflow: auto;
         border-radius: 24px;
         padding: 14px;
       }
@@ -365,20 +575,23 @@
         margin-bottom: 12px;
       }
 
-      .panel-title {
-        margin: 0;
-        font-size: 17px;
-        font-weight: 900;
-      }
-
       .panel-close {
+        display: grid;
         width: 34px;
         height: 34px;
+        place-items: center;
         border: 0;
         border-radius: 50%;
         background: rgba(29, 29, 31, 0.07);
         color: var(--text);
         font-size: 20px;
+      }
+
+      .selected-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 12px;
       }
 
       .panel-actions {
@@ -387,14 +600,10 @@
         gap: 10px;
       }
 
-      .panel-button.primary {
-        background: var(--accent);
-        color: #fff;
-      }
-
-      .panel-button.secondary {
-        background: rgba(29, 29, 31, 0.07);
-        color: var(--text);
+      .panel-actions .subscribe-button,
+      .panel-actions .plain-button {
+        min-height: 44px;
+        border-radius: 15px;
       }
 
       .link-row {
@@ -412,38 +621,49 @@
         padding: 10px 12px;
       }
 
-      .panel-help {
-        margin: 8px 0 0;
-        color: var(--muted);
-        font-size: 12px;
-      }
-
-      @media (min-width: 720px) {
+      @media (min-width: 760px) {
         main {
-          padding: 22px 22px 112px;
+          padding: 22px 22px 118px;
         }
 
         .market-list {
           grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 12px;
+        }
+
+        .week-list,
+        .permanent-list {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .guide-grid {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .detail-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .detail-card.is-wide {
+          grid-column: 1 / -1;
         }
       }
 
-      @media (max-width: 360px) {
+      @media (max-width: 370px) {
         main {
           padding-right: 12px;
           padding-left: 12px;
         }
 
         .market-card {
-          grid-template-columns: 72px minmax(0, 1fr) 30px;
+          grid-template-columns: 74px minmax(0, 1fr);
         }
 
         .thumb {
-          width: 72px;
-          height: 72px;
+          width: 74px;
+          height: 74px;
         }
 
+        .guide-grid,
         .panel-actions {
           grid-template-columns: 1fr;
         }
@@ -451,59 +671,65 @@
     </style>
   </head>
   <body>
-    <main>
+    <main id="app">
       <section class="hero" aria-labelledby="pageTitle">
-        <h1 id="pageTitle">大理赶集日历</h1>
-        <p class="lead">选你常去的集市，订阅到 iPhone 日历</p>
+        <h1 id="pageTitle">大理赶集攻略</h1>
+        <p class="lead">查时间、看距离，选几个常去的集市订阅到 iPhone 日历</p>
         <div class="location-row">
-          <button class="location-button" id="locationButton" type="button">📍 使用当前位置</button>
-          <p class="privacy-note">只在本地计算距离，不会保存。</p>
+          <button class="pill-button" id="locationButton" type="button">📍 使用当前位置</button>
+          <p class="privacy-note">定位只在本地计算距离，不会保存。</p>
         </div>
       </section>
-
-      <nav class="filters" id="filters" aria-label="集市筛选"></nav>
-
-      <section class="market-list" id="marketList" aria-label="集市列表">
-        <div class="empty">正在加载集市...</div>
+      <section class="section">
+        <div class="empty">正在加载赶集攻略...</div>
       </section>
     </main>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-    <section class="bottom-bar" id="bottomBar" aria-label="已选集市" hidden>
+    <section class="bottom-bar" id="bottomBar" aria-label="已加入日历的集市" hidden>
       <div class="bar-inner">
         <div>
-          <p class="bar-count" id="barCount">已选 0 个集市</p>
-          <p class="bar-sub">生成专属订阅日历</p>
+          <p class="bar-count" id="barCount">已加入 0 个集市</p>
+          <p class="bar-sub">统一生成 Apple 日历订阅</p>
         </div>
-        <button class="subscribe-toggle" id="openPanelButton" type="button">订阅</button>
+        <button class="subscribe-button" id="openPanelButton" type="button">生成日历</button>
       </div>
     </section>
 
-    <section class="subscribe-panel" id="subscribePanel" aria-label="订阅设置" hidden>
+    <section class="subscribe-panel" id="subscribePanel" aria-label="生成日历订阅" hidden>
       <div class="panel-inner">
         <div class="panel-head">
-          <p class="panel-title" id="panelTitle">已选 0 个集市</p>
+          <div>
+            <p class="panel-title" id="panelTitle">已选择 0 个集市</p>
+            <p class="bar-sub">只会包含已验证的周期性赶集点</p>
+          </div>
           <button class="panel-close" id="closePanelButton" type="button" aria-label="收起订阅面板">×</button>
         </div>
+        <div class="selected-list" id="selectedList"></div>
         <div class="panel-actions">
-          <button class="panel-button primary" id="subscribeButton" type="button">一键订阅 Apple 日历</button>
-          <button class="panel-button secondary" id="copyButton" type="button">复制订阅链接</button>
+          <button class="subscribe-button" id="subscribeButton" type="button">一键订阅 Apple 日历</button>
+          <button class="plain-button" id="copyButton" type="button">复制订阅链接</button>
         </div>
         <div class="link-row">
           <input id="httpsLink" type="text" readonly value="" aria-label="HTTPS 订阅链接">
         </div>
-        <p class="panel-help" id="copyStatus">小红书或微信打不开时，复制链接到 iPhone 日历里手动添加订阅。</p>
+        <p class="panel-help" id="copyStatus">小红书或微信打不开时，复制 HTTPS 链接，到 iPhone 日历里手动添加订阅。</p>
       </div>
     </section>
 
     <script>
       const STORAGE_KEY = "dali-ganji-selected-markets";
-      const PLACEHOLDER_IMAGE = "/images/markets/placeholder.jpg";
-      const FILTERS = ["全部", "附近", "古城周边", "喜洲周边", "洱海北部", "洱海东部"];
+      const PLACEHOLDER_IMAGE = new URL("images/markets/placeholder.jpg", window.location.href).toString();
+      const FILTERS = ["全部", "附近", "古城周边", "喜洲周边", "洱海北部", "洱海东部", "其他"];
+      const GUIDE_TIPS = [
+        ["几点去", "上午品类更丰富，傍晚可能更便宜"],
+        ["买什么", "水果、菌子、乳扇、烧饵块、手作、小百货"],
+        ["怎么逛", "热门集市建议预留 1-2 小时"],
+        ["注意什么", "货比三家、注意称重、拍人先问"]
+      ];
 
-      const marketList = document.querySelector("#marketList");
-      const filters = document.querySelector("#filters");
+      const app = document.querySelector("#app");
       const locationButton = document.querySelector("#locationButton");
       const toast = document.querySelector("#toast");
       const bottomBar = document.querySelector("#bottomBar");
@@ -516,8 +742,10 @@
       const copyButton = document.querySelector("#copyButton");
       const httpsInput = document.querySelector("#httpsLink");
       const copyStatus = document.querySelector("#copyStatus");
+      const selectedList = document.querySelector("#selectedList");
 
       let markets = [];
+      let events = [];
       let selected = new Set();
       let activeFilter = "全部";
       let hasLocation = false;
@@ -526,243 +754,462 @@
       init();
 
       async function init() {
-        renderFilters();
+        bindGlobalEvents();
         try {
-          const response = await fetch(new URL("markets.json", window.location.href), { cache: "no-store" });
-          if (!response.ok) throw new Error("markets.json load failed");
-          markets = await response.json();
-          selected = restoreSelection(markets);
-          renderMarkets();
+          const [marketsResponse, eventsResponse] = await Promise.all([
+            fetch(new URL("markets.json", window.location.href), { cache: "no-store" }),
+            fetch(new URL("events.json", window.location.href), { cache: "no-store" })
+          ]);
+          if (!marketsResponse.ok || !eventsResponse.ok) throw new Error("data load failed");
+          markets = await marketsResponse.json();
+          events = await eventsResponse.json();
+          selected = restoreSelection();
+          renderRoute();
           updateSubscription();
         } catch (error) {
-          marketList.innerHTML = '<div class="empty">集市列表加载失败，请稍后再试。</div>';
+          app.innerHTML = heroTemplate() + '<section class="section"><div class="error">攻略加载失败，请稍后再试。</div></section>';
         }
       }
 
-      function renderFilters() {
-        filters.innerHTML = "";
-        for (const filter of FILTERS) {
-          const button = document.createElement("button");
-          button.type = "button";
-          button.className = `filter-chip${activeFilter === filter ? " is-active" : ""}`;
-          button.textContent = filter;
+      function bindGlobalEvents() {
+        locationButton.addEventListener("click", useLocation);
+        openPanelButton.addEventListener("click", () => {
+          subscribePanel.hidden = false;
+          bottomBar.hidden = true;
+        });
+        closePanelButton.addEventListener("click", () => {
+          subscribePanel.hidden = true;
+          updateSubscription();
+        });
+        subscribeButton.addEventListener("click", () => {
+          const link = buildSubscriptionLink("webcal");
+          if (link) window.location.href = link;
+        });
+        copyButton.addEventListener("click", copySubscriptionLink);
+        window.addEventListener("popstate", renderRoute);
+      }
+
+      function heroTemplate() {
+        return `
+          <section class="hero" aria-labelledby="pageTitle">
+            <h1 id="pageTitle">大理赶集攻略</h1>
+            <p class="lead">查时间、看距离，选几个常去的集市订阅到 iPhone 日历</p>
+            <div class="location-row">
+              <button class="pill-button" id="locationButton" type="button">📍 使用当前位置</button>
+              <p class="privacy-note">定位只在本地计算距离，不会保存。</p>
+            </div>
+          </section>
+        `;
+      }
+
+      function renderRoute() {
+        const marketId = new URLSearchParams(window.location.search).get("market");
+        const market = marketId ? markets.find((item) => item.id === marketId) : null;
+        if (market) {
+          renderDetail(market);
+        } else {
+          renderHome();
+        }
+      }
+
+      function renderHome() {
+        app.innerHTML = `
+          ${heroTemplate()}
+          <section class="section" aria-labelledby="weekTitle">
+            <div class="section-head">
+              <h2 class="section-title" id="weekTitle">本周赶集</h2>
+              <p class="section-note">未来 7 天</p>
+            </div>
+            <div class="week-list" id="weekList">${weekTemplate()}</div>
+          </section>
+          <section class="section" aria-labelledby="guideTitle">
+            <div class="section-head">
+              <h2 class="section-title" id="guideTitle">新手快速攻略</h2>
+            </div>
+            <div class="guide-grid">${GUIDE_TIPS.map(([title, text]) => `<article class="guide-card"><h3>${title}</h3><p>${text}</p></article>`).join("")}</div>
+          </section>
+          <section class="section" aria-labelledby="marketsTitle">
+            <div class="section-head">
+              <h2 class="section-title" id="marketsTitle">选择集市</h2>
+              <p class="section-note">先看攻略，再加入日历</p>
+            </div>
+            <nav class="filters" id="filters" aria-label="区域筛选">${filtersTemplate()}</nav>
+            <div class="market-list" id="marketList">${marketListTemplate()}</div>
+          </section>
+          <section class="section" aria-labelledby="permanentTitle">
+            <div class="section-head">
+              <h2 class="section-title" id="permanentTitle">附近常设市场</h2>
+            </div>
+            <div class="permanent-list">${permanentMarketsTemplate()}</div>
+          </section>
+        `;
+        bindHomeEvents();
+      }
+
+      function weekTemplate() {
+        const now = startOfToday();
+        const end = new Date(now);
+        end.setDate(now.getDate() + 7);
+        const marketById = new Map(markets.map((market) => [market.id, market]));
+        const weekEvents = events
+          .filter((event) => {
+            const eventDate = parseLocalDate(event.date);
+            return eventDate >= now && eventDate < end;
+          })
+          .slice(0, 8);
+
+        if (weekEvents.length === 0) {
+          return '<div class="empty">未来 7 天暂时没有已验证的赶集数据。</div>';
+        }
+
+        return weekEvents.map((event) => {
+          const market = marketById.get(event.market_id) || {};
+          const distance = distanceText(market);
+          const meta = [formatDate(event.date), market.area, distance].filter(Boolean).join(" · ");
+          return `
+            <article class="week-card">
+              <div>
+                <h3 class="week-title">${escapeHtml(event.market_name)}</h3>
+                <p class="meta">${escapeHtml(meta)}</p>
+                <p class="summary">${escapeHtml(market.summary || market.intro || "适合顺路体验本地赶集。")}</p>
+                <div class="actions">
+                  <button class="card-button secondary" type="button" data-action="detail" data-id="${escapeHtml(event.market_id)}">查看攻略</button>
+                  ${calendarButton(event.market_id)}
+                </div>
+              </div>
+              <div class="date-badge">${formatDateBadge(event.date)}</div>
+            </article>
+          `;
+        }).join("");
+      }
+
+      function filtersTemplate() {
+        return FILTERS.map((filter) => `
+          <button class="filter-chip${activeFilter === filter ? " is-active" : ""}" type="button" data-filter="${filter}">
+            ${filter}
+          </button>
+        `).join("");
+      }
+
+      function marketListTemplate() {
+        const items = sortedPeriodicMarkets();
+        if (items.length === 0) return '<div class="empty">这个区域暂时没有收录周期性赶集点。</div>';
+        return items.map((market) => {
+          const meta = [market.area, distanceText(market)].filter(Boolean).join(" · ");
+          const tags = (market.tags || []).slice(0, 4).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("");
+          return `
+            <article class="market-card">
+              <div class="thumb">${imageTag(market)}</div>
+              <div class="market-content">
+                <h3 class="market-name">${escapeHtml(market.name)}</h3>
+                <p class="meta">${escapeHtml(meta)}</p>
+                <p class="schedule">${escapeHtml(market.schedule_text || "日期规则待补充")}</p>
+                <p class="summary">${escapeHtml(market.summary || market.intro || "")}</p>
+                <div class="tag-row">${tags}</div>
+                <div class="actions">
+                  <button class="card-button secondary" type="button" data-action="detail" data-id="${escapeHtml(market.id)}">查看攻略</button>
+                  ${calendarButton(market.id)}
+                </div>
+              </div>
+            </article>
+          `;
+        }).join("");
+      }
+
+      function permanentMarketsTemplate() {
+        const items = markets.filter((market) => market.market_type === "permanent_market");
+        if (items.length === 0) return '<div class="empty">常设市场信息正在补充。</div>';
+        return items.map((market) => {
+          const meta = [market.open_text || "每天开放", market.area, distanceText(market)].filter(Boolean).join(" · ");
+          return `
+            <article class="permanent-card">
+              <h3 class="permanent-title">${escapeHtml(market.name)}</h3>
+              <p class="meta">${escapeHtml(meta)}</p>
+              <p class="summary">${escapeHtml(market.summary || market.intro || "")}</p>
+              <p class="address">${escapeHtml(market.address || market.location_name || "地点待补充")}</p>
+              <div class="tag-row">${(market.tags || []).slice(0, 4).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>
+              <div class="actions">
+                <button class="card-button secondary" type="button" data-action="detail" data-id="${escapeHtml(market.id)}">查看攻略</button>
+              </div>
+            </article>
+          `;
+        }).join("");
+      }
+
+      function renderDetail(market) {
+        const canSubscribe = Boolean(market.calendar_enabled);
+        const needsVerification = market.verification_status === "needs_verification";
+        const meta = [market.area, distanceText(market)].filter(Boolean).join(" · ");
+        app.innerHTML = `
+          <div class="back-row">
+            <button class="plain-button" type="button" data-action="home">返回攻略</button>
+            ${needsVerification ? '<span class="status-note">日期规则待核实</span>' : ""}
+          </div>
+          <section class="detail-top">
+            <div class="detail-image">${imageTag(market)}</div>
+            <div>
+              <h1 class="detail-title">${escapeHtml(market.name)}</h1>
+              <p class="meta">${escapeHtml(meta)}</p>
+              <p class="summary">${escapeHtml(market.summary || market.intro || "")}</p>
+              <p class="schedule">${escapeHtml(market.schedule_text || market.open_text || "时间待补充")}</p>
+              <div class="detail-actions">
+                ${canSubscribe ? calendarButton(market.id) : '<button class="card-button secondary" type="button" disabled>不进入日历</button>'}
+                <button class="card-button primary" type="button" data-action="navigate" data-id="${escapeHtml(market.id)}">导航</button>
+              </div>
+            </div>
+          </section>
+          <section class="section detail-grid">
+            ${keyInfoCard(market)}
+            ${tagsCard("适合谁", market.best_for, market.not_for)}
+            ${listCard("买什么 / 吃什么", market.what_to_buy, market.food_tips)}
+            ${tipsCard("怎么逛更顺", [market.route_tips, market.transport_tips, market.parking_tips])}
+            ${listCard("避坑提醒", market.avoid_pitfalls, [market.photo_tips])}
+            ${listCard("周边顺路", market.nearby_places)}
+            ${sourceCard(market)}
+          </section>
+        `;
+        bindHomeEvents();
+      }
+
+      function keyInfoCard(market) {
+        const timeText = market.market_type === "permanent_market" ? (market.open_text || "每天开放") : (market.schedule_text || "时间待补充");
+        return `
+          <article class="detail-card">
+            <h3>关键信息</h3>
+            <div class="kv">
+              ${kv("赶集时间", timeText)}
+              ${kv("建议到达", market.best_time || "上午去选择更多")}
+              ${kv("建议停留", market.duration || "建议预留 1-2 小时")}
+              ${kv("地点", market.address || market.location_name || "地点待补充")}
+            </div>
+          </article>
+        `;
+      }
+
+      function tagsCard(title, bestFor = [], notFor = []) {
+        return `
+          <article class="detail-card">
+            <h3>${title}</h3>
+            <div class="tag-row">${bestFor.map((item) => `<span class="tag">${escapeHtml(item)}</span>`).join("") || '<span class="tag">适合顺路体验</span>'}</div>
+            ${notFor.length ? `<p class="summary">不太适合：${escapeHtml(notFor.join("、"))}</p>` : ""}
+          </article>
+        `;
+      }
+
+      function listCard(title, primary = [], secondary = []) {
+        const items = [...normalizeList(primary), ...normalizeList(secondary)].filter(Boolean);
+        return `
+          <article class="detail-card">
+            <h3>${title}</h3>
+            ${items.length ? `<ul class="text-list">${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : '<p class="summary">信息正在补充。</p>'}
+          </article>
+        `;
+      }
+
+      function tipsCard(title, tips = []) {
+        return listCard(title, tips.filter(Boolean));
+      }
+
+      function sourceCard(market) {
+        const sources = Array.isArray(market.sources) ? market.sources : [];
+        const sourceHtml = sources.length
+          ? sources.map((source) => `
+              <div class="source-item">
+                <strong>${escapeHtml(source.title || "来源")}</strong>
+                ${source.url ? `<br><a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">查看来源</a>` : ""}
+                ${source.note ? `<br>${escapeHtml(source.note)}` : ""}
+              </div>
+            `).join("")
+          : '<p class="summary">来源信息正在补充。</p>';
+        return `
+          <article class="detail-card is-wide">
+            <h3>数据来源与验证状态</h3>
+            ${market.verification_status === "needs_verification" ? '<span class="status-note">日期规则待核实</span>' : '<span class="tag">已验证</span>'}
+            <p class="summary">${escapeHtml(market.source_note || "数据来自公开资料，持续实地验证中。")}</p>
+            ${sourceHtml}
+          </article>
+        `;
+      }
+
+      function kv(label, value) {
+        return `<div class="kv-row"><div class="kv-label">${label}</div><div class="kv-value">${escapeHtml(value)}</div></div>`;
+      }
+
+      function bindHomeEvents() {
+        app.querySelector("#locationButton")?.addEventListener("click", useLocation);
+        app.querySelectorAll("[data-filter]").forEach((button) => {
           button.addEventListener("click", () => {
+            const filter = button.dataset.filter;
             if (filter === "附近" && !hasLocation) {
               showToast("请先点击“使用当前位置”");
               return;
             }
             activeFilter = filter;
-            renderFilters();
-            renderMarkets();
+            renderHome();
           });
-          filters.appendChild(button);
-        }
+        });
+        app.querySelectorAll("[data-action]").forEach((button) => {
+          button.addEventListener("click", (event) => {
+            event.preventDefault();
+            const action = button.dataset.action;
+            const id = button.dataset.id;
+            if (action === "detail") openDetail(id);
+            if (action === "toggle") toggleMarket(id);
+            if (action === "home") openHome();
+            if (action === "navigate") openNavigation(id);
+          });
+        });
       }
 
-      function restoreSelection(allMarkets) {
+      function calendarButton(id) {
+        const market = markets.find((item) => item.id === id);
+        const canSubscribe = market && market.calendar_enabled;
+        const isAdded = selected.has(id);
+        const label = isAdded ? "已加入" : "加入日历";
+        const className = isAdded ? "card-button is-added" : "card-button primary";
+        if (!canSubscribe) {
+          return '<button class="card-button secondary" type="button" disabled>待核实</button>';
+        }
+        return `<button class="${className}" type="button" data-action="toggle" data-id="${escapeHtml(id)}">${label}</button>`;
+      }
+
+      function sortedPeriodicMarkets() {
+        let items = markets.filter((market) => market.market_type === "periodic_fair");
+        if (activeFilter !== "全部" && activeFilter !== "附近") {
+          items = items.filter((market) => market.area === activeFilter);
+        }
+        if (activeFilter === "附近" || hasLocation) {
+          items = items.slice().sort((a, b) => distanceSortValue(a) - distanceSortValue(b));
+        }
+        return items;
+      }
+
+      function restoreSelection() {
         try {
           const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
-          const validIds = new Set(allMarkets.map((market) => market.id));
+          const validIds = new Set(markets.filter((market) => market.calendar_enabled).map((market) => market.id));
           return new Set(saved.filter((id) => validIds.has(id)));
         } catch (error) {
           return new Set();
         }
       }
 
-      function renderMarkets() {
-        const visibleMarkets = sortedMarkets();
-        marketList.innerHTML = "";
-        if (visibleMarkets.length === 0) {
-          marketList.innerHTML = '<div class="empty">这里暂时没有收录集市。</div>';
+      function toggleMarket(id) {
+        const market = markets.find((item) => item.id === id);
+        if (!market?.calendar_enabled) {
+          showToast("这个地点暂不生成日历事件");
           return;
         }
-
-        const fragment = document.createDocumentFragment();
-        for (const market of visibleMarkets) {
-          const isSelected = selected.has(market.id);
-          const card = document.createElement("article");
-          card.className = `market-card${isSelected ? " is-selected" : ""}`;
-          card.setAttribute("role", "button");
-          card.setAttribute("tabindex", "0");
-          card.setAttribute("aria-pressed", isSelected ? "true" : "false");
-          card.innerHTML = cardTemplate(market, isSelected);
-          card.addEventListener("click", () => toggleMarket(market.id));
-          card.addEventListener("keydown", (event) => {
-            if (event.key === "Enter" || event.key === " ") {
-              event.preventDefault();
-              toggleMarket(market.id);
-            }
-          });
-          fragment.appendChild(card);
-        }
-        marketList.appendChild(fragment);
-      }
-
-      function cardTemplate(market, isSelected) {
-        const distance = market.distanceKm !== undefined ? formatDistance(market.distanceKm) : "";
-        const areaLine = [market.area, distance].filter(Boolean).join(" · ");
-        return `
-          <div class="thumb">
-            <img
-              src="${escapeHtml(market.image || PLACEHOLDER_IMAGE)}"
-              alt="${escapeHtml(market.image_alt || market.name)}"
-              loading="lazy"
-              onerror="this.onerror=null;this.src='${PLACEHOLDER_IMAGE}'"
-            >
-          </div>
-          <div class="card-content">
-            <div class="card-title-row">
-              <h2 class="market-name">${escapeHtml(market.name)}</h2>
-            </div>
-            ${areaLine ? `<p class="meta">${escapeHtml(areaLine)}</p>` : ""}
-            <p class="rule">${escapeHtml(trimScheduleText(market.schedule_text || "时间待补充"))}</p>
-            <p class="place">${escapeHtml(market.address || market.location_name || "地点待补充")}</p>
-          </div>
-          <span class="select-mark" aria-hidden="true">${isSelected ? "✓" : "+"}</span>
-        `;
-      }
-
-      function sortedMarkets() {
-        let result = markets.slice();
-        if (activeFilter !== "全部" && activeFilter !== "附近") {
-          result = result.filter((market) => market.area === activeFilter);
-        }
-        if (hasLocation) {
-          result.sort((a, b) => {
-            const da = a.distanceKm ?? Number.POSITIVE_INFINITY;
-            const db = b.distanceKm ?? Number.POSITIVE_INFINITY;
-            if (da !== db) return da - db;
-            return Number(a.order || 0) - Number(b.order || 0);
-          });
+        if (selected.has(id)) {
+          selected.delete(id);
         } else {
-          result.sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
-        }
-        return result;
-      }
-
-      function toggleMarket(marketId) {
-        if (selected.has(marketId)) {
-          selected.delete(marketId);
-        } else {
-          selected.add(marketId);
+          selected.add(id);
         }
         saveSelection();
-        renderMarkets();
+        renderRoute();
         updateSubscription();
       }
 
-      function updateSubscription() {
-        const ids = selectedIdsInMarketOrder();
-        const hasSelection = ids.length > 0;
-        const httpsUrl = hasSelection ? subscriptionUrl(ids, "https") : "";
-        const webcalUrl = hasSelection ? subscriptionUrl(ids, "webcal") : "";
-
-        bottomBar.hidden = !hasSelection;
-        if (!hasSelection) subscribePanel.hidden = true;
-
-        barCount.textContent = `已选 ${ids.length} 个集市`;
-        panelTitle.textContent = `已选 ${ids.length} 个集市`;
-        httpsInput.value = httpsUrl;
-        httpsInput.dataset.url = httpsUrl;
-        subscribeButton.dataset.url = webcalUrl;
-        copyStatus.textContent = "小红书或微信打不开时，复制链接到 iPhone 日历里手动添加订阅。";
-      }
-
-      function selectedIdsInMarketOrder() {
-        return markets.filter((market) => selected.has(market.id)).map((market) => market.id);
-      }
-
-      function subscriptionUrl(ids, protocol) {
-        const baseUrl = window.location.protocol === "file:" ? "http://localhost:3000" : window.location.href;
-        const url = new URL(`calendars/${ids.join("__")}.ics`, baseUrl);
-        return protocol === "webcal" ? url.href.replace(/^https?:\/\//, "webcal://") : url.href;
-      }
-
       function saveSelection() {
+        const ordered = orderedSelectedIds();
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(ordered));
+      }
+
+      function updateSubscription() {
+        const ids = orderedSelectedIds();
+        const count = ids.length;
+        bottomBar.hidden = count === 0 || !subscribePanel.hidden;
+        barCount.textContent = `已加入 ${count} 个集市`;
+        panelTitle.textContent = `已选择 ${count} 个集市`;
+        httpsInput.value = buildSubscriptionLink("https") || "";
+        selectedList.innerHTML = ids.map((id) => {
+          const market = markets.find((item) => item.id === id);
+          return market ? `<span class="tag">${escapeHtml(market.label || market.name)}</span>` : "";
+        }).join("");
+      }
+
+      function orderedSelectedIds() {
+        return markets.filter((market) => market.calendar_enabled && selected.has(market.id)).map((market) => market.id);
+      }
+
+      function buildSubscriptionLink(protocol) {
+        const ids = orderedSelectedIds();
+        if (!ids.length) return "";
+        const httpsUrl = new URL(`calendars/${ids.join("__")}.ics`, window.location.href);
+        httpsUrl.search = "";
+        httpsUrl.hash = "";
+        if (protocol === "webcal") {
+          httpsUrl.protocol = "webcal:";
+        }
+        return httpsUrl.toString();
+      }
+
+      async function copySubscriptionLink() {
+        const link = buildSubscriptionLink("https");
+        if (!link) return;
         try {
-          localStorage.setItem(STORAGE_KEY, JSON.stringify(selectedIdsInMarketOrder()));
+          await navigator.clipboard.writeText(link);
+          copyStatus.textContent = "已复制。打不开一键订阅时，可以到 iPhone 日历里手动添加。";
+          showToast("订阅链接已复制");
         } catch (error) {
-          return;
+          httpsInput.select();
+          document.execCommand("copy");
+          copyStatus.textContent = "链接已选中，可手动复制。";
         }
       }
 
-      locationButton.addEventListener("click", async () => {
-        locationButton.disabled = true;
+      async function useLocation() {
+        const button = document.querySelector("#locationButton");
+        if (button) {
+          button.disabled = true;
+          button.textContent = "定位中...";
+        }
         try {
           const position = await getUserLocation();
-          const userLat = position.coords.latitude;
-          const userLng = position.coords.longitude;
+          const { latitude, longitude } = position.coords;
           markets = markets.map((market) => {
-            if (!hasCoordinates(market)) return market;
+            if (typeof market.lat !== "number" || typeof market.lng !== "number") return market;
             return {
               ...market,
-              distanceKm: calculateDistanceKm(userLat, userLng, Number(market.lat), Number(market.lng)),
+              distanceKm: calculateDistanceKm(latitude, longitude, market.lat, market.lng)
             };
           });
           hasLocation = true;
           activeFilter = "附近";
-          renderFilters();
-          renderMarkets();
           showToast("已按距离为你推荐附近集市");
+          renderRoute();
         } catch (error) {
-          showToast("无法获取位置，你仍然可以按区域手动选择");
+          showToast("无法获取位置，你仍然可以按区域手动选择。");
         } finally {
-          locationButton.disabled = false;
+          if (button) {
+            button.disabled = false;
+            button.textContent = "📍 使用当前位置";
+          }
         }
-      });
-
-      openPanelButton.addEventListener("click", () => {
-        subscribePanel.hidden = false;
-      });
-
-      closePanelButton.addEventListener("click", () => {
-        subscribePanel.hidden = true;
-      });
-
-      subscribeButton.addEventListener("click", () => {
-        const url = subscribeButton.dataset.url;
-        if (url) window.location.href = url;
-      });
-
-      copyButton.addEventListener("click", async () => {
-        const url = httpsInput.dataset.url;
-        if (!url) return;
-        try {
-          await navigator.clipboard.writeText(url);
-          copyStatus.textContent = "已复制订阅链接。";
-        } catch (error) {
-          httpsInput.focus();
-          httpsInput.select();
-          copyStatus.textContent = "请手动复制输入框里的链接。";
-        }
-      });
+      }
 
       function getUserLocation() {
         return new Promise((resolve, reject) => {
           if (!navigator.geolocation) {
-            reject(new Error("Geolocation is not supported."));
+            reject(new Error("geolocation unavailable"));
             return;
           }
           navigator.geolocation.getCurrentPosition(resolve, reject, {
             enableHighAccuracy: false,
             timeout: 10000,
-            maximumAge: 300000,
+            maximumAge: 60000
           });
         });
       }
 
       function calculateDistanceKm(lat1, lng1, lat2, lng2) {
-        const earthRadiusKm = 6371;
+        const radiusKm = 6371;
         const dLat = toRadians(lat2 - lat1);
         const dLng = toRadians(lng2 - lng1);
         const a =
-          Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-          Math.cos(toRadians(lat1)) *
-            Math.cos(toRadians(lat2)) *
-            Math.sin(dLng / 2) *
-            Math.sin(dLng / 2);
-        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-        return earthRadiusKm * c;
+          Math.sin(dLat / 2) ** 2 +
+          Math.cos(toRadians(lat1)) * Math.cos(toRadians(lat2)) * Math.sin(dLng / 2) ** 2;
+        return radiusKm * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
       }
 
       function formatDistance(distanceKm) {
@@ -771,31 +1218,107 @@
         return `距你 ${distanceKm.toFixed(1)} km`;
       }
 
-      function hasCoordinates(market) {
-        return market.lat !== null && market.lat !== undefined && market.lng !== null && market.lng !== undefined;
+      function distanceText(market) {
+        return market?.distanceKm !== undefined ? formatDistance(market.distanceKm) : "";
       }
 
-      function showToast(message) {
-        clearTimeout(toastTimer);
-        toast.textContent = message;
-        toast.classList.add("is-visible");
-        toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 2400);
+      function distanceSortValue(market) {
+        return Number.isFinite(market.distanceKm) ? market.distanceKm : Number.POSITIVE_INFINITY;
       }
 
       function toRadians(value) {
         return (value * Math.PI) / 180;
       }
 
-      function trimScheduleText(value) {
-        return String(value).replace(/赶集$/, "");
+      function openDetail(id) {
+        const url = new URL(window.location.href);
+        url.searchParams.set("market", id);
+        window.history.pushState({}, "", url);
+        renderRoute();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function openHome() {
+        const url = new URL(window.location.href);
+        url.searchParams.delete("market");
+        window.history.pushState({}, "", url);
+        renderHome();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function openNavigation(id) {
+        const market = markets.find((item) => item.id === id);
+        if (!market) return;
+        const link = market.apple_maps_url || appleMapsLink(market);
+        window.open(link, "_blank", "noopener");
+      }
+
+      function appleMapsLink(market) {
+        const query = encodeURIComponent(market.location_name || market.name || "大理赶集");
+        if (typeof market.lat === "number" && typeof market.lng === "number") {
+          return `https://maps.apple.com/?ll=${market.lat},${market.lng}&q=${query}`;
+        }
+        return `https://maps.apple.com/?q=${query}`;
+      }
+
+      function imageTag(market) {
+        const image = assetUrl(market.image || market.images?.[0]?.src);
+        const alt = market.image_alt || market.images?.[0]?.alt || market.name || "集市图片";
+        return `<img src="${escapeHtml(image)}" alt="${escapeHtml(alt)}" loading="lazy" onerror="this.onerror=null;this.src='${PLACEHOLDER_IMAGE}'">`;
+      }
+
+      function assetUrl(value) {
+        if (!value) return PLACEHOLDER_IMAGE;
+        const text = String(value);
+        if (/^(https?:|data:|blob:)/.test(text)) return text;
+        return new URL(text.replace(/^\/+/, ""), window.location.href).toString();
+      }
+
+      function normalizeList(value) {
+        if (Array.isArray(value)) return value.filter(Boolean);
+        return value ? [value] : [];
+      }
+
+      function parseLocalDate(value) {
+        const [year, month, day] = value.split("-").map(Number);
+        return new Date(year, month - 1, day);
+      }
+
+      function startOfToday() {
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        return today;
+      }
+
+      function formatDate(value) {
+        return new Intl.DateTimeFormat("zh-CN", {
+          month: "numeric",
+          day: "numeric",
+          weekday: "short"
+        }).format(parseLocalDate(value));
+      }
+
+      function formatDateBadge(value) {
+        const date = parseLocalDate(value);
+        const monthDay = new Intl.DateTimeFormat("zh-CN", { month: "numeric", day: "numeric" }).format(date);
+        const weekday = new Intl.DateTimeFormat("zh-CN", { weekday: "short" }).format(date);
+        return `${monthDay}<br>${weekday}`;
+      }
+
+      function showToast(message) {
+        window.clearTimeout(toastTimer);
+        toast.textContent = message;
+        toast.classList.add("is-visible");
+        toastTimer = window.setTimeout(() => toast.classList.remove("is-visible"), 2400);
       }
 
       function escapeHtml(value) {
-        return String(value)
-          .replace(/&/g, "&amp;")
-          .replace(/</g, "&lt;")
-          .replace(/>/g, "&gt;")
-          .replace(/"/g, "&quot;");
+        return String(value ?? "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
       }
     </script>
   </body>
