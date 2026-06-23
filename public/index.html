@@ -163,38 +163,6 @@
         font-size: 16px;
       }
 
-      .filters {
-        display: flex;
-        gap: 10px;
-        margin: 0 -18px 20px;
-        padding: 0 18px 4px;
-        overflow-x: auto;
-        scrollbar-width: none;
-      }
-
-      .filters::-webkit-scrollbar {
-        display: none;
-      }
-
-      .filter-button {
-        flex: 0 0 auto;
-        min-height: 42px;
-        border: 0;
-        border-radius: 999px;
-        padding: 0 16px;
-        background: rgba(255, 255, 255, 0.72);
-        color: var(--text);
-        font-weight: 800;
-        box-shadow: inset 0 0 0 1px var(--line);
-        transition: background 160ms ease, color 160ms ease, box-shadow 160ms ease;
-      }
-
-      .filter-button.is-active {
-        background: var(--text);
-        color: #fff;
-        box-shadow: none;
-      }
-
       .market-grid {
         display: grid;
         gap: 18px;
@@ -287,12 +255,6 @@
         align-items: center;
         justify-content: space-between;
         gap: 12px;
-      }
-
-      .area {
-        color: var(--accent);
-        font-size: 13px;
-        font-weight: 900;
       }
 
       .distance {
@@ -454,13 +416,6 @@
           grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 22px;
         }
-
-        .filters {
-          margin-right: 0;
-          margin-left: 0;
-          padding-right: 0;
-          padding-left: 0;
-        }
       }
 
       @media (min-width: 1040px) {
@@ -506,7 +461,6 @@
           <p class="section-copy">点一下卡片即可选择，再点一次取消。</p>
         </div>
 
-        <div class="filters" id="filters" aria-label="区域筛选"></div>
         <div class="market-grid" id="marketGrid">
           <div class="empty">正在加载集市...</div>
         </div>
@@ -536,11 +490,9 @@
 
     <script>
       const STORAGE_KEY = "dali-ganji-selected-markets";
-      const FILTERS = ["附近优先", "全部", "古城周边", "喜洲周边", "洱海北部", "洱海东部", "其他"];
       const PLACEHOLDER_IMAGE = "/images/markets/placeholder.jpg";
 
       const marketGrid = document.querySelector("#marketGrid");
-      const filters = document.querySelector("#filters");
       const locationButton = document.querySelector("#locationButton");
       const locationStatus = document.querySelector("#locationStatus");
       const selectedCount = document.querySelector("#selectedCount");
@@ -552,13 +504,11 @@
 
       let markets = [];
       let selected = new Set();
-      let activeFilter = "全部";
       let hasLocation = false;
 
       init();
 
       async function init() {
-        renderFilters();
         try {
           const response = await fetch(new URL("markets.json", window.location.href), { cache: "no-store" });
           if (!response.ok) throw new Error("markets.json load failed");
@@ -568,26 +518,6 @@
           updateSubscription();
         } catch (error) {
           marketGrid.innerHTML = '<div class="empty">集市列表加载失败，请稍后再试。</div>';
-        }
-      }
-
-      function renderFilters() {
-        filters.innerHTML = "";
-        for (const filter of FILTERS) {
-          const button = document.createElement("button");
-          button.type = "button";
-          button.className = `filter-button${filter === activeFilter ? " is-active" : ""}`;
-          button.textContent = filter;
-          button.addEventListener("click", () => {
-            activeFilter = filter === "附近优先" && !hasLocation ? "全部" : filter;
-            if (filter === "附近优先" && !hasLocation) {
-              locationStatus.textContent = "请先点击上方按钮授权定位。";
-              locationStatus.classList.remove("warning");
-            }
-            renderFilters();
-            renderMarkets();
-          });
-          filters.appendChild(button);
         }
       }
 
@@ -602,11 +532,11 @@
       }
 
       function renderMarkets() {
-        const visibleMarkets = sortedAndFilteredMarkets();
+        const visibleMarkets = sortedMarkets();
         marketGrid.innerHTML = "";
 
         if (visibleMarkets.length === 0) {
-          marketGrid.innerHTML = '<div class="empty">这个区域暂时没有收录集市。</div>';
+          marketGrid.innerHTML = '<div class="empty">暂时没有可显示的集市。</div>';
           return;
         }
 
@@ -645,10 +575,7 @@
             <span class="check-mark" aria-hidden="true">${isSelected ? "✓" : ""}</span>
           </div>
           <div class="card-body">
-            <div class="card-topline">
-              <span class="area">${escapeHtml(market.area || "其他")}</span>
-              ${distance ? `<span class="distance">${escapeHtml(distance)}</span>` : ""}
-            </div>
+            ${distance ? `<div class="card-topline"><span class="distance">${escapeHtml(distance)}</span></div>` : ""}
             <h3 class="market-name">${escapeHtml(market.name)}</h3>
             <div class="chips">
               <span class="chip">${escapeHtml(trimScheduleText(market.schedule_text || "时间待补充"))}</span>
@@ -659,12 +586,9 @@
         `;
       }
 
-      function sortedAndFilteredMarkets() {
+      function sortedMarkets() {
         let result = markets.slice();
-        if (activeFilter !== "全部" && activeFilter !== "附近优先") {
-          result = result.filter((market) => (market.area || "其他") === activeFilter);
-        }
-        if ((hasLocation && activeFilter === "附近优先") || (hasLocation && activeFilter === "全部")) {
+        if (hasLocation) {
           result.sort((a, b) => {
             const da = a.distanceKm ?? Number.POSITIVE_INFINITY;
             const db = b.distanceKm ?? Number.POSITIVE_INFINITY;
@@ -738,12 +662,10 @@
             };
           });
           hasLocation = true;
-          activeFilter = "附近优先";
           locationStatus.textContent = "已按距离为你排序。";
-          renderFilters();
           renderMarkets();
         } catch (error) {
-          locationStatus.textContent = "无法获取位置，你仍然可以按区域手动选择。";
+          locationStatus.textContent = "无法获取位置，你仍然可以手动选择。";
           locationStatus.classList.add("warning");
         } finally {
           locationButton.disabled = false;

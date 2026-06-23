@@ -75,7 +75,6 @@ GitHub Pages 不能运行动态 API，所以定制订阅版本应部署在 Verce
   "name": "三月街赶集",
   "location_name": "三月街",
   "address": "大理古城苍山门对面",
-  "area": "古城周边",
   "lat": 25.6957,
   "lng": 100.1518,
   "image": "/images/markets/sanyuejie.jpg",
@@ -138,17 +137,15 @@ GitHub Pages 不能运行动态 API，所以定制订阅版本应部署在 Verce
 
 1. 在 `data/markets.json` 追加一个对象。
 2. 填好 `id`、`name`、`location_name`、`address`、`intro`。
-3. 填好 `area`，可选值建议使用：`古城周边`、`喜洲周边`、`洱海北部`、`洱海东部`、`其他`。
-4. 填好 `lat`、`lng`，页面会用它们在前端本地计算距离。
-5. 选择合适的 `schedule_type` 并填写对应规则。
-6. 运行 `python3 scripts/generate_events.py`。
-7. 本地打开页面，确认新集市出现在列表里。
+3. 填好 `lat`、`lng`，页面会用它们在前端本地计算距离。
+4. 选择合适的 `schedule_type` 并填写对应规则。
+5. 运行 `python3 scripts/generate_events.py`。
+6. 本地打开页面，确认新集市出现在列表里。
 
 修改介绍、地点、坐标或地图链接：
 
 - 改 `intro` 会影响页面卡片和日历 DESCRIPTION。
 - 改 `location_name` 或 `address` 会影响日历 LOCATION 和地点说明。
-- 改 `area` 会影响落地页筛选。
 - 填 `lat`、`lng` 后，ICS 会包含 `GEO`，落地页也能显示“距你 x km”。
 - 填 `apple_maps_url` 后，DESCRIPTION 会展示 Apple 地图导航。
 - 填 `amap_url` 后，DESCRIPTION 会展示高德地图导航。
@@ -185,7 +182,7 @@ public/images/markets/{market_id}.jpg
 
 落地页不会自动请求定位。用户点击“使用我的位置推荐附近集市”后，浏览器才会请求位置权限。
 
-用户位置只在前端本地用于 Haversine 直线距离计算，不会上传到服务器，也不会写入 `localStorage`。如果定位失败，页面会提示用户继续按区域手动选择。
+用户位置只在前端本地用于 Haversine 直线距离计算，不会上传到服务器，也不会写入 `localStorage`。如果定位失败，页面会提示用户继续手动选择。
 
 ## Apple 日历测试
 

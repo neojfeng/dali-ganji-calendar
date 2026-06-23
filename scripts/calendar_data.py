@@ -160,7 +160,6 @@ def public_market_records(markets: list[dict[str, Any]]) -> list[dict[str, Any]]
                 "label": calendar_label(clean(market.get("name"))),
                 "location_name": clean(market.get("location_name")),
                 "address": clean(market.get("address")),
-                "area": clean(market.get("area")) or "其他",
                 "lat": market.get("lat"),
                 "lng": market.get("lng"),
                 "image": clean(market.get("image")),
