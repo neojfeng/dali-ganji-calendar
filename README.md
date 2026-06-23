@@ -2,22 +2,25 @@
 
 一个轻量的 Apple 日历订阅项目。用户在落地页选择自己关心的集市，系统生成只包含这些集市的订阅链接。
 
-## 为什么需要动态接口
+## 为什么使用纯静态组合日历
 
-大理赶集地点多，距离也远。全量订阅会把很多无关事件放进用户日历里，所以现在改为：
+大理赶集地点多，距离也远。全量订阅会把很多无关事件放进用户日历里，所以页面允许用户选择自己关心的集市。
+
+当前只收录 6 个集市，所有非空组合最多 63 种，适合提前生成静态 ICS 文件：
 
 1. `data/markets.json` 维护集市配置。
 2. `scripts/generate_events.py` 预生成未来 18 个月所有事件到 `public/events.json`。
-3. `api/calendar.ics` 根据用户选择的 `markets` 参数过滤事件并返回 ICS。
+3. `scripts/generate_static_calendars.py` 预生成所有选择组合到 `public/calendars/`。
+4. 落地页按用户选择生成对应静态 ICS 链接。
 
 示例：
 
 ```text
-webcal://your-domain.vercel.app/api/calendar.ics?markets=sanyuejie,yinqiaojie
-https://your-domain.vercel.app/api/calendar.ics?markets=sanyuejie,yinqiaojie
+webcal://neojfeng.github.io/dali-ganji-calendar/calendars/sanyuejie__yinqiaojie.ics
+https://neojfeng.github.io/dali-ganji-calendar/calendars/sanyuejie__yinqiaojie.ics
 ```
 
-如果没有有效的 `market_id`，接口会返回一个空日历，而不是错误页面。这样更适合 Apple 日历订阅。
+这样不依赖 Vercel 动态接口，微信和小红书分享时更稳定。
 
 ## 本地运行
 
@@ -25,36 +28,39 @@ https://your-domain.vercel.app/api/calendar.ics?markets=sanyuejie,yinqiaojie
 python3 -m pip install -r requirements.txt
 python3 scripts/generate_events.py
 python3 scripts/generate_ics.py
-npx vercel dev
+python3 scripts/generate_static_calendars.py
+python3 -m http.server 8000 --directory public
 ```
 
-打开 Vercel Dev 给出的本地地址，通常是：
+打开：
 
 ```text
-http://localhost:3000
+http://localhost:8000
 ```
 
-测试动态接口：
+测试静态组合 ICS：
 
 ```text
-http://localhost:3000/api/calendar.ics?markets=sanyuejie,yinqiaojie
+http://localhost:8000/calendars/sanyuejie__yinqiaojie.ics
 ```
 
-## 部署到 Vercel
+## 部署到 GitHub Pages
 
-1. 打开 Vercel，选择 Import Git Repository。
-2. 选择 `neojfeng/dali-ganji-calendar`。
-3. 保持默认项目设置即可，仓库里的 `vercel.json` 已写好构建命令。
-4. 部署完成后，用 Vercel 分配的域名访问落地页。
+仓库包含 `.github/workflows/deploy-pages.yml`。push 到 `main` 后，GitHub Actions 会：
 
-`vercel.json` 会在部署时运行：
+1. 安装 Python 依赖。
+2. 生成 `public/events.json`。
+3. 生成全量 `public/dali-ganji.ics`。
+4. 生成 `public/calendars/` 下的 63 个组合 ICS。
+5. 发布 `public/` 到 GitHub Pages。
 
-```bash
-python3 scripts/generate_events.py
-python3 scripts/generate_ics.py
+发布地址：
+
+```text
+https://neojfeng.github.io/dali-ganji-calendar/
 ```
 
-GitHub Pages 不能运行动态 API，所以定制订阅版本应部署在 Vercel。
+如果是第一次配置 Pages，在 GitHub 仓库里打开 `Settings -> Pages`，`Build and deployment` 的 `Source` 选择 `GitHub Actions`。
 
 ## 当前收录
 
@@ -139,7 +145,7 @@ GitHub Pages 不能运行动态 API，所以定制订阅版本应部署在 Verce
 2. 填好 `id`、`name`、`location_name`、`address`、`intro`。
 3. 填好 `lat`、`lng`，页面会用它们在前端本地计算距离。
 4. 选择合适的 `schedule_type` 并填写对应规则。
-5. 运行 `python3 scripts/generate_events.py`。
+5. 运行 `python3 scripts/generate_events.py` 和 `python3 scripts/generate_static_calendars.py`。
 6. 本地打开页面，确认新集市出现在列表里。
 
 修改介绍、地点、坐标或地图链接：

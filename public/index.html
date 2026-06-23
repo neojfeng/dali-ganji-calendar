@@ -633,8 +633,8 @@
 
       function subscriptionUrl(ids, protocol) {
         const baseUrl = window.location.protocol === "file:" ? "http://localhost:3000" : window.location.origin;
-        const url = new URL("/api/calendar.ics", baseUrl);
-        url.searchParams.set("markets", ids.join(","));
+        const calendarPath = `calendars/${ids.join("__")}.ics`;
+        const url = new URL(calendarPath, window.location.protocol === "file:" ? `${baseUrl}/` : window.location.href);
         return protocol === "webcal" ? url.href.replace(/^https?:\/\//, "webcal://") : url.href;
       }
 
