@@ -1,50 +1,73 @@
 # 大理赶集日历
 
-一个轻量的 Apple 日历订阅项目：用 `data/markets.json` 维护赶集数据，用 Python 生成公开的 `public/dali-ganji.ics`，再通过 GitHub Pages 发布订阅落地页。
+一个轻量的 Apple 日历订阅项目。用户在落地页选择自己关心的集市，系统生成只包含这些集市的订阅链接。
 
-## 订阅地址
+## 为什么需要动态接口
 
-GitHub Pages 发布成功后，可以使用：
+大理赶集地点多，距离也远。全量订阅会把很多无关事件放进用户日历里，所以现在改为：
 
-- 落地页：<https://neojfeng.github.io/dali-ganji-calendar/>
-- Apple 日历一键订阅：`webcal://neojfeng.github.io/dali-ganji-calendar/dali-ganji.ics`
-- HTTPS 订阅链接：<https://neojfeng.github.io/dali-ganji-calendar/dali-ganji.ics>
+1. `data/markets.json` 维护集市配置。
+2. `scripts/generate_events.py` 预生成未来 18 个月所有事件到 `public/events.json`。
+3. `api/calendar.ics` 根据用户选择的 `markets` 参数过滤事件并返回 ICS。
 
-## 本地生成
+示例：
+
+```text
+webcal://your-domain.vercel.app/api/calendar.ics?markets=sanyuejie,yinqiaojie
+https://your-domain.vercel.app/api/calendar.ics?markets=sanyuejie,yinqiaojie
+```
+
+如果没有有效的 `market_id`，接口会返回一个空日历，而不是错误页面。这样更适合 Apple 日历订阅。
+
+## 本地运行
 
 ```bash
 python3 -m pip install -r requirements.txt
+python3 scripts/generate_events.py
+python3 scripts/generate_ics.py
+npx vercel dev
+```
+
+打开 Vercel Dev 给出的本地地址，通常是：
+
+```text
+http://localhost:3000
+```
+
+测试动态接口：
+
+```text
+http://localhost:3000/api/calendar.ics?markets=sanyuejie,yinqiaojie
+```
+
+## 部署到 Vercel
+
+1. 打开 Vercel，选择 Import Git Repository。
+2. 选择 `neojfeng/dali-ganji-calendar`。
+3. 保持默认项目设置即可，仓库里的 `vercel.json` 已写好构建命令。
+4. 部署完成后，用 Vercel 分配的域名访问落地页。
+
+`vercel.json` 会在部署时运行：
+
+```bash
+python3 scripts/generate_events.py
 python3 scripts/generate_ics.py
 ```
 
-生成结果会写入：
+GitHub Pages 不能运行动态 API，所以定制订阅版本应部署在 Vercel。
 
-```text
-public/dali-ganji.ics
-```
-
-脚本默认从当天开始，生成未来 18 个月的全天事件。调试时可以指定开始日期：
-
-```bash
-python3 scripts/generate_ics.py --start-date 2026-06-23
-```
-
-## 当前收录与核验说明
-
-当前样例数据收录 6 个点位：
+## 当前收录
 
 - 三月街赶集：农历初二、初九、十六、二十三。
 - 床单厂集市：每周六、周日，以当周活动为准。
 - 北门菜市场集市：每天开市，作为日常菜市场收录。
 - 银桥街集市：农历初五、十三、二十、二十八。
-- 湾桥镇集市：农历初四、十一、十八、二十六；旧公开表常见二十五，较新的本地信息提示为二十六，继续实地复核。
+- 湾桥镇集市：农历初四、十一、十八、二十六；旧公开表常见二十五，继续实地复核。
 - 凤仪街集市：每月公历逢五、逢十。
-
-赶集时间来自公开资料交叉核对，并保留实地验证入口。后续如果有当地人反馈，应优先更新 `data/markets.json` 的规则和 `source_note`。
 
 ## 数据结构
 
-赶集数据在 `data/markets.json`，每个集市是一条对象：
+集市数据在 `data/markets.json`。每个对象建议包含：
 
 ```json
 {
@@ -57,6 +80,7 @@ python3 scripts/generate_ics.py --start-date 2026-06-23
   "intro": "三月街是大理古城附近最有名的传统集市之一，适合逛本地小吃、蔬菜水果、手作和日用品。",
   "schedule_type": "lunar_days",
   "lunar_days": [2, 9, 16, 23],
+  "weekday": [],
   "schedule_text": "农历初二、初九、十六、二十三赶集",
   "apple_maps_url": "",
   "amap_url": "",
@@ -64,18 +88,9 @@ python3 scripts/generate_ics.py --start-date 2026-06-23
 }
 ```
 
-## 新增集市
-
-1. 在 `data/markets.json` 里追加一个对象。
-2. `id` 使用稳定的小写英文或拼音；同一天事件的 UID 会使用 `{id}-{date}@dali-ganji-calendar`，后续不要随意改。
-3. `name` 写日历标题，例如 `三月街赶集`。
-4. `location_name` 写地点短名，`address` 写更具体的位置说明。
-5. `intro` 控制日历 DESCRIPTION 第一行，尽量短，适合手机日历快速查看。
-6. `source_note` 写数据说明，建议保留“数据来自公开资料 + 实地验证中，如有误差欢迎反馈。”
+`id` 会进入订阅 URL 和事件 UID，后续不要随意修改。
 
 ## 赶集规则
-
-支持三种 `schedule_type`。
 
 农历固定日期：
 
@@ -83,6 +98,7 @@ python3 scripts/generate_ics.py --start-date 2026-06-23
 {
   "schedule_type": "lunar_days",
   "lunar_days": [2, 9, 16, 23],
+  "weekday": [],
   "schedule_text": "农历初二、初九、十六、二十三赶集"
 }
 ```
@@ -92,64 +108,52 @@ python3 scripts/generate_ics.py --start-date 2026-06-23
 ```json
 {
   "schedule_type": "weekly",
-  "weekdays": [5],
-  "schedule_text": "每周六赶集"
+  "lunar_days": [],
+  "weekday": [5, 6],
+  "schedule_text": "每周六、周日市集"
 }
 ```
 
-`weekdays` 使用 Python 的星期编号：周一是 `0`，周日是 `6`。
+`weekday` 使用 Python 的星期编号：周一是 `0`，周日是 `6`。
 
 每月公历固定日期：
 
 ```json
 {
   "schedule_type": "gregorian_month_days",
+  "lunar_days": [],
+  "weekday": [],
   "month_days": [5, 10, 15, 20, 25, 30],
   "schedule_text": "每月公历逢五、逢十赶集"
 }
 ```
 
-这个规则适合“每月逢五逢十”这类按公历日期计算的集市。
+## 新增或修改集市
 
-## 补充坐标和地图链接
+新增集市：
 
-`lat` 和 `lng` 可以先填 `null`，脚本会跳过 `GEO` 字段，不会报错。
+1. 在 `data/markets.json` 追加一个对象。
+2. 填好 `id`、`name`、`location_name`、`address`、`intro`。
+3. 选择合适的 `schedule_type` 并填写对应规则。
+4. 运行 `python3 scripts/generate_events.py`。
+5. 本地打开页面，确认新集市出现在列表里。
 
-有坐标时：
+修改介绍、地点、坐标或地图链接：
 
-```json
-{
-  "lat": 25.6941,
-  "lng": 100.1614
-}
-```
+- 改 `intro` 会影响页面卡片和日历 DESCRIPTION。
+- 改 `location_name` 或 `address` 会影响日历 LOCATION 和地点说明。
+- 填 `lat`、`lng` 后，ICS 会包含 `GEO`。
+- 填 `apple_maps_url` 后，DESCRIPTION 会展示 Apple 地图导航。
+- 填 `amap_url` 后，DESCRIPTION 会展示高德地图导航。
 
-脚本会写入 ICS 的 `GEO` 字段。如果没有 `apple_maps_url`，但有坐标，脚本会自动生成 Apple Maps 链接。
+如果没有地图链接但有坐标，脚本会自动生成 Apple Maps 链接。
 
-也可以手动补充地图链接：
+## Apple 日历测试
 
-```json
-{
-  "apple_maps_url": "https://maps.apple.com/?ll=25.6941,100.1614&q=三月街赶集",
-  "amap_url": "https://uri.amap.com/marker?position=100.1614,25.6941&name=三月街赶集"
-}
-```
+1. 在落地页勾选一个或多个集市。
+2. 点击“一键订阅 Apple 日历”。
+3. 如果在小红书或微信里打不开，点击“复制订阅链接”。
+4. 到 iPhone 日历里手动添加订阅日历，粘贴 HTTPS 链接。
+5. 添加后检查日历事件是否只包含已选集市。
 
-有 `apple_maps_url` 时优先使用手动链接；有 `amap_url` 时会在 DESCRIPTION 中展示高德地图导航。
-
-## 订阅页面
-
-落地页在 `public/index.html`。部署到 GitHub Pages 后，页面会根据当前域名自动生成：
-
-- `webcal://.../dali-ganji.ics`：一键订阅 Apple 日历
-- `https://.../dali-ganji.ics`：手动复制订阅链接
-
-## GitHub Pages 部署
-
-本仓库包含 `.github/workflows/deploy-pages.yml`。
-
-1. 在 GitHub 仓库设置中打开 `Settings -> Pages`。
-2. `Build and deployment` 的 `Source` 选择 `GitHub Actions`。
-3. push 到 `main` 后，workflow 会安装依赖、运行 `python scripts/generate_ics.py`，然后把 `public/` 发布到 GitHub Pages。
-
-发布完成后，访问 Pages 地址即可看到订阅落地页。
+订阅链接里的 `market_id` 会按 `markets.json` 顺序生成，同一组选项会得到稳定 URL。
