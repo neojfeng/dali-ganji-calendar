@@ -1,6 +1,6 @@
 {
   "installCommand": "python3 -m pip install -r requirements.txt",
-  "buildCommand": "python3 scripts/generate_events.py && python3 scripts/generate_ics.py",
+  "buildCommand": "npm run build",
   "outputDirectory": "public",
   "functions": {
     "api/calendar.ics.js": {

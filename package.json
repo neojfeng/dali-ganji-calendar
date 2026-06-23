@@ -1,0 +1,10 @@
+{
+  "name": "dali-ganji-calendar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build": "python3 scripts/generate_events.py && python3 scripts/generate_ics.py",
+    "check:api": "node --check api/calendar.ics.js"
+  }
+}
