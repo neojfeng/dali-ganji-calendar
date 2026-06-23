@@ -1,33 +1,5 @@
 [
   {
-    "market_id": "sanyuejie",
-    "market_name": "三月街赶集",
-    "market_label": "三月街",
-    "market_index": 0,
-    "date": "2026-06-23",
-    "summary": "三月街赶集",
-    "location": "三月街",
-    "description": "三月街是大理古城附近最有名的传统集市之一，适合逛本地小吃、蔬菜水果、手作和日用品。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 https://maps.apple.com/?ll=25.6957,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8%B5%B6%E9%9B%86\n说明：多份公开赶街表交叉显示该时间，仍在实地验证中，如有误差欢迎反馈。",
-    "lat": 25.6957,
-    "lng": 100.1518,
-    "apple_maps_url": "",
-    "amap_url": ""
-  },
-  {
-    "market_id": "beimen-caishichang",
-    "market_name": "北门菜市场集市",
-    "market_label": "北门菜市场",
-    "market_index": 2,
-    "date": "2026-06-23",
-    "summary": "北门菜市场集市",
-    "location": "大理古城北门菜市场",
-    "description": "北门菜市场是古城北门一带的日常菜市场，适合买蔬菜水果、菌子、鲜花和本地食材。\n时间：每天开市\n地点：大理古城北门附近\n导航：Apple 地图 https://maps.apple.com/?ll=25.7008,100.1622&q=%E5%8C%97%E9%97%A8%E8%8F%9C%E5%B8%82%E5%9C%BA%E9%9B%86%E5%B8%82\n说明：公开资料多称每天开市；作为日常菜市场收录，具体摊位以现场为准。",
-    "lat": 25.7008,
-    "lng": 100.1622,
-    "apple_maps_url": "",
-    "amap_url": ""
-  },
-  {
     "market_id": "beimen-caishichang",
     "market_name": "北门菜市场集市",
     "market_label": "北门菜市场",
@@ -14472,6 +14444,34 @@
     "description": "北门菜市场是古城北门一带的日常菜市场，适合买蔬菜水果、菌子、鲜花和本地食材。\n时间：每天开市\n地点：大理古城北门附近\n导航：Apple 地图 https://maps.apple.com/?ll=25.7008,100.1622&q=%E5%8C%97%E9%97%A8%E8%8F%9C%E5%B8%82%E5%9C%BA%E9%9B%86%E5%B8%82\n说明：公开资料多称每天开市；作为日常菜市场收录，具体摊位以现场为准。",
     "lat": 25.7008,
     "lng": 100.1622,
+    "apple_maps_url": "",
+    "amap_url": ""
+  },
+  {
+    "market_id": "beimen-caishichang",
+    "market_name": "北门菜市场集市",
+    "market_label": "北门菜市场",
+    "market_index": 2,
+    "date": "2027-12-23",
+    "summary": "北门菜市场集市",
+    "location": "大理古城北门菜市场",
+    "description": "北门菜市场是古城北门一带的日常菜市场，适合买蔬菜水果、菌子、鲜花和本地食材。\n时间：每天开市\n地点：大理古城北门附近\n导航：Apple 地图 https://maps.apple.com/?ll=25.7008,100.1622&q=%E5%8C%97%E9%97%A8%E8%8F%9C%E5%B8%82%E5%9C%BA%E9%9B%86%E5%B8%82\n说明：公开资料多称每天开市；作为日常菜市场收录，具体摊位以现场为准。",
+    "lat": 25.7008,
+    "lng": 100.1622,
+    "apple_maps_url": "",
+    "amap_url": ""
+  },
+  {
+    "market_id": "wanqiaozhen",
+    "market_name": "湾桥镇集市",
+    "market_label": "湾桥镇",
+    "market_index": 4,
+    "date": "2027-12-23",
+    "summary": "湾桥镇集市",
+    "location": "湾桥镇农贸市场",
+    "description": "湾桥镇集市服务洱海西线北段村镇，常见本地农产品、日用品和乡镇小吃。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n导航：Apple 地图 https://maps.apple.com/?ll=25.8546,100.1275&q=%E6%B9%BE%E6%A1%A5%E9%95%87%E9%9B%86%E5%B8%82\n说明：旧公开表常见二十五，较新的本地信息提示为二十六；本项目先采用二十六并继续实地复核。",
+    "lat": 25.8546,
+    "lng": 100.1275,
     "apple_maps_url": "",
     "amap_url": ""
   }

@@ -4,49 +4,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>大理赶集日历</title>
-    <meta
-      name="description"
-      content="选择你常去的大理集市，订阅到 iPhone 日历，到点自动提醒。"
-    >
+    <meta name="description" content="选择你常去的大理集市，订阅到 iPhone 日历。">
     <style>
       :root {
         color-scheme: light;
         --bg: #f5f3ef;
-        --bg-soft: #ebe7df;
+        --surface: rgba(255, 255, 255, 0.78);
+        --surface-solid: #fff;
         --text: #1d1d1f;
         --muted: #6e6e73;
-        --subtle: #8a8a90;
-        --panel: rgba(255, 255, 255, 0.82);
-        --panel-solid: #ffffff;
-        --line: rgba(29, 29, 31, 0.09);
+        --subtle: #8f8f95;
+        --line: rgba(29, 29, 31, 0.08);
+        --chip: rgba(255, 255, 255, 0.78);
         --accent: #0a84ff;
-        --accent-strong: #006edb;
-        --selected: #eff7ff;
+        --accent-soft: #edf6ff;
         --warning: #936006;
-        --shadow-soft: 0 18px 55px rgba(52, 48, 43, 0.10);
-        --shadow-card: 0 18px 44px rgba(52, 48, 43, 0.12);
-        --radius-xl: 28px;
-        --radius-lg: 22px;
-        --radius-md: 16px;
+        --shadow-card: 0 8px 28px rgba(40, 36, 32, 0.08);
+        --shadow-selected: 0 12px 34px rgba(10, 132, 255, 0.14);
       }
 
       * {
         box-sizing: border-box;
       }
 
-      html {
-        scroll-behavior: smooth;
-      }
-
       body {
         margin: 0;
         min-height: 100vh;
         background:
-          radial-gradient(circle at 20% -10%, rgba(255, 255, 255, 0.96), transparent 32rem),
-          linear-gradient(180deg, #f9f7f3 0%, var(--bg) 46%, var(--bg-soft) 100%);
+          radial-gradient(circle at 18% -8%, rgba(255, 255, 255, 0.95), transparent 22rem),
+          linear-gradient(180deg, #fbfaf7 0%, var(--bg) 52%, #ece7de 100%);
         color: var(--text);
         font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
-        line-height: 1.58;
+        line-height: 1.5;
       }
 
       button,
@@ -60,328 +49,355 @@
       }
 
       main {
-        width: min(1080px, 100%);
+        width: min(920px, 100%);
         margin: 0 auto;
-        padding: 26px 18px 210px;
+        padding: 16px 14px 96px;
       }
 
       .hero {
         display: grid;
-        gap: 22px;
-        min-height: 360px;
+        gap: 10px;
+        min-height: 154px;
         align-content: center;
-        padding: 28px 0 34px;
-      }
-
-      .eyebrow {
-        margin: 0;
-        color: var(--accent);
-        font-size: 14px;
-        font-weight: 800;
-        letter-spacing: 0.04em;
+        padding: 8px 2px 10px;
       }
 
       h1 {
-        max-width: 760px;
         margin: 0;
-        font-size: clamp(42px, 12vw, 88px);
-        line-height: 0.98;
+        font-size: clamp(32px, 9vw, 44px);
+        line-height: 1.05;
         letter-spacing: 0;
       }
 
       .lead {
-        max-width: 650px;
-        margin: 0;
-        color: var(--muted);
-        font-size: clamp(18px, 4.5vw, 26px);
-        line-height: 1.38;
-      }
-
-      .hero-actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-        align-items: center;
-      }
-
-      .pill-button {
-        min-height: 48px;
-        border: 0;
-        border-radius: 999px;
-        padding: 0 18px;
-        background: var(--text);
-        color: #fff;
-        font-weight: 800;
-        box-shadow: 0 12px 24px rgba(29, 29, 31, 0.14);
-        transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
-      }
-
-      .pill-button:hover {
-        transform: translateY(-1px);
-        box-shadow: 0 16px 30px rgba(29, 29, 31, 0.18);
-      }
-
-      .pill-button:active {
-        transform: translateY(1px) scale(0.99);
-      }
-
-      .privacy-note {
-        max-width: 320px;
-        margin: 0;
-        color: var(--subtle);
-        font-size: 13px;
-        line-height: 1.45;
-      }
-
-      .status {
-        min-height: 20px;
-        margin: 0;
-        color: var(--muted);
-        font-size: 14px;
-      }
-
-      .status.warning {
-        color: var(--warning);
-      }
-
-      .section-head {
-        display: grid;
-        gap: 8px;
-        margin: 4px 0 18px;
-      }
-
-      h2 {
-        margin: 0;
-        font-size: clamp(27px, 7vw, 44px);
-        line-height: 1.08;
-        letter-spacing: 0;
-      }
-
-      .section-copy {
         margin: 0;
         color: var(--muted);
         font-size: 16px;
       }
 
-      .market-grid {
+      .location-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .location-button {
+        min-height: 36px;
+        border: 0;
+        border-radius: 999px;
+        padding: 0 13px;
+        background: #1d1d1f;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 800;
+        box-shadow: 0 8px 20px rgba(29, 29, 31, 0.14);
+        transition: transform 150ms ease, background 150ms ease, opacity 150ms ease;
+      }
+
+      .location-button:active {
+        transform: scale(0.98);
+      }
+
+      .location-button:disabled {
+        opacity: 0.62;
+      }
+
+      .privacy-note {
+        margin: 0;
+        color: var(--subtle);
+        font-size: 12px;
+      }
+
+      .filters {
+        display: flex;
+        gap: 8px;
+        margin: 0 -14px 12px;
+        padding: 0 14px 2px;
+        overflow-x: auto;
+        scrollbar-width: none;
+      }
+
+      .filters::-webkit-scrollbar {
+        display: none;
+      }
+
+      .filter-chip {
+        flex: 0 0 auto;
+        min-height: 36px;
+        border: 0;
+        border-radius: 999px;
+        padding: 0 14px;
+        background: var(--chip);
+        color: var(--text);
+        font-size: 14px;
+        font-weight: 800;
+        box-shadow: inset 0 0 0 1px var(--line);
+        backdrop-filter: blur(16px);
+        transition: background 150ms ease, color 150ms ease, box-shadow 150ms ease;
+      }
+
+      .filter-chip.is-active {
+        background: #1d1d1f;
+        color: #fff;
+        box-shadow: none;
+      }
+
+      .market-list {
         display: grid;
-        gap: 18px;
+        gap: 10px;
       }
 
       .market-card {
         position: relative;
-        overflow: hidden;
+        display: grid;
+        grid-template-columns: 80px minmax(0, 1fr) 32px;
+        gap: 12px;
+        align-items: center;
         border: 0;
-        border-radius: var(--radius-xl);
-        background: var(--panel);
-        box-shadow: var(--shadow-soft);
-        text-align: left;
-        transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
-        -webkit-tap-highlight-color: transparent;
-      }
-
-      .market-card:hover {
-        transform: translateY(-2px);
+        border-radius: 22px;
+        background: var(--surface);
         box-shadow: var(--shadow-card);
+        padding: 10px;
+        text-align: left;
+        backdrop-filter: blur(20px);
+        transition: transform 150ms ease, background 150ms ease, box-shadow 150ms ease;
       }
 
       .market-card:active {
-        transform: translateY(0) scale(0.995);
+        transform: scale(0.992);
       }
 
       .market-card.is-selected {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), var(--selected));
-        box-shadow: 0 20px 56px rgba(10, 132, 255, 0.16);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), var(--accent-soft));
+        box-shadow: var(--shadow-selected);
       }
 
-      .market-card.is-selected::after {
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        border: 2px solid rgba(10, 132, 255, 0.34);
-        border-radius: var(--radius-xl);
-        content: "";
-      }
-
-      .card-image-wrap {
-        position: relative;
-        aspect-ratio: 16 / 10;
+      .thumb {
+        width: 80px;
+        height: 80px;
         overflow: hidden;
+        border-radius: 16px;
         background: #e7e3da;
       }
 
-      .card-image {
+      .thumb img {
         width: 100%;
         height: 100%;
         display: block;
         object-fit: cover;
-        transition: transform 500ms ease;
       }
 
-      .market-card:hover .card-image {
-        transform: scale(1.025);
+      .card-content {
+        min-width: 0;
       }
 
-      .check-mark {
-        position: absolute;
-        top: 16px;
-        right: 16px;
-        display: grid;
-        width: 34px;
-        height: 34px;
-        place-items: center;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.84);
-        color: rgba(29, 29, 31, 0.42);
-        font-size: 18px;
-        font-weight: 900;
-        box-shadow: 0 8px 22px rgba(29, 29, 31, 0.13);
-        backdrop-filter: blur(14px);
-      }
-
-      .market-card.is-selected .check-mark {
-        background: var(--accent);
-        color: #fff;
-      }
-
-      .card-body {
-        display: grid;
-        gap: 12px;
-        padding: 18px 18px 20px;
-      }
-
-      .card-topline {
+      .card-title-row {
         display: flex;
-        align-items: center;
+        gap: 8px;
+        align-items: baseline;
         justify-content: space-between;
-        gap: 12px;
-      }
-
-      .distance {
-        color: var(--muted);
-        font-size: 13px;
-        font-weight: 800;
-        white-space: nowrap;
       }
 
       .market-name {
         margin: 0;
-        font-size: 24px;
-        line-height: 1.15;
+        overflow: hidden;
+        font-size: 17px;
+        font-weight: 900;
+        line-height: 1.2;
         letter-spacing: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
 
-      .chips {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-      }
-
-      .chip {
-        border-radius: 999px;
-        background: rgba(29, 29, 31, 0.06);
-        color: #3b3b3f;
-        padding: 7px 10px;
-        font-size: 13px;
+      .meta {
+        margin: 3px 0 0;
+        color: var(--muted);
+        font-size: 12px;
         font-weight: 700;
       }
 
-      .intro {
-        margin: 0;
+      .rule,
+      .place {
+        margin: 3px 0 0;
+        overflow: hidden;
+        color: #3d3d42;
+        font-size: 13px;
+        line-height: 1.28;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .place {
         color: var(--muted);
-        font-size: 15px;
+      }
+
+      .select-mark {
+        display: grid;
+        width: 28px;
+        height: 28px;
+        place-items: center;
+        border-radius: 50%;
+        background: rgba(29, 29, 31, 0.07);
+        color: #4d4d52;
+        font-size: 20px;
+        font-weight: 800;
+      }
+
+      .market-card.is-selected .select-mark {
+        background: var(--accent);
+        color: #fff;
+        font-size: 17px;
       }
 
       .empty {
-        border-radius: var(--radius-lg);
-        background: var(--panel-solid);
-        box-shadow: var(--shadow-soft);
+        border-radius: 20px;
+        background: var(--surface-solid);
+        box-shadow: var(--shadow-card);
         color: var(--muted);
-        padding: 24px;
+        padding: 18px;
       }
 
-      .subscribe-sheet {
+      .toast {
+        position: fixed;
+        top: calc(12px + env(safe-area-inset-top));
+        left: 50%;
+        z-index: 40;
+        max-width: min(320px, calc(100% - 28px));
+        border-radius: 999px;
+        background: rgba(29, 29, 31, 0.88);
+        color: #fff;
+        box-shadow: 0 12px 32px rgba(29, 29, 31, 0.18);
+        font-size: 13px;
+        font-weight: 800;
+        opacity: 0;
+        padding: 10px 14px;
+        pointer-events: none;
+        transform: translate(-50%, -12px);
+        transition: opacity 180ms ease, transform 180ms ease;
+        backdrop-filter: blur(18px);
+      }
+
+      .toast.is-visible {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+
+      .bottom-bar,
+      .subscribe-panel {
         position: fixed;
         right: 0;
         bottom: 0;
         left: 0;
-        z-index: 20;
-        padding: 0 12px 12px;
+        z-index: 30;
+        padding: 0 12px calc(10px + env(safe-area-inset-bottom));
         pointer-events: none;
       }
 
-      .sheet-inner {
+      .bottom-bar[hidden],
+      .subscribe-panel[hidden] {
+        display: none;
+      }
+
+      .bar-inner,
+      .panel-inner {
         width: min(720px, 100%);
         margin: 0 auto;
-        border: 1px solid rgba(255, 255, 255, 0.42);
-        border-radius: 26px;
-        background: rgba(255, 255, 255, 0.86);
-        box-shadow: 0 -18px 58px rgba(29, 29, 31, 0.18);
-        padding: 14px 14px calc(14px + env(safe-area-inset-bottom));
         pointer-events: auto;
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        background: rgba(255, 255, 255, 0.88);
+        box-shadow: 0 -12px 36px rgba(29, 29, 31, 0.16);
         backdrop-filter: blur(22px);
       }
 
-      .sheet-head {
+      .bar-inner {
+        display: flex;
+        min-height: 66px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        border-radius: 22px;
+        padding: 10px 12px 10px 16px;
+      }
+
+      .bar-count {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 900;
+      }
+
+      .bar-sub {
+        margin: 1px 0 0;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .subscribe-toggle,
+      .panel-button {
+        min-height: 44px;
+        border: 0;
+        border-radius: 15px;
+        font-weight: 900;
+        transition: transform 150ms ease, background 150ms ease;
+      }
+
+      .subscribe-toggle {
+        min-width: 86px;
+        background: var(--accent);
+        color: #fff;
+      }
+
+      .subscribe-toggle:active,
+      .panel-button:active {
+        transform: scale(0.98);
+      }
+
+      .panel-inner {
+        border-radius: 24px;
+        padding: 14px;
+      }
+
+      .panel-head {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 14px;
+        gap: 12px;
         margin-bottom: 12px;
       }
 
-      .selected-count {
+      .panel-title {
         margin: 0;
         font-size: 17px;
         font-weight: 900;
       }
 
-      .sheet-note {
-        margin: 2px 0 0;
-        color: var(--muted);
-        font-size: 12px;
+      .panel-close {
+        width: 34px;
+        height: 34px;
+        border: 0;
+        border-radius: 50%;
+        background: rgba(29, 29, 31, 0.07);
+        color: var(--text);
+        font-size: 20px;
       }
 
-      .sheet-actions {
+      .panel-actions {
         display: grid;
-        grid-template-columns: 1.25fr 0.95fr;
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
       }
 
-      .sheet-button {
-        min-height: 50px;
-        border: 0;
-        border-radius: 16px;
-        padding: 0 12px;
-        font-weight: 900;
-        transition: transform 150ms ease, background 150ms ease, opacity 150ms ease;
-      }
-
-      .sheet-button:active {
-        transform: scale(0.985);
-      }
-
-      .sheet-button.primary {
+      .panel-button.primary {
         background: var(--accent);
         color: #fff;
       }
 
-      .sheet-button.primary:enabled:hover {
-        background: var(--accent-strong);
-      }
-
-      .sheet-button.secondary {
+      .panel-button.secondary {
         background: rgba(29, 29, 31, 0.07);
         color: var(--text);
       }
 
-      .sheet-button:disabled {
-        cursor: not-allowed;
-        opacity: 0.45;
-      }
-
       .link-row {
-        display: grid;
         margin-top: 10px;
       }
 
@@ -396,8 +412,7 @@
         padding: 10px 12px;
       }
 
-      .copy-status {
-        min-height: 18px;
+      .panel-help {
         margin: 8px 0 0;
         color: var(--muted);
         font-size: 12px;
@@ -405,37 +420,32 @@
 
       @media (min-width: 720px) {
         main {
-          padding: 34px 28px 220px;
+          padding: 22px 22px 112px;
         }
 
-        .hero {
-          min-height: 460px;
-        }
-
-        .market-grid {
+        .market-list {
           grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 22px;
+          gap: 12px;
         }
       }
 
-      @media (min-width: 1040px) {
-        .market-grid {
-          grid-template-columns: repeat(3, minmax(0, 1fr));
-        }
-      }
-
-      @media (max-width: 390px) {
+      @media (max-width: 360px) {
         main {
-          padding-right: 14px;
-          padding-left: 14px;
+          padding-right: 12px;
+          padding-left: 12px;
         }
 
-        .sheet-actions {
+        .market-card {
+          grid-template-columns: 72px minmax(0, 1fr) 30px;
+        }
+
+        .thumb {
+          width: 72px;
+          height: 72px;
+        }
+
+        .panel-actions {
           grid-template-columns: 1fr;
-        }
-
-        .market-name {
-          font-size: 22px;
         }
       }
     </style>
@@ -443,60 +453,65 @@
   <body>
     <main>
       <section class="hero" aria-labelledby="pageTitle">
-        <div>
-          <p class="eyebrow">DALI LOCAL MARKETS</p>
-          <h1 id="pageTitle">大理赶集日历</h1>
+        <h1 id="pageTitle">大理赶集日历</h1>
+        <p class="lead">选你常去的集市，订阅到 iPhone 日历</p>
+        <div class="location-row">
+          <button class="location-button" id="locationButton" type="button">📍 使用当前位置</button>
+          <p class="privacy-note">只在本地计算距离，不会保存。</p>
         </div>
-        <p class="lead">选几个你常去的集市，订阅到 iPhone 日历，到点自动提醒。</p>
-        <div class="hero-actions">
-          <button class="pill-button" id="locationButton" type="button">使用我的位置推荐附近集市</button>
-          <p class="privacy-note">定位只在本地用于计算距离，不会保存。</p>
-        </div>
-        <p class="status" id="locationStatus" role="status" aria-live="polite"></p>
       </section>
 
-      <section aria-labelledby="marketsTitle">
-        <div class="section-head">
-          <h2 id="marketsTitle">选择你的集市</h2>
-          <p class="section-copy">点一下卡片即可选择，再点一次取消。</p>
-        </div>
+      <nav class="filters" id="filters" aria-label="集市筛选"></nav>
 
-        <div class="market-grid" id="marketGrid">
-          <div class="empty">正在加载集市...</div>
-        </div>
+      <section class="market-list" id="marketList" aria-label="集市列表">
+        <div class="empty">正在加载集市...</div>
       </section>
     </main>
 
-    <section class="subscribe-sheet" aria-label="订阅操作">
-      <div class="sheet-inner">
-        <div class="sheet-head">
-          <div>
-            <p class="selected-count" id="selectedCount">选择你关注的集市</p>
-            <p class="sheet-note" id="sheetNote">生成只包含这些集市的 Apple 日历。</p>
-          </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <section class="bottom-bar" id="bottomBar" aria-label="已选集市" hidden>
+      <div class="bar-inner">
+        <div>
+          <p class="bar-count" id="barCount">已选 0 个集市</p>
+          <p class="bar-sub">生成专属订阅日历</p>
         </div>
-        <div class="sheet-actions">
-          <button class="sheet-button primary" id="subscribeButton" type="button" disabled>一键订阅 Apple 日历</button>
-          <button class="sheet-button secondary" id="copyButton" type="button" disabled>复制订阅链接</button>
+        <button class="subscribe-toggle" id="openPanelButton" type="button">订阅</button>
+      </div>
+    </section>
+
+    <section class="subscribe-panel" id="subscribePanel" aria-label="订阅设置" hidden>
+      <div class="panel-inner">
+        <div class="panel-head">
+          <p class="panel-title" id="panelTitle">已选 0 个集市</p>
+          <button class="panel-close" id="closePanelButton" type="button" aria-label="收起订阅面板">×</button>
+        </div>
+        <div class="panel-actions">
+          <button class="panel-button primary" id="subscribeButton" type="button">一键订阅 Apple 日历</button>
+          <button class="panel-button secondary" id="copyButton" type="button">复制订阅链接</button>
         </div>
         <div class="link-row">
-          <input id="httpsLink" type="text" readonly value="先选择一个集市" aria-label="HTTPS 订阅链接">
+          <input id="httpsLink" type="text" readonly value="" aria-label="HTTPS 订阅链接">
         </div>
-        <p class="copy-status" id="copyStatus" role="status" aria-live="polite">
-          小红书或微信打不开时，复制链接到 iPhone 日历里手动添加订阅。
-        </p>
+        <p class="panel-help" id="copyStatus">小红书或微信打不开时，复制链接到 iPhone 日历里手动添加订阅。</p>
       </div>
     </section>
 
     <script>
       const STORAGE_KEY = "dali-ganji-selected-markets";
       const PLACEHOLDER_IMAGE = "/images/markets/placeholder.jpg";
+      const FILTERS = ["全部", "附近", "古城周边", "喜洲周边", "洱海北部", "洱海东部"];
 
-      const marketGrid = document.querySelector("#marketGrid");
+      const marketList = document.querySelector("#marketList");
+      const filters = document.querySelector("#filters");
       const locationButton = document.querySelector("#locationButton");
-      const locationStatus = document.querySelector("#locationStatus");
-      const selectedCount = document.querySelector("#selectedCount");
-      const sheetNote = document.querySelector("#sheetNote");
+      const toast = document.querySelector("#toast");
+      const bottomBar = document.querySelector("#bottomBar");
+      const barCount = document.querySelector("#barCount");
+      const openPanelButton = document.querySelector("#openPanelButton");
+      const subscribePanel = document.querySelector("#subscribePanel");
+      const panelTitle = document.querySelector("#panelTitle");
+      const closePanelButton = document.querySelector("#closePanelButton");
       const subscribeButton = document.querySelector("#subscribeButton");
       const copyButton = document.querySelector("#copyButton");
       const httpsInput = document.querySelector("#httpsLink");
@@ -504,11 +519,14 @@
 
       let markets = [];
       let selected = new Set();
+      let activeFilter = "全部";
       let hasLocation = false;
+      let toastTimer;
 
       init();
 
       async function init() {
+        renderFilters();
         try {
           const response = await fetch(new URL("markets.json", window.location.href), { cache: "no-store" });
           if (!response.ok) throw new Error("markets.json load failed");
@@ -517,7 +535,27 @@
           renderMarkets();
           updateSubscription();
         } catch (error) {
-          marketGrid.innerHTML = '<div class="empty">集市列表加载失败，请稍后再试。</div>';
+          marketList.innerHTML = '<div class="empty">集市列表加载失败，请稍后再试。</div>';
+        }
+      }
+
+      function renderFilters() {
+        filters.innerHTML = "";
+        for (const filter of FILTERS) {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = `filter-chip${activeFilter === filter ? " is-active" : ""}`;
+          button.textContent = filter;
+          button.addEventListener("click", () => {
+            if (filter === "附近" && !hasLocation) {
+              showToast("请先点击“使用当前位置”");
+              return;
+            }
+            activeFilter = filter;
+            renderFilters();
+            renderMarkets();
+          });
+          filters.appendChild(button);
         }
       }
 
@@ -533,10 +571,9 @@
 
       function renderMarkets() {
         const visibleMarkets = sortedMarkets();
-        marketGrid.innerHTML = "";
-
+        marketList.innerHTML = "";
         if (visibleMarkets.length === 0) {
-          marketGrid.innerHTML = '<div class="empty">暂时没有可显示的集市。</div>';
+          marketList.innerHTML = '<div class="empty">这里暂时没有收录集市。</div>';
           return;
         }
 
@@ -558,36 +595,38 @@
           });
           fragment.appendChild(card);
         }
-        marketGrid.appendChild(fragment);
+        marketList.appendChild(fragment);
       }
 
       function cardTemplate(market, isSelected) {
         const distance = market.distanceKm !== undefined ? formatDistance(market.distanceKm) : "";
+        const areaLine = [market.area, distance].filter(Boolean).join(" · ");
         return `
-          <div class="card-image-wrap">
+          <div class="thumb">
             <img
-              class="card-image"
               src="${escapeHtml(market.image || PLACEHOLDER_IMAGE)}"
               alt="${escapeHtml(market.image_alt || market.name)}"
               loading="lazy"
               onerror="this.onerror=null;this.src='${PLACEHOLDER_IMAGE}'"
             >
-            <span class="check-mark" aria-hidden="true">${isSelected ? "✓" : ""}</span>
           </div>
-          <div class="card-body">
-            ${distance ? `<div class="card-topline"><span class="distance">${escapeHtml(distance)}</span></div>` : ""}
-            <h3 class="market-name">${escapeHtml(market.name)}</h3>
-            <div class="chips">
-              <span class="chip">${escapeHtml(trimScheduleText(market.schedule_text || "时间待补充"))}</span>
-              <span class="chip">${escapeHtml(market.location_name || market.address || "地点待补充")}</span>
+          <div class="card-content">
+            <div class="card-title-row">
+              <h2 class="market-name">${escapeHtml(market.name)}</h2>
             </div>
-            <p class="intro">${escapeHtml(market.intro || "简介待补充。")}</p>
+            ${areaLine ? `<p class="meta">${escapeHtml(areaLine)}</p>` : ""}
+            <p class="rule">${escapeHtml(trimScheduleText(market.schedule_text || "时间待补充"))}</p>
+            <p class="place">${escapeHtml(market.address || market.location_name || "地点待补充")}</p>
           </div>
+          <span class="select-mark" aria-hidden="true">${isSelected ? "✓" : "+"}</span>
         `;
       }
 
       function sortedMarkets() {
         let result = markets.slice();
+        if (activeFilter !== "全部" && activeFilter !== "附近") {
+          result = result.filter((market) => market.area === activeFilter);
+        }
         if (hasLocation) {
           result.sort((a, b) => {
             const da = a.distanceKm ?? Number.POSITIVE_INFINITY;
@@ -618,13 +657,15 @@
         const httpsUrl = hasSelection ? subscriptionUrl(ids, "https") : "";
         const webcalUrl = hasSelection ? subscriptionUrl(ids, "webcal") : "";
 
-        selectedCount.textContent = hasSelection ? `已选择 ${ids.length} 个集市` : "选择你关注的集市";
-        sheetNote.textContent = hasSelection ? "会生成只包含这些集市的订阅日历。" : "点选上方卡片后即可订阅。";
-        subscribeButton.disabled = !hasSelection;
-        copyButton.disabled = !hasSelection;
-        httpsInput.value = hasSelection ? httpsUrl : "先选择一个集市";
+        bottomBar.hidden = !hasSelection;
+        if (!hasSelection) subscribePanel.hidden = true;
+
+        barCount.textContent = `已选 ${ids.length} 个集市`;
+        panelTitle.textContent = `已选 ${ids.length} 个集市`;
+        httpsInput.value = httpsUrl;
         httpsInput.dataset.url = httpsUrl;
         subscribeButton.dataset.url = webcalUrl;
+        copyStatus.textContent = "小红书或微信打不开时，复制链接到 iPhone 日历里手动添加订阅。";
       }
 
       function selectedIdsInMarketOrder() {
@@ -632,9 +673,8 @@
       }
 
       function subscriptionUrl(ids, protocol) {
-        const baseUrl = window.location.protocol === "file:" ? "http://localhost:3000" : window.location.origin;
-        const calendarPath = `calendars/${ids.join("__")}.ics`;
-        const url = new URL(calendarPath, window.location.protocol === "file:" ? `${baseUrl}/` : window.location.href);
+        const baseUrl = window.location.protocol === "file:" ? "http://localhost:3000" : window.location.href;
+        const url = new URL(`calendars/${ids.join("__")}.ics`, baseUrl);
         return protocol === "webcal" ? url.href.replace(/^https?:\/\//, "webcal://") : url.href;
       }
 
@@ -648,8 +688,6 @@
 
       locationButton.addEventListener("click", async () => {
         locationButton.disabled = true;
-        locationStatus.textContent = "正在获取你的位置...";
-        locationStatus.classList.remove("warning");
         try {
           const position = await getUserLocation();
           const userLat = position.coords.latitude;
@@ -662,14 +700,23 @@
             };
           });
           hasLocation = true;
-          locationStatus.textContent = "已按距离为你排序。";
+          activeFilter = "附近";
+          renderFilters();
           renderMarkets();
+          showToast("已按距离为你推荐附近集市");
         } catch (error) {
-          locationStatus.textContent = "无法获取位置，你仍然可以手动选择。";
-          locationStatus.classList.add("warning");
+          showToast("无法获取位置，你仍然可以按区域手动选择");
         } finally {
           locationButton.disabled = false;
         }
+      });
+
+      openPanelButton.addEventListener("click", () => {
+        subscribePanel.hidden = false;
+      });
+
+      closePanelButton.addEventListener("click", () => {
+        subscribePanel.hidden = true;
       });
 
       subscribeButton.addEventListener("click", () => {
@@ -726,6 +773,13 @@
 
       function hasCoordinates(market) {
         return market.lat !== null && market.lat !== undefined && market.lng !== null && market.lng !== undefined;
+      }
+
+      function showToast(message) {
+        clearTimeout(toastTimer);
+        toast.textContent = message;
+        toast.classList.add("is-visible");
+        toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 2400);
       }
 
       function toRadians(value) {
