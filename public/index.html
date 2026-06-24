@@ -1041,18 +1041,6 @@
           previewMonthOffset += 1;
           renderCalendarPreview();
         });
-        subscribeButton.addEventListener("click", (event) => {
-          if (inAppBrowser) {
-            event.preventDefault();
-            copySubscriptionLink();
-            return;
-          }
-          if (!subscribeButton.getAttribute("href") || subscribeButton.getAttribute("href") === "#") {
-            event.preventDefault();
-            return;
-          }
-          copyStatus.textContent = "正在打开 Apple 日历订阅确认页...";
-        });
         copyButton.addEventListener("click", copySubscriptionLink);
         window.addEventListener("popstate", renderRoute);
       }
