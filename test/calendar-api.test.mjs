@@ -60,6 +60,19 @@ test("Vercel API handler returns the same dynamic ICS response", async () => {
   assert.doesNotMatch(response.body, /北门菜市场/);
 });
 
+test("clean calendar feed URL works for subscription clients", async () => {
+  const token = encodeSelectionToToken(["sanyuejie", "yinqiaojie"], calendarData.markets);
+  const edgeResponse = await handleRequest(new Request(`https://example.com/calendar/${token}.ics`));
+  const vercelResponse = await invokeVercelHandler(`/calendar/${token}.ics`);
+  const edgeBody = await edgeResponse.text();
+
+  assert.equal(edgeResponse.status, 200);
+  assert.match(edgeBody, /X-PUBLISHED-TTL:PT1H/);
+  assert.match(edgeBody, /REFRESH-INTERVAL;VALUE=DURATION:PT1H/);
+  assert.match(edgeBody, /三月街赶集/);
+  assert.match(vercelResponse.body, /银桥街集市/);
+});
+
 test("calendar API returns an empty calendar for an invalid token without crashing", async () => {
   const response = await handleRequest(new Request("https://example.com/api/calendar.ics?s=!!!!"));
   const body = await response.text();

@@ -13,7 +13,7 @@ const HEADERS = {
 export async function handleRequest(request) {
   try {
     const url = new URL(request.url);
-    const token = url.searchParams.get("s");
+    const token = url.searchParams.get("s") || tokenFromPath(url.pathname);
     const selectedIds = token ? decodeTokenToMarketIds(token, calendarData.markets) : [];
 
     const ics = selectedIds.length ? buildIcsForMarketIds(selectedIds, calendarData) : emptyCalendar();
@@ -30,3 +30,8 @@ export async function onRequest(context) {
 export default {
   fetch: handleRequest
 };
+
+function tokenFromPath(pathname) {
+  const match = pathname.match(/^\/calendar\/([A-Za-z0-9_-]+)\.ics$/u);
+  return match ? match[1] : "";
+}

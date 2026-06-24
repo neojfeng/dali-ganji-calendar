@@ -22,7 +22,7 @@ export default async function handler(request, response) {
 export function buildCalendarResponse(request) {
   try {
     const url = requestUrl(request);
-    const token = url.searchParams.get("s");
+    const token = url.searchParams.get("s") || tokenFromPath(url.pathname);
     const selectedIds = token ? decodeTokenToMarketIds(token, calendarData.markets) : [];
     return selectedIds.length ? buildIcsForMarketIds(selectedIds, calendarData) : emptyCalendar();
   } catch (error) {
@@ -33,4 +33,9 @@ export function buildCalendarResponse(request) {
 function requestUrl(request) {
   const host = request.headers?.host || "localhost";
   return new URL(request.url || "/api/calendar.ics", `https://${host}`);
+}
+
+function tokenFromPath(pathname) {
+  const match = pathname.match(/^\/calendar\/([A-Za-z0-9_-]+)\.ics$/u);
+  return match ? match[1] : "";
 }

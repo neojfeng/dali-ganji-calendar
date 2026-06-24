@@ -1534,8 +1534,7 @@
         if (!ids.length) return "";
         const token = encodeSelectionToToken(ids, markets);
         if (!token) return "";
-        const httpsUrl = new URL("/api/calendar.ics", window.location.origin);
-        httpsUrl.searchParams.set("s", token);
+        const httpsUrl = new URL(`/calendar/${encodeURIComponent(token)}.ics`, window.location.origin);
         httpsUrl.hash = "";
         if (protocol === "webcal") {
           httpsUrl.protocol = "webcal:";

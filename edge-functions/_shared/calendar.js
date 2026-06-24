@@ -68,6 +68,8 @@ export function buildIcsFromEvents(events, calendarName = CALENDAR_NAME) {
   ];
   addProperty(lines, "X-WR-CALNAME", calendarName);
   addProperty(lines, "X-WR-TIMEZONE", TIMEZONE);
+  lines.push("X-PUBLISHED-TTL:PT1H");
+  lines.push("REFRESH-INTERVAL;VALUE=DURATION:PT1H");
 
   for (const event of Array.isArray(events) ? events : []) {
     const ymd = String(event.date || "").replaceAll("-", "");
