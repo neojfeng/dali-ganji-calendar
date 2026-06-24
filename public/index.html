@@ -148,7 +148,6 @@
       .week-list,
       .market-list,
       .permanent-list,
-      .guide-grid,
       .detail-grid {
         display: grid;
         gap: 10px;
@@ -157,7 +156,6 @@
       .week-card,
       .market-card,
       .permanent-card,
-      .guide-card,
       .detail-card {
         border: 1px solid rgba(255, 255, 255, 0.48);
         border-radius: 22px;
@@ -209,28 +207,6 @@
         font-size: 12px;
         font-weight: 850;
         text-align: center;
-      }
-
-      .guide-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .guide-card {
-        min-height: 108px;
-        padding: 13px;
-      }
-
-      .guide-card h3 {
-        margin: 0 0 6px;
-        font-size: 15px;
-        letter-spacing: 0;
-      }
-
-      .guide-card p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 13px;
-        line-height: 1.45;
       }
 
       .filters {
@@ -755,10 +731,6 @@
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
-        .guide-grid {
-          grid-template-columns: repeat(4, minmax(0, 1fr));
-        }
-
         .detail-grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
@@ -783,7 +755,6 @@
           height: 74px;
         }
 
-        .guide-grid,
         .panel-actions {
           grid-template-columns: 1fr;
         }
@@ -868,13 +839,6 @@
       const STORAGE_KEY = "dali-ganji-selected-markets";
       const PLACEHOLDER_IMAGE = new URL("images/markets/placeholder.jpg", window.location.href).toString();
       const FILTERS = ["全部", "附近", "古城周边", "喜洲周边", "洱海北部", "洱海东部", "其他"];
-      const GUIDE_TIPS = [
-        ["几点去", "上午品类更丰富，傍晚可能更便宜"],
-        ["买什么", "水果、菌子、乳扇、烧饵块、手作、小百货"],
-        ["怎么逛", "热门集市建议预留 1-2 小时"],
-        ["注意什么", "货比三家、注意称重、拍人先问"]
-      ];
-
       const app = document.querySelector("#app");
       const locationButton = document.querySelector("#locationButton");
       const toast = document.querySelector("#toast");
@@ -984,12 +948,6 @@
               <p class="section-note">未来 7 天</p>
             </div>
             <div class="week-list" id="weekList">${weekTemplate()}</div>
-          </section>
-          <section class="section" aria-labelledby="guideTitle">
-            <div class="section-head">
-              <h2 class="section-title" id="guideTitle">新手快速攻略</h2>
-            </div>
-            <div class="guide-grid">${GUIDE_TIPS.map(([title, text]) => `<article class="guide-card"><h3>${title}</h3><p>${text}</p></article>`).join("")}</div>
           </section>
           <section class="section" aria-labelledby="marketsTitle">
             <div class="section-head">
