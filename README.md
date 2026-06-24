@@ -2,21 +2,21 @@
 
 这是一个移动端优先的“大理赶集攻略”小工具。用户先查看本周赶集、集市攻略、适合人群、买什么、怎么去和避坑提醒，再把自己常去的周期性集市加入 Apple 日历订阅。
 
-项目继续使用纯静态 GitHub Pages 方案：提前生成公开数据和所有日历组合，页面在前端按用户选择拼出对应的 `webcal://` 或 HTTPS 订阅链接。
+项目继续使用纯静态 GitHub Pages 方案：提前生成公开数据、所有日历组合和 iOS 订阅配置文件，页面在前端按用户选择拼出对应的 HTTPS 订阅链接或 `.mobileconfig` 安装链接。
 
 ## 核心逻辑
 
 1. `data/markets.json` 是唯一的集市和攻略数据源。
 2. `scripts/generate_events.py` 读取数据，生成未来 18 个月的赶集事件到 `public/events.json`，并生成前端使用的 `public/markets.json`。
 3. `scripts/generate_ics.py` 生成全量兼容文件 `public/dali-ganji.ics`。
-4. `scripts/generate_static_calendars.py` 生成 `public/calendars/` 下所有非空选择组合。
+4. `scripts/generate_static_calendars.py` 生成 `public/calendars/` 下所有非空选择组合的 ICS 和 iOS 订阅配置文件。
 5. `public/index.html` 展示攻略、详情页、定位距离和个性化订阅交互。
 
 示例订阅链接：
 
 ```text
-webcal://neojfeng.github.io/dali-ganji-calendar/calendars/sanyuejie__yinqiaojie.ics
 https://neojfeng.github.io/dali-ganji-calendar/calendars/sanyuejie__yinqiaojie.ics
+https://neojfeng.github.io/dali-ganji-calendar/calendars/sanyuejie__yinqiaojie.mobileconfig
 ```
 
 ## 哪些地点会生成日历事件
@@ -69,7 +69,7 @@ http://localhost:8000/calendars/sanyuejie__yinqiaojie.ics
 1. 安装 Python 依赖。
 2. 重新生成 `public/events.json` 和 `public/markets.json`。
 3. 重新生成 `public/dali-ganji.ics`。
-4. 重新生成 `public/calendars/` 下的组合 ICS。
+4. 重新生成 `public/calendars/` 下的组合 ICS 和 iOS 订阅配置文件。
 5. 发布 `public/` 到 GitHub Pages。
 
 发布地址：
@@ -255,9 +255,9 @@ public/images/markets/{market_id}.jpg
 2. 点击“查看攻略”进入详情页，确认内容正常。
 3. 在首页或详情页点击“加入日历”。
 4. 选择一个或多个集市后，点击底部“生成日历”。
-5. 点击“复制订阅链接”。
-6. 到 iPhone 日历 App 中添加“订阅日历”，粘贴 HTTPS 链接。
-7. 添加后检查日历事件是否只包含已加入的集市。
-8. 如果尝试系统订阅时看到 “Events” 事件列表，取消操作；那是导入事件，不是订阅日历。
+5. 在 Safari 中点击“安装订阅日历”，按系统提示安装描述文件。
+6. 安装后检查日历 App 中是否出现一个可单独关闭或删除的订阅日历。
+7. 如果无法安装描述文件，点击“复制订阅链接”，到 iPhone 日历 App 中手动添加“订阅日历”。
+8. 如果看到 “Events” 事件列表，取消操作；那是导入事件，不是订阅日历。
 
 订阅链接里的 `market_id` 会按 `markets.json` 顺序生成，同一组选项会得到稳定 URL。

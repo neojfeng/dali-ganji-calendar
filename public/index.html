@@ -955,13 +955,13 @@
         </div>
         <div class="panel-actions">
           <button class="subscribe-button" id="copyButton" type="button">复制订阅链接</button>
-          <a class="plain-button" id="subscribeButton" href="#" rel="noopener">一键订阅 Apple 日历</a>
+          <a class="plain-button" id="subscribeButton" href="#" rel="noopener">安装订阅日历</a>
         </div>
         <p class="panel-help" id="copyStatus">复制 HTTPS 链接后，到 iPhone 日历里添加“订阅日历”，这样可以随时关闭显示或删除订阅。</p>
         <ol class="subscription-steps">
-          <li>打开 iPhone 日历 App，点底部“日历”。</li>
-          <li>点“添加日历” → “添加订阅日历”。</li>
-          <li>粘贴链接并保存。若看到 “Events” 事件列表，请取消，不要点勾。</li>
+          <li>Safari 里点“安装订阅日历”，按系统提示安装描述文件。</li>
+          <li>安装后会新增一个独立订阅日历，可在日历列表里关闭显示或删除。</li>
+          <li>如果看到 “Events” 事件列表，请取消；那是导入事件，不是订阅。</li>
         </ol>
       </div>
     </section>
@@ -1051,7 +1051,7 @@
             event.preventDefault();
             return;
           }
-          copyStatus.textContent = "如果打开的是 “Events” 事件列表，请取消，改用复制链接手动添加订阅日历。";
+          copyStatus.textContent = "按系统提示安装描述文件。安装后会新增一个可单独关闭或删除的订阅日历。";
         });
         copyButton.addEventListener("click", copySubscriptionLink);
         window.addEventListener("popstate", renderRoute);
@@ -1453,16 +1453,16 @@
         if (inAppBrowser) {
           actions.classList.add("is-single");
           copyButton.textContent = "复制订阅链接";
-          subscribeButton.textContent = "一键订阅 Apple 日历";
+          subscribeButton.textContent = "安装订阅日历";
           subscribeButton.href = buildSubscriptionLink("https") || "#";
-          copyStatus.textContent = "微信或小红书里不能直接唤起订阅。复制 HTTPS 链接后，到 iPhone 日历里添加“订阅日历”。";
+          copyStatus.textContent = "微信或小红书里不能安装订阅配置。复制 HTTPS 链接后，到 iPhone 日历里添加“订阅日历”。";
           return;
         }
         actions.classList.remove("is-single");
         copyButton.textContent = "复制订阅链接";
-        subscribeButton.textContent = "一键订阅 Apple 日历";
-        subscribeButton.href = buildSubscriptionLink("webcal") || "#";
-        copyStatus.textContent = "复制 HTTPS 链接后，到 iPhone 日历里添加“订阅日历”，这样可以随时关闭显示或删除订阅。";
+        subscribeButton.textContent = "安装订阅日历";
+        subscribeButton.href = buildSubscriptionLink("profile") || "#";
+        copyStatus.textContent = "Safari 里可安装订阅配置；也可以复制 HTTPS 链接，到 iPhone 日历里手动添加“订阅日历”。";
       }
 
       function renderCalendarPreview() {
@@ -1536,7 +1536,8 @@
       function buildSubscriptionLink(protocol) {
         const ids = orderedSelectedIds();
         if (!ids.length) return "";
-        const httpsUrl = new URL(`calendars/${ids.join("__")}.ics`, window.location.href);
+        const extension = protocol === "profile" ? "mobileconfig" : "ics";
+        const httpsUrl = new URL(`calendars/${ids.join("__")}.${extension}`, window.location.href);
         httpsUrl.search = "";
         httpsUrl.hash = "";
         if (protocol === "webcal") {

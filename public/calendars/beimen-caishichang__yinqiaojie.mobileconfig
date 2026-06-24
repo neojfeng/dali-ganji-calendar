@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDescription</key>
+			<string>订阅 大理赶集日历｜北门菜市场、银桥街</string>
+			<key>PayloadDisplayName</key>
+			<string>大理赶集日历｜北门菜市场、银桥街</string>
+			<key>PayloadIdentifier</key>
+			<string>io.github.neojfeng.dali-ganji-calendar.subscribed-calendar.beimen-caishichang__yinqiaojie</string>
+			<key>PayloadType</key>
+			<string>com.apple.subscribedcalendar.account</string>
+			<key>PayloadUUID</key>
+			<string>D0326441-A69E-54C9-9968-1BC5A257E3B9</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>SubCalAccountDescription</key>
+			<string>大理赶集日历｜北门菜市场、银桥街</string>
+			<key>SubCalAccountHostName</key>
+			<string>https://neojfeng.github.io/dali-ganji-calendar/calendars/beimen-caishichang__yinqiaojie.ics</string>
+			<key>SubCalAccountUseSSL</key>
+			<true/>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>安装后会在 iPhone 日历中添加一个可单独显示、隐藏或删除的订阅日历。</string>
+	<key>PayloadDisplayName</key>
+	<string>大理赶集日历｜北门菜市场、银桥街</string>
+	<key>PayloadIdentifier</key>
+	<string>io.github.neojfeng.dali-ganji-calendar.profile.beimen-caishichang__yinqiaojie</string>
+	<key>PayloadOrganization</key>
+	<string>大理赶集日历</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>B0D4E890-6FB2-54FF-AA89-1BDE0109F606</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

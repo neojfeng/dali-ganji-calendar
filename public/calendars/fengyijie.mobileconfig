@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDescription</key>
+			<string>订阅 大理赶集日历｜凤仪街</string>
+			<key>PayloadDisplayName</key>
+			<string>大理赶集日历｜凤仪街</string>
+			<key>PayloadIdentifier</key>
+			<string>io.github.neojfeng.dali-ganji-calendar.subscribed-calendar.fengyijie</string>
+			<key>PayloadType</key>
+			<string>com.apple.subscribedcalendar.account</string>
+			<key>PayloadUUID</key>
+			<string>06B56E02-B9AA-572C-AC74-1FD703630B9E</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>SubCalAccountDescription</key>
+			<string>大理赶集日历｜凤仪街</string>
+			<key>SubCalAccountHostName</key>
+			<string>https://neojfeng.github.io/dali-ganji-calendar/calendars/fengyijie.ics</string>
+			<key>SubCalAccountUseSSL</key>
+			<true/>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>安装后会在 iPhone 日历中添加一个可单独显示、隐藏或删除的订阅日历。</string>
+	<key>PayloadDisplayName</key>
+	<string>大理赶集日历｜凤仪街</string>
+	<key>PayloadIdentifier</key>
+	<string>io.github.neojfeng.dali-ganji-calendar.profile.fengyijie</string>
+	<key>PayloadOrganization</key>
+	<string>大理赶集日历</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>3C71CE1C-3BBA-597F-9D55-B79564F93F3D</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
