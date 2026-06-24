@@ -459,35 +459,43 @@
 
       .detail-title {
         margin: 0;
-        font-size: clamp(28px, 8vw, 42px);
-        line-height: 1.08;
+        min-width: 0;
+        overflow: hidden;
+        font-size: 22px;
+        line-height: 1.18;
         letter-spacing: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
 
-      .detail-actions {
+      .detail-info-card {
+        padding: 0 2px;
+      }
+
+      .detail-icon-actions {
         display: flex;
-        flex-wrap: wrap;
-        gap: 9px;
-        margin-top: 12px;
+        flex: 0 0 auto;
+        align-items: center;
+        gap: 8px;
       }
 
       .detail-card {
-        padding: 15px;
+        padding: 16px;
       }
 
       .detail-card h3 {
-        margin-bottom: 9px;
+        margin-bottom: 12px;
       }
 
       .kv {
         display: grid;
-        gap: 8px;
+        gap: 9px;
       }
 
       .kv-row {
         display: grid;
-        grid-template-columns: 74px minmax(0, 1fr);
-        gap: 10px;
+        grid-template-columns: 76px minmax(0, 1fr);
+        gap: 12px;
         font-size: 14px;
       }
 
@@ -497,34 +505,50 @@
 
       .kv-value {
         color: var(--text);
-        font-weight: 720;
+        font-weight: 400;
+        line-height: 1.35;
+      }
+
+      .tag-groups {
+        display: grid;
+        gap: 12px;
+      }
+
+      .tag-group {
+        display: grid;
+        gap: 7px;
+      }
+
+      .tag-group-title {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+
+      .tag.is-negative {
+        background: #fff0f0;
+        color: #b42318;
+      }
+
+      .tag.is-positive {
+        background: #eef8f1;
+        color: var(--green);
       }
 
       .text-list {
         display: grid;
-        gap: 7px;
+        gap: 9px;
         margin: 0;
-        padding-left: 18px;
+        padding-left: 20px;
         color: #3d3d42;
         font-size: 14px;
+        line-height: 1.45;
       }
 
-      .source-item {
-        margin-top: 9px;
-        border-top: 1px solid var(--line);
-        padding-top: 9px;
-        color: var(--muted);
-        font-size: 13px;
-      }
-
-      .status-note {
-        display: inline-flex;
-        border-radius: 999px;
-        background: #fff6df;
-        color: var(--warning);
-        font-size: 12px;
-        font-weight: 600;
-        padding: 4px 8px;
+      .text-list li {
+        padding-left: 2px;
       }
 
       .toast {
@@ -628,14 +652,13 @@
       }
 
       .panel-head {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 12px;
-        margin-bottom: 14px;
+        display: grid;
+        gap: 16px;
+        margin-bottom: 18px;
       }
 
       .panel-close {
+        justify-self: start;
         flex: 0 0 auto;
         min-height: 34px;
         border: 0;
@@ -649,7 +672,12 @@
 
       .panel-title-group {
         min-width: 0;
-        padding-top: 2px;
+      }
+
+      .panel-title {
+        font-size: 30px;
+        line-height: 1.12;
+        letter-spacing: 0;
       }
 
       .selected-list {
@@ -791,19 +819,8 @@
         border-radius: 15px;
       }
 
-      .link-row {
+      .panel-actions + .panel-help {
         margin-top: 10px;
-      }
-
-      .link-row input {
-        width: 100%;
-        min-width: 0;
-        border: 0;
-        border-radius: 14px;
-        background: rgba(29, 29, 31, 0.06);
-        color: var(--muted);
-        font-size: 12px;
-        padding: 10px 12px;
       }
 
       @media (min-width: 760px) {
@@ -886,7 +903,6 @@
           <button class="panel-close" id="closePanelButton" type="button" aria-label="返回上一页">返回</button>
           <div class="panel-title-group">
             <p class="panel-title" id="panelTitle">已选择 0 个集市</p>
-            <p class="bar-sub">只会包含已验证的周期性赶集点</p>
           </div>
         </div>
         <div class="selected-list" id="selectedList"></div>
@@ -914,9 +930,6 @@
           <button class="subscribe-button" id="subscribeButton" type="button">一键订阅 Apple 日历</button>
           <button class="plain-button" id="copyButton" type="button">复制订阅链接</button>
         </div>
-        <div class="link-row">
-          <input id="httpsLink" type="text" readonly value="" aria-label="HTTPS 订阅链接">
-        </div>
         <p class="panel-help" id="copyStatus">小红书或微信打不开时，复制 HTTPS 链接，到 iPhone 日历里手动添加订阅。</p>
       </div>
     </section>
@@ -936,7 +949,6 @@
       const closePanelButton = document.querySelector("#closePanelButton");
       const subscribeButton = document.querySelector("#subscribeButton");
       const copyButton = document.querySelector("#copyButton");
-      const httpsInput = document.querySelector("#httpsLink");
       const copyStatus = document.querySelector("#copyStatus");
       const selectedList = document.querySelector("#selectedList");
       const calendarPreviewTitle = document.querySelector("#calendarPreviewTitle");
@@ -1134,35 +1146,33 @@
       }
 
       function renderDetail(market) {
-        const canSubscribe = Boolean(market.calendar_enabled);
-        const needsVerification = market.verification_status === "needs_verification";
-        const meta = [market.area, distanceText(market)].filter(Boolean).join(" · ");
+        const tags = (market.tags || []).slice(0, 4).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("");
         app.innerHTML = `
           <div class="back-row">
-            <button class="plain-button" type="button" data-action="home">返回攻略</button>
-            ${needsVerification ? '<span class="status-note">日期规则待核实</span>' : ""}
+            <button class="panel-close" type="button" data-action="home">返回</button>
           </div>
           <section class="detail-top">
             <div class="detail-image">${imageTag(market)}</div>
-            <div>
-              <h1 class="detail-title">${escapeHtml(market.name)}</h1>
-              <p class="meta">${escapeHtml(meta)}</p>
-              <p class="summary">${escapeHtml(market.summary || market.intro || "")}</p>
-              <p class="schedule">${escapeHtml(market.schedule_text || market.open_text || "时间待补充")}</p>
-              <div class="detail-actions">
-                ${canSubscribe || market.market_type === "permanent_market" ? calendarButton(market.id) : '<button class="card-button secondary" type="button" disabled>不进入日历</button>'}
-                <button class="card-button primary" type="button" data-action="navigate" data-id="${escapeHtml(market.id)}">导航</button>
+            <article class="detail-info-card">
+              <div class="card-title-row">
+                <h1 class="detail-title">${escapeHtml(market.name)}</h1>
+                <div class="detail-icon-actions">
+                  ${calendarButton(market.id)}
+                  ${navigationButton(market.id)}
+                </div>
               </div>
-            </div>
+              <p class="address">${locationLineHtml(market, marketKicker(market))}</p>
+              <p class="summary">${escapeHtml(market.summary || market.intro || "")}</p>
+              <div class="tag-row">${tags}</div>
+            </article>
           </section>
           <section class="section detail-grid">
             ${keyInfoCard(market)}
-            ${tagsCard("适合谁", market.best_for, market.not_for)}
-            ${listCard("买什么 / 吃什么", market.what_to_buy, market.food_tips)}
-            ${tipsCard("怎么逛更顺", [market.route_tips, market.transport_tips, market.parking_tips])}
-            ${listCard("避坑提醒", market.avoid_pitfalls, [market.photo_tips])}
-            ${listCard("周边顺路", market.nearby_places)}
-            ${sourceCard(market)}
+            ${fitCard(market.best_for, market.not_for)}
+            ${buyEatCard(market.what_to_buy, market.food_tips)}
+            ${tipsCard("🧭 怎么逛更顺", [market.route_tips, market.transport_tips, market.parking_tips])}
+            ${tipsCard("⚠️ 避坑提醒", [...normalizeList(market.avoid_pitfalls), market.photo_tips].filter(Boolean))}
+            ${tagCard("📍 周边顺路", [{ items: market.nearby_places }])}
           </section>
         `;
         bindHomeEvents();
@@ -1172,58 +1182,61 @@
         const timeText = market.market_type === "permanent_market" ? (market.open_text || "每天开放") : (market.schedule_text || "时间待补充");
         return `
           <article class="detail-card">
-            <h3>关键信息</h3>
+            <h3>🗓️ 关键信息</h3>
             <div class="kv">
               ${kv("赶集时间", timeText)}
               ${kv("建议到达", market.best_time || "上午去选择更多")}
               ${kv("建议停留", market.duration || "建议预留 1-2 小时")}
-              ${kv("地点", market.address || market.location_name || "地点待补充")}
             </div>
           </article>
         `;
       }
 
-      function tagsCard(title, bestFor = [], notFor = []) {
+      function fitCard(bestFor = [], notFor = []) {
+        return tagCard("✨ 适合谁 / 🙅 不适合谁", [
+          { label: "适合谁", items: bestFor.length ? bestFor : ["顺路体验"], positive: true },
+          { label: "不适合谁", items: notFor, negative: true }
+        ]);
+      }
+
+      function buyEatCard(primary = [], secondary = []) {
+        return tagCard("🛍️ 买什么 / 🍜 吃什么", [
+          { label: "买什么", items: primary },
+          { label: "吃什么", items: secondary }
+        ]);
+      }
+
+      function tagCard(title, groups = []) {
+        const groupHtml = groups
+          .map((group) => tagGroup(group.items, group.negative, group.positive, group.label))
+          .filter(Boolean)
+          .join("");
         return `
           <article class="detail-card">
             <h3>${title}</h3>
-            <div class="tag-row">${bestFor.map((item) => `<span class="tag">${escapeHtml(item)}</span>`).join("") || '<span class="tag">适合顺路体验</span>'}</div>
-            ${notFor.length ? `<p class="summary">不太适合：${escapeHtml(notFor.join("、"))}</p>` : ""}
+            ${groupHtml ? `<div class="tag-groups">${groupHtml}</div>` : '<p class="summary">信息正在补充。</p>'}
           </article>
         `;
       }
 
-      function listCard(title, primary = [], secondary = []) {
-        const items = [...normalizeList(primary), ...normalizeList(secondary)].filter(Boolean);
+      function tagGroup(items = [], negative = false, positive = false, label = "") {
+        const normalized = normalizeList(items);
+        if (!normalized.length) return "";
+        const tagClass = negative ? "tag is-negative" : positive ? "tag is-positive" : "tag";
         return `
-          <article class="detail-card">
-            <h3>${title}</h3>
-            ${items.length ? `<ul class="text-list">${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : '<p class="summary">信息正在补充。</p>'}
-          </article>
+          <div class="tag-group">
+            ${label ? `<p class="tag-group-title">${escapeHtml(label)}</p>` : ""}
+            <div class="tag-row">${normalized.map((item) => `<span class="${tagClass}">${escapeHtml(item)}</span>`).join("")}</div>
+          </div>
         `;
       }
 
       function tipsCard(title, tips = []) {
-        return listCard(title, tips.filter(Boolean));
-      }
-
-      function sourceCard(market) {
-        const sources = Array.isArray(market.sources) ? market.sources : [];
-        const sourceHtml = sources.length
-          ? sources.map((source) => `
-              <div class="source-item">
-                <strong>${escapeHtml(source.title || "来源")}</strong>
-                ${source.url ? `<br><a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">查看来源</a>` : ""}
-                ${source.note ? `<br>${escapeHtml(source.note)}` : ""}
-              </div>
-            `).join("")
-          : '<p class="summary">来源信息正在补充。</p>';
+        const items = normalizeList(tips);
         return `
-          <article class="detail-card is-wide">
-            <h3>数据来源与验证状态</h3>
-            ${market.verification_status === "needs_verification" ? '<span class="status-note">日期规则待核实</span>' : '<span class="tag">已验证</span>'}
-            <p class="summary">${escapeHtml(market.source_note || "数据来自公开资料，持续实地验证中。")}</p>
-            ${sourceHtml}
+          <article class="detail-card">
+            <h3>${title}</h3>
+            ${items.length ? `<ul class="text-list">${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : '<p class="summary">信息正在补充。</p>'}
           </article>
         `;
       }
@@ -1294,6 +1307,14 @@
         `;
       }
 
+      function navigationButton(id) {
+        return `
+          <button class="card-icon-button" type="button" data-action="navigate" data-id="${escapeHtml(id)}" aria-label="导航">
+            ${navigationIcon()}
+          </button>
+        `;
+      }
+
       function plusIcon() {
         return `
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -1307,6 +1328,15 @@
         return `
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="m5 12 4 4 10-10"></path>
+          </svg>
+        `;
+      }
+
+      function navigationIcon() {
+        return `
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 11 21 3l-8 18-2-8-8-2Z"></path>
+            <path d="m11 13 10-10"></path>
           </svg>
         `;
       }
@@ -1367,7 +1397,6 @@
         bottomBar.hidden = count === 0 || !subscribePanel.hidden;
         barCount.textContent = `已加入 ${count} 个集市`;
         panelTitle.textContent = `已选择 ${count} 个集市`;
-        httpsInput.value = buildSubscriptionLink("https") || "";
         selectedList.innerHTML = ids.map((id) => {
           const market = markets.find((item) => item.id === id);
           return market ? `<span class="tag">${escapeHtml(market.label || market.name)}</span>` : "";
@@ -1465,9 +1494,8 @@
           copyStatus.textContent = "已复制。打不开一键订阅时，可以到 iPhone 日历里手动添加。";
           showToast("订阅链接已复制");
         } catch (error) {
-          httpsInput.select();
-          document.execCommand("copy");
-          copyStatus.textContent = "链接已选中，可手动复制。";
+          copyStatus.textContent = "复制失败，可以先点一键订阅，或稍后再试。";
+          showToast("暂时无法复制链接");
         }
       }
 
@@ -1582,16 +1610,24 @@
       function openNavigation(id) {
         const market = markets.find((item) => item.id === id);
         if (!market) return;
-        const link = market.apple_maps_url || appleMapsLink(market);
+        const link = market.amap_url || amapLink(market) || baiduMapLink(market);
         window.open(link, "_blank", "noopener");
       }
 
-      function appleMapsLink(market) {
+      function amapLink(market) {
         const query = encodeURIComponent(market.location_name || market.name || "大理赶集");
         if (typeof market.lat === "number" && typeof market.lng === "number") {
-          return `https://maps.apple.com/?ll=${market.lat},${market.lng}&q=${query}`;
+          return `https://uri.amap.com/marker?position=${market.lng},${market.lat}&name=${query}`;
         }
-        return `https://maps.apple.com/?q=${query}`;
+        return `https://uri.amap.com/search?keyword=${query}&city=大理`;
+      }
+
+      function baiduMapLink(market) {
+        const query = encodeURIComponent(market.address || market.location_name || market.name || "大理赶集");
+        if (typeof market.lat === "number" && typeof market.lng === "number") {
+          return `https://api.map.baidu.com/marker?location=${market.lat},${market.lng}&title=${query}&content=${query}&output=html`;
+        }
+        return `https://map.baidu.com/search/${query}`;
       }
 
       function imageTag(market) {

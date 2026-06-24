@@ -7,1259 +7,1407 @@ X-WR-CALNAME:大理赶集日历｜三月街、北门菜市场
 X-WR-TIMEZONE:Asia/Shanghai
 BEGIN:VEVENT
 UID:sanyuejie-2026-06-30@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20260630
 DTEND;VALUE=DATE:20260701
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-07-07@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20260707
 DTEND;VALUE=DATE:20260708
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-07-15@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20260715
 DTEND;VALUE=DATE:20260716
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-07-22@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20260722
 DTEND;VALUE=DATE:20260723
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-07-29@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20260729
 DTEND;VALUE=DATE:20260730
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-08-05@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20260805
 DTEND;VALUE=DATE:20260806
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-08-14@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260815
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-08-21@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20260821
 DTEND;VALUE=DATE:20260822
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-08-28@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20260828
 DTEND;VALUE=DATE:20260829
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-09-04@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20260904
 DTEND;VALUE=DATE:20260905
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-09-12@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20260912
 DTEND;VALUE=DATE:20260913
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-09-19@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20260919
 DTEND;VALUE=DATE:20260920
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-09-26@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20260926
 DTEND;VALUE=DATE:20260927
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-10-03@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261004
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-10-11@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20261011
 DTEND;VALUE=DATE:20261012
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-10-18@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-10-25@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-11-01@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-11-10@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-11-17@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-11-24@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-12-01@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-12-10@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-12-17@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20261217
 DTEND;VALUE=DATE:20261218
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-12-24@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20261224
 DTEND;VALUE=DATE:20261225
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2026-12-31@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-01-09@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270110
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-01-16@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270116
 DTEND;VALUE=DATE:20270117
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-01-23@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270123
 DTEND;VALUE=DATE:20270124
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-01-30@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270130
 DTEND;VALUE=DATE:20270131
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-02-07@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270207
 DTEND;VALUE=DATE:20270208
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-02-14@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-02-21@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270222
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-02-28@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270301
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-03-09@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270309
 DTEND;VALUE=DATE:20270310
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-03-16@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270316
 DTEND;VALUE=DATE:20270317
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-03-23@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-03-30@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270330
 DTEND;VALUE=DATE:20270331
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-04-08@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270408
 DTEND;VALUE=DATE:20270409
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-04-15@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270415
 DTEND;VALUE=DATE:20270416
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-04-22@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-04-29@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270429
 DTEND;VALUE=DATE:20270430
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-05-07@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270507
 DTEND;VALUE=DATE:20270508
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-05-14@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270514
 DTEND;VALUE=DATE:20270515
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-05-21@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270521
 DTEND;VALUE=DATE:20270522
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-05-28@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270528
 DTEND;VALUE=DATE:20270529
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-06-06@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270606
 DTEND;VALUE=DATE:20270607
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-06-13@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270613
 DTEND;VALUE=DATE:20270614
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-06-20@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270620
 DTEND;VALUE=DATE:20270621
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-06-27@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270627
 DTEND;VALUE=DATE:20270628
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-07-05@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270705
 DTEND;VALUE=DATE:20270706
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-07-12@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270712
 DTEND;VALUE=DATE:20270713
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-07-19@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270719
 DTEND;VALUE=DATE:20270720
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-07-26@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270726
 DTEND;VALUE=DATE:20270727
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-08-03@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270803
 DTEND;VALUE=DATE:20270804
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-08-10@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270810
 DTEND;VALUE=DATE:20270811
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-08-17@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270817
 DTEND;VALUE=DATE:20270818
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-08-24@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270824
 DTEND;VALUE=DATE:20270825
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-09-02@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270902
 DTEND;VALUE=DATE:20270903
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-09-09@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270909
 DTEND;VALUE=DATE:20270910
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-09-16@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270916
 DTEND;VALUE=DATE:20270917
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-09-23@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20270923
 DTEND;VALUE=DATE:20270924
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-10-01@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20271001
 DTEND;VALUE=DATE:20271002
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-10-08@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20271008
 DTEND;VALUE=DATE:20271009
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-10-15@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20271015
 DTEND;VALUE=DATE:20271016
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-10-22@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20271022
 DTEND;VALUE=DATE:20271023
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-10-30@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20271030
 DTEND;VALUE=DATE:20271031
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-11-06@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20271106
 DTEND;VALUE=DATE:20271107
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-11-13@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20271113
 DTEND;VALUE=DATE:20271114
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-11-20@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20271120
 DTEND;VALUE=DATE:20271121
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-11-29@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20271129
 DTEND;VALUE=DATE:20271130
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-12-06@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20271206
 DTEND;VALUE=DATE:20271207
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-12-13@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20271213
 DTEND;VALUE=DATE:20271214
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanyuejie-2027-12-20@dali-ganji-calendar
-DTSTAMP:20260623T170835Z
+DTSTAMP:20260624T045629Z
 DTSTART;VALUE=DATE:20271220
 DTEND;VALUE=DATE:20271221
 SUMMARY:三月街赶集
 LOCATION:三月街
 DESCRIPTION:大理古城附近最有名的传统集市之一，适合第一
  次体验大理赶集。\n时间：农历初二、初九、十六、二十
- 三赶集\n地点：大理古城苍山门对面\n导航：Apple 地图 htt
- ps://maps.apple.com/?ll=25.6957\,100.1518&q=%E4%B8%89%E6%9C%88%E8%A1%97%E8
- %B5%B6%E9%9B%86\n提醒：货比三家、注意称重、人多时看好随
- 身物品\n说明：多份公开赶街表交叉显示该时间，持续实
- 地验证中。
+ 三赶集\n地点：大理古城苍山门对面\n导航：高德地图 htt
+ ps://uri.amap.com/marker?position=100.1518\,25.6957&name=%E4%B8%89%E6%9C%8
+ 8%E8%A1%97%E8%B5%B6%E9%9B%86 / 百度地图 https://api.map.baidu.com/mark
+ er?location=25.6957\,100.1518&title=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E
+ 8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&content=%E5%A4%A7%E7%90%86%E5%
+ 8F%A4%E5%9F%8E%E8%8B%8D%E5%B1%B1%E9%97%A8%E5%AF%B9%E9%9D%A2&output=html\n
+ 提醒：货比三家、注意称重、人多时看好随身物品
 GEO:25.6957;100.1518
 TRANSP:TRANSPARENT
 END:VEVENT

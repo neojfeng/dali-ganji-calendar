@@ -196,9 +196,6 @@ def public_market_records(markets: list[dict[str, Any]]) -> list[dict[str, Any]]
                 "nearby_places": clean_list(market.get("nearby_places")),
                 "apple_maps_url": clean(market.get("apple_maps_url")),
                 "amap_url": clean(market.get("amap_url")),
-                "verification_status": clean(market.get("verification_status")),
-                "source_note": clean(market.get("source_note")),
-                "sources": market.get("sources") if isinstance(market.get("sources"), list) else [],
                 "order": index,
             }
         )
@@ -209,7 +206,6 @@ def is_calendar_market(market: dict[str, Any]) -> bool:
     return (
         clean(market.get("market_type")) == "periodic_fair"
         and bool(market.get("calendar_enabled"))
-        and clean(market.get("verification_status")) == "verified"
     )
 
 
@@ -231,7 +227,6 @@ def description_for(market: dict[str, Any]) -> str:
     intro = clean(market.get("summary")) or clean(market.get("intro"))
     schedule_text = clean(market.get("schedule_text")) or "时间待补充"
     place = clean(market.get("address")) or clean(market.get("location_name")) or "地点待补充"
-    source_note = clean(market.get("source_note")) or "数据来自公开资料 + 实地验证中，如有误差欢迎反馈。"
     nav_links = navigation_links(market)
     reminders = clean_list(market.get("avoid_pitfalls"))
 
@@ -244,30 +239,38 @@ def description_for(market: dict[str, Any]) -> str:
         lines.append(f"导航：{' / '.join(nav_links)}")
     if reminders:
         lines.append(f"提醒：{'、'.join(reminders[:3])}")
-    lines.append(f"说明：{source_note}")
     return "\n".join(lines)
 
 
 def navigation_links(market: dict[str, Any]) -> list[str]:
     links: list[str] = []
-    apple_maps_url = clean(market.get("apple_maps_url"))
     amap_url = clean(market.get("amap_url"))
-
-    if apple_maps_url:
-        links.append(f"Apple 地图 {apple_maps_url}")
-    elif has_coordinates(market):
-        links.append(f"Apple 地图 {apple_maps_link(market)}")
 
     if amap_url:
         links.append(f"高德地图 {amap_url}")
+    else:
+        links.append(f"高德地图 {amap_link(market)}")
+
+    links.append(f"百度地图 {baidu_map_link(market)}")
     return links
 
 
-def apple_maps_link(market: dict[str, Any]) -> str:
-    lat = market.get("lat")
-    lng = market.get("lng")
+def amap_link(market: dict[str, Any]) -> str:
     name = clean(market.get("name")) or clean(market.get("location_name")) or "大理赶集"
-    return f"https://maps.apple.com/?ll={lat},{lng}&q={quote(name)}"
+    if has_coordinates(market):
+        return f"https://uri.amap.com/marker?position={market.get('lng')},{market.get('lat')}&name={quote(name)}"
+    return f"https://uri.amap.com/search?keyword={quote(name)}&city={quote('大理')}"
+
+
+def baidu_map_link(market: dict[str, Any]) -> str:
+    name = clean(market.get("address")) or clean(market.get("location_name")) or clean(market.get("name")) or "大理赶集"
+    if has_coordinates(market):
+        query = quote(name)
+        return (
+            "https://api.map.baidu.com/marker?"
+            f"location={market.get('lat')},{market.get('lng')}&title={query}&content={query}&output=html"
+        )
+    return f"https://map.baidu.com/search/{quote(name)}"
 
 
 def has_coordinates(market: dict[str, Any]) -> bool:

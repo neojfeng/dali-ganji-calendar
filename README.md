@@ -1,13 +1,13 @@
 # 大理赶集攻略 + Apple 日历订阅
 
-这是一个移动端优先的“大理赶集攻略”小工具。用户先查看本周赶集、集市攻略、适合人群、买什么、怎么去和避坑提醒，再把自己常去的已验证周期性集市加入 Apple 日历订阅。
+这是一个移动端优先的“大理赶集攻略”小工具。用户先查看本周赶集、集市攻略、适合人群、买什么、怎么去和避坑提醒，再把自己常去的周期性集市加入 Apple 日历订阅。
 
 项目继续使用纯静态 GitHub Pages 方案：提前生成公开数据和所有日历组合，页面在前端按用户选择拼出对应的 `webcal://` 或 HTTPS 订阅链接。
 
 ## 核心逻辑
 
 1. `data/markets.json` 是唯一的集市和攻略数据源。
-2. `scripts/generate_events.py` 读取数据，生成未来 18 个月的已验证赶集事件到 `public/events.json`，并生成前端使用的 `public/markets.json`。
+2. `scripts/generate_events.py` 读取数据，生成未来 18 个月的赶集事件到 `public/events.json`，并生成前端使用的 `public/markets.json`。
 3. `scripts/generate_ics.py` 生成全量兼容文件 `public/dali-ganji.ics`。
 4. `scripts/generate_static_calendars.py` 生成 `public/calendars/` 下所有非空选择组合。
 5. `public/index.html` 展示攻略、详情页、定位距离和个性化订阅交互。
@@ -25,15 +25,13 @@ https://neojfeng.github.io/dali-ganji-calendar/calendars/sanyuejie__yinqiaojie.i
 
 - `market_type` 是 `periodic_fair`
 - `calendar_enabled` 是 `true`
-- `verification_status` 是 `verified`
 
 以下情况不会生成日历事件：
 
 - `market_type` 是 `permanent_market` 的常设市场，例如北门菜市场。
-- `verification_status` 是 `needs_verification` 的地点。
 - `calendar_enabled` 是 `false` 的地点。
 
-静态组合文件仍会保留历史 market_id 组合；如果组合里包含常设市场或待核实地点，它们不会产生事件。
+静态组合文件仍会保留历史 market_id 组合；如果组合里包含常设市场或未启用日历的地点，它们不会产生事件。
 
 ## 本地运行
 
@@ -123,10 +121,7 @@ https://neojfeng.github.io/dali-ganji-calendar/
     }
   ],
   "apple_maps_url": "",
-  "amap_url": "",
-  "verification_status": "verified",
-  "source_note": "多份公开赶街表交叉显示该时间，持续实地验证中。",
-  "sources": []
+  "amap_url": ""
 }
 ```
 
@@ -146,10 +141,7 @@ https://neojfeng.github.io/dali-ganji-calendar/
   "address": "大理古城北门附近",
   "lat": 25.7008,
   "lng": 100.1622,
-  "images": [],
-  "verification_status": "needs_verification",
-  "source_note": "常设市场信息待继续实地补充，不生成日历事件。",
-  "sources": []
+  "images": []
 }
 ```
 
@@ -193,7 +185,7 @@ https://neojfeng.github.io/dali-ganji-calendar/
 
 1. 在 `data/markets.json` 追加对象。
 2. 填写 `id`、`name`、`area`、`market_type: "periodic_fair"`。
-3. 只有确认日期可靠时，才设置 `calendar_enabled: true` 和 `verification_status: "verified"`。
+3. 只有确认日期可靠且需要生成订阅事件时，才设置 `calendar_enabled: true`。
 4. 填写 `schedule_type` 和对应规则字段。
 5. 补充 `summary`、`tags`、`best_for`、`what_to_buy`、交通和避坑字段。
 6. 填写 `location_name`、`address`、`lat`、`lng`。
@@ -205,7 +197,7 @@ https://neojfeng.github.io/dali-ganji-calendar/
 2. 设置 `calendar_enabled: false`。
 3. 填写 `open_text`，例如“每天开放”。
 4. 补充攻略字段和地点坐标。
-5. 常设市场会出现在“附近常设市场”，但不会显示“加入日历”按钮。
+5. 常设市场会出现在集市列表中，但不会生成日历事件。
 
 ## 补充详情页攻略字段
 
@@ -250,16 +242,6 @@ public/images/markets/{market_id}.jpg
 ```
 
 图片建议使用 16:10 或 4:3，宽度 1200px 左右即可。不要热链外部网站图片；如果某个集市没有图片，页面会显示 `public/images/markets/placeholder.jpg`。
-
-## 记录来源
-
-每个地点建议维护：
-
-- `verification_status`：`verified` 或 `needs_verification`。
-- `source_note`：给用户看的简短数据说明。
-- `sources`：来源列表，包含 `title`、`url`、`source_type`、`checked_at`、`note`。
-
-如果日期规则还没确认，使用 `needs_verification`，页面会显示“日期规则待核实”，并且不会生成日历事件。
 
 ## 定位和距离
 
