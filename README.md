@@ -14,8 +14,8 @@
 订阅链接格式：
 
 ```text
-https://example.com/calendar/v3/BQ.ics
-webcal://example.com/calendar/v3/BQ.ics
+https://example.com/calendars/BQ.ics
+webcal://example.com/calendars/BQ.ics
 ```
 
 ## 选择 Token
@@ -107,13 +107,13 @@ npm run build
 npm test
 ```
 
-测试覆盖 token 双向转换、点击顺序稳定性、不可订阅地点过滤、有效和无效 `/api/calendar.ics?s=...` 响应、干净订阅源 URL、mobileconfig 配置、选中/未选中集市筛选、中文转义、description 换行，以及订阅 feed 不包含导入语义的 `METHOD:PUBLISH`。
+测试覆盖 token 双向转换、点击顺序稳定性、不可订阅地点过滤、有效和无效 `/api/calendar.ics?s=...` 响应、静态风格订阅源 URL、mobileconfig 配置、选中/未选中集市筛选、中文转义和 description 换行。
 
 手动测试动态 ICS：
 
 ```text
-https://your-domain.example/calendar/v3/BQ.ics
-webcal://your-domain.example/calendar/v3/BQ.ics
+https://your-domain.example/calendars/BQ.ics
+webcal://your-domain.example/calendars/BQ.ics
 ```
 
 响应头应包含：

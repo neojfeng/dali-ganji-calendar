@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/calendars/:token.mobileconfig",
+      "destination": "/api/calendar.mobileconfig?s=:token"
+    },
+    {
+      "source": "/calendars/:token.ics",
+      "destination": "/api/calendar.ics?s=:token"
+    },
+    {
       "source": "/calendar/v3/:token.mobileconfig",
       "destination": "/api/calendar.mobileconfig?s=:token"
     },

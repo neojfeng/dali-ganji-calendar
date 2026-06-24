@@ -22,7 +22,7 @@ export function buildProfileResponse(request) {
   const url = requestUrl(request);
   const token = url.searchParams.get("s") || tokenFromPath(url.pathname);
   const selectedIds = token ? decodeTokenToMarketIds(token, calendarData.markets) : [];
-  const subscriptionUrl = new URL(`/calendar/v3/${encodeURIComponent(token || "empty")}.ics`, url.origin).toString();
+  const subscriptionUrl = new URL(`/calendars/${encodeURIComponent(token || "empty")}.ics`, url.origin).toString();
   return buildMobileConfigProfile({
     token,
     selectedMarketIds: selectedIds,
@@ -37,6 +37,6 @@ function requestUrl(request) {
 }
 
 function tokenFromPath(pathname) {
-  const match = pathname.match(/^\/calendar\/(?:v\d+\/)?([A-Za-z0-9_-]+)\.mobileconfig$/u);
+  const match = pathname.match(/^\/(?:calendar\/(?:v\d+\/)?|calendars\/)([A-Za-z0-9_-]+)\.mobileconfig$/u);
   return match ? match[1] : "";
 }

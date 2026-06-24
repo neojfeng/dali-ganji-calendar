@@ -1,6 +1,6 @@
 const CALENDAR_NAME = "大理赶集日历";
 const TIMEZONE = "Asia/Shanghai";
-const PRODID = "-//Jfeng//Dali Ganji Calendar//ZH-CN";
+const PRODID = "-//Dali Ganji Calendar//CN";
 const DOMAIN = "dali-ganji-calendar";
 
 export function getSubscribableMarkets(markets) {
@@ -63,12 +63,11 @@ export function buildIcsFromEvents(events, calendarName = CALENDAR_NAME) {
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
     `PRODID:${PRODID}`,
-    "CALSCALE:GREGORIAN"
+    "CALSCALE:GREGORIAN",
+    "METHOD:PUBLISH"
   ];
   addProperty(lines, "X-WR-CALNAME", calendarName);
   addProperty(lines, "X-WR-TIMEZONE", TIMEZONE);
-  lines.push("X-PUBLISHED-TTL:PT1H");
-  lines.push("REFRESH-INTERVAL;VALUE=DURATION:PT1H");
 
   for (const event of Array.isArray(events) ? events : []) {
     const ymd = String(event.date || "").replaceAll("-", "");

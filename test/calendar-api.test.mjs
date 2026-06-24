@@ -46,7 +46,7 @@ test("calendar API returns text/calendar for a valid token", async () => {
   assert.equal(response.status, 200);
   assert.equal(response.headers.get("Content-Type"), "text/calendar; charset=utf-8");
   assert.match(body, /BEGIN:VCALENDAR/);
-  assert.doesNotMatch(body, /METHOD:PUBLISH/);
+  assert.match(body, /METHOD:PUBLISH/);
   assert.match(body, new RegExp(`UID:${selected[0]}-`));
 });
 
@@ -65,13 +65,12 @@ test("Vercel API handler returns the same dynamic ICS response", async () => {
 
 test("clean calendar feed URL works for subscription clients", async () => {
   const token = encodeSelectionToToken(["sanyuejie", "yinqiaojie"], calendarData.markets);
-  const edgeResponse = await handleRequest(new Request(`https://example.com/calendar/v3/${token}.ics`));
-  const vercelResponse = await invokeVercelHandler(`/calendar/v3/${token}.ics`);
+  const edgeResponse = await handleRequest(new Request(`https://example.com/calendars/${token}.ics`));
+  const vercelResponse = await invokeVercelHandler(`/calendars/${token}.ics`);
   const edgeBody = await edgeResponse.text();
 
   assert.equal(edgeResponse.status, 200);
-  assert.match(edgeBody, /X-PUBLISHED-TTL:PT1H/);
-  assert.match(edgeBody, /REFRESH-INTERVAL;VALUE=DURATION:PT1H/);
+  assert.match(edgeBody, /METHOD:PUBLISH/);
   assert.match(edgeBody, /DTEND;VALUE=DATE:/);
   assert.match(edgeBody, /GEO:/);
   assert.match(edgeBody, /三月街赶集/);
@@ -80,14 +79,14 @@ test("clean calendar feed URL works for subscription clients", async () => {
 
 test("mobileconfig endpoint installs a subscribed calendar account", async () => {
   const token = encodeSelectionToToken(["sanyuejie", "yinqiaojie"], calendarData.markets);
-  const edgeResponse = await handleMobileConfigRequest(new Request(`https://example.com/calendar/v3/${token}.mobileconfig`));
+  const edgeResponse = await handleMobileConfigRequest(new Request(`https://example.com/calendars/${token}.mobileconfig`));
   const edgeBody = await edgeResponse.text();
-  const vercelResponse = await invokeVercelHandler(`/calendar/v3/${token}.mobileconfig`, vercelMobileConfigHandler);
+  const vercelResponse = await invokeVercelHandler(`/calendars/${token}.mobileconfig`, vercelMobileConfigHandler);
 
   assert.equal(edgeResponse.status, 200);
   assert.equal(edgeResponse.headers.get("Content-Type"), "application/x-apple-aspen-config; charset=utf-8");
   assert.match(edgeBody, /com\.apple\.subscribedcalendar\.account/);
-  assert.match(edgeBody, /https:\/\/example\.com\/calendar\/v3\/BQ\.ics/);
+  assert.match(edgeBody, /https:\/\/example\.com\/calendars\/BQ\.ics/);
   assert.match(edgeBody, /大理赶集日历/);
   assert.equal(vercelResponse.headers["Content-Type"], "application/x-apple-aspen-config; charset=utf-8");
   assert.match(vercelResponse.body, /com\.apple\.subscribedcalendar\.account/);
