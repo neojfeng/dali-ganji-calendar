@@ -38,6 +38,10 @@
         line-height: 1.5;
       }
 
+      body.has-subscribe-panel {
+        overflow: hidden;
+      }
+
       button,
       input {
         font: inherit;
@@ -480,8 +484,7 @@
         transform: translate(-50%, 0);
       }
 
-      .bottom-bar,
-      .subscribe-panel {
+      .bottom-bar {
         position: fixed;
         right: 0;
         bottom: 0;
@@ -491,13 +494,23 @@
         pointer-events: none;
       }
 
+      .subscribe-panel {
+        position: fixed;
+        inset: 0;
+        z-index: 45;
+        background:
+          radial-gradient(circle at 18% -10%, rgba(255, 255, 255, 0.95), transparent 22rem),
+          linear-gradient(180deg, #fbfaf7 0%, var(--bg) 54%, #ebe6dd 100%);
+        padding: calc(12px + env(safe-area-inset-top)) 14px calc(16px + env(safe-area-inset-bottom));
+        overflow: auto;
+      }
+
       .bottom-bar[hidden],
       .subscribe-panel[hidden] {
         display: none;
       }
 
-      .bar-inner,
-      .panel-inner {
+      .bar-inner {
         width: min(720px, 100%);
         margin: 0 auto;
         pointer-events: auto;
@@ -505,6 +518,12 @@
         background: rgba(255, 255, 255, 0.9);
         box-shadow: 0 -14px 38px rgba(29, 29, 31, 0.16);
         backdrop-filter: blur(24px);
+      }
+
+      .panel-inner {
+        width: min(720px, 100%);
+        min-height: 100%;
+        margin: 0 auto;
       }
 
       .bar-inner {
@@ -537,30 +556,32 @@
       }
 
       .panel-inner {
-        max-height: min(78vh, 540px);
-        overflow: auto;
-        border-radius: 24px;
-        padding: 14px;
+        padding: 0 0 18px;
       }
 
       .panel-head {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        align-items: flex-start;
+        justify-content: flex-start;
         gap: 12px;
-        margin-bottom: 12px;
+        margin-bottom: 14px;
       }
 
       .panel-close {
-        display: grid;
-        width: 34px;
-        height: 34px;
-        place-items: center;
+        flex: 0 0 auto;
+        min-height: 34px;
         border: 0;
-        border-radius: 50%;
+        border-radius: 999px;
         background: rgba(29, 29, 31, 0.07);
         color: var(--text);
-        font-size: 20px;
+        font-size: 14px;
+        font-weight: 850;
+        padding: 0 12px;
+      }
+
+      .panel-title-group {
+        min-width: 0;
+        padding-top: 2px;
       }
 
       .selected-list {
@@ -797,11 +818,11 @@
     <section class="subscribe-panel" id="subscribePanel" aria-label="生成日历订阅" hidden>
       <div class="panel-inner">
         <div class="panel-head">
-          <div>
+          <button class="panel-close" id="closePanelButton" type="button" aria-label="返回上一页">返回</button>
+          <div class="panel-title-group">
             <p class="panel-title" id="panelTitle">已选择 0 个集市</p>
             <p class="bar-sub">只会包含已验证的周期性赶集点</p>
           </div>
-          <button class="panel-close" id="closePanelButton" type="button" aria-label="收起订阅面板">×</button>
         </div>
         <div class="selected-list" id="selectedList"></div>
         <div class="calendar-preview" aria-label="日历事件预览">
@@ -892,10 +913,12 @@
         openPanelButton.addEventListener("click", () => {
           subscribePanel.hidden = false;
           bottomBar.hidden = true;
+          document.body.classList.add("has-subscribe-panel");
           renderCalendarPreview();
         });
         closePanelButton.addEventListener("click", () => {
           subscribePanel.hidden = true;
+          document.body.classList.remove("has-subscribe-panel");
           updateSubscription();
         });
         prevMonthButton.addEventListener("click", () => {
