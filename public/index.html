@@ -955,12 +955,12 @@
         </div>
         <div class="panel-actions">
           <button class="subscribe-button" id="copyButton" type="button">复制订阅链接</button>
-          <a class="plain-button" id="subscribeButton" href="#" rel="noopener">安装订阅日历</a>
+          <a class="plain-button" id="subscribeButton" href="#" rel="noopener">一键订阅 Apple 日历</a>
         </div>
-        <p class="panel-help" id="copyStatus">复制 HTTPS 链接后，到 iPhone 日历里添加“订阅日历”，这样可以随时关闭显示或删除订阅。</p>
+        <p class="panel-help" id="copyStatus">如果无法一键订阅，请复制订阅链接，用 Safari 打开后再添加到 iPhone 日历。</p>
         <ol class="subscription-steps">
-          <li>Safari 里点“安装订阅日历”，按系统提示安装描述文件。</li>
-          <li>安装后会新增一个独立订阅日历，可在日历列表里关闭显示或删除。</li>
+          <li>Safari 里点“一键订阅 Apple 日历”，按系统提示添加订阅。</li>
+          <li>微信或小红书里请先复制 HTTPS 链接，再用 Safari 打开。</li>
           <li>如果看到 “Events” 事件列表，请取消；那是导入事件，不是订阅。</li>
         </ol>
       </div>
@@ -1051,7 +1051,7 @@
             event.preventDefault();
             return;
           }
-          copyStatus.textContent = "按系统提示安装描述文件。安装后会新增一个可单独关闭或删除的订阅日历。";
+          copyStatus.textContent = "按系统提示添加订阅日历。添加后可在日历列表里单独关闭或删除。";
         });
         copyButton.addEventListener("click", copySubscriptionLink);
         window.addEventListener("popstate", renderRoute);
@@ -1325,7 +1325,7 @@
 
       function calendarButton(id) {
         const market = markets.find((item) => item.id === id);
-        const canSubscribe = market && market.calendar_enabled;
+        const canSubscribe = market && isSubscribableMarket(market);
         const isAdded = selected.has(id);
         if (market?.market_type === "permanent_market") {
           return `
@@ -1396,7 +1396,7 @@
       function restoreSelection() {
         try {
           const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
-          const validIds = new Set(markets.filter((market) => market.calendar_enabled).map((market) => market.id));
+          const validIds = new Set(getSubscribableMarkets(markets).map((market) => market.id));
           return new Set(saved.filter((id) => validIds.has(id)));
         } catch (error) {
           return new Set();
@@ -1409,7 +1409,7 @@
           showAlwaysOpenToast();
           return;
         }
-        if (!market?.calendar_enabled) {
+        if (!isSubscribableMarket(market)) {
           showToast("这个地点暂不生成日历事件");
           return;
         }
@@ -1453,16 +1453,16 @@
         if (inAppBrowser) {
           actions.classList.add("is-single");
           copyButton.textContent = "复制订阅链接";
-          subscribeButton.textContent = "安装订阅日历";
+          subscribeButton.textContent = "一键订阅 Apple 日历";
           subscribeButton.href = buildSubscriptionLink("https") || "#";
-          copyStatus.textContent = "微信或小红书里不能安装订阅配置。复制 HTTPS 链接后，到 iPhone 日历里添加“订阅日历”。";
+          copyStatus.textContent = "微信或小红书里通常不能唤起日历。复制 HTTPS 链接后，用 Safari 打开再添加到 iPhone 日历。";
           return;
         }
         actions.classList.remove("is-single");
         copyButton.textContent = "复制订阅链接";
-        subscribeButton.textContent = "安装订阅日历";
-        subscribeButton.href = buildSubscriptionLink("profile") || "#";
-        copyStatus.textContent = "Safari 里可安装订阅配置；也可以复制 HTTPS 链接，到 iPhone 日历里手动添加“订阅日历”。";
+        subscribeButton.textContent = "一键订阅 Apple 日历";
+        subscribeButton.href = buildSubscriptionLink("webcal") || "#";
+        copyStatus.textContent = "Safari 里可一键唤起 Apple 日历；如果失败，请复制 HTTPS 链接后用 Safari 打开。";
       }
 
       function renderCalendarPreview() {
@@ -1530,20 +1530,75 @@
       }
 
       function orderedSelectedIds() {
-        return markets.filter((market) => market.calendar_enabled && selected.has(market.id)).map((market) => market.id);
+        return normalizeSelectedMarketIds(Array.from(selected), markets);
       }
 
       function buildSubscriptionLink(protocol) {
         const ids = orderedSelectedIds();
         if (!ids.length) return "";
-        const extension = protocol === "profile" ? "mobileconfig" : "ics";
-        const httpsUrl = new URL(`calendars/${ids.join("__")}.${extension}`, window.location.href);
-        httpsUrl.search = "";
+        const token = encodeSelectionToToken(ids, markets);
+        if (!token) return "";
+        const httpsUrl = new URL("/api/calendar.ics", window.location.origin);
+        httpsUrl.searchParams.set("s", token);
         httpsUrl.hash = "";
         if (protocol === "webcal") {
           httpsUrl.protocol = "webcal:";
         }
         return httpsUrl.toString();
+      }
+
+      function getSubscribableMarkets(items) {
+        return items.filter((market) => isSubscribableMarket(market));
+      }
+
+      function isSubscribableMarket(market) {
+        return Boolean(
+          market &&
+          market.id &&
+          market.market_type === "periodic_fair" &&
+          market.calendar_enabled === true &&
+          market.verification_status === "verified" &&
+          hasValidScheduleRule(market)
+        );
+      }
+
+      function hasValidScheduleRule(market) {
+        if (market.schedule_type === "lunar_days") return Array.isArray(market.lunar_days) && market.lunar_days.length > 0;
+        if (market.schedule_type === "weekly") return typeof market.weekday === "number" || (Array.isArray(market.weekday) && market.weekday.length > 0);
+        if (market.schedule_type === "gregorian_month_days") return Array.isArray(market.month_days) && market.month_days.length > 0;
+        return false;
+      }
+
+      function normalizeSelectedMarketIds(selectedMarketIds, items) {
+        const selectedIds = new Set(selectedMarketIds.map((id) => String(id)));
+        return getSubscribableMarkets(items)
+          .filter((market) => selectedIds.has(String(market.id)))
+          .map((market) => String(market.id));
+      }
+
+      function encodeSelectionToToken(selectedMarketIds, items) {
+        const subscribable = getSubscribableMarkets(items);
+        const selectedIds = new Set(normalizeSelectedMarketIds(selectedMarketIds, items));
+        if (!selectedIds.size) return "";
+        const bytes = new Uint8Array(Math.ceil(subscribable.length / 8));
+        subscribable.forEach((market, index) => {
+          if (selectedIds.has(String(market.id))) {
+            bytes[Math.floor(index / 8)] |= 1 << (index % 8);
+          }
+        });
+        return bytesToBase64Url(trimTrailingZeroBytes(bytes));
+      }
+
+      function bytesToBase64Url(bytes) {
+        let binary = "";
+        for (const byte of bytes) binary += String.fromCharCode(byte);
+        return btoa(binary).replace(/\+/gu, "-").replace(/\//gu, "_").replace(/=+$/u, "");
+      }
+
+      function trimTrailingZeroBytes(bytes) {
+        let end = bytes.length;
+        while (end > 0 && bytes[end - 1] === 0) end -= 1;
+        return bytes.slice(0, end);
       }
 
       async function copySubscriptionLink() {

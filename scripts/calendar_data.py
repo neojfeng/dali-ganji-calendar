@@ -22,12 +22,12 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATA_PATH = ROOT / "data" / "markets.json"
 DEFAULT_EVENTS_PATH = ROOT / "public" / "events.json"
 DEFAULT_PUBLIC_MARKETS_PATH = ROOT / "public" / "markets.json"
-DEFAULT_ICS_PATH = ROOT / "public" / "dali-ganji.ics"
 
 CALENDAR_NAME = "大理赶集日历"
 TIMEZONE = "Asia/Shanghai"
 DOMAIN = "dali-ganji-calendar"
 MONTHS_AHEAD = 18
+DATA_NOTICE = "数据由大理赶集攻略整理，赶集时间可能因天气、节假日或当地安排调整，请出行前再确认。"
 
 
 def add_months(day: date, months: int) -> date:
@@ -142,6 +142,9 @@ def build_event_records(markets: list[dict[str, Any]], start: date, end: date) -
                     "summary": name,
                     "location": location,
                     "description": description_for(market),
+                    "uid": f"{market_id}-{event_date.isoformat()}@{DOMAIN}",
+                    "verification_status": verification_status(market),
+                    "calendar_enabled": True,
                     "lat": market.get("lat"),
                     "lng": market.get("lng"),
                     "apple_maps_url": clean(market.get("apple_maps_url")),
@@ -157,8 +160,8 @@ def public_market_records(markets: list[dict[str, Any]]) -> list[dict[str, Any]]
     for index, market in enumerate(markets):
         name = clean(market.get("name"))
         images = market.get("images") if isinstance(market.get("images"), list) else []
-        legacy_image = clean(market.get("image"))
-        primary_image = clean(images[0].get("src")) if images and isinstance(images[0], dict) else legacy_image
+        fallback_image = clean(market.get("image"))
+        primary_image = clean(images[0].get("src")) if images and isinstance(images[0], dict) else fallback_image
         primary_alt = clean(images[0].get("alt")) if images and isinstance(images[0], dict) else clean(market.get("image_alt"))
         records.append(
             {
@@ -170,6 +173,7 @@ def public_market_records(markets: list[dict[str, Any]]) -> list[dict[str, Any]]
                 "area": clean(market.get("area")) or "其他",
                 "market_type": clean(market.get("market_type")) or "periodic_fair",
                 "calendar_enabled": is_calendar_market(market),
+                "verification_status": verification_status(market),
                 "summary": clean(market.get("summary")) or clean(market.get("intro")),
                 "intro": clean(market.get("intro")) or clean(market.get("summary")),
                 "tags": clean_list(market.get("tags")),
@@ -182,6 +186,9 @@ def public_market_records(markets: list[dict[str, Any]]) -> list[dict[str, Any]]
                 "image_credit": clean(market.get("image_credit")),
                 "images": images,
                 "schedule_type": clean(market.get("schedule_type")),
+                "lunar_days": market.get("lunar_days") if isinstance(market.get("lunar_days"), list) else [],
+                "weekday": market.get("weekday") if isinstance(market.get("weekday"), (int, list)) else [],
+                "month_days": market.get("month_days") if isinstance(market.get("month_days"), list) else [],
                 "schedule_text": clean(market.get("schedule_text")),
                 "open_text": clean(market.get("open_text")),
                 "best_time": clean(market.get("best_time")),
@@ -206,7 +213,25 @@ def is_calendar_market(market: dict[str, Any]) -> bool:
     return (
         clean(market.get("market_type")) == "periodic_fair"
         and bool(market.get("calendar_enabled"))
+        and verification_status(market) == "verified"
+        and has_valid_schedule_rule(market)
     )
+
+
+def verification_status(market: dict[str, Any]) -> str:
+    return clean(market.get("verification_status"))
+
+
+def has_valid_schedule_rule(market: dict[str, Any]) -> bool:
+    schedule_type = clean(market.get("schedule_type"))
+    if schedule_type == "lunar_days":
+        return bool(clean_list(market.get("lunar_days")))
+    if schedule_type == "weekly":
+        weekdays = market.get("weekday", market.get("weekdays", []))
+        return isinstance(weekdays, int) or bool(clean_list(weekdays))
+    if schedule_type == "gregorian_month_days":
+        return bool(clean_list(market.get("month_days")))
+    return False
 
 
 def clean_list(value: Any) -> list[str]:
@@ -239,6 +264,7 @@ def description_for(market: dict[str, Any]) -> str:
         lines.append(f"导航：{' / '.join(nav_links)}")
     if reminders:
         lines.append(f"提醒：{'、'.join(reminders[:3])}")
+    lines.append(f"数据说明：{DATA_NOTICE}")
     return "\n".join(lines)
 
 
@@ -316,7 +342,7 @@ def build_ics_from_events(events: list[dict[str, Any]], calendar_name: str = CAL
     lines = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
-        "PRODID:-//Dali Ganji Calendar//CN",
+        "PRODID:-//Jfeng//Dali Ganji Calendar//ZH-CN",
         "CALSCALE:GREGORIAN",
         "METHOD:PUBLISH",
     ]
@@ -326,7 +352,7 @@ def build_ics_from_events(events: list[dict[str, Any]], calendar_name: str = CAL
     for event in events:
         event_date = date.fromisoformat(str(event["date"]))
         lines.append("BEGIN:VEVENT")
-        add_property(lines, "UID", f"{event['market_id']}-{event_date.isoformat()}@{DOMAIN}")
+        add_property(lines, "UID", event.get("uid") or f"{event['market_id']}-{event_date.isoformat()}@{DOMAIN}")
         lines.append(f"DTSTAMP:{dtstamp}")
         lines.append(f"DTSTART;VALUE=DATE:{event_date.strftime('%Y%m%d')}")
         lines.append(f"DTEND;VALUE=DATE:{(event_date + timedelta(days=1)).strftime('%Y%m%d')}")

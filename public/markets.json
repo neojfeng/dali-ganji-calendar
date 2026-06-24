@@ -8,6 +8,7 @@
     "area": "古城周边",
     "market_type": "periodic_fair",
     "calendar_enabled": true,
+    "verification_status": "verified",
     "summary": "大理古城附近最有名的传统集市之一，适合第一次体验大理赶集。",
     "intro": "大理古城附近最有名的传统集市之一，适合逛本地小吃、蔬菜水果、手作和日用品。",
     "tags": [
@@ -38,6 +39,14 @@
       }
     ],
     "schedule_type": "lunar_days",
+    "lunar_days": [
+      2,
+      9,
+      16,
+      23
+    ],
+    "weekday": [],
+    "month_days": [],
     "schedule_text": "农历初二、初九、十六、二十三赶集",
     "open_text": "",
     "best_time": "上午 8:30-11:30 品类更丰富，傍晚可能更便宜",
@@ -84,6 +93,7 @@
     "area": "古城周边",
     "market_type": "periodic_fair",
     "calendar_enabled": true,
+    "verification_status": "verified",
     "summary": "古城里的文创和生活方式市集，更适合轻松逛摊、喝咖啡和看手作。",
     "intro": "床单厂集市以文创、手作、咖啡小吃和周末活动为主，更像古城里的生活方式市集。",
     "tags": [
@@ -114,6 +124,12 @@
       }
     ],
     "schedule_type": "weekly",
+    "lunar_days": [],
+    "weekday": [
+      5,
+      6
+    ],
+    "month_days": [],
     "schedule_text": "每周六、周日市集（以当周活动为准）",
     "open_text": "",
     "best_time": "下午摊位和活动氛围更完整，上午适合避开人流",
@@ -157,6 +173,7 @@
     "area": "古城周边",
     "market_type": "permanent_market",
     "calendar_enabled": false,
+    "verification_status": "verified",
     "summary": "大理古城北门附近的日常菜市场，适合买菜、菌子、水果和本地食材。",
     "intro": "古城北门一带的日常菜市场，适合买蔬菜水果、菌子、鲜花和本地食材。",
     "tags": [
@@ -186,6 +203,9 @@
       }
     ],
     "schedule_type": "",
+    "lunar_days": [],
+    "weekday": [],
+    "month_days": [],
     "schedule_text": "",
     "open_text": "每天开放",
     "best_time": "",
@@ -230,6 +250,7 @@
     "area": "喜洲周边",
     "market_type": "periodic_fair",
     "calendar_enabled": true,
+    "verification_status": "verified",
     "summary": "靠近洱海西线和田园村落的乡镇集市，适合感受本地生活。",
     "intro": "银桥街集市靠近洱海西线和田园村落，是银桥镇本地采购和赶街的重要集市。",
     "tags": [
@@ -260,6 +281,14 @@
       }
     ],
     "schedule_type": "lunar_days",
+    "lunar_days": [
+      5,
+      13,
+      20,
+      28
+    ],
+    "weekday": [],
+    "month_days": [],
     "schedule_text": "农历初五、十三、二十、二十八赶集",
     "open_text": "",
     "best_time": "上午 8:00-11:00 摊位更齐，午后逐渐收摊",
@@ -302,6 +331,7 @@
     "area": "洱海北部",
     "market_type": "periodic_fair",
     "calendar_enabled": true,
+    "verification_status": "verified",
     "summary": "洱海西线北段的乡镇大集，常见农产品、日用品和本地小吃。",
     "intro": "湾桥镇集市服务洱海西线北段村镇，常见本地农产品、日用品和乡镇小吃。",
     "tags": [
@@ -332,6 +362,14 @@
       }
     ],
     "schedule_type": "lunar_days",
+    "lunar_days": [
+      4,
+      11,
+      18,
+      26
+    ],
+    "weekday": [],
+    "month_days": [],
     "schedule_text": "农历初四、十一、十八、二十六赶集",
     "open_text": "",
     "best_time": "上午 8:00-11:30 更热闹，午后摊位减少",
@@ -375,6 +413,7 @@
     "area": "其他",
     "market_type": "periodic_fair",
     "calendar_enabled": true,
+    "verification_status": "verified",
     "summary": "凤仪镇逢五逢十的乡镇大集，适合看更日常的本地采购场景。",
     "intro": "凤仪街集市是凤仪镇逢五逢十的乡镇大集，常见农副产品、小吃和日用百货。",
     "tags": [
@@ -405,6 +444,16 @@
       }
     ],
     "schedule_type": "gregorian_month_days",
+    "lunar_days": [],
+    "weekday": [],
+    "month_days": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
     "schedule_text": "每月公历逢五、逢十赶集",
     "open_text": "",
     "best_time": "上午 8:00-11:30 更热闹，午后部分摊位减少",

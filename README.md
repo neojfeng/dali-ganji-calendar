@@ -1,263 +1,216 @@
-# 大理赶集攻略 + Apple 日历订阅
+# 大理赶集攻略 + 动态 Apple 日历订阅
 
-这是一个移动端优先的“大理赶集攻略”小工具。用户先查看本周赶集、集市攻略、适合人群、买什么、怎么去和避坑提醒，再把自己常去的周期性集市加入 Apple 日历订阅。
+这是一个移动端优先的“大理赶集攻略”小工具。首页、详情页、图片和公开数据保持静态化；用户选择常去集市后，页面生成短订阅 URL，由 EdgeOne Edge Function 动态返回对应 ICS 日历。
 
-项目继续使用纯静态 GitHub Pages 方案：提前生成公开数据、所有日历组合和 iOS 订阅配置文件，页面在前端按用户选择拼出对应的 HTTPS 订阅链接或 `.mobileconfig` 安装链接。
+## 项目结构
 
-## 核心逻辑
+1. `data/markets.json` 是唯一的集市配置源。
+2. `scripts/generate_events.py` 生成未来 18 个月事件到 `public/events.json`，并生成前端使用的 `public/markets.json`。
+3. `scripts/generate_calendar_data.py` 生成 `edge-functions/_data/calendar-data.js`，供 Edge Function import。
+4. `scripts/build-static.mjs` 把 `public/` 复制到 `dist/`。
+5. `edge-functions/api/calendar.ics.js` 根据 `s` token 动态生成 ICS。
 
-1. `data/markets.json` 是唯一的集市和攻略数据源。
-2. `scripts/generate_events.py` 读取数据，生成未来 18 个月的赶集事件到 `public/events.json`，并生成前端使用的 `public/markets.json`。
-3. `scripts/generate_ics.py` 生成全量兼容文件 `public/dali-ganji.ics`。
-4. `scripts/generate_static_calendars.py` 生成 `public/calendars/` 下所有非空选择组合的 ICS 和 iOS 订阅配置文件。
-5. `public/index.html` 展示攻略、详情页、定位距离和个性化订阅交互。
-
-示例订阅链接：
+订阅链接格式：
 
 ```text
-https://neojfeng.github.io/dali-ganji-calendar/calendars/sanyuejie__yinqiaojie.ics
-https://neojfeng.github.io/dali-ganji-calendar/calendars/sanyuejie__yinqiaojie.mobileconfig
+https://example.com/api/calendar.ics?s=BQ
+webcal://example.com/api/calendar.ics?s=BQ
 ```
+
+## 选择 Token
+
+token 不依赖数据库。它只基于 `markets.json` 中可订阅集市的顺序：
+
+1. 可订阅集市按 `markets.json` 顺序分配 index。
+2. 用户选择用 bitset 表示。
+3. bitset 编码为 base64url 短字符串。
+4. 解码时忽略超出当前集市数量的 bit。
+5. 如果 token 包含后来被禁用或改为 `needs_verification` 的集市，接口会过滤掉它，不生成事件。
+
+共享函数在 `edge-functions/_shared/calendar.js`：
+
+- `getSubscribableMarkets(markets)`
+- `encodeSelectionToToken(selectedMarketIds, markets)`
+- `decodeTokenToMarketIds(token, markets)`
+- `normalizeSelectedMarketIds(selectedMarketIds, markets)`
 
 ## 哪些地点会生成日历事件
 
-只有同时满足以下条件的地点才会生成 ICS 事件，也才能在页面中“加入日历”：
+只有同时满足以下条件的地点才会生成 ICS 事件：
 
 - `market_type` 是 `periodic_fair`
 - `calendar_enabled` 是 `true`
+- `verification_status` 是 `verified`
+- 有有效 `schedule_type` 和日期规则
 
-以下情况不会生成日历事件：
+以下地点不会生成日历事件：
 
-- `market_type` 是 `permanent_market` 的常设市场，例如北门菜市场。
-- `calendar_enabled` 是 `false` 的地点。
+- `permanent_market` 常设市场
+- `verification_status: "needs_verification"`
+- `calendar_enabled: false`
+- 没有日期规则的地点
 
-静态组合文件仍会保留历史 market_id 组合；如果组合里包含常设市场或未启用日历的地点，它们不会产生事件。
+## 本地开发
 
-## 本地运行
+安装 Python 依赖：
 
 ```bash
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
+```
+
+构建静态输出和 Edge 数据模块：
+
+```bash
+npm run build
+```
+
+如果本机没有 `npm`，也可以直接执行：
+
+```bash
 .venv/bin/python scripts/generate_events.py
-.venv/bin/python scripts/generate_ics.py
-.venv/bin/python scripts/generate_static_calendars.py
-python3 -m http.server 8000 --directory public
+.venv/bin/python scripts/generate_calendar_data.py
+node scripts/build-static.mjs
+```
+
+本地仅预览静态页面：
+
+```bash
+python3 -m http.server 8000 --directory dist
 ```
 
 打开：
 
 ```text
 http://localhost:8000
-```
-
-测试详情页：
-
-```text
 http://localhost:8000/?market=sanyuejie
 ```
 
-测试静态组合 ICS：
+本地完整调试 Edge Function 可使用 EdgeOne Makers：
+
+```bash
+npm run dev
+```
+
+## 构建和测试
+
+构建：
+
+```bash
+npm run build
+```
+
+测试：
+
+```bash
+npm test
+```
+
+测试覆盖 token 双向转换、点击顺序稳定性、不可订阅地点过滤、有效和无效 `/api/calendar.ics?s=...` 响应、选中/未选中集市筛选、中文转义和 description 换行。
+
+手动测试动态 ICS：
 
 ```text
-http://localhost:8000/calendars/sanyuejie__yinqiaojie.ics
+https://your-domain.example/api/calendar.ics?s=BQ
 ```
 
-## 部署到 GitHub Pages
-
-仓库包含 `.github/workflows/deploy-pages.yml`。push 到 `main` 后，GitHub Actions 会自动：
-
-1. 安装 Python 依赖。
-2. 重新生成 `public/events.json` 和 `public/markets.json`。
-3. 重新生成 `public/dali-ganji.ics`。
-4. 重新生成 `public/calendars/` 下的组合 ICS 和 iOS 订阅配置文件。
-5. 发布 `public/` 到 GitHub Pages。
-
-发布地址：
+响应头应包含：
 
 ```text
-https://neojfeng.github.io/dali-ganji-calendar/
+Content-Type: text/calendar; charset=utf-8
+Cache-Control: public, max-age=3600
 ```
 
-第一次配置 Pages 时，在 GitHub 仓库打开 `Settings -> Pages`，`Build and deployment` 的 `Source` 选择 `GitHub Actions`。
+## EdgeOne Pages / Makers 部署
 
-## 数据结构
+建议配置：
 
-周期性赶集点示例：
+- Framework Preset: `None` / `Static`
+- Root Directory: `./`
+- Install Command: `npm install && python3 -m pip install -r requirements.txt`
+- Build Command: `npm run build`
+- Output Directory: `dist`
+- Node Version: `20` 或 `22`
 
-```json
-{
-  "id": "sanyuejie",
-  "name": "三月街赶集",
-  "area": "古城周边",
-  "market_type": "periodic_fair",
-  "calendar_enabled": true,
-  "summary": "大理古城附近最有名的传统集市之一，适合第一次体验大理赶集。",
-  "intro": "大理古城附近最有名的传统集市之一，适合逛本地小吃、蔬菜水果、手作和日用品。",
-  "tags": ["游客友好", "小吃多", "水果", "手作"],
-  "best_for": ["第一次体验", "小吃", "水果", "手作"],
-  "not_for": ["怕人多", "只想安静买菜"],
-  "schedule_type": "lunar_days",
-  "lunar_days": [2, 9, 16, 23],
-  "weekday": null,
-  "schedule_text": "农历初二、初九、十六、二十三赶集",
-  "best_time": "上午 8:30-11:30 品类更丰富，傍晚可能更便宜",
-  "duration": "建议预留 1.5-2.5 小时",
-  "location_name": "三月街",
-  "address": "大理古城苍山门对面",
-  "lat": 25.6957,
-  "lng": 100.1518,
-  "transport_tips": "打车可定位三月街，古城内步行前往也方便。",
-  "parking_tips": "赶集日周边人流较多，建议优先打车、步行或骑行。",
-  "route_tips": "建议从靠苍山一侧开始往古城方向逛，最后顺路到苍山门附近。",
-  "what_to_buy": ["水果", "蔬菜", "菌子", "乳扇", "烧饵块"],
-  "food_tips": ["烧饵块", "乳扇", "米线"],
-  "photo_tips": "拍摊主、老人和特写前建议先询问。",
-  "avoid_pitfalls": ["货比三家", "注意称重"],
-  "nearby_places": ["大理古城", "苍山门"],
-  "images": [
-    {
-      "src": "/images/markets/sanyuejie.jpg",
-      "alt": "三月街赶集摊位"
-    }
-  ],
-  "apple_maps_url": "",
-  "amap_url": ""
-}
+Edge Function 文件位于：
+
+```text
+edge-functions/api/calendar.ics.js
 ```
 
-常设市场示例：
+目标访问路由：
 
-```json
-{
-  "id": "beimen-caishichang",
-  "name": "北门菜市场",
-  "area": "古城周边",
-  "market_type": "permanent_market",
-  "calendar_enabled": false,
-  "summary": "大理古城北门附近的日常菜市场，适合买菜、菌子、水果和本地食材。",
-  "open_text": "每天开放",
-  "tags": ["常设市场", "买菜", "水果", "菌子"],
-  "location_name": "北门菜市场",
-  "address": "大理古城北门附近",
-  "lat": 25.7008,
-  "lng": 100.1622,
-  "images": []
-}
+```text
+/api/calendar.ics?s={selection_token}
 ```
 
-`id` 会进入订阅 URL 和事件 UID，后续不要随意修改。
+## iPhone 日历订阅
 
-## 赶集规则
+1. 打开首页，选择一个或多个集市。
+2. 点击底部“生成日历”。
+3. Safari 中点“一键订阅 Apple 日历”，页面会打开 `webcal://` 链接。
+4. 按系统提示添加订阅日历。
+5. 添加后可在 iPhone 日历列表中单独关闭显示或删除。
 
-农历固定日期：
+小红书、微信等内置浏览器可能无法唤起 `webcal://`。这时点击“复制订阅链接”，用 Safari 打开复制的 HTTPS 链接后再添加到 iPhone 日历。
 
-```json
-{
-  "schedule_type": "lunar_days",
-  "lunar_days": [2, 9, 16, 23],
-  "schedule_text": "农历初二、初九、十六、二十三赶集"
-}
-```
+如果看到 “Events” 事件列表，请取消；那是导入一次性事件，不是订阅日历。
 
-每周固定星期：
-
-```json
-{
-  "schedule_type": "weekly",
-  "weekday": [5, 6],
-  "schedule_text": "每周六、周日市集"
-}
-```
-
-`weekday` 使用 Python 的星期编号：周一是 `0`，周日是 `6`。
-
-每月公历固定日期：
-
-```json
-{
-  "schedule_type": "gregorian_month_days",
-  "month_days": [5, 10, 15, 20, 25, 30],
-  "schedule_text": "每月公历逢五、逢十赶集"
-}
-```
-
-## 新增周期性赶集点
+## 新增集市
 
 1. 在 `data/markets.json` 追加对象。
-2. 填写 `id`、`name`、`area`、`market_type: "periodic_fair"`。
-3. 只有确认日期可靠且需要生成订阅事件时，才设置 `calendar_enabled: true`。
-4. 填写 `schedule_type` 和对应规则字段。
-5. 补充 `summary`、`tags`、`best_for`、`what_to_buy`、交通和避坑字段。
-6. 填写 `location_name`、`address`、`lat`、`lng`。
-7. 运行生成脚本并本地测试。
+2. 填写稳定的 `id`，后续不要随意修改；它会进入事件 UID 和订阅 token 的选择顺序。
+3. 周期性赶集点设置 `market_type: "periodic_fair"`。
+4. 确认日期可靠后设置 `calendar_enabled: true` 和 `verification_status: "verified"`。
+5. 填写 `schedule_type` 与对应规则。
+6. 补充 `summary`、攻略字段、地点、坐标和图片。
+7. 运行 `npm run build` 和 `npm test`。
 
-## 新增常设市场
+支持的日期规则：
 
-1. 设置 `market_type: "permanent_market"`。
-2. 设置 `calendar_enabled: false`。
-3. 填写 `open_text`，例如“每天开放”。
-4. 补充攻略字段和地点坐标。
-5. 常设市场会出现在集市列表中，但不会生成日历事件。
-
-## 补充详情页攻略字段
-
-详情页会读取这些字段：
-
-- `summary`：一句话定位。
-- `best_time`：建议到达时间。
-- `duration`：建议停留时间。
-- `best_for` / `not_for`：适合谁、不适合谁。
-- `what_to_buy` / `food_tips`：买什么、吃什么。
-- `route_tips` / `transport_tips` / `parking_tips`：怎么逛、怎么去、停车。
-- `avoid_pitfalls` / `photo_tips`：避坑和拍照提醒。
-- `nearby_places`：周边顺路。
-
-字段缺失时页面会显示兜底文案，不会崩溃。
-
-## 添加或替换图片
-
-图片放在：
-
-```text
-public/images/markets/
+```json
+{ "schedule_type": "lunar_days", "lunar_days": [2, 9, 16, 23] }
 ```
 
-建议命名：
-
-```text
-public/images/markets/{market_id}.jpg
+```json
+{ "schedule_type": "weekly", "weekday": [5, 6] }
 ```
 
-然后在 `images` 里填写：
+```json
+{ "schedule_type": "gregorian_month_days", "month_days": [5, 10, 15, 20, 25, 30] }
+```
+
+`weekday` 使用 Python 编号：周一是 `0`，周日是 `6`。
+
+## 禁用或待核实集市
+
+不确定日期时不要删除集市。优先这样处理：
 
 ```json
 {
-  "images": [
-    {
-      "src": "/images/markets/sanyuejie.jpg",
-      "alt": "三月街赶集摊位"
-    }
-  ]
+  "calendar_enabled": false,
+  "verification_status": "needs_verification"
 }
 ```
 
-图片建议使用 16:10 或 4:3，宽度 1200px 左右即可。不要热链外部网站图片；如果某个集市没有图片，页面会显示 `public/images/markets/placeholder.jpg`。
+这样攻略页仍可保留信息，已有订阅 token 即使包含它，也不会继续生成事件。
 
-## 定位和距离
+常设市场使用：
 
-页面不会自动请求定位。用户点击“📍 使用当前位置”后，浏览器才会请求位置权限。
+```json
+{
+  "market_type": "permanent_market",
+  "calendar_enabled": false
+}
+```
 
-用户位置只在前端本地用于 Haversine 直线距离计算，不会上传到服务器，也不会写入 `localStorage`。如果定位失败，页面会提示用户继续按区域手动选择。
+## 更新赶集规则
 
-## Apple 日历测试
+token 只记录选择了哪些 market index，不记录具体事件。只要 `id` 和 `markets.json` 中已有可订阅集市顺序保持稳定，更新赶集规则后，订阅链接会在下一次日历刷新时自动拿到新事件。
 
-1. 打开首页，浏览本周赶集和集市攻略。
-2. 点击“查看攻略”进入详情页，确认内容正常。
-3. 在首页或详情页点击“加入日历”。
-4. 选择一个或多个集市后，点击底部“生成日历”。
-5. 在 Safari 中点击“安装订阅日历”，按系统提示安装描述文件。
-6. 安装后检查日历 App 中是否出现一个可单独关闭或删除的订阅日历。
-7. 如果无法安装描述文件，点击“复制订阅链接”，到 iPhone 日历 App 中手动添加“订阅日历”。
-8. 如果看到 “Events” 事件列表，取消操作；那是导入事件，不是订阅日历。
+维护规则：
 
-订阅链接里的 `market_id` 会按 `markets.json` 顺序生成，同一组选项会得到稳定 URL。
+1. 不要随意重排已有可订阅集市。
+2. 不要随意修改已有 `id`。
+3. 新增集市尽量追加到列表后面。
+4. 如果必须下线某个集市，设置 `calendar_enabled: false` 或 `verification_status: "needs_verification"`。

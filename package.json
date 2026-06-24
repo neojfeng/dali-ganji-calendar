@@ -1,0 +1,13 @@
+{
+  "name": "dali-ganji-calendar",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate:events": "([ -x .venv/bin/python ] && .venv/bin/python scripts/generate_events.py) || python3 scripts/generate_events.py",
+    "generate:calendar-data": "([ -x .venv/bin/python ] && .venv/bin/python scripts/generate_calendar_data.py) || python3 scripts/generate_calendar_data.py",
+    "build": "npm run generate:events && npm run generate:calendar-data && node scripts/build-static.mjs",
+    "test": "npm run generate:calendar-data && node --test",
+    "dev": "edgeone makers dev"
+  }
+}
