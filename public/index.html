@@ -1042,16 +1042,12 @@
           renderCalendarPreview();
         });
         subscribeButton.addEventListener("click", (event) => {
+          event.preventDefault();
           if (inAppBrowser) {
-            event.preventDefault();
             copySubscriptionLink();
             return;
           }
-          if (!subscribeButton.getAttribute("href") || subscribeButton.getAttribute("href") === "#") {
-            event.preventDefault();
-            return;
-          }
-          copyStatus.textContent = "按系统提示添加订阅日历。添加后可在日历列表里单独关闭或删除。";
+          openAppleCalendarSubscription();
         });
         copyButton.addEventListener("click", copySubscriptionLink);
         window.addEventListener("popstate", renderRoute);
@@ -1545,6 +1541,13 @@
           httpsUrl.protocol = "webcal:";
         }
         return httpsUrl.toString();
+      }
+
+      function openAppleCalendarSubscription() {
+        const link = buildSubscriptionLink("webcal");
+        if (!link) return;
+        copyStatus.textContent = "正在打开 Apple 日历订阅确认页...";
+        window.location.assign(link);
       }
 
       function getSubscribableMarkets(items) {
