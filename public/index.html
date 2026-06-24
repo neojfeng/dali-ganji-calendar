@@ -396,12 +396,19 @@
       .card-button,
       .plain-button,
       .subscribe-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
         min-height: 34px;
         border: 0;
         border-radius: 999px;
         padding: 0 12px;
+        font-family: inherit;
         font-size: 13px;
         font-weight: 600;
+        line-height: 1;
+        text-decoration: none;
         transition: transform 150ms ease, background 150ms ease, opacity 150ms ease;
       }
 
@@ -948,7 +955,7 @@
         </div>
         <div class="panel-actions">
           <button class="subscribe-button" id="copyButton" type="button">复制订阅链接</button>
-          <button class="plain-button" id="subscribeButton" type="button">尝试系统订阅</button>
+          <a class="plain-button" id="subscribeButton" href="#" rel="noopener">一键订阅 Apple 日历</a>
         </div>
         <p class="panel-help" id="copyStatus">复制 HTTPS 链接后，到 iPhone 日历里添加“订阅日历”，这样可以随时关闭显示或删除订阅。</p>
         <ol class="subscription-steps">
@@ -1034,12 +1041,17 @@
           previewMonthOffset += 1;
           renderCalendarPreview();
         });
-        subscribeButton.addEventListener("click", () => {
+        subscribeButton.addEventListener("click", (event) => {
           if (inAppBrowser) {
+            event.preventDefault();
             copySubscriptionLink();
             return;
           }
-          openSystemSubscription();
+          if (!subscribeButton.getAttribute("href") || subscribeButton.getAttribute("href") === "#") {
+            event.preventDefault();
+            return;
+          }
+          copyStatus.textContent = "如果打开的是 “Events” 事件列表，请取消，改用复制链接手动添加订阅日历。";
         });
         copyButton.addEventListener("click", copySubscriptionLink);
         window.addEventListener("popstate", renderRoute);
@@ -1441,13 +1453,15 @@
         if (inAppBrowser) {
           actions.classList.add("is-single");
           copyButton.textContent = "复制订阅链接";
-          subscribeButton.textContent = "尝试系统订阅";
+          subscribeButton.textContent = "一键订阅 Apple 日历";
+          subscribeButton.href = buildSubscriptionLink("https") || "#";
           copyStatus.textContent = "微信或小红书里不能直接唤起订阅。复制 HTTPS 链接后，到 iPhone 日历里添加“订阅日历”。";
           return;
         }
         actions.classList.remove("is-single");
         copyButton.textContent = "复制订阅链接";
-        subscribeButton.textContent = "尝试系统订阅";
+        subscribeButton.textContent = "一键订阅 Apple 日历";
+        subscribeButton.href = buildSubscriptionLink("webcal") || "#";
         copyStatus.textContent = "复制 HTTPS 链接后，到 iPhone 日历里添加“订阅日历”，这样可以随时关闭显示或删除订阅。";
       }
 
@@ -1529,13 +1543,6 @@
           httpsUrl.protocol = "webcal:";
         }
         return httpsUrl.toString();
-      }
-
-      function openSystemSubscription() {
-        const link = buildSubscriptionLink("webcal");
-        if (!link) return;
-        copyStatus.textContent = "如果打开的是 “Events” 事件列表，请取消，改用复制链接手动添加订阅日历。";
-        window.location.href = link;
       }
 
       async function copySubscriptionLink() {
