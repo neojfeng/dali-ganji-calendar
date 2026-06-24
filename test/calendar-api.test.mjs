@@ -3,7 +3,9 @@ import { test } from "node:test";
 
 import { calendarData } from "../edge-functions/_data/calendar-data.js";
 import { handleRequest } from "../edge-functions/api/calendar.ics.js";
+import { handleRequest as handleMobileConfigRequest } from "../edge-functions/api/calendar.mobileconfig.js";
 import vercelHandler from "../api/calendar.ics.js";
+import vercelMobileConfigHandler from "../api/calendar.mobileconfig.js";
 import {
   buildIcsForMarketIds,
   buildIcsFromEvents,
@@ -73,6 +75,21 @@ test("clean calendar feed URL works for subscription clients", async () => {
   assert.match(vercelResponse.body, /银桥街集市/);
 });
 
+test("mobileconfig endpoint installs a subscribed calendar account", async () => {
+  const token = encodeSelectionToToken(["sanyuejie", "yinqiaojie"], calendarData.markets);
+  const edgeResponse = await handleMobileConfigRequest(new Request(`https://example.com/calendar/${token}.mobileconfig`));
+  const edgeBody = await edgeResponse.text();
+  const vercelResponse = await invokeVercelHandler(`/calendar/${token}.mobileconfig`, vercelMobileConfigHandler);
+
+  assert.equal(edgeResponse.status, 200);
+  assert.equal(edgeResponse.headers.get("Content-Type"), "application/x-apple-aspen-config; charset=utf-8");
+  assert.match(edgeBody, /com\.apple\.subscribedcalendar\.account/);
+  assert.match(edgeBody, /https:\/\/example\.com\/calendar\/BQ\.ics/);
+  assert.match(edgeBody, /大理赶集日历/);
+  assert.equal(vercelResponse.headers["Content-Type"], "application/x-apple-aspen-config; charset=utf-8");
+  assert.match(vercelResponse.body, /com\.apple\.subscribedcalendar\.account/);
+});
+
 test("calendar API returns an empty calendar for an invalid token without crashing", async () => {
   const response = await handleRequest(new Request("https://example.com/api/calendar.ics?s=!!!!"));
   const body = await response.text();
@@ -108,13 +125,13 @@ test("Chinese fields, commas, semicolons, backslashes, and description newlines 
   assert.match(ics, /DESCRIPTION:第一行\\n第二行\\,带逗号\\;和反斜杠\\\\/);
 });
 
-async function invokeVercelHandler(url) {
+async function invokeVercelHandler(url, handler = vercelHandler) {
   const result = {
     headers: {},
     statusCode: undefined,
     body: ""
   };
-  await vercelHandler(
+  await handler(
     {
       url,
       headers: {

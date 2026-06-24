@@ -94,6 +94,63 @@ export function emptyCalendar() {
   return buildIcsFromEvents([], CALENDAR_NAME);
 }
 
+export function buildMobileConfigProfile({ token, selectedMarketIds, data, subscriptionUrl }) {
+  const markets = Array.isArray(data?.markets) ? data.markets : [];
+  const normalizedIds = normalizeSelectedMarketIds(selectedMarketIds, markets);
+  const title = calendarTitle(normalizedIds, markets);
+  const stableKey = `${subscriptionUrl}#${token || normalizedIds.join(",")}`;
+  const profileUuid = stableUuid(`${stableKey}:profile`);
+  const calendarUuid = stableUuid(`${stableKey}:calendar`);
+  const identifierStem = token || normalizedIds.join(".");
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>PayloadContent</key>
+  <array>
+    <dict>
+      <key>PayloadDescription</key>
+      <string>${xmlEscape(`订阅 ${title}`)}</string>
+      <key>PayloadDisplayName</key>
+      <string>${xmlEscape(title)}</string>
+      <key>PayloadIdentifier</key>
+      <string>${xmlEscape(`com.jfeng.dali-ganji-calendar.subscribed-calendar.${identifierStem}`)}</string>
+      <key>PayloadType</key>
+      <string>com.apple.subscribedcalendar.account</string>
+      <key>PayloadUUID</key>
+      <string>${calendarUuid}</string>
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+      <key>SubCalAccountDescription</key>
+      <string>${xmlEscape(title)}</string>
+      <key>SubCalAccountHostName</key>
+      <string>${xmlEscape(subscriptionUrl)}</string>
+      <key>SubCalAccountUseSSL</key>
+      <true/>
+    </dict>
+  </array>
+  <key>PayloadDescription</key>
+  <string>${xmlEscape(`安装后会添加订阅日历：${title}`)}</string>
+  <key>PayloadDisplayName</key>
+  <string>${xmlEscape(title)}</string>
+  <key>PayloadIdentifier</key>
+  <string>${xmlEscape(`com.jfeng.dali-ganji-calendar.profile.${identifierStem}`)}</string>
+  <key>PayloadOrganization</key>
+  <string>${xmlEscape(CALENDAR_NAME)}</string>
+  <key>PayloadRemovalDisallowed</key>
+  <false/>
+  <key>PayloadType</key>
+  <string>Configuration</string>
+  <key>PayloadUUID</key>
+  <string>${profileUuid}</string>
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+</dict>
+</plist>
+`;
+}
+
 function isSubscribableMarket(market) {
   return (
     market &&
@@ -181,4 +238,46 @@ function base64UrlToBytes(token) {
   } catch (error) {
     return null;
   }
+}
+
+function xmlEscape(value) {
+  return String(value ?? "")
+    .replace(/&/gu, "&amp;")
+    .replace(/</gu, "&lt;")
+    .replace(/>/gu, "&gt;")
+    .replace(/"/gu, "&quot;")
+    .replace(/'/gu, "&apos;");
+}
+
+function stableUuid(value) {
+  const bytes = cyrb128(value);
+  bytes[6] = (bytes[6] & 0x0f) | 0x50;
+  bytes[8] = (bytes[8] & 0x3f) | 0x80;
+  const hex = Array.from(bytes, (byte) => byte.toString(16).padStart(2, "0")).join("");
+  return `${hex.slice(0, 8)}-${hex.slice(8, 12)}-${hex.slice(12, 16)}-${hex.slice(16, 20)}-${hex.slice(20)}`.toUpperCase();
+}
+
+function cyrb128(value) {
+  let h1 = 1779033703;
+  let h2 = 3144134277;
+  let h3 = 1013904242;
+  let h4 = 2773480762;
+  for (let index = 0; index < value.length; index += 1) {
+    const code = value.charCodeAt(index);
+    h1 = h2 ^ Math.imul(h1 ^ code, 597399067);
+    h2 = h3 ^ Math.imul(h2 ^ code, 2869860233);
+    h3 = h4 ^ Math.imul(h3 ^ code, 951274213);
+    h4 = h1 ^ Math.imul(h4 ^ code, 2716044179);
+  }
+  h1 = Math.imul(h3 ^ (h1 >>> 18), 597399067);
+  h2 = Math.imul(h4 ^ (h2 >>> 22), 2869860233);
+  h3 = Math.imul(h1 ^ (h3 >>> 17), 951274213);
+  h4 = Math.imul(h2 ^ (h4 >>> 19), 2716044179);
+
+  const output = new Uint8Array(16);
+  new DataView(output.buffer).setUint32(0, h1 >>> 0);
+  new DataView(output.buffer).setUint32(4, h2 >>> 0);
+  new DataView(output.buffer).setUint32(8, h3 >>> 0);
+  new DataView(output.buffer).setUint32(12, h4 >>> 0);
+  return output;
 }

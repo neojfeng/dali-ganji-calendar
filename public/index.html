@@ -957,11 +957,11 @@
           <button class="subscribe-button" id="copyButton" type="button">复制订阅链接</button>
           <a class="plain-button" id="subscribeButton" href="#" rel="noopener">一键订阅 Apple 日历</a>
         </div>
-        <p class="panel-help" id="copyStatus">如果无法一键订阅，请复制订阅链接，用 Safari 打开后再添加到 iPhone 日历。</p>
+        <p class="panel-help" id="copyStatus">如果无法一键订阅，请复制订阅链接，在 iPhone 日历里添加订阅日历。</p>
         <ol class="subscription-steps">
-          <li>Safari 里点“一键订阅 Apple 日历”，按系统提示添加订阅。</li>
-          <li>微信或小红书里请先复制 HTTPS 链接，再用 Safari 打开。</li>
-          <li>如果看到 “Events” 事件列表，请取消；那是导入事件，不是订阅。</li>
+          <li>Safari 里点“一键订阅 Apple 日历”，按系统提示安装订阅配置。</li>
+          <li>微信或小红书里请先复制 HTTPS 链接，再到 iPhone 日历里添加订阅日历。</li>
+          <li>如果看到 “Events” 事件列表，请取消；那是导入事件，不是订阅日历。</li>
         </ol>
       </div>
     </section>
@@ -1457,8 +1457,8 @@
         actions.classList.remove("is-single");
         copyButton.textContent = "复制订阅链接";
         subscribeButton.textContent = "一键订阅 Apple 日历";
-        subscribeButton.href = buildSubscriptionLink("webcal") || "#";
-        copyStatus.textContent = "Safari 里可一键唤起 Apple 日历；如果失败，请复制 HTTPS 链接后用 Safari 打开。";
+        subscribeButton.href = buildSubscriptionLink("profile") || "#";
+        copyStatus.textContent = "Safari 里可一键安装订阅配置；如果失败，请复制 HTTPS 链接后手动添加订阅日历。";
       }
 
       function renderCalendarPreview() {
@@ -1534,18 +1534,16 @@
         if (!ids.length) return "";
         const token = encodeSelectionToToken(ids, markets);
         if (!token) return "";
-        const httpsUrl = new URL(`/calendar/${encodeURIComponent(token)}.ics`, window.location.origin);
+        const extension = protocol === "profile" ? "mobileconfig" : "ics";
+        const httpsUrl = new URL(`/calendar/${encodeURIComponent(token)}.${extension}`, window.location.origin);
         httpsUrl.hash = "";
-        if (protocol === "webcal") {
-          httpsUrl.protocol = "webcal:";
-        }
         return httpsUrl.toString();
       }
 
       function openAppleCalendarSubscription() {
-        const link = buildSubscriptionLink("webcal");
+        const link = buildSubscriptionLink("profile");
         if (!link) return;
-        copyStatus.textContent = "正在打开 Apple 日历订阅确认页...";
+        copyStatus.textContent = "正在打开 Apple 日历订阅配置...";
         window.location.assign(link);
       }
 

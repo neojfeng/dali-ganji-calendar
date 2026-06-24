@@ -9,12 +9,13 @@
 3. `scripts/generate_calendar_data.py` 生成 `edge-functions/_data/calendar-data.js`，供 Edge Function import。
 4. `scripts/build-static.mjs` 把 `public/` 复制到 `dist/`。
 5. `edge-functions/api/calendar.ics.js` 根据 `s` token 动态生成 ICS。
+6. `edge-functions/api/calendar.mobileconfig.js` 根据同一个 token 动态生成 iOS 订阅日历配置。
 
 订阅链接格式：
 
 ```text
-https://example.com/api/calendar.ics?s=BQ
-webcal://example.com/api/calendar.ics?s=BQ
+https://example.com/calendar/BQ.ics
+https://example.com/calendar/BQ.mobileconfig
 ```
 
 ## 选择 Token
@@ -106,12 +107,13 @@ npm run build
 npm test
 ```
 
-测试覆盖 token 双向转换、点击顺序稳定性、不可订阅地点过滤、有效和无效 `/api/calendar.ics?s=...` 响应、选中/未选中集市筛选、中文转义和 description 换行。
+测试覆盖 token 双向转换、点击顺序稳定性、不可订阅地点过滤、有效和无效 `/api/calendar.ics?s=...` 响应、干净订阅源 URL、mobileconfig 配置、选中/未选中集市筛选、中文转义和 description 换行。
 
 手动测试动态 ICS：
 
 ```text
-https://your-domain.example/api/calendar.ics?s=BQ
+https://your-domain.example/calendar/BQ.ics
+https://your-domain.example/calendar/BQ.mobileconfig
 ```
 
 响应头应包含：
@@ -136,23 +138,25 @@ Edge Function 文件位于：
 
 ```text
 edge-functions/api/calendar.ics.js
+edge-functions/api/calendar.mobileconfig.js
 ```
 
 目标访问路由：
 
 ```text
 /api/calendar.ics?s={selection_token}
+/api/calendar.mobileconfig?s={selection_token}
 ```
 
 ## iPhone 日历订阅
 
 1. 打开首页，选择一个或多个集市。
 2. 点击底部“生成日历”。
-3. Safari 中点“一键订阅 Apple 日历”，页面会打开 `webcal://` 链接。
-4. 按系统提示添加订阅日历。
+3. Safari 中点“一键订阅 Apple 日历”，页面会打开 `.mobileconfig` 订阅配置。
+4. 按系统提示安装订阅配置。
 5. 添加后可在 iPhone 日历列表中单独关闭显示或删除。
 
-小红书、微信等内置浏览器可能无法唤起 `webcal://`。这时点击“复制订阅链接”，用 Safari 打开复制的 HTTPS 链接后再添加到 iPhone 日历。
+小红书、微信等内置浏览器可能无法安装订阅配置。这时点击“复制订阅链接”，再到 iPhone 日历里手动添加订阅日历。
 
 如果看到 “Events” 事件列表，请取消；那是导入一次性事件，不是订阅日历。
 
