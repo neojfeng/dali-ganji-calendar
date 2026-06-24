@@ -989,6 +989,7 @@
       const prevMonthButton = document.querySelector("#prevMonthButton");
       const nextMonthButton = document.querySelector("#nextMonthButton");
       const inAppBrowser = isRestrictedInAppBrowser();
+      const canUseAppleCalendarShortcut = isAppleCalendarShortcutBrowser();
 
       let markets = [];
       let events = [];
@@ -1438,12 +1439,14 @@
 
       function updateSubscribePanelMode() {
         const actions = copyButton.parentElement;
-        if (inAppBrowser) {
+        if (inAppBrowser || !canUseAppleCalendarShortcut) {
           actions.classList.add("is-single");
           copyButton.textContent = "复制订阅链接";
           subscribeButton.textContent = "一键订阅 Apple 日历";
           subscribeButton.href = buildSubscriptionLink("https") || "#";
-          copyStatus.textContent = "微信或小红书里通常不能唤起日历。复制 HTTPS 链接后，用 Safari 打开再添加到 iPhone 日历。";
+          copyStatus.textContent = inAppBrowser
+            ? "微信或小红书里通常不能唤起日历。复制 HTTPS 链接后，用 Safari 打开再添加到 iPhone 日历。"
+            : "当前浏览器不会打开 iPhone 的订阅日历页面。请复制 HTTPS 链接，在 iPhone Safari 或日历 App 中添加订阅。";
           return;
         }
         actions.classList.remove("is-single");
@@ -1634,6 +1637,13 @@
       function isRestrictedInAppBrowser() {
         const ua = navigator.userAgent.toLowerCase();
         return /micromessenger|xiaohongshu|xhs|aweme|bytedance|toutiao|qq\//.test(ua);
+      }
+
+      function isAppleCalendarShortcutBrowser() {
+        const ua = navigator.userAgent;
+        const isIOS = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+        const isSafari = /Safari/i.test(ua) && !/CriOS|FxiOS|EdgiOS|OPiOS|Chrome|Edg|Firefox/i.test(ua);
+        return isIOS && isSafari;
       }
 
       async function useLocation() {
