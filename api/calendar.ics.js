@@ -36,6 +36,6 @@ function requestUrl(request) {
 }
 
 function tokenFromPath(pathname) {
-  const match = pathname.match(/^\/calendar\/([A-Za-z0-9_-]+)\.ics$/u);
+  const match = pathname.match(/^\/calendar\/(?:v\d+\/)?([A-Za-z0-9_-]+)\.ics$/u);
   return match ? match[1] : "";
 }

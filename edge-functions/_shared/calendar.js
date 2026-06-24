@@ -78,9 +78,13 @@ export function buildIcsFromEvents(events, calendarName = CALENDAR_NAME) {
     addProperty(lines, "UID", event.uid || `${event.market_id}-${event.date}@${DOMAIN}`);
     lines.push(`DTSTAMP:${dtstamp}`);
     lines.push(`DTSTART;VALUE=DATE:${ymd}`);
+    lines.push(`DTEND;VALUE=DATE:${nextDateYmd(ymd)}`);
     addProperty(lines, "SUMMARY", event.summary || event.market_name);
     addProperty(lines, "LOCATION", event.location || "");
     addProperty(lines, "DESCRIPTION", event.description || "");
+    if (event.lat !== undefined && event.lat !== null && event.lng !== undefined && event.lng !== null) {
+      lines.push(`GEO:${event.lat};${event.lng}`);
+    }
     lines.push("TRANSP:TRANSPARENT");
     lines.push("END:VEVENT");
   }
@@ -227,6 +231,17 @@ function trimTrailingZeroBytes(bytes) {
   let end = bytes.length;
   while (end > 0 && bytes[end - 1] === 0) end -= 1;
   return bytes.slice(0, end);
+}
+
+function nextDateYmd(ymd) {
+  const year = Number(ymd.slice(0, 4));
+  const month = Number(ymd.slice(4, 6)) - 1;
+  const day = Number(ymd.slice(6, 8));
+  const next = new Date(Date.UTC(year, month, day + 1));
+  const nextYear = String(next.getUTCFullYear()).padStart(4, "0");
+  const nextMonth = String(next.getUTCMonth() + 1).padStart(2, "0");
+  const nextDay = String(next.getUTCDate()).padStart(2, "0");
+  return `${nextYear}${nextMonth}${nextDay}`;
 }
 
 function base64UrlToBytes(token) {

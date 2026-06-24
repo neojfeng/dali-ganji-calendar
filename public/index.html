@@ -968,6 +968,7 @@
 
     <script>
       const STORAGE_KEY = "dali-ganji-selected-markets";
+      const CALENDAR_FEED_VERSION = "v3";
       const PLACEHOLDER_IMAGE = new URL("images/markets/placeholder.jpg", window.location.href).toString();
       const FILTERS = ["最近", "全部", "附近", "古城周边", "喜洲周边", "洱海北部", "洱海东部", "其他"];
       const app = document.querySelector("#app");
@@ -1538,7 +1539,7 @@
         if (!ids.length) return "";
         const token = encodeSelectionToToken(ids, markets);
         if (!token) return "";
-        const httpsUrl = new URL(`/calendar/${encodeURIComponent(token)}.ics`, window.location.origin);
+        const httpsUrl = new URL(`/calendar/${CALENDAR_FEED_VERSION}/${encodeURIComponent(token)}.ics`, window.location.origin);
         httpsUrl.hash = "";
         if (protocol === "webcal") {
           httpsUrl.protocol = "webcal:";
