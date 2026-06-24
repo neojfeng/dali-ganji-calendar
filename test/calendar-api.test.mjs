@@ -64,9 +64,9 @@ test("Vercel API handler returns the same dynamic ICS response", async () => {
 });
 
 test("clean calendar feed URL works for subscription clients", async () => {
-  const token = encodeSelectionToToken(["sanyuejie", "yinqiaojie"], calendarData.markets);
-  const edgeResponse = await handleRequest(new Request(`https://example.com/calendars/${token}.ics`));
-  const vercelResponse = await invokeVercelHandler(`/calendars/${token}.ics`);
+  const path = "/calendars/sanyuejie__yinqiaojie.ics";
+  const edgeResponse = await handleRequest(new Request(`https://example.com${path}`));
+  const vercelResponse = await invokeVercelHandler(path);
   const edgeBody = await edgeResponse.text();
 
   assert.equal(edgeResponse.status, 200);
@@ -78,15 +78,14 @@ test("clean calendar feed URL works for subscription clients", async () => {
 });
 
 test("mobileconfig endpoint installs a subscribed calendar account", async () => {
-  const token = encodeSelectionToToken(["sanyuejie", "yinqiaojie"], calendarData.markets);
-  const edgeResponse = await handleMobileConfigRequest(new Request(`https://example.com/calendars/${token}.mobileconfig`));
+  const edgeResponse = await handleMobileConfigRequest(new Request("https://example.com/calendars/sanyuejie__yinqiaojie.mobileconfig"));
   const edgeBody = await edgeResponse.text();
-  const vercelResponse = await invokeVercelHandler(`/calendars/${token}.mobileconfig`, vercelMobileConfigHandler);
+  const vercelResponse = await invokeVercelHandler("/calendars/sanyuejie__yinqiaojie.mobileconfig", vercelMobileConfigHandler);
 
   assert.equal(edgeResponse.status, 200);
   assert.equal(edgeResponse.headers.get("Content-Type"), "application/x-apple-aspen-config; charset=utf-8");
   assert.match(edgeBody, /com\.apple\.subscribedcalendar\.account/);
-  assert.match(edgeBody, /https:\/\/example\.com\/calendars\/BQ\.ics/);
+  assert.match(edgeBody, /https:\/\/example\.com\/calendars\/sanyuejie__yinqiaojie\.ics/);
   assert.match(edgeBody, /大理赶集日历/);
   assert.equal(vercelResponse.headers["Content-Type"], "application/x-apple-aspen-config; charset=utf-8");
   assert.match(vercelResponse.body, /com\.apple\.subscribedcalendar\.account/);

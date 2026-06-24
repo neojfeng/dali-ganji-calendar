@@ -1,6 +1,7 @@
 import { calendarData } from "../_data/calendar-data.js";
 import {
   buildIcsForMarketIds,
+  decodePathSelectionToMarketIds,
   decodeTokenToMarketIds,
   emptyCalendar
 } from "../_shared/calendar.js";
@@ -13,8 +14,10 @@ const HEADERS = {
 export async function handleRequest(request) {
   try {
     const url = new URL(request.url);
-    const token = url.searchParams.get("s") || tokenFromPath(url.pathname);
-    const selectedIds = token ? decodeTokenToMarketIds(token, calendarData.markets) : [];
+    const token = url.searchParams.get("s");
+    const selectedIds = token
+      ? decodeTokenToMarketIds(token, calendarData.markets)
+      : decodePathSelectionToMarketIds(selectionFromPath(url.pathname), calendarData.markets);
 
     const ics = selectedIds.length ? buildIcsForMarketIds(selectedIds, calendarData) : emptyCalendar();
     return new Response(ics, { status: 200, headers: HEADERS });
@@ -31,7 +34,7 @@ export default {
   fetch: handleRequest
 };
 
-function tokenFromPath(pathname) {
+function selectionFromPath(pathname) {
   const match = pathname.match(/^\/(?:calendar\/(?:v\d+\/)?|calendars\/)([A-Za-z0-9_-]+)\.ics$/u);
   return match ? match[1] : "";
 }

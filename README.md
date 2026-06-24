@@ -14,8 +14,8 @@
 订阅链接格式：
 
 ```text
-https://example.com/calendars/BQ.ics
-webcal://example.com/calendars/BQ.ics
+https://example.com/calendars/sanyuejie__yinqiaojie.ics
+webcal://example.com/calendars/sanyuejie__yinqiaojie.ics
 ```
 
 ## 选择 Token
@@ -112,8 +112,8 @@ npm test
 手动测试动态 ICS：
 
 ```text
-https://your-domain.example/calendars/BQ.ics
-webcal://your-domain.example/calendars/BQ.ics
+https://your-domain.example/calendars/sanyuejie__yinqiaojie.ics
+webcal://your-domain.example/calendars/sanyuejie__yinqiaojie.ics
 ```
 
 响应头应包含：

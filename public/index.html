@@ -1536,9 +1536,8 @@
       function buildSubscriptionLink(protocol) {
         const ids = orderedSelectedIds();
         if (!ids.length) return "";
-        const token = encodeSelectionToToken(ids, markets);
-        if (!token) return "";
-        const httpsUrl = new URL(`/calendars/${encodeURIComponent(token)}.ics`, window.location.origin);
+        const httpsUrl = new URL(`calendars/${ids.join("__")}.ics`, window.location.href);
+        httpsUrl.search = "";
         httpsUrl.hash = "";
         if (protocol === "webcal") {
           httpsUrl.protocol = "webcal:";

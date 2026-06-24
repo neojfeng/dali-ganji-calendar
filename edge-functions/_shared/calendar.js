@@ -45,6 +45,17 @@ export function decodeTokenToMarketIds(token, markets) {
   return ids;
 }
 
+export function decodePathSelectionToMarketIds(value, markets) {
+  if (typeof value !== "string" || !value) return [];
+  const decoded = decodeURIComponent(value);
+  if (decoded.includes("__")) {
+    return normalizeSelectedMarketIds(decoded.split("__"), markets);
+  }
+  const exact = normalizeSelectedMarketIds([decoded], markets);
+  if (exact.length) return exact;
+  return decodeTokenToMarketIds(decoded, markets);
+}
+
 export function buildIcsForMarketIds(selectedMarketIds, data) {
   const markets = Array.isArray(data?.markets) ? data.markets : [];
   const events = Array.isArray(data?.events) ? data.events : [];

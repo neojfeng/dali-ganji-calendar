@@ -1,6 +1,7 @@
 import { calendarData } from "../_data/calendar-data.js";
 import {
   buildMobileConfigProfile,
+  decodePathSelectionToMarketIds,
   decodeTokenToMarketIds
 } from "../_shared/calendar.js";
 
@@ -12,11 +13,15 @@ const HEADERS = {
 export async function handleRequest(request) {
   try {
     const url = new URL(request.url);
-    const token = url.searchParams.get("s") || tokenFromPath(url.pathname);
-    const selectedIds = token ? decodeTokenToMarketIds(token, calendarData.markets) : [];
-    const subscriptionUrl = new URL(`/calendars/${encodeURIComponent(token || "empty")}.ics`, url.origin).toString();
+    const token = url.searchParams.get("s");
+    const pathSelection = selectionFromPath(url.pathname);
+    const selectedIds = token
+      ? decodeTokenToMarketIds(token, calendarData.markets)
+      : decodePathSelectionToMarketIds(pathSelection, calendarData.markets);
+    const pathStem = selectedIds.length ? selectedIds.join("__") : token || pathSelection || "empty";
+    const subscriptionUrl = new URL(`/calendars/${encodeURIComponent(pathStem)}.ics`, url.origin).toString();
     const profile = buildMobileConfigProfile({
-      token,
+      token: token || pathStem,
       selectedMarketIds: selectedIds,
       data: calendarData,
       subscriptionUrl
@@ -35,7 +40,7 @@ export default {
   fetch: handleRequest
 };
 
-function tokenFromPath(pathname) {
+function selectionFromPath(pathname) {
   const match = pathname.match(/^\/(?:calendar\/(?:v\d+\/)?|calendars\/)([A-Za-z0-9_-]+)\.mobileconfig$/u);
   return match ? match[1] : "";
 }

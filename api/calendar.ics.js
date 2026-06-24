@@ -1,6 +1,7 @@
 import { calendarData } from "../edge-functions/_data/calendar-data.js";
 import {
   buildIcsForMarketIds,
+  decodePathSelectionToMarketIds,
   decodeTokenToMarketIds,
   emptyCalendar
 } from "../edge-functions/_shared/calendar.js";
@@ -22,8 +23,10 @@ export default async function handler(request, response) {
 export function buildCalendarResponse(request) {
   try {
     const url = requestUrl(request);
-    const token = url.searchParams.get("s") || tokenFromPath(url.pathname);
-    const selectedIds = token ? decodeTokenToMarketIds(token, calendarData.markets) : [];
+    const token = url.searchParams.get("s");
+    const selectedIds = token
+      ? decodeTokenToMarketIds(token, calendarData.markets)
+      : decodePathSelectionToMarketIds(selectionFromPath(url.pathname), calendarData.markets);
     return selectedIds.length ? buildIcsForMarketIds(selectedIds, calendarData) : emptyCalendar();
   } catch (error) {
     return emptyCalendar();
@@ -35,7 +38,7 @@ function requestUrl(request) {
   return new URL(request.url || "/api/calendar.ics", `https://${host}`);
 }
 
-function tokenFromPath(pathname) {
+function selectionFromPath(pathname) {
   const match = pathname.match(/^\/(?:calendar\/(?:v\d+\/)?|calendars\/)([A-Za-z0-9_-]+)\.ics$/u);
   return match ? match[1] : "";
 }

@@ -1,6 +1,7 @@
 import { calendarData } from "../edge-functions/_data/calendar-data.js";
 import {
   buildMobileConfigProfile,
+  decodePathSelectionToMarketIds,
   decodeTokenToMarketIds
 } from "../edge-functions/_shared/calendar.js";
 
@@ -20,11 +21,15 @@ export default async function handler(request, response) {
 
 export function buildProfileResponse(request) {
   const url = requestUrl(request);
-  const token = url.searchParams.get("s") || tokenFromPath(url.pathname);
-  const selectedIds = token ? decodeTokenToMarketIds(token, calendarData.markets) : [];
-  const subscriptionUrl = new URL(`/calendars/${encodeURIComponent(token || "empty")}.ics`, url.origin).toString();
+  const token = url.searchParams.get("s");
+  const pathSelection = selectionFromPath(url.pathname);
+  const selectedIds = token
+    ? decodeTokenToMarketIds(token, calendarData.markets)
+    : decodePathSelectionToMarketIds(pathSelection, calendarData.markets);
+  const pathStem = selectedIds.length ? selectedIds.join("__") : token || pathSelection || "empty";
+  const subscriptionUrl = new URL(`/calendars/${encodeURIComponent(pathStem)}.ics`, url.origin).toString();
   return buildMobileConfigProfile({
-    token,
+    token: token || pathStem,
     selectedMarketIds: selectedIds,
     data: calendarData,
     subscriptionUrl
@@ -36,7 +41,7 @@ function requestUrl(request) {
   return new URL(request.url || "/api/calendar.mobileconfig", `https://${host}`);
 }
 
-function tokenFromPath(pathname) {
+function selectionFromPath(pathname) {
   const match = pathname.match(/^\/(?:calendar\/(?:v\d+\/)?|calendars\/)([A-Za-z0-9_-]+)\.mobileconfig$/u);
   return match ? match[1] : "";
 }
