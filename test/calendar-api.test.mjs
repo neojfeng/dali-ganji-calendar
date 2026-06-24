@@ -46,6 +46,7 @@ test("calendar API returns text/calendar for a valid token", async () => {
   assert.equal(response.status, 200);
   assert.equal(response.headers.get("Content-Type"), "text/calendar; charset=utf-8");
   assert.match(body, /BEGIN:VCALENDAR/);
+  assert.doesNotMatch(body, /METHOD:PUBLISH/);
   assert.match(body, new RegExp(`UID:${selected[0]}-`));
 });
 

@@ -959,7 +959,7 @@
         </div>
         <p class="panel-help" id="copyStatus">如果无法一键订阅，请复制订阅链接，在 iPhone 日历里添加订阅日历。</p>
         <ol class="subscription-steps">
-          <li>Safari 里点“一键订阅 Apple 日历”，按系统提示安装订阅配置。</li>
+          <li>Safari 里点“一键订阅 Apple 日历”，按系统提示订阅日历。</li>
           <li>微信或小红书里请先复制 HTTPS 链接，再到 iPhone 日历里添加订阅日历。</li>
           <li>如果看到 “Events” 事件列表，请取消；那是导入事件，不是订阅日历。</li>
         </ol>
@@ -1457,8 +1457,8 @@
         actions.classList.remove("is-single");
         copyButton.textContent = "复制订阅链接";
         subscribeButton.textContent = "一键订阅 Apple 日历";
-        subscribeButton.href = buildSubscriptionLink("profile") || "#";
-        copyStatus.textContent = "Safari 里可一键安装订阅配置；如果失败，请复制 HTTPS 链接后手动添加订阅日历。";
+        subscribeButton.href = buildSubscriptionLink("webcal") || "#";
+        copyStatus.textContent = "Safari 里可一键打开 Apple 日历订阅；如果失败，请复制 HTTPS 链接后手动添加订阅日历。";
       }
 
       function renderCalendarPreview() {
@@ -1534,16 +1534,18 @@
         if (!ids.length) return "";
         const token = encodeSelectionToToken(ids, markets);
         if (!token) return "";
-        const extension = protocol === "profile" ? "mobileconfig" : "ics";
-        const httpsUrl = new URL(`/calendar/${encodeURIComponent(token)}.${extension}`, window.location.origin);
+        const httpsUrl = new URL(`/calendar/${encodeURIComponent(token)}.ics`, window.location.origin);
         httpsUrl.hash = "";
+        if (protocol === "webcal") {
+          httpsUrl.protocol = "webcal:";
+        }
         return httpsUrl.toString();
       }
 
       function openAppleCalendarSubscription() {
-        const link = buildSubscriptionLink("profile");
+        const link = buildSubscriptionLink("webcal");
         if (!link) return;
-        copyStatus.textContent = "正在打开 Apple 日历订阅配置...";
+        copyStatus.textContent = "正在打开 Apple 日历订阅确认页...";
         window.location.assign(link);
       }
 

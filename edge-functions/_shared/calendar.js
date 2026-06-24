@@ -63,8 +63,7 @@ export function buildIcsFromEvents(events, calendarName = CALENDAR_NAME) {
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
     `PRODID:${PRODID}`,
-    "CALSCALE:GREGORIAN",
-    "METHOD:PUBLISH"
+    "CALSCALE:GREGORIAN"
   ];
   addProperty(lines, "X-WR-CALNAME", calendarName);
   addProperty(lines, "X-WR-TIMEZONE", TIMEZONE);
