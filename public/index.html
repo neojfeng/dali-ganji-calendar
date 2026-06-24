@@ -8,19 +8,21 @@
     <style>
       :root {
         color-scheme: light;
-        --bg: #f5f3ef;
-        --surface: rgba(255, 255, 255, 0.86);
+        --bg: #f2f2f7;
+        --surface: #fff;
         --white: #fff;
         --text: #1d1d1f;
-        --muted: #6e6e73;
-        --subtle: #8f8f95;
-        --line: rgba(29, 29, 31, 0.08);
-        --accent: #0a84ff;
-        --accent-soft: #eef6ff;
+        --muted: #8e8e93;
+        --subtle: #aeaeb2;
+        --line: rgba(0, 0, 0, 0.06);
+        --accent: #007aff;
+        --accent-soft: #eaf4ff;
         --green: #2f8a58;
         --warning: #9a6500;
-        --shadow: 0 10px 30px rgba(40, 36, 32, 0.08);
-        --shadow-strong: 0 18px 46px rgba(29, 29, 31, 0.14);
+        --hairline: 0.5px solid rgba(0, 0, 0, 0.06);
+        --bar-line: 0.5px solid rgba(0, 0, 0, 0.1);
+        --shadow: none;
+        --shadow-strong: 0 8px 24px rgba(0, 0, 0, 0.08);
       }
 
       * {
@@ -30,9 +32,7 @@
       body {
         margin: 0;
         min-height: 100vh;
-        background:
-          radial-gradient(circle at 18% -10%, rgba(255, 255, 255, 0.95), transparent 22rem),
-          linear-gradient(180deg, #fbfaf7 0%, var(--bg) 52%, #ebe6dd 100%);
+        background: var(--bg);
         color: var(--text);
         font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
         line-height: 1.5;
@@ -76,6 +76,7 @@
       h1 {
         margin-bottom: 0;
         font-size: clamp(32px, 9vw, 44px);
+        font-weight: 700;
         line-height: 1.05;
         letter-spacing: 0;
       }
@@ -94,16 +95,19 @@
       }
 
       .pill-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
         min-height: 36px;
         border: 0;
         border-radius: 999px;
         padding: 0 14px;
-        background: #1d1d1f;
-        color: #fff;
+        background: #fff;
+        color: var(--accent);
         font-size: 14px;
-        font-weight: 850;
-        box-shadow: 0 8px 20px rgba(29, 29, 31, 0.14);
-        transition: transform 150ms ease, opacity 150ms ease;
+        font-weight: 600;
+        box-shadow: none;
+        transition: transform 150ms ease, opacity 150ms ease, background 150ms ease;
       }
 
       .pill-button:active,
@@ -115,6 +119,25 @@
 
       .pill-button:disabled {
         opacity: 0.62;
+      }
+
+      .button-icon,
+      .meta-icon {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        flex: 0 0 auto;
+        color: currentColor;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+
+      .meta-icon {
+        width: 14px;
+        height: 14px;
       }
 
       .privacy-note {
@@ -149,9 +172,7 @@
         white-space: nowrap;
       }
 
-      .week-list,
       .market-list,
-      .permanent-list,
       .detail-grid {
         display: grid;
         gap: 10px;
@@ -159,20 +180,11 @@
 
       .week-card,
       .market-card,
-      .permanent-card,
       .detail-card {
-        border: 1px solid rgba(255, 255, 255, 0.48);
+        border: var(--hairline);
         border-radius: 22px;
         background: var(--surface);
         box-shadow: var(--shadow);
-        backdrop-filter: blur(18px);
-      }
-
-      .week-card {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) auto;
-        gap: 10px;
-        padding: 12px;
       }
 
       .week-title,
@@ -181,7 +193,7 @@
       .detail-card h3 {
         margin: 0;
         font-size: 16px;
-        font-weight: 900;
+        font-weight: 700;
         line-height: 1.22;
         letter-spacing: 0;
       }
@@ -209,7 +221,7 @@
         background: #f1eee7;
         color: var(--text);
         font-size: 12px;
-        font-weight: 850;
+        font-weight: 600;
         text-align: center;
       }
 
@@ -232,25 +244,33 @@
         border: 0;
         border-radius: 999px;
         padding: 0 14px;
-        background: rgba(255, 255, 255, 0.82);
+        background: rgba(255, 255, 255, 0.8);
         color: var(--text);
         font-size: 14px;
-        font-weight: 850;
+        font-weight: 600;
         box-shadow: inset 0 0 0 1px var(--line);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         transition: background 150ms ease, color 150ms ease, box-shadow 150ms ease;
       }
 
       .filter-chip.is-active {
-        background: #1d1d1f;
+        background: var(--accent);
         color: #fff;
         box-shadow: none;
       }
 
+      .week-card,
       .market-card {
-        display: grid;
-        grid-template-columns: 82px minmax(0, 1fr);
-        gap: 12px;
-        padding: 10px;
+        padding: 12px;
+        cursor: pointer;
+        transition: background 150ms ease, transform 150ms ease;
+      }
+
+      .week-card:active,
+      .market-card:active {
+        background: rgba(255, 255, 255, 0.72);
+        transform: scale(0.995);
       }
 
       .thumb {
@@ -273,7 +293,15 @@
         min-width: 0;
       }
 
+      .card-title-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
       .market-name {
+        min-width: 0;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -291,7 +319,17 @@
       }
 
       .address {
+        display: flex;
+        align-items: center;
+        gap: 4px;
         color: var(--muted);
+      }
+
+      .address span {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
 
       .tag-row {
@@ -306,14 +344,53 @@
         background: rgba(29, 29, 31, 0.06);
         color: #4b4b51;
         font-size: 11px;
-        font-weight: 760;
-        padding: 3px 7px;
+        font-weight: 500;
+        padding: 2px 6px;
       }
 
       .actions {
         display: flex;
+        justify-content: flex-end;
         gap: 8px;
         margin-top: 10px;
+      }
+
+      .card-icon-button {
+        display: grid;
+        width: 30px;
+        height: 30px;
+        flex: 0 0 auto;
+        place-items: center;
+        border: 0;
+        border-radius: 50%;
+        background: var(--accent);
+        color: #fff;
+        padding: 0;
+        transition: transform 150ms ease, background 150ms ease, opacity 150ms ease;
+      }
+
+      .card-icon-button svg {
+        width: 16px;
+        height: 16px;
+        stroke: currentColor;
+        stroke-width: 2.4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+
+      .card-icon-button.is-added {
+        background: var(--accent-soft);
+        color: var(--accent);
+      }
+
+      .card-icon-button.is-muted {
+        background: rgba(29, 29, 31, 0.07);
+        color: var(--muted);
+      }
+
+      .card-icon-button:active {
+        transform: scale(0.94);
       }
 
       .card-button,
@@ -324,7 +401,7 @@
         border-radius: 999px;
         padding: 0 12px;
         font-size: 13px;
-        font-weight: 850;
+        font-weight: 600;
         transition: transform 150ms ease, background 150ms ease, opacity 150ms ease;
       }
 
@@ -336,26 +413,17 @@
       .card-button.secondary,
       .plain-button {
         background: rgba(29, 29, 31, 0.07);
-        color: var(--text);
+        color: var(--muted);
       }
 
       .card-button.is-added {
         background: var(--accent-soft);
-        color: #0568d8;
+        color: var(--accent);
       }
 
       .card-button:disabled {
         opacity: 0.48;
         cursor: not-allowed;
-      }
-
-      .permanent-card {
-        padding: 13px;
-      }
-
-      .permanent-card .tag {
-        background: #eef8f1;
-        color: var(--green);
       }
 
       .empty,
@@ -455,7 +523,7 @@
         background: #fff6df;
         color: var(--warning);
         font-size: 12px;
-        font-weight: 850;
+        font-weight: 600;
         padding: 4px 8px;
       }
 
@@ -470,7 +538,7 @@
         color: #fff;
         box-shadow: 0 12px 32px rgba(29, 29, 31, 0.18);
         font-size: 13px;
-        font-weight: 850;
+        font-weight: 600;
         opacity: 0;
         padding: 10px 14px;
         pointer-events: none;
@@ -490,7 +558,7 @@
         bottom: 0;
         left: 0;
         z-index: 40;
-        padding: 0 12px calc(10px + env(safe-area-inset-bottom));
+        padding: 0 12px calc(16px + env(safe-area-inset-bottom));
         pointer-events: none;
       }
 
@@ -499,8 +567,7 @@
         inset: 0;
         z-index: 45;
         background:
-          radial-gradient(circle at 18% -10%, rgba(255, 255, 255, 0.95), transparent 22rem),
-          linear-gradient(180deg, #fbfaf7 0%, var(--bg) 54%, #ebe6dd 100%);
+          linear-gradient(180deg, #fff 0%, var(--bg) 100%);
         padding: calc(12px + env(safe-area-inset-top)) 14px calc(16px + env(safe-area-inset-bottom));
         overflow: auto;
       }
@@ -514,10 +581,11 @@
         width: min(720px, 100%);
         margin: 0 auto;
         pointer-events: auto;
-        border: 1px solid rgba(255, 255, 255, 0.45);
-        background: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 -14px 38px rgba(29, 29, 31, 0.16);
+        border: var(--bar-line);
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: var(--shadow-strong);
         backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
       }
 
       .panel-inner {
@@ -539,7 +607,7 @@
       .bar-count,
       .panel-title {
         margin: 0;
-        font-weight: 900;
+        font-weight: 700;
       }
 
       .bar-sub,
@@ -575,7 +643,7 @@
         background: rgba(29, 29, 31, 0.07);
         color: var(--text);
         font-size: 14px;
-        font-weight: 850;
+        font-weight: 600;
         padding: 0 12px;
       }
 
@@ -609,7 +677,7 @@
       .calendar-preview-title {
         margin: 0;
         font-size: 15px;
-        font-weight: 900;
+        font-weight: 700;
       }
 
       .calendar-nav {
@@ -627,7 +695,7 @@
         background: rgba(29, 29, 31, 0.08);
         color: var(--text);
         font-size: 18px;
-        font-weight: 850;
+        font-weight: 600;
         line-height: 1;
       }
 
@@ -647,7 +715,7 @@
       .calendar-weekday {
         color: var(--subtle);
         font-size: 11px;
-        font-weight: 850;
+        font-weight: 600;
         text-align: center;
       }
 
@@ -666,19 +734,19 @@
       }
 
       .calendar-day.is-today {
-        box-shadow: inset 0 0 0 1px rgba(10, 132, 255, 0.42);
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.18);
       }
 
       .calendar-day.has-events {
         background: #fff;
-        box-shadow: 0 5px 14px rgba(10, 132, 255, 0.10);
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
       }
 
       .calendar-date {
         display: block;
         margin-bottom: 3px;
         font-size: 11px;
-        font-weight: 850;
+        font-weight: 600;
         line-height: 1;
       }
 
@@ -686,10 +754,10 @@
         display: block;
         overflow: hidden;
         border-radius: 999px;
-        background: var(--accent-soft);
-        color: #0568d8;
+        background: rgba(142, 142, 147, 0.14);
+        color: var(--muted);
         font-size: 9px;
-        font-weight: 850;
+        font-weight: 600;
         line-height: 1.2;
         margin-top: 2px;
         padding: 2px 4px;
@@ -701,7 +769,7 @@
         display: block;
         color: var(--muted);
         font-size: 9px;
-        font-weight: 850;
+        font-weight: 600;
         margin-top: 1px;
       }
 
@@ -747,11 +815,6 @@
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
-        .week-list,
-        .permanent-list {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-
         .detail-grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
@@ -765,10 +828,6 @@
         main {
           padding-right: 12px;
           padding-left: 12px;
-        }
-
-        .market-card {
-          grid-template-columns: 74px minmax(0, 1fr);
         }
 
         .thumb {
@@ -794,7 +853,13 @@
         <h1 id="pageTitle">大理赶集攻略</h1>
         <p class="lead">查时间、看距离，选几个常去的集市订阅到 iPhone 日历</p>
         <div class="location-row">
-          <button class="pill-button" id="locationButton" type="button">📍 使用当前位置</button>
+          <button class="pill-button" id="locationButton" type="button">
+            <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 0 1 16 0Z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            使用当前位置
+          </button>
           <p class="privacy-note">定位只在本地计算距离，不会保存。</p>
         </div>
       </section>
@@ -859,7 +924,7 @@
     <script>
       const STORAGE_KEY = "dali-ganji-selected-markets";
       const PLACEHOLDER_IMAGE = new URL("images/markets/placeholder.jpg", window.location.href).toString();
-      const FILTERS = ["全部", "附近", "古城周边", "喜洲周边", "洱海北部", "洱海东部", "其他"];
+      const FILTERS = ["最近", "全部", "附近", "古城周边", "喜洲周边", "洱海北部", "洱海东部", "其他"];
       const app = document.querySelector("#app");
       const locationButton = document.querySelector("#locationButton");
       const toast = document.querySelector("#toast");
@@ -883,7 +948,7 @@
       let markets = [];
       let events = [];
       let selected = new Set();
-      let activeFilter = "全部";
+      let activeFilter = "最近";
       let hasLocation = false;
       let previewMonthOffset = 0;
       let toastTimer;
@@ -945,7 +1010,13 @@
             <h1 id="pageTitle">大理赶集攻略</h1>
             <p class="lead">查时间、看距离，选几个常去的集市订阅到 iPhone 日历</p>
             <div class="location-row">
-              <button class="pill-button" id="locationButton" type="button">📍 使用当前位置</button>
+              <button class="pill-button" id="locationButton" type="button">
+                <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                使用当前位置
+              </button>
               <p class="privacy-note">定位只在本地计算距离，不会保存。</p>
             </div>
           </section>
@@ -965,26 +1036,13 @@
       function renderHome() {
         app.innerHTML = `
           ${heroTemplate()}
-          <section class="section" aria-labelledby="weekTitle">
-            <div class="section-head">
-              <h2 class="section-title" id="weekTitle">本周赶集</h2>
-              <p class="section-note">未来 7 天</p>
-            </div>
-            <div class="week-list" id="weekList">${weekTemplate()}</div>
-          </section>
           <section class="section" aria-labelledby="marketsTitle">
             <div class="section-head">
               <h2 class="section-title" id="marketsTitle">选择集市</h2>
-              <p class="section-note">先看攻略，再加入日历</p>
+              <p class="section-note">${activeFilter === "最近" ? "未来 7 天" : "先看攻略，再加入日历"}</p>
             </div>
             <nav class="filters" id="filters" aria-label="区域筛选">${filtersTemplate()}</nav>
             <div class="market-list" id="marketList">${marketListTemplate()}</div>
-          </section>
-          <section class="section" aria-labelledby="permanentTitle">
-            <div class="section-head">
-              <h2 class="section-title" id="permanentTitle">附近常设市场</h2>
-            </div>
-            <div class="permanent-list">${permanentMarketsTemplate()}</div>
           </section>
         `;
         bindHomeEvents();
@@ -995,12 +1053,23 @@
         const end = new Date(now);
         end.setDate(now.getDate() + 7);
         const marketById = new Map(markets.map((market) => [market.id, market]));
-        const weekEvents = events
+        const eventsByMarket = new Map();
+        events
           .filter((event) => {
             const eventDate = parseLocalDate(event.date);
             return eventDate >= now && eventDate < end;
           })
-          .slice(0, 8);
+          .sort((a, b) => {
+            const dateCompare = a.date.localeCompare(b.date);
+            if (dateCompare !== 0) return dateCompare;
+            return Number(a.market_index || 0) - Number(b.market_index || 0);
+          })
+          .forEach((event) => {
+            if (!eventsByMarket.has(event.market_id)) {
+              eventsByMarket.set(event.market_id, event);
+            }
+          });
+        const weekEvents = Array.from(eventsByMarket.values()).slice(0, 8);
 
         if (weekEvents.length === 0) {
           return '<div class="empty">未来 7 天暂时没有已验证的赶集数据。</div>';
@@ -1008,22 +1077,10 @@
 
         return weekEvents.map((event) => {
           const market = marketById.get(event.market_id) || {};
-          const distance = distanceText(market);
-          const meta = [formatDate(event.date), market.area, distance].filter(Boolean).join(" · ");
-          return `
-            <article class="week-card">
-              <div>
-                <h3 class="week-title">${escapeHtml(event.market_name)}</h3>
-                <p class="meta">${escapeHtml(meta)}</p>
-                <p class="summary">${escapeHtml(market.summary || market.intro || "适合顺路体验本地赶集。")}</p>
-                <div class="actions">
-                  <button class="card-button secondary" type="button" data-action="detail" data-id="${escapeHtml(event.market_id)}">查看攻略</button>
-                  ${calendarButton(event.market_id)}
-                </div>
-              </div>
-              <div class="date-badge">${formatDateBadge(event.date)}</div>
-            </article>
-          `;
+          return guideCardTemplate(market, {
+            className: "week-card",
+            fallbackSummary: "适合顺路体验本地赶集。"
+          });
         }).join("");
       }
 
@@ -1036,48 +1093,44 @@
       }
 
       function marketListTemplate() {
-        const items = sortedPeriodicMarkets();
-        if (items.length === 0) return '<div class="empty">这个区域暂时没有收录周期性赶集点。</div>';
-        return items.map((market) => {
-          const meta = [market.area, distanceText(market)].filter(Boolean).join(" · ");
-          const tags = (market.tags || []).slice(0, 4).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("");
-          return `
-            <article class="market-card">
-              <div class="thumb">${imageTag(market)}</div>
-              <div class="market-content">
-                <h3 class="market-name">${escapeHtml(market.name)}</h3>
-                <p class="meta">${escapeHtml(meta)}</p>
-                <p class="schedule">${escapeHtml(market.schedule_text || "日期规则待补充")}</p>
-                <p class="summary">${escapeHtml(market.summary || market.intro || "")}</p>
-                <div class="tag-row">${tags}</div>
-                <div class="actions">
-                  <button class="card-button secondary" type="button" data-action="detail" data-id="${escapeHtml(market.id)}">查看攻略</button>
-                  ${calendarButton(market.id)}
-                </div>
-              </div>
-            </article>
-          `;
-        }).join("");
+        if (activeFilter === "最近") return weekTemplate();
+        const items = sortedSelectableMarkets();
+        if (items.length === 0) return '<div class="empty">这个区域暂时没有收录集市。</div>';
+        return items.map((market) => guideCardTemplate(market, {
+          className: "market-card",
+          fallbackSummary: ""
+        })).join("");
       }
 
-      function permanentMarketsTemplate() {
-        const items = markets.filter((market) => market.market_type === "permanent_market");
-        if (items.length === 0) return '<div class="empty">常设市场信息正在补充。</div>';
-        return items.map((market) => {
-          const meta = [market.open_text || "每天开放", market.area, distanceText(market)].filter(Boolean).join(" · ");
-          return `
-            <article class="permanent-card">
-              <h3 class="permanent-title">${escapeHtml(market.name)}</h3>
-              <p class="meta">${escapeHtml(meta)}</p>
-              <p class="summary">${escapeHtml(market.summary || market.intro || "")}</p>
-              <p class="address">${escapeHtml(market.address || market.location_name || "地点待补充")}</p>
-              <div class="tag-row">${(market.tags || []).slice(0, 4).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>
-              <div class="actions">
-                <button class="card-button secondary" type="button" data-action="detail" data-id="${escapeHtml(market.id)}">查看攻略</button>
-              </div>
-            </article>
-          `;
-        }).join("");
+      function guideCardTemplate(market, options = {}) {
+        const tags = (market.tags || []).slice(0, 4).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("");
+        return `
+          <article class="${options.className || "market-card"}" data-card-id="${escapeHtml(market.id)}" role="button" tabindex="0">
+            <div class="card-title-row">
+              <h3 class="market-name">${escapeHtml(market.name || "集市")}</h3>
+              ${calendarButton(market.id)}
+            </div>
+            <p class="address">${locationLineHtml(market, options.kicker || marketKicker(market))}</p>
+            <p class="summary">${escapeHtml(market.summary || market.intro || options.fallbackSummary || "")}</p>
+            <div class="tag-row">${tags}</div>
+          </article>
+        `;
+      }
+
+      function marketKicker(market) {
+        if (market.market_type === "permanent_market") {
+          return market.open_text || "每天开放";
+        }
+        const nextEvent = nextEventForMarket(market.id);
+        if (!nextEvent) return "日期待补充";
+        return `${relativeDateText(nextEvent.date)}可赶集`;
+      }
+
+      function nextEventForMarket(marketId) {
+        const today = startOfToday();
+        return events
+          .filter((event) => event.market_id === marketId && parseLocalDate(event.date) >= today)
+          .sort((a, b) => a.date.localeCompare(b.date))[0];
       }
 
       function renderDetail(market) {
@@ -1097,7 +1150,7 @@
               <p class="summary">${escapeHtml(market.summary || market.intro || "")}</p>
               <p class="schedule">${escapeHtml(market.schedule_text || market.open_text || "时间待补充")}</p>
               <div class="detail-actions">
-                ${canSubscribe ? calendarButton(market.id) : '<button class="card-button secondary" type="button" disabled>不进入日历</button>'}
+                ${canSubscribe || market.market_type === "permanent_market" ? calendarButton(market.id) : '<button class="card-button secondary" type="button" disabled>不进入日历</button>'}
                 <button class="card-button primary" type="button" data-action="navigate" data-id="${escapeHtml(market.id)}">导航</button>
               </div>
             </div>
@@ -1195,12 +1248,23 @@
         app.querySelectorAll("[data-action]").forEach((button) => {
           button.addEventListener("click", (event) => {
             event.preventDefault();
+            event.stopPropagation();
             const action = button.dataset.action;
             const id = button.dataset.id;
             if (action === "detail") openDetail(id);
             if (action === "toggle") toggleMarket(id);
+            if (action === "always-open") showAlwaysOpenToast();
             if (action === "home") openHome();
             if (action === "navigate") openNavigation(id);
+          });
+        });
+        app.querySelectorAll("[data-card-id]").forEach((card) => {
+          card.addEventListener("click", () => openDetail(card.dataset.cardId));
+          card.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              openDetail(card.dataset.cardId);
+            }
           });
         });
       }
@@ -1209,16 +1273,46 @@
         const market = markets.find((item) => item.id === id);
         const canSubscribe = market && market.calendar_enabled;
         const isAdded = selected.has(id);
-        const label = isAdded ? "已加入" : "加入日历";
-        const className = isAdded ? "card-button is-added" : "card-button primary";
-        if (!canSubscribe) {
-          return '<button class="card-button secondary" type="button" disabled>待核实</button>';
+        if (market?.market_type === "permanent_market") {
+          return `
+            <button class="card-icon-button is-muted" type="button" data-action="always-open" data-id="${escapeHtml(id)}" aria-label="每天开放，不用加入日历">
+              ${plusIcon()}
+            </button>
+          `;
         }
-        return `<button class="${className}" type="button" data-action="toggle" data-id="${escapeHtml(id)}">${label}</button>`;
+        if (!canSubscribe) {
+          return `
+            <button class="card-icon-button is-muted" type="button" disabled aria-label="日期待核实，暂不能加入日历">
+              ${plusIcon()}
+            </button>
+          `;
+        }
+        return `
+          <button class="card-icon-button${isAdded ? " is-added" : ""}" type="button" data-action="toggle" data-id="${escapeHtml(id)}" aria-label="${isAdded ? "已加入日历" : "加入日历"}">
+            ${isAdded ? checkIcon() : plusIcon()}
+          </button>
+        `;
       }
 
-      function sortedPeriodicMarkets() {
-        let items = markets.filter((market) => market.market_type === "periodic_fair");
+      function plusIcon() {
+        return `
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 5v14"></path>
+            <path d="M5 12h14"></path>
+          </svg>
+        `;
+      }
+
+      function checkIcon() {
+        return `
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m5 12 4 4 10-10"></path>
+          </svg>
+        `;
+      }
+
+      function sortedSelectableMarkets() {
+        let items = markets.slice();
         if (activeFilter !== "全部" && activeFilter !== "附近") {
           items = items.filter((market) => market.area === activeFilter);
         }
@@ -1240,6 +1334,10 @@
 
       function toggleMarket(id) {
         const market = markets.find((item) => item.id === id);
+        if (market?.market_type === "permanent_market") {
+          showAlwaysOpenToast();
+          return;
+        }
         if (!market?.calendar_enabled) {
           showToast("这个地点暂不生成日历事件");
           return;
@@ -1257,6 +1355,10 @@
       function saveSelection() {
         const ordered = orderedSelectedIds();
         localStorage.setItem(STORAGE_KEY, JSON.stringify(ordered));
+      }
+
+      function showAlwaysOpenToast() {
+        showToast("这个集市每天都开放，不用赶日子哦");
       }
 
       function updateSubscription() {
@@ -1386,15 +1488,14 @@
             };
           });
           hasLocation = true;
-          activeFilter = "附近";
-          showToast("已按距离为你推荐附近集市");
+          showToast("已为你显示距离");
           renderRoute();
         } catch (error) {
           showToast("无法获取位置，你仍然可以按区域手动选择。");
         } finally {
           if (button) {
             button.disabled = false;
-            button.textContent = "📍 使用当前位置";
+            button.innerHTML = `${mapPinIcon("button-icon")}使用当前位置`;
           }
         }
       }
@@ -1431,6 +1532,27 @@
 
       function distanceText(market) {
         return market?.distanceKm !== undefined ? formatDistance(market.distanceKm) : "";
+      }
+
+      function locationLine(market) {
+        const place = market.address || market.location_name || "地点待补充";
+        return [place, distanceText(market)].filter(Boolean).join(" · ");
+      }
+
+      function locationLineHtml(market, statusText) {
+        const place = market.address || market.location_name || "地点待补充";
+        const placeText = [place, distanceText(market)].filter(Boolean).join(" · ");
+        const status = statusText ? `<span>${escapeHtml(statusText)}</span><span aria-hidden="true">｜</span>` : "";
+        return `${status}${mapPinIcon("meta-icon")}<span>${escapeHtml(placeText)}</span>`;
+      }
+
+      function mapPinIcon(className) {
+        return `
+          <svg class="${className}" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 0 1 16 0Z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+        `;
       }
 
       function distanceSortValue(market) {
@@ -1517,11 +1639,21 @@
       }
 
       function formatDate(value) {
-        return new Intl.DateTimeFormat("zh-CN", {
-          month: "numeric",
-          day: "numeric",
-          weekday: "short"
-        }).format(parseLocalDate(value));
+        const date = parseLocalDate(value);
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+        const weekday = new Intl.DateTimeFormat("zh-CN", { weekday: "short" }).format(date);
+        return `${month}/${day} ${weekday}`;
+      }
+
+      function relativeDateText(value) {
+        const eventDate = parseLocalDate(value);
+        const today = startOfToday();
+        const diffDays = Math.round((eventDate - today) / 86400000);
+        if (diffDays === 0) return "今天";
+        if (diffDays === 1) return "明天";
+        if (diffDays === 2) return "后天";
+        return `${diffDays} 天后`;
       }
 
       function formatDateBadge(value) {
