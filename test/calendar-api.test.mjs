@@ -3,6 +3,7 @@ import { test } from "node:test";
 
 import { calendarData } from "../edge-functions/_data/calendar-data.js";
 import { handleRequest } from "../edge-functions/api/calendar.ics.js";
+import vercelHandler from "../api/calendar.ics.js";
 import {
   buildIcsForMarketIds,
   buildIcsFromEvents,
@@ -46,6 +47,19 @@ test("calendar API returns text/calendar for a valid token", async () => {
   assert.match(body, new RegExp(`UID:${selected[0]}-`));
 });
 
+test("Vercel API handler returns the same dynamic ICS response", async () => {
+  const selected = ["sanyuejie", "yinqiaojie"];
+  const token = encodeSelectionToToken(selected, calendarData.markets);
+  const response = await invokeVercelHandler(`/api/calendar.ics?s=${token}`);
+
+  assert.equal(response.statusCode, 200);
+  assert.equal(response.headers["Content-Type"], "text/calendar; charset=utf-8");
+  assert.equal(response.headers["Cache-Control"], "public, max-age=3600");
+  assert.match(response.body, /三月街赶集/);
+  assert.match(response.body, /银桥街集市/);
+  assert.doesNotMatch(response.body, /北门菜市场/);
+});
+
 test("calendar API returns an empty calendar for an invalid token without crashing", async () => {
   const response = await handleRequest(new Request("https://example.com/api/calendar.ics?s=!!!!"));
   const body = await response.text();
@@ -80,3 +94,34 @@ test("Chinese fields, commas, semicolons, backslashes, and description newlines 
   assert.match(ics, /LOCATION:大理\\,古城\\;测试/);
   assert.match(ics, /DESCRIPTION:第一行\\n第二行\\,带逗号\\;和反斜杠\\\\/);
 });
+
+async function invokeVercelHandler(url) {
+  const result = {
+    headers: {},
+    statusCode: undefined,
+    body: ""
+  };
+  await vercelHandler(
+    {
+      url,
+      headers: {
+        host: "example.com"
+      }
+    },
+    {
+      setHeader(name, value) {
+        result.headers[name] = value;
+      },
+      set statusCode(value) {
+        result.statusCode = value;
+      },
+      get statusCode() {
+        return result.statusCode;
+      },
+      end(body) {
+        result.body = body;
+      }
+    }
+  );
+  return result;
+}
