@@ -1042,12 +1042,16 @@
           renderCalendarPreview();
         });
         subscribeButton.addEventListener("click", (event) => {
-          event.preventDefault();
           if (inAppBrowser) {
+            event.preventDefault();
             copySubscriptionLink();
             return;
           }
-          openAppleCalendarSubscription();
+          if (!subscribeButton.getAttribute("href") || subscribeButton.getAttribute("href") === "#") {
+            event.preventDefault();
+            return;
+          }
+          copyStatus.textContent = "正在打开 Apple 日历订阅确认页...";
         });
         copyButton.addEventListener("click", copySubscriptionLink);
         window.addEventListener("popstate", renderRoute);
@@ -1540,13 +1544,6 @@
           httpsUrl.protocol = "webcal:";
         }
         return httpsUrl.toString();
-      }
-
-      function openAppleCalendarSubscription() {
-        const link = buildSubscriptionLink("webcal");
-        if (!link) return;
-        copyStatus.textContent = "正在打开 Apple 日历订阅确认页...";
-        window.location.assign(link);
       }
 
       function getSubscribableMarkets(items) {
