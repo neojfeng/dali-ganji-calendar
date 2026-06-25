@@ -595,11 +595,11 @@ export const calendarData = {
       ],
       "lat": 25.8546,
       "lng": 100.1275,
-      "image": "/images/markets/wanqiaozhen.jpg",
+      "image": "/images/markets/wanqiaojie.jpg",
       "image_alt": "湾桥街集市的乡镇街道和农产品插画",
       "images": [
         {
-          "src": "/images/markets/wanqiaozhen.jpg",
+          "src": "/images/markets/wanqiaojie.jpg",
           "alt": "湾桥街集市的乡镇街道和农产品插画"
         }
       ],
@@ -14487,7 +14487,7 @@ export const calendarData = {
       "lng": 100.251
     }
   ],
-  "generatedAt": "2026-06-25T16:42:28.907587+00:00",
+  "generatedAt": "2026-06-25T17:10:39.424787+00:00",
   "calendarMeta": {
     "name": "大理赶集日历",
     "timezone": "Asia/Shanghai",
