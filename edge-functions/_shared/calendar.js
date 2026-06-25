@@ -134,29 +134,25 @@ export function buildMobileConfigProfile({ token, selectedMarketIds, data, subsc
 }
 
 function isSubscribableMarket(market) {
-  const allowedMarketTypes = new Set(["periodic_fair", "creative_market"]);
   return (
     market &&
     String(market.id || "") &&
-    allowedMarketTypes.has(market.market_type) &&
-    market.calendar_enabled === true &&
-    hasValidScheduleRule(market)
+    market.subscription_enabled !== false &&
+    hasSubscribableSchedule(market.schedule)
   );
 }
 
-function hasValidScheduleRule(market) {
-  if (market.schedule_type === "lunar_days") return Array.isArray(market.lunar_days) && market.lunar_days.length > 0;
-  if (market.schedule_type === "weekly" || market.schedule_type === "weekday") {
-    return typeof market.weekday === "number" || (Array.isArray(market.weekday) && market.weekday.length > 0);
-  }
-  if (market.schedule_type === "gregorian_month_days") {
-    return Array.isArray(market.month_days) && market.month_days.length > 0;
-  }
-  return false;
+function hasSubscribableSchedule(schedule) {
+  return (
+    schedule &&
+    ["lunar_days", "weekdays", "month_days"].includes(schedule.type) &&
+    Array.isArray(schedule.days) &&
+    schedule.days.length > 0
+  );
 }
 
 function isEventSubscribable(event) {
-  return event.calendar_enabled === true;
+  return Boolean(event);
 }
 
 function calendarTitle(selectedIds, markets) {

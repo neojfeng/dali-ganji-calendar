@@ -7,8 +7,6 @@
     "address": "大理市大理古城苍山门/西门外三月街一带",
     "old_town_trip": "1 km，步行约 10-15min / 打车约 ¥10",
     "area": "古城周边",
-    "market_type": "periodic_fair",
-    "calendar_enabled": true,
     "summary": "大理古城西门外最经典的白族传统集市，兼具本地采购、民族小吃、手作杂货和游客打卡属性。",
     "tags": [
       "千年集市",
@@ -40,15 +38,15 @@
         "alt": "三月街集市牌坊和热闹摊位插画"
       }
     ],
-    "schedule_type": "lunar_days",
-    "lunar_days": [
-      2,
-      9,
-      16,
-      23
-    ],
-    "weekday": [],
-    "month_days": [],
+    "schedule": {
+      "type": "lunar_days",
+      "days": [
+        2,
+        9,
+        16,
+        23
+      ]
+    },
     "schedule_text": "农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集",
     "open_text": "",
     "best_time": "上午 8:00-12:00 货品最全，下午人流仍多但部分生鲜摊减少",
@@ -107,8 +105,6 @@
     "address": "大理市大理古城北门片区，博爱路与平等路附近",
     "old_town_trip": "古城内/北门附近，步行约 5-15min / 打车约 ¥10",
     "area": "古城周边",
-    "market_type": "daily_market",
-    "calendar_enabled": false,
     "summary": "大理古城北侧最方便的日常菜市场之一，适合早上感受本地生活、买蔬果鲜花和吃早餐小吃。",
     "tags": [
       "日常菜市",
@@ -140,10 +136,9 @@
         "alt": "古城北门农贸市场的鲜花蔬果和早餐摊插画"
       }
     ],
-    "schedule_type": "daily",
-    "lunar_days": [],
-    "weekday": [],
-    "month_days": [],
+    "schedule": {
+      "type": "daily"
+    },
     "schedule_text": "每天营业，早市更热闹",
     "open_text": "",
     "best_time": "上午 7:30-10:30 最有生活气，生鲜选择更多",
@@ -198,8 +193,6 @@
     "address": "大理市下关龙尾关山脚及周边街巷",
     "old_town_trip": "15 km，打车约 30min / ¥40",
     "area": "下关市区",
-    "market_type": "daily_market",
-    "calendar_enabled": false,
     "summary": "龙尾关山脚下偏本地的下午小集，氛围自由松散，适合吃小吃、看市井生活和感受下关烟火气。",
     "tags": [
       "下午集市",
@@ -231,10 +224,9 @@
         "alt": "龙尾关山脚下午小集和街边摊插画"
       }
     ],
-    "schedule_type": "daily",
-    "lunar_days": [],
-    "weekday": [],
-    "month_days": [],
+    "schedule": {
+      "type": "daily"
+    },
     "schedule_text": "每天下午出摊，傍晚更有烟火气",
     "open_text": "",
     "best_time": "下午 16:30-19:00 更热闹",
@@ -285,8 +277,6 @@
     "address": "大理市银桥镇银桥街、头铺农贸市场一带",
     "old_town_trip": "10 km，打车约 20min / ¥30",
     "area": "洱海西线",
-    "market_type": "periodic_fair",
-    "calendar_enabled": true,
     "summary": "距离古城较近、比三月街更生活化的乡镇集，适合看本地采购、买当季蔬果和云南特色食材。",
     "tags": [
       "乡镇集",
@@ -318,15 +308,15 @@
         "alt": "银桥街集市的田园和集市摊位插画"
       }
     ],
-    "schedule_type": "lunar_days",
-    "lunar_days": [
-      5,
-      13,
-      20,
-      28
-    ],
-    "weekday": [],
-    "month_days": [],
+    "schedule": {
+      "type": "lunar_days",
+      "days": [
+        5,
+        13,
+        20,
+        28
+      ]
+    },
     "schedule_text": "农历初五、十三、二十、二十八赶集",
     "open_text": "",
     "best_time": "上午 8:00-11:30 更热闹，午后摊位减少",
@@ -381,8 +371,6 @@
     "address": "大理市湾桥镇湾桥街/镇农贸市场",
     "old_town_trip": "18 km，打车约 30min / ¥45",
     "area": "洱海北部",
-    "market_type": "periodic_fair",
-    "calendar_enabled": true,
     "summary": "洱海西线北段的乡镇大集，常见农产品、日用品和本地小吃，适合顺路感受洱海北部本地生活。",
     "tags": [
       "乡镇集",
@@ -414,15 +402,15 @@
         "alt": "湾桥镇集市的乡镇街道和农产品插画"
       }
     ],
-    "schedule_type": "lunar_days",
-    "lunar_days": [
-      4,
-      11,
-      18,
-      26
-    ],
-    "weekday": [],
-    "month_days": [],
+    "schedule": {
+      "type": "lunar_days",
+      "days": [
+        4,
+        11,
+        18,
+        26
+      ]
+    },
     "schedule_text": "农历初四、十一、十八、二十六赶集",
     "open_text": "",
     "best_time": "上午 8:00-11:30 更热闹，午后摊位减少",
@@ -473,8 +461,6 @@
     "address": "大理市凤仪镇凤中路、凤仪主街巷道一带",
     "old_town_trip": "20 km，打车约 35min / ¥50",
     "area": "其他",
-    "market_type": "periodic_fair",
-    "calendar_enabled": true,
     "summary": "凤仪镇逢五逢十的乡镇大集，游客少、本地采购氛围浓，适合吃小吃和看更日常的乡镇生活。",
     "tags": [
       "乡镇集",
@@ -506,17 +492,17 @@
         "alt": "凤仪街集市的乡镇街巷和摊位插画"
       }
     ],
-    "schedule_type": "gregorian_month_days",
-    "lunar_days": [],
-    "weekday": [],
-    "month_days": [
-      5,
-      10,
-      15,
-      20,
-      25,
-      30
-    ],
+    "schedule": {
+      "type": "month_days",
+      "days": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30
+      ]
+    },
     "schedule_text": "每月公历逢五、逢十赶集",
     "open_text": "",
     "best_time": "上午 8:00-11:30 更热闹，午后部分摊位减少",
@@ -570,8 +556,6 @@
     "address": "大理市大理镇绿玉路111号，古城南门/博爱门以南一带",
     "old_town_trip": "1 km，步行约 10-15min / 打车约 ¥10",
     "area": "古城周边",
-    "market_type": "daily_market",
-    "calendar_enabled": false,
     "summary": "大理古城南门附近的熟食型菜市场，下午三点后小吃摊更集中，是古城周边找本地小吃的高性价比路线。",
     "tags": [
       "南门菜市",
@@ -603,10 +587,9 @@
         "alt": "南门绿玉农贸市场的下午熟食小吃摊插画"
       }
     ],
-    "schedule_type": "daily",
-    "lunar_days": [],
-    "weekday": [],
-    "month_days": [],
+    "schedule": {
+      "type": "daily"
+    },
     "schedule_text": "每天营业，熟食小吃多在下午集中出摊",
     "open_text": "",
     "best_time": "下午 15:00-18:30 更适合觅食，早上偏日常买菜",
@@ -665,8 +648,6 @@
     "address": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
     "old_town_trip": "17 km，打车约 35min / ¥45",
     "area": "下关市区",
-    "market_type": "periodic_fair",
-    "calendar_enabled": true,
     "summary": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和农副产品摊位，是大理更猎奇、更本地的淘宝型集市。",
     "tags": [
       "周日集",
@@ -698,12 +679,12 @@
         "alt": "下关花鸟市场周日旧货和绿植摊位插画"
       }
     ],
-    "schedule_type": "weekday",
-    "lunar_days": [],
-    "weekday": [
-      0
-    ],
-    "month_days": [],
+    "schedule": {
+      "type": "weekdays",
+      "days": [
+        0
+      ]
+    },
     "schedule_text": "每周日赶集，清晨到午后更集中；平日主要为花鸟绿植市场",
     "open_text": "",
     "best_time": "周日 7:00-12:00 淘货氛围最强，午后陆续收摊",
@@ -759,8 +740,6 @@
     "address": "大理市喜洲镇南侧作邑/镇南菜市场一带，喜洲古镇往南约 3.5 km",
     "old_town_trip": "25 km，打车约 40min / ¥60",
     "area": "喜洲",
-    "market_type": "periodic_fair",
-    "calendar_enabled": true,
     "summary": "喜洲镇南侧作邑一带的传统赶集点，距离喜洲古镇核心区约数公里，更偏本地采购和古镇周边乡土生活。",
     "tags": [
       "喜洲",
@@ -792,15 +771,15 @@
         "alt": "喜洲龙街集市的古镇乡土摊位插画"
       }
     ],
-    "schedule_type": "lunar_days",
-    "lunar_days": [
-      2,
-      9,
-      16,
-      23
-    ],
-    "weekday": [],
-    "month_days": [],
+    "schedule": {
+      "type": "lunar_days",
+      "days": [
+        2,
+        9,
+        16,
+        23
+      ]
+    },
     "schedule_text": "农历初二、初九、十六、二十三赶集",
     "open_text": "",
     "best_time": "上午 8:00-11:30 更热闹，午后摊位减少",
@@ -856,8 +835,6 @@
     "address": "大理市大理古城苍坪街56号及周边创意市集空间",
     "old_town_trip": "1 km，步行约 10-15min / 打车约 ¥10",
     "area": "古城周边",
-    "market_type": "creative_market",
-    "calendar_enabled": true,
     "summary": "以床单厂艺术区一类周末创意市集为核心的文艺摊位路线，偏原创手作、古着、扎染、海外小物和咖啡轻食。",
     "tags": [
       "创意市集",
@@ -890,14 +867,14 @@
         "alt": "摩洛哥风格创意市集和手作摊位插画"
       }
     ],
-    "schedule_type": "weekday",
-    "lunar_days": [],
-    "weekday": [
-      5,
-      6,
-      0
-    ],
-    "month_days": [],
+    "schedule": {
+      "type": "weekdays",
+      "days": [
+        5,
+        6,
+        0
+      ]
+    },
     "schedule_text": "通常周五至周日更热闹，具体以当期市集公告为准",
     "open_text": "",
     "best_time": "下午 14:00-19:00 氛围更好，周六通常人气最高",

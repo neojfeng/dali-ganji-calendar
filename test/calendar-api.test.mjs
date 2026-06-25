@@ -36,14 +36,13 @@ test("comma-separated selection tokens decode by market id", () => {
   assert.deepEqual(decodeTokenToMarketIds(token, reorderedMarkets), normalizeSelectedMarketIds(selected, reorderedMarkets));
 });
 
-test("disabled, permanent, daily, and unscheduled markets are not subscribable", () => {
+test("disabled, daily, and unscheduled markets are not subscribable", () => {
   const fixtureMarkets = [
-    { id: "ok", market_type: "periodic_fair", calendar_enabled: true, schedule_type: "weekly", weekday: [5] },
-    { id: "creative", market_type: "creative_market", calendar_enabled: true, schedule_type: "weekday", weekday: [0] },
-    { id: "disabled", market_type: "periodic_fair", calendar_enabled: false, schedule_type: "weekly", weekday: [5] },
-    { id: "permanent", market_type: "permanent_market", calendar_enabled: true, schedule_type: "weekly", weekday: [5] },
-    { id: "daily", market_type: "daily_market", calendar_enabled: true, schedule_type: "daily" },
-    { id: "unscheduled", market_type: "periodic_fair", calendar_enabled: true, schedule_type: "weekly", weekday: [] }
+    { id: "ok", schedule: { type: "weekdays", days: [5] } },
+    { id: "creative", schedule: { type: "weekdays", days: [0] } },
+    { id: "disabled", subscription_enabled: false, schedule: { type: "weekdays", days: [5] } },
+    { id: "daily", schedule: { type: "daily" } },
+    { id: "unscheduled", schedule: { type: "weekdays", days: [] } }
   ];
 
   assert.deepEqual(getSubscribableMarkets(fixtureMarkets).map((market) => market.id), ["ok", "creative"]);
@@ -109,10 +108,21 @@ test("frontend treats daily markets as always-open instead of pending verificati
   const html = await readFile(new URL("../public/index.html", import.meta.url), "utf8");
 
   assert.match(html, /function isAlwaysOpenMarket/);
-  assert.match(html, /\["permanent_market", "daily_market"\]\.includes/);
-  assert.match(html, /market\?\.schedule_type === "daily"/);
+  assert.match(html, /market\?\.schedule\?\.type === "daily"/);
   assert.match(html, /if \(isAlwaysOpenMarket\(market\)\)/);
   assert.match(html, /每天开集/);
+});
+
+test("source market data uses unified schedule objects", async () => {
+  const markets = JSON.parse(await readFile(new URL("../data/markets.json", import.meta.url), "utf8"));
+  const deprecatedFields = ["market_type", "calendar_enabled", "schedule_type", "lunar_days", "weekday", "month_days"];
+
+  assert.ok(markets.every((market) => market.schedule && typeof market.schedule.type === "string"));
+  for (const market of markets) {
+    for (const field of deprecatedFields) {
+      assert.equal(Object.hasOwn(market, field), false, `${market.id} should not include ${field}`);
+    }
+  }
 });
 
 test("mobileconfig endpoint installs a subscribed calendar account", async () => {
@@ -157,7 +167,7 @@ test("calendar event descriptions stay focused on market basics", () => {
   assert.doesNotMatch(description, /导航：|提醒：|数据说明：/);
 });
 
-test("weekday schedule type treats 0 as Sunday", () => {
+test("weekdays schedule type treats 0 as Sunday", () => {
   const sundayEvents = calendarData.events.filter((event) => event.market_id === "xiaguan_huaniao");
 
   assert.ok(sundayEvents.length > 0);
@@ -171,8 +181,7 @@ test("Chinese fields, commas, semicolons, backslashes, and description newlines 
       date: "2026-07-01",
       summary: "中文,分号;反斜杠\\",
       location: "大理,古城;测试",
-      description: "第一行\n第二行,带逗号;和反斜杠\\",
-      calendar_enabled: true
+      description: "第一行\n第二行,带逗号;和反斜杠\\"
     }
   ]);
 

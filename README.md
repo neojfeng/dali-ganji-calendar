@@ -38,14 +38,14 @@ token 不依赖数据库，也不保存攻略内容。它直接记录用户选�
 
 只有同时满足以下条件的地点才会生成 ICS 事件：
 
-- `market_type` 是 `periodic_fair`
-- `calendar_enabled` 是 `true`
-- 有有效 `schedule_type` 和日期规则
+- `schedule.type` 是 `lunar_days`、`weekdays` 或 `month_days`
+- `schedule.days` 是非空数组
+- 没有显式设置 `subscription_enabled: false`
 
 以下地点不会生成日历事件：
 
-- `permanent_market` 常设市场
-- `calendar_enabled: false`
+- `schedule.type: "daily"` 每天开的市场
+- `subscription_enabled: false`
 - 没有日期规则的地点
 
 ## 本地开发
@@ -109,8 +109,8 @@ npm test
 手动测试动态 ICS：
 
 ```text
-https://your-domain.example/calendars/sanyuejie__yinqiaojie.ics
-webcal://your-domain.example/calendars/sanyuejie__yinqiaojie.ics
+https://your-domain.example/api/calendar.ics?s=sanyuejie,yinqiaojie
+webcal://your-domain.example/api/calendar.ics?s=sanyuejie,yinqiaojie
 ```
 
 响应头应包含：
@@ -161,48 +161,47 @@ edge-functions/api/calendar.mobileconfig.js
 
 1. 在 `data/markets.json` 追加对象。
 2. 填写稳定的 `id`，后续不要随意修改；它会进入事件 UID 和订阅 token。
-3. 周期性赶集点设置 `market_type: "periodic_fair"`。
-4. 需要进入 Apple 日历订阅的周期性集市设置 `calendar_enabled: true`。
-5. 填写 `schedule_type` 与对应规则。
-6. 补充 `summary`、攻略字段、地点、坐标和图片。
-7. 运行 `npm run build` 和 `npm test`。
+3. 填写 `schedule`，它是程序计算营业日期和订阅能力的唯一日期规则。
+4. 补充 `summary`、攻略字段、地点、坐标和图片。
+5. 运行 `npm run build` 和 `npm test`。
 
 支持的日期规则：
 
 ```json
-{ "schedule_type": "lunar_days", "lunar_days": [2, 9, 16, 23] }
+{ "schedule": { "type": "daily" } }
 ```
 
 ```json
-{ "schedule_type": "weekly", "weekday": [5, 6] }
+{ "schedule": { "type": "lunar_days", "days": [2, 9, 16, 23] } }
 ```
 
 ```json
-{ "schedule_type": "gregorian_month_days", "month_days": [5, 10, 15, 20, 25, 30] }
+{ "schedule": { "type": "weekdays", "days": [0, 5, 6] } }
 ```
 
-`schedule_type: "weekly"` 沿用 Python 编号：周一是 `0`，周日是 `6`。
+```json
+{ "schedule": { "type": "month_days", "days": [5, 10, 15, 20, 25, 30] } }
+```
 
-`schedule_type: "weekday"` 使用前端常见编号：周日是 `0`，周一是 `1`，周六是 `6`。
+`weekdays` 使用 JavaScript / 前端常见编号：周日是 `0`，周一是 `1`，周六是 `6`。
 
-## 禁用订阅或常设市场
+## 禁用订阅或每天开
 
 不确定日期或暂时不想进入 Apple 日历时，不要删除集市。优先这样处理：
 
 ```json
 {
-  "calendar_enabled": false
+  "subscription_enabled": false
 }
 ```
 
 这样攻略页仍可保留信息，订阅接口不会为它生成事件。
 
-常设市场使用：
+每天开放、不需要订阅日历的市场使用：
 
 ```json
 {
-  "market_type": "permanent_market",
-  "calendar_enabled": false
+  "schedule": { "type": "daily" }
 }
 ```
 
@@ -214,4 +213,4 @@ token 只记录选择了哪些 `market id`，不记录具体事件或攻略快�
 
 1. 不要随意修改已有 `id`。
 2. 新增、重排集市不会影响已订阅链接。
-3. 如果必须下线某个集市，设置 `calendar_enabled: false`。
+3. 如果必须下线某个集市的订阅，设置 `subscription_enabled: false`。

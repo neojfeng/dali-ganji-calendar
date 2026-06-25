@@ -1236,7 +1236,7 @@
           index: Number(event.market_index ?? marketIndexById.get(event.market_id) ?? 0)
         }));
         markets.forEach((market, index) => {
-          if (market.market_type !== "permanent_market") return;
+          if (!isAlwaysOpenMarket(market)) return;
           recentItems.push({
             market,
             date: dateToIso(now),
@@ -1540,7 +1540,7 @@
 
       function toggleMarket(id) {
         const market = markets.find((item) => item.id === id);
-        if (market?.market_type === "permanent_market") {
+        if (isAlwaysOpenMarket(market)) {
           showAlwaysOpenToast();
           return;
         }
@@ -1678,21 +1678,22 @@
         return Boolean(
           market &&
           market.id &&
-          ["periodic_fair", "creative_market"].includes(market.market_type) &&
-          market.calendar_enabled === true &&
-          hasValidScheduleRule(market)
+          market.subscription_enabled !== false &&
+          hasSubscribableSchedule(market.schedule)
         );
       }
 
       function isAlwaysOpenMarket(market) {
-        return ["permanent_market", "daily_market"].includes(market?.market_type) || market?.schedule_type === "daily";
+        return market?.schedule?.type === "daily";
       }
 
-      function hasValidScheduleRule(market) {
-        if (market.schedule_type === "lunar_days") return Array.isArray(market.lunar_days) && market.lunar_days.length > 0;
-        if (market.schedule_type === "weekly" || market.schedule_type === "weekday") return typeof market.weekday === "number" || (Array.isArray(market.weekday) && market.weekday.length > 0);
-        if (market.schedule_type === "gregorian_month_days") return Array.isArray(market.month_days) && market.month_days.length > 0;
-        return false;
+      function hasSubscribableSchedule(schedule) {
+        return Boolean(
+          schedule &&
+          ["lunar_days", "weekdays", "month_days"].includes(schedule.type) &&
+          Array.isArray(schedule.days) &&
+          schedule.days.length > 0
+        );
       }
 
       function normalizeSelectedMarketIds(selectedMarketIds, items) {

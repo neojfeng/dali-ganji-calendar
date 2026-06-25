@@ -55,22 +55,20 @@ def parse_iso_date(value: str | None) -> date:
 
 
 def market_dates(market: dict[str, Any], start: date, end: date) -> list[date]:
-    schedule_type = market.get("schedule_type")
+    schedule = normalized_schedule(market)
+    schedule_type = schedule.get("type")
     if schedule_type == "lunar_days":
-        return lunar_market_dates(market, start, end)
-    if schedule_type == "weekly":
-        return weekly_market_dates(market, start, end, sunday_zero=False)
-    if schedule_type == "weekday":
-        return weekly_market_dates(market, start, end, sunday_zero=True)
-    if schedule_type == "gregorian_month_days":
-        return gregorian_month_dates(market, start, end)
+        return lunar_market_dates(market, schedule_days(schedule), start, end)
+    if schedule_type == "weekdays":
+        return weekly_market_dates(market, schedule_days(schedule), start, end)
+    if schedule_type == "month_days":
+        return gregorian_month_dates(market, schedule_days(schedule), start, end)
     raise ValueError(f"{market.get('id', '<unknown>')}: unsupported schedule_type {schedule_type!r}")
 
 
-def lunar_market_dates(market: dict[str, Any], start: date, end: date) -> list[date]:
-    lunar_days = market.get("lunar_days") or []
+def lunar_market_dates(market: dict[str, Any], lunar_days: list[Any], start: date, end: date) -> list[date]:
     if not isinstance(lunar_days, list):
-        raise ValueError(f"{market.get('id', '<unknown>')}: lunar_days must be a list.")
+        raise ValueError(f"{market.get('id', '<unknown>')}: schedule.days must be a list.")
 
     dates: set[date] = set()
     for lunar_year in range(start.year - 1, end.year + 2):
@@ -88,28 +86,24 @@ def lunar_market_dates(market: dict[str, Any], start: date, end: date) -> list[d
     return sorted(dates)
 
 
-def weekly_market_dates(market: dict[str, Any], start: date, end: date, sunday_zero: bool) -> list[date]:
-    weekdays = market.get("weekday", market.get("weekdays", []))
-    if isinstance(weekdays, int):
-        weekdays = [weekdays]
+def weekly_market_dates(market: dict[str, Any], weekdays: list[Any], start: date, end: date) -> list[date]:
     if not isinstance(weekdays, list) or not weekdays:
-        raise ValueError(f"{market.get('id', '<unknown>')}: weekly markets need weekday.")
+        raise ValueError(f"{market.get('id', '<unknown>')}: weekdays schedules need days.")
 
     wanted = {int(day) for day in weekdays}
     current = start
     dates: list[date] = []
     while current < end:
-        current_weekday = (current.weekday() + 1) % 7 if sunday_zero else current.weekday()
+        current_weekday = (current.weekday() + 1) % 7
         if current_weekday in wanted:
             dates.append(current)
         current += timedelta(days=1)
     return dates
 
 
-def gregorian_month_dates(market: dict[str, Any], start: date, end: date) -> list[date]:
-    month_days = market.get("month_days", [])
+def gregorian_month_dates(market: dict[str, Any], month_days: list[Any], start: date, end: date) -> list[date]:
     if not isinstance(month_days, list) or not month_days:
-        raise ValueError(f"{market.get('id', '<unknown>')}: gregorian_month_days needs month_days.")
+        raise ValueError(f"{market.get('id', '<unknown>')}: month_days schedules need days.")
 
     wanted = {int(day) for day in month_days}
     current = start
@@ -145,7 +139,6 @@ def build_event_records(markets: list[dict[str, Any]], start: date, end: date) -
                     "location": location,
                     "description": description_for(market),
                     "uid": f"{market_id}-{event_date.isoformat()}@{DOMAIN}",
-                    "calendar_enabled": True,
                     "lat": market.get("lat"),
                     "lng": market.get("lng"),
                 }
@@ -162,6 +155,7 @@ def public_market_records(markets: list[dict[str, Any]]) -> list[dict[str, Any]]
         fallback_image = clean(market.get("image"))
         primary_image = clean(images[0].get("src")) if images and isinstance(images[0], dict) else fallback_image
         primary_alt = clean(images[0].get("alt")) if images and isinstance(images[0], dict) else clean(market.get("image_alt"))
+        schedule = normalized_schedule(market)
         records.append(
             {
                 "id": clean(market.get("id")),
@@ -171,8 +165,6 @@ def public_market_records(markets: list[dict[str, Any]]) -> list[dict[str, Any]]
                 "address": clean(market.get("address")),
                 "old_town_trip": clean(market.get("old_town_trip")),
                 "area": clean(market.get("area")) or "其他",
-                "market_type": clean(market.get("market_type")) or "periodic_fair",
-                "calendar_enabled": is_calendar_market(market),
                 "summary": clean(market.get("summary")),
                 "tags": clean_list(market.get("tags")),
                 "best_for": clean_list(market.get("best_for")),
@@ -182,10 +174,7 @@ def public_market_records(markets: list[dict[str, Any]]) -> list[dict[str, Any]]
                 "image": primary_image,
                 "image_alt": primary_alt,
                 "images": images,
-                "schedule_type": clean(market.get("schedule_type")),
-                "lunar_days": market.get("lunar_days") if isinstance(market.get("lunar_days"), list) else [],
-                "weekday": market.get("weekday") if isinstance(market.get("weekday"), (int, list)) else [],
-                "month_days": market.get("month_days") if isinstance(market.get("month_days"), list) else [],
+                "schedule": schedule,
                 "schedule_text": clean(market.get("schedule_text")),
                 "open_text": clean(market.get("open_text")),
                 "best_time": clean(market.get("best_time")),
@@ -202,24 +191,58 @@ def public_market_records(markets: list[dict[str, Any]]) -> list[dict[str, Any]]
 
 
 def is_calendar_market(market: dict[str, Any]) -> bool:
-    allowed_market_types = {"periodic_fair", "creative_market"}
-    return (
-        clean(market.get("market_type")) in allowed_market_types
-        and bool(market.get("calendar_enabled"))
-        and has_valid_schedule_rule(market)
-    )
+    return market.get("subscription_enabled") is not False and has_valid_schedule_rule(market)
 
 
 def has_valid_schedule_rule(market: dict[str, Any]) -> bool:
-    schedule_type = clean(market.get("schedule_type"))
-    if schedule_type == "lunar_days":
-        return bool(clean_list(market.get("lunar_days")))
-    if schedule_type in {"weekly", "weekday"}:
-        weekdays = market.get("weekday", market.get("weekdays", []))
-        return isinstance(weekdays, int) or bool(clean_list(weekdays))
-    if schedule_type == "gregorian_month_days":
-        return bool(clean_list(market.get("month_days")))
+    schedule = normalized_schedule(market)
+    schedule_type = clean(schedule.get("type"))
+    if schedule_type in {"lunar_days", "weekdays", "month_days"}:
+        return bool(schedule_days(schedule))
     return False
+
+
+def normalized_schedule(market: dict[str, Any]) -> dict[str, Any]:
+    schedule = market.get("schedule")
+    if isinstance(schedule, dict):
+        schedule_type = clean(schedule.get("type"))
+        days = schedule_days(schedule)
+        if schedule_type == "daily":
+            return {"type": "daily"}
+        if schedule_type in {"lunar_days", "weekdays", "month_days"}:
+            return {"type": schedule_type, "days": days}
+        return {"type": schedule_type}
+
+    schedule_type = clean(market.get("schedule_type"))
+    if schedule_type == "daily":
+        return {"type": "daily"}
+    if schedule_type == "lunar_days":
+        return {"type": "lunar_days", "days": clean_number_list(market.get("lunar_days"))}
+    if schedule_type == "gregorian_month_days":
+        return {"type": "month_days", "days": clean_number_list(market.get("month_days"))}
+    if schedule_type == "weekday":
+        return {"type": "weekdays", "days": clean_number_list(market.get("weekday"))}
+    if schedule_type == "weekly":
+        return {"type": "weekdays", "days": [((day + 1) % 7) for day in clean_number_list(market.get("weekday", market.get("weekdays", [])))]}
+    return {"type": schedule_type}
+
+
+def schedule_days(schedule: dict[str, Any]) -> list[Any]:
+    return schedule.get("days") if isinstance(schedule.get("days"), list) else []
+
+
+def clean_number_list(value: Any) -> list[int]:
+    if isinstance(value, int):
+        value = [value]
+    if not isinstance(value, list):
+        return []
+    days: list[int] = []
+    for item in value:
+        try:
+            days.append(int(item))
+        except (TypeError, ValueError):
+            continue
+    return days
 
 
 def clean_list(value: Any) -> list[str]:
