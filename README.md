@@ -40,6 +40,7 @@ token 不依赖数据库，也不保存攻略内容。它直接记录用户选�
 
 - `schedule.type` 是 `lunar_days`、`weekdays` 或 `month_days`
 - `schedule.days` 是非空数组
+- 或 `schedule.type` 是 `interval_days`，并有有效 `start_date` 和 `interval`
 - 没有显式设置 `subscription_enabled: false`
 
 以下地点不会生成日历事件：
@@ -183,7 +184,13 @@ edge-functions/api/calendar.mobileconfig.js
 { "schedule": { "type": "month_days", "days": [5, 10, 15, 20, 25, 30] } }
 ```
 
+```json
+{ "schedule": { "type": "interval_days", "start_date": "2026-01-05", "interval": 6 } }
+```
+
 `weekdays` 使用 JavaScript / 前端常见编号：周日是 `0`，周一是 `1`，周六是 `6`。
+
+`interval_days` 用于双廊街这类固定间隔循环：`start_date` 是一个已知赶集日，`interval` 是间隔天数。
 
 ## 禁用订阅或每天开
 

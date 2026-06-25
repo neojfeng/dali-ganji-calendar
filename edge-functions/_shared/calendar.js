@@ -143,6 +143,9 @@ function isSubscribableMarket(market) {
 }
 
 function hasSubscribableSchedule(schedule) {
+  if (schedule?.type === "interval_days") {
+    return typeof schedule.start_date === "string" && Number(schedule.interval) > 0;
+  }
   return (
     schedule &&
     ["lunar_days", "weekdays", "month_days"].includes(schedule.type) &&

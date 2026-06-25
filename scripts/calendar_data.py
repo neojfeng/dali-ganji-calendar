@@ -63,6 +63,8 @@ def market_dates(market: dict[str, Any], start: date, end: date) -> list[date]:
         return weekly_market_dates(market, schedule_days(schedule), start, end)
     if schedule_type == "month_days":
         return gregorian_month_dates(market, schedule_days(schedule), start, end)
+    if schedule_type == "interval_days":
+        return interval_market_dates(market, schedule, start, end)
     raise ValueError(f"{market.get('id', '<unknown>')}: unsupported schedule_type {schedule_type!r}")
 
 
@@ -112,6 +114,29 @@ def gregorian_month_dates(market: dict[str, Any], month_days: list[Any], start: 
         if current.day in wanted:
             dates.append(current)
         current += timedelta(days=1)
+    return dates
+
+
+def interval_market_dates(market: dict[str, Any], schedule: dict[str, Any], start: date, end: date) -> list[date]:
+    try:
+        anchor = date.fromisoformat(clean(schedule.get("start_date")))
+        interval = int(schedule.get("interval"))
+    except (TypeError, ValueError) as exc:
+        raise ValueError(f"{market.get('id', '<unknown>')}: interval_days needs start_date and interval.") from exc
+    if interval <= 0:
+        raise ValueError(f"{market.get('id', '<unknown>')}: interval_days interval must be positive.")
+
+    current = anchor
+    if current < start:
+        steps = (start - current).days // interval
+        current += timedelta(days=steps * interval)
+        while current < start:
+            current += timedelta(days=interval)
+
+    dates: list[date] = []
+    while current < end:
+        dates.append(current)
+        current += timedelta(days=interval)
     return dates
 
 
@@ -199,6 +224,8 @@ def has_valid_schedule_rule(market: dict[str, Any]) -> bool:
     schedule_type = clean(schedule.get("type"))
     if schedule_type in {"lunar_days", "weekdays", "month_days"}:
         return bool(schedule_days(schedule))
+    if schedule_type == "interval_days":
+        return has_interval_schedule(schedule)
     return False
 
 
@@ -211,6 +238,12 @@ def normalized_schedule(market: dict[str, Any]) -> dict[str, Any]:
             return {"type": "daily"}
         if schedule_type in {"lunar_days", "weekdays", "month_days"}:
             return {"type": schedule_type, "days": days}
+        if schedule_type == "interval_days":
+            return {
+                "type": "interval_days",
+                "start_date": clean(schedule.get("start_date")),
+                "interval": schedule.get("interval"),
+            }
         return {"type": schedule_type}
 
     schedule_type = clean(market.get("schedule_type"))
@@ -225,6 +258,14 @@ def normalized_schedule(market: dict[str, Any]) -> dict[str, Any]:
     if schedule_type == "weekly":
         return {"type": "weekdays", "days": [((day + 1) % 7) for day in clean_number_list(market.get("weekday", market.get("weekdays", [])))]}
     return {"type": schedule_type}
+
+
+def has_interval_schedule(schedule: dict[str, Any]) -> bool:
+    try:
+        date.fromisoformat(clean(schedule.get("start_date")))
+        return int(schedule.get("interval")) > 0
+    except (TypeError, ValueError):
+        return False
 
 
 def schedule_days(schedule: dict[str, Any]) -> list[Any]:

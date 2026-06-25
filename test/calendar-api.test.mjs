@@ -40,13 +40,14 @@ test("disabled, daily, and unscheduled markets are not subscribable", () => {
   const fixtureMarkets = [
     { id: "ok", schedule: { type: "weekdays", days: [5] } },
     { id: "creative", schedule: { type: "weekdays", days: [0] } },
+    { id: "interval", schedule: { type: "interval_days", start_date: "2026-01-05", interval: 6 } },
     { id: "disabled", subscription_enabled: false, schedule: { type: "weekdays", days: [5] } },
     { id: "daily", schedule: { type: "daily" } },
     { id: "unscheduled", schedule: { type: "weekdays", days: [] } }
   ];
 
-  assert.deepEqual(getSubscribableMarkets(fixtureMarkets).map((market) => market.id), ["ok", "creative"]);
-  assert.deepEqual(normalizeSelectedMarketIds(fixtureMarkets.map((market) => market.id), fixtureMarkets), ["ok", "creative"]);
+  assert.deepEqual(getSubscribableMarkets(fixtureMarkets).map((market) => market.id), ["ok", "creative", "interval"]);
+  assert.deepEqual(normalizeSelectedMarketIds(fixtureMarkets.map((market) => market.id), fixtureMarkets), ["ok", "creative", "interval"]);
 });
 
 test("calendar API returns text/calendar for a valid token", async () => {
@@ -75,8 +76,8 @@ test("Vercel API handler returns the same dynamic ICS response", async () => {
   assert.equal(response.headers["Content-Type"], "text/calendar; charset=utf-8");
   assert.equal(response.headers["Cache-Control"], "public, max-age=3600");
   assert.match(response.body, /PRODID:-\/\/Jfeng\/\/Dali Ganji Calendar\/\/ZH-CN/);
-  assert.match(response.body, /三月街集市/);
-  assert.match(response.body, /银桥街集市/);
+  assert.match(response.body, /三月街/);
+  assert.match(response.body, /银桥街/);
   assert.doesNotMatch(response.body, /北门菜市场/);
 });
 
@@ -87,8 +88,8 @@ test("clean calendar feed URL works with comma-separated market ids", async () =
   const edgeBody = await edgeResponse.text();
 
   assert.equal(edgeResponse.status, 200);
-  assert.match(edgeBody, /三月街集市/);
-  assert.match(vercelResponse.body, /银桥街集市/);
+  assert.match(edgeBody, /三月街/);
+  assert.match(vercelResponse.body, /银桥街/);
 });
 
 test("frontend builds webcal and HTTPS subscription links from the selection token", async () => {
@@ -154,8 +155,8 @@ test("generated ICS contains selected markets and excludes unselected markets", 
   const selected = ["sanyuejie"];
   const ics = buildIcsForMarketIds(selected, calendarData);
 
-  assert.match(ics, /三月街集市/);
-  assert.doesNotMatch(ics, /银桥街集市/);
+  assert.match(ics, /三月街/);
+  assert.doesNotMatch(ics, /银桥街/);
 });
 
 test("calendar event descriptions stay focused on market basics", () => {
@@ -172,6 +173,19 @@ test("weekdays schedule type treats 0 as Sunday", () => {
 
   assert.ok(sundayEvents.length > 0);
   assert.ok(sundayEvents.every((event) => new Date(`${event.date}T00:00:00Z`).getUTCDay() === 0));
+});
+
+test("interval_days schedule generates a six-day cycle", () => {
+  const shuanglangDates = calendarData.events
+    .filter((event) => event.market_id === "shuanglangjie")
+    .slice(0, 6)
+    .map((event) => new Date(`${event.date}T00:00:00Z`));
+
+  assert.equal(shuanglangDates.length, 6);
+  for (let index = 1; index < shuanglangDates.length; index += 1) {
+    const diffDays = (shuanglangDates[index] - shuanglangDates[index - 1]) / 86400000;
+    assert.equal(diffDays, 6);
+  }
 });
 
 test("Chinese fields, commas, semicolons, backslashes, and description newlines are escaped", () => {
