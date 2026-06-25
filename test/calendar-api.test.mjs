@@ -126,6 +126,19 @@ test("source market data uses unified schedule objects", async () => {
   }
 });
 
+test("frontend filters and market location labels match current groups", async () => {
+  const html = await readFile(new URL("../public/index.html", import.meta.url), "utf8");
+  const markets = JSON.parse(await readFile(new URL("../data/markets.json", import.meta.url), "utf8"));
+
+  assert.match(html, /古城周边集市/);
+  assert.match(html, /银桥\/喜洲片区/);
+  assert.match(html, /下关市区集市/);
+  assert.match(html, /其他乡镇集市/);
+  for (const market of markets) {
+    assert.doesNotMatch(market.location_name, /\/|一带|附近|或/, `${market.id} location_name should be a short map label`);
+  }
+});
+
 test("mobileconfig endpoint installs a subscribed calendar account", async () => {
   const token = encodeSelectionToToken(["sanyuejie", "yinqiaojie"], calendarData.markets);
   const encodedToken = encodeURIComponent(token);

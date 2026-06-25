@@ -1081,7 +1081,7 @@
     <script>
       const STORAGE_KEY = "dali-ganji-selected-markets";
       const PLACEHOLDER_IMAGE = new URL("images/markets/placeholder.jpg", window.location.href).toString();
-      const FILTERS = ["最近", "全部", "附近", "古城周边", "喜洲周边", "洱海北部", "洱海东部", "其他"];
+      const FILTERS = ["最近", "全部", "附近", "古城周边集市", "银桥/喜洲片区", "下关市区集市", "其他乡镇集市"];
       const app = document.querySelector("#app");
       const locationButton = document.querySelector("#locationButton");
       const toast = document.querySelector("#toast");
@@ -1824,12 +1824,12 @@
       }
 
       function locationLine(market) {
-        const place = market.address || market.location_name || "地点待补充";
+        const place = market.location_name || market.address || "地点待补充";
         return [place, distanceText(market)].filter(Boolean).join(" · ");
       }
 
       function listLocationLineHtml(market) {
-        const place = market.address || market.location_name || "地点待补充";
+        const place = market.location_name || market.address || "地点待补充";
         const distance = distanceText(market);
         const distanceHtml = distance ? `<span class="distance-text">${escapeHtml(distance)}</span>` : "";
         const separator = distance ? '<span aria-hidden="true">·</span>' : "";
@@ -1837,7 +1837,7 @@
       }
 
       function detailLocationLineHtml(market) {
-        const place = market.address || market.location_name || "地点待补充";
+        const place = market.location_name || market.address || "地点待补充";
         const distance = distanceText(market);
         const distanceHtml = distance ? `<span class="distance-text">${escapeHtml(distance)}</span>` : "";
         const separator = distance ? '<span aria-hidden="true">·</span>' : "";
@@ -1845,7 +1845,7 @@
       }
 
       function locationLineHtml(market, statusText) {
-        const place = market.address || market.location_name || "地点待补充";
+        const place = market.location_name || market.address || "地点待补充";
         const placeText = [place, distanceText(market)].filter(Boolean).join(" · ");
         const status = statusText ? `<span>${escapeHtml(statusText)}</span><span aria-hidden="true">｜</span>` : "";
         return `${status}${mapPinIcon("meta-icon")}<span>${escapeHtml(placeText)}</span>`;
@@ -1900,7 +1900,7 @@
       }
 
       function baiduMapLink(market) {
-        const query = encodeURIComponent(market.address || market.location_name || market.name || "大理赶集");
+        const query = encodeURIComponent(market.location_name || market.address || market.name || "大理赶集");
         if (typeof market.lat === "number" && typeof market.lng === "number") {
           return `https://api.map.baidu.com/marker?location=${market.lat},${market.lng}&title=${query}&content=${query}&output=html`;
         }
