@@ -125,6 +125,15 @@ test("generated ICS contains selected markets and excludes unselected markets", 
   assert.doesNotMatch(ics, /银桥街集市/);
 });
 
+test("calendar event descriptions stay focused on market basics", () => {
+  const description = calendarData.events.find((event) => event.description)?.description ?? "";
+
+  assert.match(description, /时间：/);
+  assert.match(description, /地点：/);
+  assert.match(description, /更多赶集攻略或重新订阅日历，请访问：https:\/\/ganji\.neojfeng\.store\//);
+  assert.doesNotMatch(description, /导航：|提醒：|数据说明：/);
+});
+
 test("Chinese fields, commas, semicolons, backslashes, and description newlines are escaped", () => {
   const ics = buildIcsFromEvents([
     {

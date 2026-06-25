@@ -7,7 +7,6 @@ import sys
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
-from urllib.parse import quote
 from zoneinfo import ZoneInfo
 
 try:
@@ -27,7 +26,7 @@ CALENDAR_NAME = "大理赶集日历"
 TIMEZONE = "Asia/Shanghai"
 DOMAIN = "dali-ganji-calendar"
 MONTHS_AHEAD = 18
-DATA_NOTICE = "数据由大理赶集攻略整理，赶集时间可能因天气、节假日或当地安排调整，请出行前再确认。"
+GUIDE_URL = "https://ganji.neojfeng.store/"
 
 
 def add_months(day: date, months: int) -> date:
@@ -253,55 +252,14 @@ def description_for(market: dict[str, Any]) -> str:
     intro = clean(market.get("summary")) or clean(market.get("intro"))
     schedule_text = clean(market.get("schedule_text")) or "时间待补充"
     place = clean(market.get("address")) or clean(market.get("location_name")) or "地点待补充"
-    nav_links = navigation_links(market)
-    reminders = clean_list(market.get("avoid_pitfalls"))
 
     lines = []
     if intro:
         lines.append(intro)
     lines.append(f"时间：{schedule_text}")
     lines.append(f"地点：{place}")
-    if nav_links:
-        lines.append(f"导航：{' / '.join(nav_links)}")
-    if reminders:
-        lines.append(f"提醒：{'、'.join(reminders[:3])}")
-    lines.append(f"数据说明：{DATA_NOTICE}")
+    lines.append(f"更多赶集攻略或重新订阅日历，请访问：{GUIDE_URL}")
     return "\n".join(lines)
-
-
-def navigation_links(market: dict[str, Any]) -> list[str]:
-    links: list[str] = []
-    amap_url = clean(market.get("amap_url"))
-
-    if amap_url:
-        links.append(f"高德地图 {amap_url}")
-    else:
-        links.append(f"高德地图 {amap_link(market)}")
-
-    links.append(f"百度地图 {baidu_map_link(market)}")
-    return links
-
-
-def amap_link(market: dict[str, Any]) -> str:
-    name = clean(market.get("name")) or clean(market.get("location_name")) or "大理赶集"
-    if has_coordinates(market):
-        return f"https://uri.amap.com/marker?position={market.get('lng')},{market.get('lat')}&name={quote(name)}"
-    return f"https://uri.amap.com/search?keyword={quote(name)}&city={quote('大理')}"
-
-
-def baidu_map_link(market: dict[str, Any]) -> str:
-    name = clean(market.get("address")) or clean(market.get("location_name")) or clean(market.get("name")) or "大理赶集"
-    if has_coordinates(market):
-        query = quote(name)
-        return (
-            "https://api.map.baidu.com/marker?"
-            f"location={market.get('lat')},{market.get('lng')}&title={query}&content={query}&output=html"
-        )
-    return f"https://map.baidu.com/search/{quote(name)}"
-
-
-def has_coordinates(market: dict[str, Any]) -> bool:
-    return market.get("lat") is not None and market.get("lng") is not None
 
 
 def clean(value: Any) -> str:

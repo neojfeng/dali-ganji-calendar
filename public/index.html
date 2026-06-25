@@ -87,6 +87,17 @@
         font-size: 15px;
       }
 
+      .browser-notice {
+        margin: 0;
+        border-radius: 16px;
+        background: rgba(0, 122, 255, 0.08);
+        color: #005bbf;
+        font-size: 13px;
+        font-weight: 650;
+        line-height: 1.45;
+        padding: 10px 12px;
+      }
+
       .location-row {
         display: flex;
         flex-wrap: wrap;
@@ -1156,6 +1167,7 @@
           <section class="hero" aria-labelledby="pageTitle">
             <h1 id="pageTitle">大理赶集攻略</h1>
             <p class="lead">点击集市查看攻略，订阅集市可添加到 Apple 日历</p>
+            ${inAppBrowserNoticeTemplate()}
             <div class="location-row">
               <button class="pill-button" id="locationButton" type="button">
                 <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -1168,6 +1180,11 @@
             </div>
           </section>
         `;
+      }
+
+      function inAppBrowserNoticeTemplate() {
+        if (!inAppBrowser) return "";
+        return '<p class="browser-notice">当前浏览器可能无法打开 Apple 日历。请点击右上角“…” → 在默认浏览器或 Safari 打开后再订阅。</p>';
       }
 
       function renderRoute() {
@@ -1312,6 +1329,7 @@
           <div class="back-row">
             <button class="panel-close" type="button" data-action="home">返回</button>
           </div>
+          ${inAppBrowserNoticeTemplate()}
           <section class="detail-top">
             <div class="detail-image">${imageTag(market)}</div>
             <article class="detail-info-card">
