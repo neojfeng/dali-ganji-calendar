@@ -816,22 +816,19 @@
 
       .panel-actions {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-      }
-
-      .panel-actions.is-single {
         grid-template-columns: 1fr;
-      }
-
-      .panel-actions.is-single .plain-button {
-        display: none;
+        gap: 10px;
       }
 
       .panel-actions .subscribe-button,
       .panel-actions .plain-button {
         min-height: 44px;
         border-radius: 15px;
+      }
+
+      .panel-actions .subscribe-button[aria-disabled="true"] {
+        opacity: 0.48;
+        cursor: not-allowed;
       }
 
       .panel-actions + .panel-help {
@@ -868,6 +865,12 @@
         }
       }
 
+      @media (min-width: 560px) {
+        .panel-actions {
+          grid-template-columns: 1.2fr 1fr 1fr;
+        }
+      }
+
       @media (max-width: 370px) {
         main {
           padding-right: 12px;
@@ -877,10 +880,6 @@
         .thumb {
           width: 74px;
           height: 74px;
-        }
-
-        .panel-actions {
-          grid-template-columns: 1fr;
         }
 
         .calendar-day {
@@ -954,13 +953,14 @@
           <p class="calendar-preview-empty" id="calendarPreviewEmpty" hidden>这个月没有已加入集市的赶集日。</p>
         </div>
         <div class="panel-actions">
-          <button class="subscribe-button" id="copyButton" type="button">复制订阅链接</button>
-          <a class="plain-button" id="subscribeButton" href="#" rel="noopener">一键订阅 Apple 日历</a>
+          <a class="subscribe-button" id="subscribeButton" href="#" rel="noopener">一键订阅 Apple 日历</a>
+          <button class="plain-button" id="copyButton" type="button">复制订阅链接</button>
+          <button class="plain-button" id="guideButton" type="button">查看手动添加教程</button>
         </div>
-        <p class="panel-help" id="copyStatus">如果无法一键订阅，请复制订阅链接，在 iPhone 日历里添加订阅日历。</p>
+        <p class="panel-help" id="copyStatus">如果没有自动打开 Apple 日历，请复制订阅链接，用 Safari 打开后再添加到 iPhone 日历。</p>
         <ol class="subscription-steps">
-          <li>Safari 里点“一键订阅 Apple 日历”，按系统提示订阅日历。</li>
-          <li>微信或小红书里请先复制 HTTPS 链接，再到 iPhone 日历里添加订阅日历。</li>
+          <li>iPhone 路径：日历 App → 日历 → 添加日历 → 添加订阅日历 → 粘贴 HTTPS 订阅链接。</li>
+          <li>微信或小红书里如果无法打开 Apple 日历，请点击右上角用 Safari 打开，或复制订阅链接手动添加。</li>
           <li>如果看到 “Events” 事件列表，请取消；那是导入事件，不是订阅日历。</li>
         </ol>
       </div>
@@ -981,6 +981,7 @@
       const closePanelButton = document.querySelector("#closePanelButton");
       const subscribeButton = document.querySelector("#subscribeButton");
       const copyButton = document.querySelector("#copyButton");
+      const guideButton = document.querySelector("#guideButton");
       const copyStatus = document.querySelector("#copyStatus");
       const selectedList = document.querySelector("#selectedList");
       const calendarPreviewTitle = document.querySelector("#calendarPreviewTitle");
@@ -989,7 +990,6 @@
       const prevMonthButton = document.querySelector("#prevMonthButton");
       const nextMonthButton = document.querySelector("#nextMonthButton");
       const inAppBrowser = isRestrictedInAppBrowser();
-      const canUseAppleCalendarShortcut = isAppleCalendarShortcutBrowser();
 
       let markets = [];
       let events = [];
@@ -1043,6 +1043,14 @@
           renderCalendarPreview();
         });
         copyButton.addEventListener("click", copySubscriptionLink);
+        guideButton.addEventListener("click", showManualSubscriptionGuide);
+        subscribeButton.addEventListener("click", (event) => {
+          if (!orderedSelectedIds().length) {
+            event.preventDefault();
+            showToast("请先选择你关注的集市");
+            copyStatus.textContent = "请先选择你关注的集市";
+          }
+        });
         window.addEventListener("popstate", renderRoute);
       }
 
@@ -1438,22 +1446,12 @@
       }
 
       function updateSubscribePanelMode() {
-        const actions = copyButton.parentElement;
-        if (inAppBrowser || !canUseAppleCalendarShortcut) {
-          actions.classList.add("is-single");
-          copyButton.textContent = "复制订阅链接";
-          subscribeButton.textContent = "一键订阅 Apple 日历";
-          subscribeButton.href = buildSubscriptionLink("https") || "#";
-          copyStatus.textContent = inAppBrowser
-            ? "微信或小红书里通常不能唤起日历。复制 HTTPS 链接后，用 Safari 打开再添加到 iPhone 日历。"
-            : "当前浏览器不会打开 iPhone 的订阅日历页面。请复制 HTTPS 链接，在 iPhone Safari 或日历 App 中添加订阅。";
-          return;
-        }
-        actions.classList.remove("is-single");
         copyButton.textContent = "复制订阅链接";
         subscribeButton.textContent = "一键订阅 Apple 日历";
-        subscribeButton.href = buildSubscriptionLink("webcal") || "#";
-        copyStatus.textContent = "Safari 里可一键打开 Apple 日历订阅；如果失败，请复制 HTTPS 链接后手动添加订阅日历。";
+        const webcalUrl = buildSubscriptionLink("webcal");
+        subscribeButton.href = webcalUrl || "#";
+        subscribeButton.setAttribute("aria-disabled", webcalUrl ? "false" : "true");
+        copyStatus.textContent = subscriptionHelpText();
       }
 
       function renderCalendarPreview() {
@@ -1527,13 +1525,12 @@
       function buildSubscriptionLink(protocol) {
         const ids = orderedSelectedIds();
         if (!ids.length) return "";
-        const httpsUrl = new URL(`calendars/${ids.join("__")}.ics`, window.location.href);
-        httpsUrl.search = "";
-        httpsUrl.hash = "";
-        if (protocol === "webcal") {
-          httpsUrl.protocol = "webcal:";
-        }
-        return httpsUrl.toString();
+        const token = encodeSelectionToToken(ids, markets);
+        if (!token) return "";
+        const host = window.location.host;
+        const path = `/api/calendar.ics?s=${encodeURIComponent(token)}`;
+        if (protocol === "webcal") return `webcal://${host}${path}`;
+        return `https://${host}${path}`;
       }
 
       function getSubscribableMarkets(items) {
@@ -1592,16 +1589,25 @@
 
       async function copySubscriptionLink() {
         const link = buildSubscriptionLink("https");
-        if (!link) return;
+        if (!link) {
+          showToast("请先选择你关注的集市");
+          copyStatus.textContent = "请先选择你关注的集市";
+          return;
+        }
         try {
           await writeClipboard(link);
-          copyStatus.textContent = "已复制 HTTPS 链接。请到 iPhone 日历 App 里添加订阅日历。";
+          copyStatus.textContent = "已复制 HTTPS 链接。请到 iPhone 日历 App → 日历 → 添加日历 → 添加订阅日历里粘贴。";
           showToast("订阅链接已复制");
         } catch (error) {
           window.prompt("请复制下面的订阅链接", link);
           copyStatus.textContent = "如果没有自动复制，请手动复制弹窗里的 HTTPS 链接。";
           showToast("暂时无法复制链接");
         }
+      }
+
+      function showManualSubscriptionGuide() {
+        copyStatus.textContent = "iPhone 路径：日历 App → 日历 → 添加日历 → 添加订阅日历 → 粘贴 HTTPS 订阅链接。";
+        showToast("可复制链接后手动添加");
       }
 
       async function writeClipboard(text) {
@@ -1639,11 +1645,14 @@
         return /micromessenger|xiaohongshu|xhs|aweme|bytedance|toutiao|qq\//.test(ua);
       }
 
-      function isAppleCalendarShortcutBrowser() {
-        const ua = navigator.userAgent;
-        const isIOS = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
-        const isSafari = /Safari/i.test(ua) && !/CriOS|FxiOS|EdgiOS|OPiOS|Chrome|Edg|Firefox/i.test(ua);
-        return isIOS && isSafari;
+      function subscriptionHelpText() {
+        if (inAppBrowser) {
+          return "当前浏览器可能无法直接打开 Apple 日历。请点击右上角用 Safari 打开，或复制订阅链接手动添加。";
+        }
+        if (window.location.protocol !== "https:" && window.location.hostname !== "localhost") {
+          return "当前站点不是 HTTPS，一键订阅可能不可用。生产环境请使用 HTTPS 域名。";
+        }
+        return "如果没有自动打开 Apple 日历，请复制订阅链接，用 Safari 打开后再添加到 iPhone 日历。";
       }
 
       async function useLocation() {

@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import { test } from "node:test";
 
 import { calendarData } from "../edge-functions/_data/calendar-data.js";
@@ -45,9 +46,13 @@ test("calendar API returns text/calendar for a valid token", async () => {
 
   assert.equal(response.status, 200);
   assert.equal(response.headers.get("Content-Type"), "text/calendar; charset=utf-8");
+  assert.equal(response.headers.get("Cache-Control"), "public, max-age=3600");
   assert.match(body, /BEGIN:VCALENDAR/);
-  assert.match(body, /METHOD:PUBLISH/);
+  assert.match(body, /PRODID:-\/\/Jfeng\/\/Dali Ganji Calendar\/\/ZH-CN/);
+  assert.match(body, /X-WR-CALNAME:大理赶集日历/);
+  assert.match(body, /X-WR-TIMEZONE:Asia\/Shanghai/);
   assert.match(body, new RegExp(`UID:${selected[0]}-`));
+  assert.doesNotMatch(body, /<!doctype html/i);
 });
 
 test("Vercel API handler returns the same dynamic ICS response", async () => {
@@ -58,26 +63,38 @@ test("Vercel API handler returns the same dynamic ICS response", async () => {
   assert.equal(response.statusCode, 200);
   assert.equal(response.headers["Content-Type"], "text/calendar; charset=utf-8");
   assert.equal(response.headers["Cache-Control"], "public, max-age=3600");
+  assert.match(response.body, /PRODID:-\/\/Jfeng\/\/Dali Ganji Calendar\/\/ZH-CN/);
   assert.match(response.body, /三月街赶集/);
   assert.match(response.body, /银桥街集市/);
   assert.doesNotMatch(response.body, /北门菜市场/);
 });
 
-test("clean calendar feed URL works for subscription clients", async () => {
+test("legacy clean calendar feed URL still works for existing subscription clients", async () => {
   const path = "/calendars/sanyuejie__yinqiaojie.ics";
   const edgeResponse = await handleRequest(new Request(`https://example.com${path}`));
   const vercelResponse = await invokeVercelHandler(path);
   const edgeBody = await edgeResponse.text();
 
   assert.equal(edgeResponse.status, 200);
-  assert.match(edgeBody, /METHOD:PUBLISH/);
-  assert.match(edgeBody, /DTEND;VALUE=DATE:/);
-  assert.match(edgeBody, /GEO:/);
   assert.match(edgeBody, /三月街赶集/);
   assert.match(vercelResponse.body, /银桥街集市/);
 });
 
+test("frontend builds webcal and HTTPS subscription links from the selection token", async () => {
+  const html = await readFile(new URL("../public/index.html", import.meta.url), "utf8");
+
+  assert.match(html, /<a class="subscribe-button" id="subscribeButton" href="#"/);
+  assert.match(html, /webcal:\/\/\$\{host\}\$\{path\}/);
+  assert.match(html, /https:\/\/\$\{host\}\$\{path\}/);
+  assert.match(html, /\/api\/calendar\.ics\?s=\$\{encodeURIComponent\(token\)\}/);
+  assert.match(html, /请先选择你关注的集市/);
+  assert.doesNotMatch(html, /data:text\/calendar/);
+  assert.doesNotMatch(html, /new Blob/);
+  assert.doesNotMatch(html, /calendars\/\$\{ids\.join/);
+});
+
 test("mobileconfig endpoint installs a subscribed calendar account", async () => {
+  const token = encodeSelectionToToken(["sanyuejie", "yinqiaojie"], calendarData.markets);
   const edgeResponse = await handleMobileConfigRequest(new Request("https://example.com/calendars/sanyuejie__yinqiaojie.mobileconfig"));
   const edgeBody = await edgeResponse.text();
   const vercelResponse = await invokeVercelHandler("/calendars/sanyuejie__yinqiaojie.mobileconfig", vercelMobileConfigHandler);
@@ -85,7 +102,7 @@ test("mobileconfig endpoint installs a subscribed calendar account", async () =>
   assert.equal(edgeResponse.status, 200);
   assert.equal(edgeResponse.headers.get("Content-Type"), "application/x-apple-aspen-config; charset=utf-8");
   assert.match(edgeBody, /com\.apple\.subscribedcalendar\.account/);
-  assert.match(edgeBody, /https:\/\/example\.com\/calendars\/sanyuejie__yinqiaojie\.ics/);
+  assert.match(edgeBody, new RegExp(`https://example\\.com/api/calendar\\.ics\\?s=${token}`));
   assert.match(edgeBody, /大理赶集日历/);
   assert.equal(vercelResponse.headers["Content-Type"], "application/x-apple-aspen-config; charset=utf-8");
   assert.match(vercelResponse.body, /com\.apple\.subscribedcalendar\.account/);

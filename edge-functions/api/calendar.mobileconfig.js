@@ -2,7 +2,8 @@ import { calendarData } from "../_data/calendar-data.js";
 import {
   buildMobileConfigProfile,
   decodePathSelectionToMarketIds,
-  decodeTokenToMarketIds
+  decodeTokenToMarketIds,
+  encodeSelectionToToken
 } from "../_shared/calendar.js";
 
 const HEADERS = {
@@ -18,10 +19,11 @@ export async function handleRequest(request) {
     const selectedIds = token
       ? decodeTokenToMarketIds(token, calendarData.markets)
       : decodePathSelectionToMarketIds(pathSelection, calendarData.markets);
-    const pathStem = selectedIds.length ? selectedIds.join("__") : token || pathSelection || "empty";
-    const subscriptionUrl = new URL(`/calendars/${encodeURIComponent(pathStem)}.ics`, url.origin).toString();
+    const selectionToken = token || encodeSelectionToToken(selectedIds, calendarData.markets);
+    const pathStem = selectionToken || pathSelection || "empty";
+    const subscriptionUrl = new URL(`/api/calendar.ics?s=${encodeURIComponent(pathStem)}`, url.origin).toString();
     const profile = buildMobileConfigProfile({
-      token: token || pathStem,
+      token: pathStem,
       selectedMarketIds: selectedIds,
       data: calendarData,
       subscriptionUrl
