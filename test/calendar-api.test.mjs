@@ -105,6 +105,16 @@ test("frontend builds webcal and HTTPS subscription links from the selection tok
   assert.doesNotMatch(html, /calendars\/\$\{ids\.join/);
 });
 
+test("frontend treats daily markets as always-open instead of pending verification", async () => {
+  const html = await readFile(new URL("../public/index.html", import.meta.url), "utf8");
+
+  assert.match(html, /function isAlwaysOpenMarket/);
+  assert.match(html, /\["permanent_market", "daily_market"\]\.includes/);
+  assert.match(html, /market\?\.schedule_type === "daily"/);
+  assert.match(html, /if \(isAlwaysOpenMarket\(market\)\)/);
+  assert.match(html, /每天开集/);
+});
+
 test("mobileconfig endpoint installs a subscribed calendar account", async () => {
   const token = encodeSelectionToToken(["sanyuejie", "yinqiaojie"], calendarData.markets);
   const encodedToken = encodeURIComponent(token);

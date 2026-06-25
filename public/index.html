@@ -1297,7 +1297,7 @@
       }
 
       function marketTimeBadge(market) {
-        if (market.market_type === "permanent_market") {
+        if (isAlwaysOpenMarket(market)) {
           return '<span class="time-badge is-soon">今天开集</span>';
         }
         const nextEvent = nextEventForMarket(market.id);
@@ -1308,7 +1308,7 @@
       }
 
       function marketKicker(market) {
-        if (market.market_type === "permanent_market") {
+        if (isAlwaysOpenMarket(market)) {
           return "今天开集";
         }
         const nextEvent = nextEventForMarket(market.id);
@@ -1360,7 +1360,7 @@
       }
 
       function keyInfoCard(market) {
-        const timeText = market.market_type === "permanent_market" ? (market.open_text || "每天开放") : (market.schedule_text || "时间待补充");
+        const timeText = isAlwaysOpenMarket(market) ? (market.open_text || market.schedule_text || "每天开放") : (market.schedule_text || "时间待补充");
         return `
           <article class="detail-card">
             <h3>🗓️ 关键信息</h3>
@@ -1468,7 +1468,7 @@
         const market = markets.find((item) => item.id === id);
         const canSubscribe = market && isSubscribableMarket(market);
         const isAdded = selected.has(id);
-        if (market?.market_type === "permanent_market") {
+        if (isAlwaysOpenMarket(market)) {
           return `
             <button class="calendar-pill-button is-muted" type="button" data-action="always-open" data-id="${escapeHtml(id)}" aria-label="每天开集，不用加入日历">每天开集</button>
           `;
@@ -1682,6 +1682,10 @@
           market.calendar_enabled === true &&
           hasValidScheduleRule(market)
         );
+      }
+
+      function isAlwaysOpenMarket(market) {
+        return ["permanent_market", "daily_market"].includes(market?.market_type) || market?.schedule_type === "daily";
       }
 
       function hasValidScheduleRule(market) {
