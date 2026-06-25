@@ -255,9 +255,9 @@
       }
 
       .filter-chip.is-active {
-        background: var(--accent);
-        color: #fff;
-        box-shadow: none;
+        background: #fff;
+        color: var(--accent);
+        box-shadow: inset 0 0 0 1px rgba(0, 122, 255, 0.18);
       }
 
       .week-card,
@@ -300,11 +300,45 @@
         gap: 10px;
       }
 
+      .card-main-row {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .market-heading {
+        display: flex;
+        min-width: 0;
+        align-items: center;
+        gap: 6px;
+      }
+
       .market-name {
         min-width: 0;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+      }
+
+      .time-badge {
+        display: inline-flex;
+        height: 22px;
+        flex: 0 0 auto;
+        align-items: center;
+        border-radius: 999px;
+        background: rgba(0, 0, 0, 0.05);
+        color: #8e8e93;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 1;
+        padding: 0 7px;
+        white-space: nowrap;
+      }
+
+      .time-badge.is-soon {
+        background: rgba(52, 199, 89, 0.1);
+        color: #34c759;
       }
 
       .schedule,
@@ -321,7 +355,7 @@
       .address {
         display: flex;
         align-items: center;
-        gap: 4px;
+        gap: 5px;
         color: var(--muted);
       }
 
@@ -330,6 +364,44 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+      }
+
+      .address .place-text {
+        flex: 0 1 auto;
+      }
+
+      .address .distance-text {
+        flex: 0 0 auto;
+        color: #1c1c1e;
+        font-weight: 700;
+      }
+
+      .place-link {
+        min-width: 0;
+        overflow: hidden;
+        border: 0;
+        background: transparent;
+        color: var(--accent);
+        font: inherit;
+        font-weight: 650;
+        padding: 0;
+        text-align: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .place-link:active {
+        opacity: 0.62;
+      }
+
+      .address .place-link {
+        color: var(--accent);
+      }
+
+      .address .meta-icon.is-link {
+        color: var(--accent);
       }
 
       .tag-row {
@@ -391,6 +463,40 @@
 
       .card-icon-button:active {
         transform: scale(0.94);
+      }
+
+      .calendar-pill-button {
+        display: inline-flex;
+        height: 28px;
+        min-width: 58px;
+        flex: 0 0 auto;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        border-radius: 14px;
+        background: rgba(0, 122, 255, 0.08);
+        color: #007aff;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1;
+        padding: 0 12px;
+        white-space: nowrap;
+        transition: transform 150ms ease, background 150ms ease, opacity 150ms ease;
+      }
+
+      .calendar-pill-button.is-added,
+      .calendar-pill-button.is-muted {
+        background: rgba(0, 0, 0, 0.05);
+        color: #8e8e93;
+      }
+
+      .calendar-pill-button:disabled {
+        opacity: 0.62;
+        cursor: not-allowed;
+      }
+
+      .calendar-pill-button:active {
+        transform: scale(0.96);
       }
 
       .card-button,
@@ -894,7 +1000,7 @@
     <main id="app">
       <section class="hero" aria-labelledby="pageTitle">
         <h1 id="pageTitle">大理赶集攻略</h1>
-        <p class="lead">查时间、看距离，选几个常去的集市订阅到 iPhone 日历</p>
+        <p class="lead">点击集市查看攻略，订阅几个常去的集市可一键添加到 Apple 日历</p>
         <div class="location-row">
           <button class="pill-button" id="locationButton" type="button">
             <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -1058,7 +1164,7 @@
         return `
           <section class="hero" aria-labelledby="pageTitle">
             <h1 id="pageTitle">大理赶集攻略</h1>
-            <p class="lead">查时间、看距离，选几个常去的集市订阅到 iPhone 日历</p>
+            <p class="lead">点击集市查看攻略，订阅几个常去的集市可一键添加到 Apple 日历</p>
             <div class="location-row">
               <button class="pill-button" id="locationButton" type="button">
                 <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -1086,11 +1192,7 @@
       function renderHome() {
         app.innerHTML = `
           ${heroTemplate()}
-          <section class="section" aria-labelledby="marketsTitle">
-            <div class="section-head">
-              <h2 class="section-title" id="marketsTitle">选择集市</h2>
-              <p class="section-note">${activeFilter === "最近" ? "未来 7 天" : "先看攻略，再加入日历"}</p>
-            </div>
+          <section class="section" aria-label="集市列表">
             <nav class="filters" id="filters" aria-label="区域筛选">${filtersTemplate()}</nav>
             <div class="market-list" id="marketList">${marketListTemplate()}</div>
           </section>
@@ -1103,6 +1205,7 @@
         const end = new Date(now);
         end.setDate(now.getDate() + 7);
         const marketById = new Map(markets.map((market) => [market.id, market]));
+        const marketIndexById = new Map(markets.map((market, index) => [market.id, index]));
         const eventsByMarket = new Map();
         events
           .filter((event) => {
@@ -1119,14 +1222,29 @@
               eventsByMarket.set(event.market_id, event);
             }
           });
-        const weekEvents = Array.from(eventsByMarket.values()).slice(0, 8);
+        const recentItems = Array.from(eventsByMarket.values()).map((event) => ({
+          market: marketById.get(event.market_id) || {},
+          date: event.date,
+          index: Number(event.market_index ?? marketIndexById.get(event.market_id) ?? 0)
+        }));
+        markets.forEach((market, index) => {
+          if (market.market_type !== "permanent_market") return;
+          recentItems.push({
+            market,
+            date: dateToIso(now),
+            index
+          });
+        });
+        const weekItems = recentItems
+          .filter((item) => item.market?.id)
+          .sort((a, b) => a.date.localeCompare(b.date) || a.index - b.index)
+          .slice(0, 8);
 
-        if (weekEvents.length === 0) {
+        if (weekItems.length === 0) {
           return '<div class="empty">未来 7 天暂时没有已验证的赶集数据。</div>';
         }
 
-        return weekEvents.map((event) => {
-          const market = marketById.get(event.market_id) || {};
+        return weekItems.map(({ market }) => {
           return guideCardTemplate(market, {
             className: "week-card",
             fallbackSummary: "适合顺路体验本地赶集。"
@@ -1156,20 +1274,34 @@
         const tags = (market.tags || []).slice(0, 4).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("");
         return `
           <article class="${options.className || "market-card"}" data-card-id="${escapeHtml(market.id)}" role="button" tabindex="0">
-            <div class="card-title-row">
-              <h3 class="market-name">${escapeHtml(market.name || "集市")}</h3>
+            <div class="card-main-row">
+              <div class="market-heading">
+                <h3 class="market-name">${escapeHtml(market.name || "集市")}</h3>
+                ${marketTimeBadge(market)}
+              </div>
               ${calendarButton(market.id)}
             </div>
-            <p class="address">${locationLineHtml(market, options.kicker || marketKicker(market))}</p>
+            <p class="address">${listLocationLineHtml(market)}</p>
             <p class="summary">${escapeHtml(market.summary || market.intro || options.fallbackSummary || "")}</p>
             <div class="tag-row">${tags}</div>
           </article>
         `;
       }
 
+      function marketTimeBadge(market) {
+        if (market.market_type === "permanent_market") {
+          return '<span class="time-badge is-soon">今天开集</span>';
+        }
+        const nextEvent = nextEventForMarket(market.id);
+        if (!nextEvent) return '<span class="time-badge">日期待补充</span>';
+        const diffDays = daysUntil(nextEvent.date);
+        const label = diffDays === 0 ? "今天开集" : diffDays === 1 ? "明天开集" : diffDays === 2 ? "后天开集" : `${diffDays}天后开集`;
+        return `<span class="time-badge${diffDays >= 0 && diffDays <= 7 ? " is-soon" : ""}">${escapeHtml(label)}</span>`;
+      }
+
       function marketKicker(market) {
         if (market.market_type === "permanent_market") {
-          return market.open_text || "每天开放";
+          return "今天开集";
         }
         const nextEvent = nextEventForMarket(market.id);
         if (!nextEvent) return "日期待补充";
@@ -1192,14 +1324,16 @@
           <section class="detail-top">
             <div class="detail-image">${imageTag(market)}</div>
             <article class="detail-info-card">
-              <div class="card-title-row">
-                <h1 class="detail-title">${escapeHtml(market.name)}</h1>
+              <div class="card-main-row">
+                <div class="market-heading">
+                  <h1 class="detail-title">${escapeHtml(market.name)}</h1>
+                  ${marketTimeBadge(market)}
+                </div>
                 <div class="detail-icon-actions">
                   ${calendarButton(market.id)}
-                  ${navigationButton(market.id)}
                 </div>
               </div>
-              <p class="address">${locationLineHtml(market, marketKicker(market))}</p>
+              <p class="address">${detailLocationLineHtml(market)}</p>
               <p class="summary">${escapeHtml(market.summary || market.intro || "")}</p>
               <div class="tag-row">${tags}</div>
             </article>
@@ -1225,6 +1359,7 @@
               ${kv("赶集时间", timeText)}
               ${kv("建议到达", market.best_time || "上午去选择更多")}
               ${kv("建议停留", market.duration || "建议预留 1-2 小时")}
+              ${market.old_town_trip ? kv("距离古城", market.old_town_trip) : ""}
             </div>
           </article>
         `;
@@ -1326,22 +1461,16 @@
         const isAdded = selected.has(id);
         if (market?.market_type === "permanent_market") {
           return `
-            <button class="card-icon-button is-muted" type="button" data-action="always-open" data-id="${escapeHtml(id)}" aria-label="每天开放，不用加入日历">
-              ${plusIcon()}
-            </button>
+            <button class="calendar-pill-button is-muted" type="button" data-action="always-open" data-id="${escapeHtml(id)}" aria-label="每天开集，不用加入日历">每天开集</button>
           `;
         }
         if (!canSubscribe) {
           return `
-            <button class="card-icon-button is-muted" type="button" disabled aria-label="日期待核实，暂不能加入日历">
-              ${plusIcon()}
-            </button>
+            <button class="calendar-pill-button is-muted" type="button" disabled aria-label="日期待核实，暂不能加入日历">待核</button>
           `;
         }
         return `
-          <button class="card-icon-button${isAdded ? " is-added" : ""}" type="button" data-action="toggle" data-id="${escapeHtml(id)}" aria-label="${isAdded ? "已加入日历" : "加入日历"}">
-            ${isAdded ? checkIcon() : plusIcon()}
-          </button>
+          <button class="calendar-pill-button${isAdded ? " is-added" : ""}" type="button" data-action="toggle" data-id="${escapeHtml(id)}" aria-label="${isAdded ? "已订阅" : "订阅"}">${isAdded ? "已订阅" : "订阅"}</button>
         `;
       }
 
@@ -1723,6 +1852,22 @@
         return [place, distanceText(market)].filter(Boolean).join(" · ");
       }
 
+      function listLocationLineHtml(market) {
+        const place = market.address || market.location_name || "地点待补充";
+        const distance = distanceText(market);
+        const distanceHtml = distance ? `<span class="distance-text">${escapeHtml(distance)}</span>` : "";
+        const separator = distance ? '<span aria-hidden="true">·</span>' : "";
+        return `${mapPinIcon("meta-icon")}<span class="place-text">${escapeHtml(place)}</span>${separator}${distanceHtml}`;
+      }
+
+      function detailLocationLineHtml(market) {
+        const place = market.address || market.location_name || "地点待补充";
+        const distance = distanceText(market);
+        const distanceHtml = distance ? `<span class="distance-text">${escapeHtml(distance)}</span>` : "";
+        const separator = distance ? '<span aria-hidden="true">·</span>' : "";
+        return `${mapPinIcon("meta-icon is-link")}<button class="place-link" type="button" data-action="navigate" data-id="${escapeHtml(market.id)}" aria-label="导航到${escapeHtml(place)}">${escapeHtml(place)}</button>${separator}${distanceHtml}`;
+      }
+
       function locationLineHtml(market, statusText) {
         const place = market.address || market.location_name || "地点待补充";
         const placeText = [place, distanceText(market)].filter(Boolean).join(" · ");
@@ -1839,13 +1984,17 @@
       }
 
       function relativeDateText(value) {
-        const eventDate = parseLocalDate(value);
-        const today = startOfToday();
-        const diffDays = Math.round((eventDate - today) / 86400000);
+        const diffDays = daysUntil(value);
         if (diffDays === 0) return "今天";
         if (diffDays === 1) return "明天";
         if (diffDays === 2) return "后天";
         return `${diffDays} 天后`;
+      }
+
+      function daysUntil(value) {
+        const eventDate = parseLocalDate(value);
+        const today = startOfToday();
+        return Math.round((eventDate - today) / 86400000);
       }
 
       function formatDateBadge(value) {
