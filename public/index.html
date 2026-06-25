@@ -1081,7 +1081,7 @@
     <script>
       const STORAGE_KEY = "dali-ganji-selected-markets";
       const PLACEHOLDER_IMAGE = new URL("images/markets/placeholder.jpg", window.location.href).toString();
-      const FILTERS = ["最近", "全部", "附近", "古城周边集市", "银桥/喜洲片区", "下关市区集市", "其他乡镇集市"];
+      const FILTERS = ["近期开集", "离我最近", "全部", "古城周边集市", "银桥/喜洲片区", "下关市区集市", "其他乡镇集市"];
       const app = document.querySelector("#app");
       const locationButton = document.querySelector("#locationButton");
       const toast = document.querySelector("#toast");
@@ -1104,7 +1104,7 @@
       let markets = [];
       let events = [];
       let selected = new Set();
-      let activeFilter = "最近";
+      let activeFilter = "近期开集";
       let hasLocation = false;
       let previewMonthOffset = 0;
       let toastTimer;
@@ -1269,7 +1269,7 @@
       }
 
       function marketListTemplate() {
-        if (activeFilter === "最近") return weekTemplate();
+        if (activeFilter === "近期开集") return weekTemplate();
         const items = sortedSelectableMarkets();
         if (items.length === 0) return '<div class="empty">这个区域暂时没有收录集市。</div>';
         return items.map((market) => guideCardTemplate(market, {
@@ -1432,7 +1432,7 @@
         app.querySelectorAll("[data-filter]").forEach((button) => {
           button.addEventListener("click", () => {
             const filter = button.dataset.filter;
-            if (filter === "附近" && !hasLocation) {
+            if (filter === "离我最近" && !hasLocation) {
               showToast("请先点击“使用当前位置”");
               return;
             }
@@ -1519,10 +1519,10 @@
 
       function sortedSelectableMarkets() {
         let items = markets.slice();
-        if (activeFilter !== "全部" && activeFilter !== "附近") {
+        if (activeFilter !== "全部" && activeFilter !== "离我最近") {
           items = items.filter((market) => market.area === activeFilter);
         }
-        if (activeFilter === "附近" || hasLocation) {
+        if (activeFilter === "离我最近" || hasLocation) {
           items = items.slice().sort((a, b) => distanceSortValue(a) - distanceSortValue(b));
         }
         return items;
