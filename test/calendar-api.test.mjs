@@ -21,21 +21,33 @@ test("selection token round-trips and ignores click order", () => {
   const reordered = ["fengyijie", "yinqiaojie", "sanyuejie"];
 
   const token = encodeSelectionToToken(selected, calendarData.markets);
+  assert.equal(token, normalizeSelectedMarketIds(selected, calendarData.markets).join(","));
   assert.equal(token, encodeSelectionToToken(reordered, calendarData.markets));
   assert.deepEqual(decodeTokenToMarketIds(token, calendarData.markets), normalizeSelectedMarketIds(selected, calendarData.markets));
 });
 
-test("disabled, unverified, permanent, and unscheduled markets are not subscribable", () => {
+test("comma-separated selection tokens decode by market id", () => {
+  const selected = ["sanyuejie", "yinqiaojie"];
+  const reorderedMarkets = [...calendarData.markets].reverse();
+  const token = encodeSelectionToToken(selected, calendarData.markets);
+
+  assert.equal(token, "sanyuejie,yinqiaojie");
+  assert.deepEqual(decodeTokenToMarketIds(token, calendarData.markets), normalizeSelectedMarketIds(selected, calendarData.markets));
+  assert.deepEqual(decodeTokenToMarketIds(token, reorderedMarkets), normalizeSelectedMarketIds(selected, reorderedMarkets));
+});
+
+test("disabled, permanent, daily, and unscheduled markets are not subscribable", () => {
   const fixtureMarkets = [
-    { id: "ok", market_type: "periodic_fair", calendar_enabled: true, verification_status: "verified", schedule_type: "weekly", weekday: [5] },
-    { id: "disabled", market_type: "periodic_fair", calendar_enabled: false, verification_status: "verified", schedule_type: "weekly", weekday: [5] },
-    { id: "unverified", market_type: "periodic_fair", calendar_enabled: true, verification_status: "needs_verification", schedule_type: "weekly", weekday: [5] },
-    { id: "permanent", market_type: "permanent_market", calendar_enabled: true, verification_status: "verified", schedule_type: "weekly", weekday: [5] },
-    { id: "unscheduled", market_type: "periodic_fair", calendar_enabled: true, verification_status: "verified", schedule_type: "weekly", weekday: [] }
+    { id: "ok", market_type: "periodic_fair", calendar_enabled: true, schedule_type: "weekly", weekday: [5] },
+    { id: "creative", market_type: "creative_market", calendar_enabled: true, schedule_type: "weekday", weekday: [0] },
+    { id: "disabled", market_type: "periodic_fair", calendar_enabled: false, schedule_type: "weekly", weekday: [5] },
+    { id: "permanent", market_type: "permanent_market", calendar_enabled: true, schedule_type: "weekly", weekday: [5] },
+    { id: "daily", market_type: "daily_market", calendar_enabled: true, schedule_type: "daily" },
+    { id: "unscheduled", market_type: "periodic_fair", calendar_enabled: true, schedule_type: "weekly", weekday: [] }
   ];
 
-  assert.deepEqual(getSubscribableMarkets(fixtureMarkets).map((market) => market.id), ["ok"]);
-  assert.deepEqual(normalizeSelectedMarketIds(fixtureMarkets.map((market) => market.id), fixtureMarkets), ["ok"]);
+  assert.deepEqual(getSubscribableMarkets(fixtureMarkets).map((market) => market.id), ["ok", "creative"]);
+  assert.deepEqual(normalizeSelectedMarketIds(fixtureMarkets.map((market) => market.id), fixtureMarkets), ["ok", "creative"]);
 });
 
 test("calendar API returns text/calendar for a valid token", async () => {
@@ -64,19 +76,19 @@ test("Vercel API handler returns the same dynamic ICS response", async () => {
   assert.equal(response.headers["Content-Type"], "text/calendar; charset=utf-8");
   assert.equal(response.headers["Cache-Control"], "public, max-age=3600");
   assert.match(response.body, /PRODID:-\/\/Jfeng\/\/Dali Ganji Calendar\/\/ZH-CN/);
-  assert.match(response.body, /三月街赶集/);
+  assert.match(response.body, /三月街集市/);
   assert.match(response.body, /银桥街集市/);
   assert.doesNotMatch(response.body, /北门菜市场/);
 });
 
-test("legacy clean calendar feed URL still works for existing subscription clients", async () => {
-  const path = "/calendars/sanyuejie__yinqiaojie.ics";
+test("clean calendar feed URL works with comma-separated market ids", async () => {
+  const path = "/calendars/sanyuejie,yinqiaojie.ics";
   const edgeResponse = await handleRequest(new Request(`https://example.com${path}`));
   const vercelResponse = await invokeVercelHandler(path);
   const edgeBody = await edgeResponse.text();
 
   assert.equal(edgeResponse.status, 200);
-  assert.match(edgeBody, /三月街赶集/);
+  assert.match(edgeBody, /三月街集市/);
   assert.match(vercelResponse.body, /银桥街集市/);
 });
 
@@ -95,14 +107,15 @@ test("frontend builds webcal and HTTPS subscription links from the selection tok
 
 test("mobileconfig endpoint installs a subscribed calendar account", async () => {
   const token = encodeSelectionToToken(["sanyuejie", "yinqiaojie"], calendarData.markets);
-  const edgeResponse = await handleMobileConfigRequest(new Request("https://example.com/calendars/sanyuejie__yinqiaojie.mobileconfig"));
+  const encodedToken = encodeURIComponent(token);
+  const edgeResponse = await handleMobileConfigRequest(new Request("https://example.com/calendars/sanyuejie,yinqiaojie.mobileconfig"));
   const edgeBody = await edgeResponse.text();
-  const vercelResponse = await invokeVercelHandler("/calendars/sanyuejie__yinqiaojie.mobileconfig", vercelMobileConfigHandler);
+  const vercelResponse = await invokeVercelHandler("/calendars/sanyuejie,yinqiaojie.mobileconfig", vercelMobileConfigHandler);
 
   assert.equal(edgeResponse.status, 200);
   assert.equal(edgeResponse.headers.get("Content-Type"), "application/x-apple-aspen-config; charset=utf-8");
   assert.match(edgeBody, /com\.apple\.subscribedcalendar\.account/);
-  assert.match(edgeBody, new RegExp(`https://example\\.com/api/calendar\\.ics\\?s=${token}`));
+  assert.match(edgeBody, new RegExp(`https://example\\.com/api/calendar\\.ics\\?s=${encodedToken}`));
   assert.match(edgeBody, /大理赶集日历/);
   assert.equal(vercelResponse.headers["Content-Type"], "application/x-apple-aspen-config; charset=utf-8");
   assert.match(vercelResponse.body, /com\.apple\.subscribedcalendar\.account/);
@@ -121,7 +134,7 @@ test("generated ICS contains selected markets and excludes unselected markets", 
   const selected = ["sanyuejie"];
   const ics = buildIcsForMarketIds(selected, calendarData);
 
-  assert.match(ics, /三月街赶集/);
+  assert.match(ics, /三月街集市/);
   assert.doesNotMatch(ics, /银桥街集市/);
 });
 
@@ -134,6 +147,13 @@ test("calendar event descriptions stay focused on market basics", () => {
   assert.doesNotMatch(description, /导航：|提醒：|数据说明：/);
 });
 
+test("weekday schedule type treats 0 as Sunday", () => {
+  const sundayEvents = calendarData.events.filter((event) => event.market_id === "xiaguan_huaniao");
+
+  assert.ok(sundayEvents.length > 0);
+  assert.ok(sundayEvents.every((event) => new Date(`${event.date}T00:00:00Z`).getUTCDay() === 0));
+});
+
 test("Chinese fields, commas, semicolons, backslashes, and description newlines are escaped", () => {
   const ics = buildIcsFromEvents([
     {
@@ -142,8 +162,7 @@ test("Chinese fields, commas, semicolons, backslashes, and description newlines 
       summary: "中文,分号;反斜杠\\",
       location: "大理,古城;测试",
       description: "第一行\n第二行,带逗号;和反斜杠\\",
-      calendar_enabled: true,
-      verification_status: "verified"
+      calendar_enabled: true
     }
   ]);
 

@@ -15,44 +15,18 @@ export function normalizeSelectedMarketIds(selectedMarketIds, markets) {
 }
 
 export function encodeSelectionToToken(selectedMarketIds, markets) {
-  const subscribable = getSubscribableMarkets(markets);
-  const selected = new Set(normalizeSelectedMarketIds(selectedMarketIds, markets));
-  if (!selected.size) return "";
-
-  const bytes = new Uint8Array(Math.ceil(subscribable.length / 8));
-  subscribable.forEach((market, index) => {
-    if (selected.has(String(market.id))) {
-      bytes[Math.floor(index / 8)] |= 1 << (index % 8);
-    }
-  });
-
-  return bytesToBase64Url(trimTrailingZeroBytes(bytes));
+  return normalizeSelectedMarketIds(selectedMarketIds, markets).join(",");
 }
 
 export function decodeTokenToMarketIds(token, markets) {
-  if (typeof token !== "string" || !/^[A-Za-z0-9_-]+$/u.test(token)) return [];
-  const bytes = base64UrlToBytes(token);
-  if (!bytes) return [];
-
-  const subscribable = getSubscribableMarkets(markets);
-  const ids = [];
-  subscribable.forEach((market, index) => {
-    const byte = bytes[Math.floor(index / 8)] || 0;
-    if (byte & (1 << (index % 8))) {
-      ids.push(String(market.id));
-    }
-  });
-  return ids;
+  if (typeof token !== "string" || !/^[A-Za-z0-9_,.-]+$/u.test(token)) return [];
+  const decoded = decodeURIComponent(token);
+  return normalizeSelectedMarketIds(decoded.split(",").filter(Boolean), markets);
 }
 
 export function decodePathSelectionToMarketIds(value, markets) {
   if (typeof value !== "string" || !value) return [];
   const decoded = decodeURIComponent(value);
-  if (decoded.includes("__")) {
-    return normalizeSelectedMarketIds(decoded.split("__"), markets);
-  }
-  const exact = normalizeSelectedMarketIds([decoded], markets);
-  if (exact.length) return exact;
   return decodeTokenToMarketIds(decoded, markets);
 }
 
@@ -160,19 +134,19 @@ export function buildMobileConfigProfile({ token, selectedMarketIds, data, subsc
 }
 
 function isSubscribableMarket(market) {
+  const allowedMarketTypes = new Set(["periodic_fair", "creative_market"]);
   return (
     market &&
     String(market.id || "") &&
-    market.market_type === "periodic_fair" &&
+    allowedMarketTypes.has(market.market_type) &&
     market.calendar_enabled === true &&
-    market.verification_status === "verified" &&
     hasValidScheduleRule(market)
   );
 }
 
 function hasValidScheduleRule(market) {
   if (market.schedule_type === "lunar_days") return Array.isArray(market.lunar_days) && market.lunar_days.length > 0;
-  if (market.schedule_type === "weekly") {
+  if (market.schedule_type === "weekly" || market.schedule_type === "weekday") {
     return typeof market.weekday === "number" || (Array.isArray(market.weekday) && market.weekday.length > 0);
   }
   if (market.schedule_type === "gregorian_month_days") {
@@ -182,7 +156,7 @@ function hasValidScheduleRule(market) {
 }
 
 function isEventSubscribable(event) {
-  return event.calendar_enabled === true && event.verification_status === "verified";
+  return event.calendar_enabled === true;
 }
 
 function calendarTitle(selectedIds, markets) {
@@ -224,28 +198,6 @@ function foldIcalLine(line) {
   }
   chunks.push(current);
   return chunks.join("\r\n");
-}
-
-function bytesToBase64Url(bytes) {
-  let binary = "";
-  for (const byte of bytes) binary += String.fromCharCode(byte);
-  return btoa(binary).replace(/\+/gu, "-").replace(/\//gu, "_").replace(/=+$/u, "");
-}
-
-function trimTrailingZeroBytes(bytes) {
-  let end = bytes.length;
-  while (end > 0 && bytes[end - 1] === 0) end -= 1;
-  return bytes.slice(0, end);
-}
-
-function base64UrlToBytes(token) {
-  try {
-    const padded = token.replace(/-/gu, "+").replace(/_/gu, "/").padEnd(Math.ceil(token.length / 4) * 4, "=");
-    const binary = atob(padded);
-    return Uint8Array.from(binary, (char) => char.charCodeAt(0));
-  } catch (error) {
-    return null;
-  }
 }
 
 function xmlEscape(value) {

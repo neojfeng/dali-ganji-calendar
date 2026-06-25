@@ -1290,7 +1290,7 @@
               ${calendarButton(market.id)}
             </div>
             <p class="address">${listLocationLineHtml(market)}</p>
-            <p class="summary">${escapeHtml(market.summary || market.intro || options.fallbackSummary || "")}</p>
+            <p class="summary">${escapeHtml(market.summary || options.fallbackSummary || "")}</p>
             <div class="tag-row">${tags}</div>
           </article>
         `;
@@ -1343,7 +1343,7 @@
                 </div>
               </div>
               <p class="address">${detailLocationLineHtml(market)}</p>
-              <p class="summary">${escapeHtml(market.summary || market.intro || "")}</p>
+              <p class="summary">${escapeHtml(market.summary || "")}</p>
               <div class="tag-row">${tags}</div>
             </article>
           </section>
@@ -1351,8 +1351,8 @@
             ${keyInfoCard(market)}
             ${fitCard(market.best_for, market.not_for)}
             ${buyEatCard(market.what_to_buy, market.food_tips)}
-            ${tipsCard("🧭 怎么逛更顺", [market.route_tips, market.transport_tips, market.parking_tips])}
-            ${tipsCard("⚠️ 避坑提醒", [...normalizeList(market.avoid_pitfalls), market.photo_tips].filter(Boolean))}
+            ${tipsCard("🧭 怎么逛更顺", market.visit_tips)}
+            ${tipsCard("⚠️ 避坑提醒", market.avoid_pitfalls)}
             ${tagCard("📍 周边顺路", [{ items: market.nearby_places }])}
           </section>
         `;
@@ -1678,16 +1678,15 @@
         return Boolean(
           market &&
           market.id &&
-          market.market_type === "periodic_fair" &&
+          ["periodic_fair", "creative_market"].includes(market.market_type) &&
           market.calendar_enabled === true &&
-          market.verification_status === "verified" &&
           hasValidScheduleRule(market)
         );
       }
 
       function hasValidScheduleRule(market) {
         if (market.schedule_type === "lunar_days") return Array.isArray(market.lunar_days) && market.lunar_days.length > 0;
-        if (market.schedule_type === "weekly") return typeof market.weekday === "number" || (Array.isArray(market.weekday) && market.weekday.length > 0);
+        if (market.schedule_type === "weekly" || market.schedule_type === "weekday") return typeof market.weekday === "number" || (Array.isArray(market.weekday) && market.weekday.length > 0);
         if (market.schedule_type === "gregorian_month_days") return Array.isArray(market.month_days) && market.month_days.length > 0;
         return false;
       }
@@ -1700,28 +1699,7 @@
       }
 
       function encodeSelectionToToken(selectedMarketIds, items) {
-        const subscribable = getSubscribableMarkets(items);
-        const selectedIds = new Set(normalizeSelectedMarketIds(selectedMarketIds, items));
-        if (!selectedIds.size) return "";
-        const bytes = new Uint8Array(Math.ceil(subscribable.length / 8));
-        subscribable.forEach((market, index) => {
-          if (selectedIds.has(String(market.id))) {
-            bytes[Math.floor(index / 8)] |= 1 << (index % 8);
-          }
-        });
-        return bytesToBase64Url(trimTrailingZeroBytes(bytes));
-      }
-
-      function bytesToBase64Url(bytes) {
-        let binary = "";
-        for (const byte of bytes) binary += String.fromCharCode(byte);
-        return btoa(binary).replace(/\+/gu, "-").replace(/\//gu, "_").replace(/=+$/u, "");
-      }
-
-      function trimTrailingZeroBytes(bytes) {
-        let end = bytes.length;
-        while (end > 0 && bytes[end - 1] === 0) end -= 1;
-        return bytes.slice(0, end);
+        return normalizeSelectedMarketIds(selectedMarketIds, items).join(",");
       }
 
       async function copySubscriptionLink() {
@@ -1901,7 +1879,7 @@
       function openNavigation(id) {
         const market = markets.find((item) => item.id === id);
         if (!market) return;
-        const link = market.amap_url || amapLink(market) || baiduMapLink(market);
+        const link = amapLink(market) || baiduMapLink(market);
         window.open(link, "_blank", "noopener");
       }
 

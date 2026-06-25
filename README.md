@@ -14,19 +14,18 @@
 订阅链接格式：
 
 ```text
-https://example.com/calendars/sanyuejie__yinqiaojie.ics
-webcal://example.com/calendars/sanyuejie__yinqiaojie.ics
+https://example.com/api/calendar.ics?s=sanyuejie,yinqiaojie
+webcal://example.com/api/calendar.ics?s=sanyuejie,yinqiaojie
 ```
 
 ## 选择 Token
 
-token 不依赖数据库。它只基于 `markets.json` 中可订阅集市的顺序：
+token 不依赖数据库，也不保存攻略内容。它直接记录用户选择的稳定 `market id`：
 
-1. 可订阅集市按 `markets.json` 顺序分配 index。
-2. 用户选择用 bitset 表示。
-3. bitset 编码为 base64url 短字符串。
-4. 解码时忽略超出当前集市数量的 bit。
-5. 如果 token 包含后来被禁用或改为 `needs_verification` 的集市，接口会过滤掉它，不生成事件。
+1. 单个集市：`s=sanyuejie`
+2. 多个集市：`s=sanyuejie,yinqiaojie`
+3. 解码时只保留当前仍可订阅的 `market id`。
+4. 更新攻略、地点或赶集规则后，订阅链接不变；Apple 日历下次刷新订阅源时会拿到最新 ICS。
 
 共享函数在 `edge-functions/_shared/calendar.js`：
 
@@ -41,13 +40,11 @@ token 不依赖数据库。它只基于 `markets.json` 中可订阅集市的顺�
 
 - `market_type` 是 `periodic_fair`
 - `calendar_enabled` 是 `true`
-- `verification_status` 是 `verified`
 - 有有效 `schedule_type` 和日期规则
 
 以下地点不会生成日历事件：
 
 - `permanent_market` 常设市场
-- `verification_status: "needs_verification"`
 - `calendar_enabled: false`
 - 没有日期规则的地点
 
@@ -163,9 +160,9 @@ edge-functions/api/calendar.mobileconfig.js
 ## 新增集市
 
 1. 在 `data/markets.json` 追加对象。
-2. 填写稳定的 `id`，后续不要随意修改；它会进入事件 UID 和订阅 token 的选择顺序。
+2. 填写稳定的 `id`，后续不要随意修改；它会进入事件 UID 和订阅 token。
 3. 周期性赶集点设置 `market_type: "periodic_fair"`。
-4. 确认日期可靠后设置 `calendar_enabled: true` 和 `verification_status: "verified"`。
+4. 需要进入 Apple 日历订阅的周期性集市设置 `calendar_enabled: true`。
 5. 填写 `schedule_type` 与对应规则。
 6. 补充 `summary`、攻略字段、地点、坐标和图片。
 7. 运行 `npm run build` 和 `npm test`。
@@ -184,20 +181,21 @@ edge-functions/api/calendar.mobileconfig.js
 { "schedule_type": "gregorian_month_days", "month_days": [5, 10, 15, 20, 25, 30] }
 ```
 
-`weekday` 使用 Python 编号：周一是 `0`，周日是 `6`。
+`schedule_type: "weekly"` 沿用 Python 编号：周一是 `0`，周日是 `6`。
 
-## 禁用或待核实集市
+`schedule_type: "weekday"` 使用前端常见编号：周日是 `0`，周一是 `1`，周六是 `6`。
 
-不确定日期时不要删除集市。优先这样处理：
+## 禁用订阅或常设市场
+
+不确定日期或暂时不想进入 Apple 日历时，不要删除集市。优先这样处理：
 
 ```json
 {
-  "calendar_enabled": false,
-  "verification_status": "needs_verification"
+  "calendar_enabled": false
 }
 ```
 
-这样攻略页仍可保留信息，已有订阅 token 即使包含它，也不会继续生成事件。
+这样攻略页仍可保留信息，订阅接口不会为它生成事件。
 
 常设市场使用：
 
@@ -210,11 +208,10 @@ edge-functions/api/calendar.mobileconfig.js
 
 ## 更新赶集规则
 
-token 只记录选择了哪些 market index，不记录具体事件。只要 `id` 和 `markets.json` 中已有可订阅集市顺序保持稳定，更新赶集规则后，订阅链接会在下一次日历刷新时自动拿到新事件。
+token 只记录选择了哪些 `market id`，不记录具体事件或攻略快照。只要 `id` 保持稳定，更新赶集规则后，订阅链接会在下一次日历刷新时自动拿到新事件。
 
 维护规则：
 
-1. 不要随意重排已有可订阅集市。
-2. 不要随意修改已有 `id`。
-3. 新增集市尽量追加到列表后面。
-4. 如果必须下线某个集市，设置 `calendar_enabled: false` 或 `verification_status: "needs_verification"`。
+1. 不要随意修改已有 `id`。
+2. 新增、重排集市不会影响已订阅链接。
+3. 如果必须下线某个集市，设置 `calendar_enabled: false`。

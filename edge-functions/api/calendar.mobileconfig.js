@@ -43,6 +43,6 @@ export default {
 };
 
 function selectionFromPath(pathname) {
-  const match = pathname.match(/^\/(?:calendar\/(?:v\d+\/)?|calendars\/)([A-Za-z0-9_-]+)\.mobileconfig$/u);
+  const match = pathname.match(/^\/(?:calendar\/(?:v\d+\/)?|calendars\/)([A-Za-z0-9_,.-]+)\.mobileconfig$/u);
   return match ? match[1] : "";
 }

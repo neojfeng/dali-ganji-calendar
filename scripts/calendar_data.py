@@ -59,7 +59,9 @@ def market_dates(market: dict[str, Any], start: date, end: date) -> list[date]:
     if schedule_type == "lunar_days":
         return lunar_market_dates(market, start, end)
     if schedule_type == "weekly":
-        return weekly_market_dates(market, start, end)
+        return weekly_market_dates(market, start, end, sunday_zero=False)
+    if schedule_type == "weekday":
+        return weekly_market_dates(market, start, end, sunday_zero=True)
     if schedule_type == "gregorian_month_days":
         return gregorian_month_dates(market, start, end)
     raise ValueError(f"{market.get('id', '<unknown>')}: unsupported schedule_type {schedule_type!r}")
@@ -86,18 +88,19 @@ def lunar_market_dates(market: dict[str, Any], start: date, end: date) -> list[d
     return sorted(dates)
 
 
-def weekly_market_dates(market: dict[str, Any], start: date, end: date) -> list[date]:
+def weekly_market_dates(market: dict[str, Any], start: date, end: date, sunday_zero: bool) -> list[date]:
     weekdays = market.get("weekday", market.get("weekdays", []))
     if isinstance(weekdays, int):
         weekdays = [weekdays]
     if not isinstance(weekdays, list) or not weekdays:
-        raise ValueError(f"{market.get('id', '<unknown>')}: weekly markets need weekday, Monday=0.")
+        raise ValueError(f"{market.get('id', '<unknown>')}: weekly markets need weekday.")
 
     wanted = {int(day) for day in weekdays}
     current = start
     dates: list[date] = []
     while current < end:
-        if current.weekday() in wanted:
+        current_weekday = (current.weekday() + 1) % 7 if sunday_zero else current.weekday()
+        if current_weekday in wanted:
             dates.append(current)
         current += timedelta(days=1)
     return dates
@@ -142,12 +145,9 @@ def build_event_records(markets: list[dict[str, Any]], start: date, end: date) -
                     "location": location,
                     "description": description_for(market),
                     "uid": f"{market_id}-{event_date.isoformat()}@{DOMAIN}",
-                    "verification_status": verification_status(market),
                     "calendar_enabled": True,
                     "lat": market.get("lat"),
                     "lng": market.get("lng"),
-                    "apple_maps_url": clean(market.get("apple_maps_url")),
-                    "amap_url": clean(market.get("amap_url")),
                 }
             )
 
@@ -173,9 +173,7 @@ def public_market_records(markets: list[dict[str, Any]]) -> list[dict[str, Any]]
                 "area": clean(market.get("area")) or "其他",
                 "market_type": clean(market.get("market_type")) or "periodic_fair",
                 "calendar_enabled": is_calendar_market(market),
-                "verification_status": verification_status(market),
-                "summary": clean(market.get("summary")) or clean(market.get("intro")),
-                "intro": clean(market.get("intro")) or clean(market.get("summary")),
+                "summary": clean(market.get("summary")),
                 "tags": clean_list(market.get("tags")),
                 "best_for": clean_list(market.get("best_for")),
                 "not_for": clean_list(market.get("not_for")),
@@ -183,7 +181,6 @@ def public_market_records(markets: list[dict[str, Any]]) -> list[dict[str, Any]]
                 "lng": market.get("lng"),
                 "image": primary_image,
                 "image_alt": primary_alt,
-                "image_credit": clean(market.get("image_credit")),
                 "images": images,
                 "schedule_type": clean(market.get("schedule_type")),
                 "lunar_days": market.get("lunar_days") if isinstance(market.get("lunar_days"), list) else [],
@@ -193,16 +190,11 @@ def public_market_records(markets: list[dict[str, Any]]) -> list[dict[str, Any]]
                 "open_text": clean(market.get("open_text")),
                 "best_time": clean(market.get("best_time")),
                 "duration": clean(market.get("duration")),
-                "transport_tips": clean(market.get("transport_tips")),
-                "parking_tips": clean(market.get("parking_tips")),
-                "route_tips": clean(market.get("route_tips")),
+                "visit_tips": clean_list(market.get("visit_tips")),
                 "what_to_buy": clean_list(market.get("what_to_buy")),
                 "food_tips": clean_list(market.get("food_tips")),
-                "photo_tips": clean(market.get("photo_tips")),
                 "avoid_pitfalls": clean_list(market.get("avoid_pitfalls")),
                 "nearby_places": clean_list(market.get("nearby_places")),
-                "apple_maps_url": clean(market.get("apple_maps_url")),
-                "amap_url": clean(market.get("amap_url")),
                 "order": index,
             }
         )
@@ -210,23 +202,19 @@ def public_market_records(markets: list[dict[str, Any]]) -> list[dict[str, Any]]
 
 
 def is_calendar_market(market: dict[str, Any]) -> bool:
+    allowed_market_types = {"periodic_fair", "creative_market"}
     return (
-        clean(market.get("market_type")) == "periodic_fair"
+        clean(market.get("market_type")) in allowed_market_types
         and bool(market.get("calendar_enabled"))
-        and verification_status(market) == "verified"
         and has_valid_schedule_rule(market)
     )
-
-
-def verification_status(market: dict[str, Any]) -> str:
-    return clean(market.get("verification_status"))
 
 
 def has_valid_schedule_rule(market: dict[str, Any]) -> bool:
     schedule_type = clean(market.get("schedule_type"))
     if schedule_type == "lunar_days":
         return bool(clean_list(market.get("lunar_days")))
-    if schedule_type == "weekly":
+    if schedule_type in {"weekly", "weekday"}:
         weekdays = market.get("weekday", market.get("weekdays", []))
         return isinstance(weekdays, int) or bool(clean_list(weekdays))
     if schedule_type == "gregorian_month_days":
@@ -249,13 +237,13 @@ def calendar_label(name: str) -> str:
 
 
 def description_for(market: dict[str, Any]) -> str:
-    intro = clean(market.get("summary")) or clean(market.get("intro"))
+    summary = clean(market.get("summary"))
     schedule_text = clean(market.get("schedule_text")) or "时间待补充"
     place = clean(market.get("address")) or clean(market.get("location_name")) or "地点待补充"
 
     lines = []
-    if intro:
-        lines.append(intro)
+    if summary:
+        lines.append(summary)
     lines.append(f"时间：{schedule_text}")
     lines.append(f"地点：{place}")
     lines.append(f"更多赶集攻略或重新订阅日历，请访问：{GUIDE_URL}")
