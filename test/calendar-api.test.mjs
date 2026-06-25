@@ -87,7 +87,7 @@ test("frontend builds webcal and HTTPS subscription links from the selection tok
   assert.match(html, /webcal:\/\/\$\{host\}\$\{path\}/);
   assert.match(html, /https:\/\/\$\{host\}\$\{path\}/);
   assert.match(html, /\/api\/calendar\.ics\?s=\$\{encodeURIComponent\(token\)\}/);
-  assert.match(html, /请先选择你关注的集市/);
+  assert.match(html, /请先订阅一个集市/);
   assert.doesNotMatch(html, /data:text\/calendar/);
   assert.doesNotMatch(html, /new Blob/);
   assert.doesNotMatch(html, /calendars\/\$\{ids\.join/);

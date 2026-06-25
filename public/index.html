@@ -747,8 +747,7 @@
         font-weight: 700;
       }
 
-      .bar-sub,
-      .panel-help {
+      .bar-sub {
         margin: 2px 0 0;
         color: var(--muted);
         font-size: 12px;
@@ -875,12 +874,16 @@
       }
 
       .calendar-day.is-today {
-        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.18);
+        box-shadow: inset 0 0 0 1.5px rgba(0, 122, 255, 0.34);
       }
 
       .calendar-day.has-events {
         background: #fff;
         box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+      }
+
+      .calendar-day.has-events.is-today {
+        box-shadow: inset 0 0 0 1.5px rgba(0, 122, 255, 0.34);
       }
 
       .calendar-date {
@@ -895,8 +898,8 @@
         display: block;
         overflow: hidden;
         border-radius: 999px;
-        background: rgba(142, 142, 147, 0.14);
-        color: var(--muted);
+        background: rgba(0, 122, 255, 0.1);
+        color: #007aff;
         font-size: 9px;
         font-weight: 600;
         line-height: 1.2;
@@ -937,10 +940,6 @@
         cursor: not-allowed;
       }
 
-      .panel-actions + .panel-help {
-        margin-top: 10px;
-      }
-
       .subscription-steps {
         margin: 10px 0 0;
         padding-left: 20px;
@@ -973,7 +972,7 @@
 
       @media (min-width: 560px) {
         .panel-actions {
-          grid-template-columns: 1.2fr 1fr 1fr;
+          grid-template-columns: 1.2fr 1fr;
         }
       }
 
@@ -1000,7 +999,7 @@
     <main id="app">
       <section class="hero" aria-labelledby="pageTitle">
         <h1 id="pageTitle">大理赶集攻略</h1>
-        <p class="lead">点击集市查看攻略，订阅几个常去的集市可一键添加到 Apple 日历</p>
+        <p class="lead">点击集市查看攻略，订阅集市可添加到 Apple 日历</p>
         <div class="location-row">
           <button class="pill-button" id="locationButton" type="button">
             <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -1019,11 +1018,10 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-    <section class="bottom-bar" id="bottomBar" aria-label="已加入日历的集市" hidden>
+    <section class="bottom-bar" id="bottomBar" aria-label="已订阅的集市" hidden>
       <div class="bar-inner">
         <div>
-          <p class="bar-count" id="barCount">已加入 0 个集市</p>
-          <p class="bar-sub">统一生成 Apple 日历订阅</p>
+          <p class="bar-count" id="barCount">已订阅 0 个集市</p>
         </div>
         <button class="subscribe-button" id="openPanelButton" type="button">生成日历</button>
       </div>
@@ -1034,11 +1032,11 @@
         <div class="panel-head">
           <button class="panel-close" id="closePanelButton" type="button" aria-label="返回上一页">返回</button>
           <div class="panel-title-group">
-            <p class="panel-title" id="panelTitle">已选择 0 个集市</p>
+            <p class="panel-title" id="panelTitle">已订阅 0 个集市</p>
           </div>
         </div>
         <div class="selected-list" id="selectedList"></div>
-        <div class="calendar-preview" aria-label="日历事件预览">
+        <div class="calendar-preview" aria-label="日历预览">
           <div class="calendar-preview-head">
             <p class="calendar-preview-title" id="calendarPreviewTitle">日历预览</p>
             <div class="calendar-nav">
@@ -1056,18 +1054,15 @@
             <span class="calendar-weekday">日</span>
           </div>
           <div class="calendar-grid" id="calendarPreviewGrid"></div>
-          <p class="calendar-preview-empty" id="calendarPreviewEmpty" hidden>这个月没有已加入集市的赶集日。</p>
+          <p class="calendar-preview-empty" id="calendarPreviewEmpty" hidden>这个月没有已订阅集市的赶集日。</p>
         </div>
         <div class="panel-actions">
           <a class="subscribe-button" id="subscribeButton" href="#" rel="noopener">一键订阅 Apple 日历</a>
           <button class="plain-button" id="copyButton" type="button">复制订阅链接</button>
-          <button class="plain-button" id="guideButton" type="button">查看手动添加教程</button>
         </div>
-        <p class="panel-help" id="copyStatus">如果没有自动打开 Apple 日历，请复制订阅链接，用 Safari 打开后再添加到 iPhone 日历。</p>
         <ol class="subscription-steps">
-          <li>iPhone 路径：日历 App → 日历 → 添加日历 → 添加订阅日历 → 粘贴 HTTPS 订阅链接。</li>
-          <li>微信或小红书里如果无法打开 Apple 日历，请点击右上角用 Safari 打开，或复制订阅链接手动添加。</li>
-          <li>如果看到 “Events” 事件列表，请取消；那是导入事件，不是订阅日历。</li>
+          <li>如果一键订阅没反应，请先点“复制订阅链接”；在微信或小红书里，请点击右上角使用 Safari 打开后再试。</li>
+          <li>手动添加：复制后打开日历 App → 日历 → 添加日历 → 添加订阅日历 → 粘贴链接。</li>
         </ol>
       </div>
     </section>
@@ -1087,8 +1082,6 @@
       const closePanelButton = document.querySelector("#closePanelButton");
       const subscribeButton = document.querySelector("#subscribeButton");
       const copyButton = document.querySelector("#copyButton");
-      const guideButton = document.querySelector("#guideButton");
-      const copyStatus = document.querySelector("#copyStatus");
       const selectedList = document.querySelector("#selectedList");
       const calendarPreviewTitle = document.querySelector("#calendarPreviewTitle");
       const calendarPreviewGrid = document.querySelector("#calendarPreviewGrid");
@@ -1149,12 +1142,10 @@
           renderCalendarPreview();
         });
         copyButton.addEventListener("click", copySubscriptionLink);
-        guideButton.addEventListener("click", showManualSubscriptionGuide);
         subscribeButton.addEventListener("click", (event) => {
           if (!orderedSelectedIds().length) {
             event.preventDefault();
-            showToast("请先选择你关注的集市");
-            copyStatus.textContent = "请先选择你关注的集市";
+            showToast("请先订阅一个集市");
           }
         });
         window.addEventListener("popstate", renderRoute);
@@ -1164,7 +1155,7 @@
         return `
           <section class="hero" aria-labelledby="pageTitle">
             <h1 id="pageTitle">大理赶集攻略</h1>
-            <p class="lead">点击集市查看攻略，订阅几个常去的集市可一键添加到 Apple 日历</p>
+            <p class="lead">点击集市查看攻略，订阅集市可添加到 Apple 日历</p>
             <div class="location-row">
               <button class="pill-button" id="locationButton" type="button">
                 <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -1536,7 +1527,7 @@
           return;
         }
         if (!isSubscribableMarket(market)) {
-          showToast("这个地点暂不生成日历事件");
+          showToast("这个地点暂时不能订阅");
           return;
         }
         if (selected.has(id)) {
@@ -1562,8 +1553,8 @@
         const ids = orderedSelectedIds();
         const count = ids.length;
         bottomBar.hidden = count === 0 || !subscribePanel.hidden;
-        barCount.textContent = `已加入 ${count} 个集市`;
-        panelTitle.textContent = `已选择 ${count} 个集市`;
+        barCount.textContent = `已订阅 ${count} 个集市`;
+        panelTitle.textContent = `已订阅 ${count} 个集市`;
         selectedList.innerHTML = ids.map((id) => {
           const market = markets.find((item) => item.id === id);
           return market ? `<span class="tag">${escapeHtml(market.label || market.name)}</span>` : "";
@@ -1580,7 +1571,6 @@
         const webcalUrl = buildSubscriptionLink("webcal");
         subscribeButton.href = webcalUrl || "#";
         subscribeButton.setAttribute("aria-disabled", webcalUrl ? "false" : "true");
-        copyStatus.textContent = subscriptionHelpText();
       }
 
       function renderCalendarPreview() {
@@ -1719,24 +1709,16 @@
       async function copySubscriptionLink() {
         const link = buildSubscriptionLink("https");
         if (!link) {
-          showToast("请先选择你关注的集市");
-          copyStatus.textContent = "请先选择你关注的集市";
+          showToast("请先订阅一个集市");
           return;
         }
         try {
           await writeClipboard(link);
-          copyStatus.textContent = "已复制 HTTPS 链接。请到 iPhone 日历 App → 日历 → 添加日历 → 添加订阅日历里粘贴。";
           showToast("订阅链接已复制");
         } catch (error) {
-          window.prompt("请复制下面的订阅链接", link);
-          copyStatus.textContent = "如果没有自动复制，请手动复制弹窗里的 HTTPS 链接。";
+          window.prompt("请复制下面的链接", link);
           showToast("暂时无法复制链接");
         }
-      }
-
-      function showManualSubscriptionGuide() {
-        copyStatus.textContent = "iPhone 路径：日历 App → 日历 → 添加日历 → 添加订阅日历 → 粘贴 HTTPS 订阅链接。";
-        showToast("可复制链接后手动添加");
       }
 
       async function writeClipboard(text) {
@@ -1772,16 +1754,6 @@
       function isRestrictedInAppBrowser() {
         const ua = navigator.userAgent.toLowerCase();
         return /micromessenger|xiaohongshu|xhs|aweme|bytedance|toutiao|qq\//.test(ua);
-      }
-
-      function subscriptionHelpText() {
-        if (inAppBrowser) {
-          return "当前浏览器可能无法直接打开 Apple 日历。请点击右上角用 Safari 打开，或复制订阅链接手动添加。";
-        }
-        if (window.location.protocol !== "https:" && window.location.hostname !== "localhost") {
-          return "当前站点不是 HTTPS，一键订阅可能不可用。生产环境请使用 HTTPS 域名。";
-        }
-        return "如果没有自动打开 Apple 日历，请复制订阅链接，用 Safari 打开后再添加到 iPhone 日历。";
       }
 
       async function useLocation() {
