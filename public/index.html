@@ -338,8 +338,8 @@
         flex: 0 0 auto;
         align-items: center;
         border-radius: 999px;
-        background: rgba(0, 0, 0, 0.05);
-        color: #8e8e93;
+        background: rgba(142, 142, 147, 0.12);
+        color: #636366;
         font-size: 11px;
         font-weight: 700;
         line-height: 1;
@@ -347,9 +347,14 @@
         white-space: nowrap;
       }
 
-      .time-badge.is-soon {
-        background: rgba(52, 199, 89, 0.1);
-        color: #34c759;
+      .time-badge.is-today {
+        background: rgba(52, 199, 89, 0.12);
+        color: #248a3d;
+      }
+
+      .time-badge.is-tomorrow {
+        background: rgba(255, 149, 0, 0.12);
+        color: #b26800;
       }
 
       .schedule,
@@ -479,11 +484,11 @@
       .calendar-pill-button {
         display: inline-flex;
         height: 28px;
-        min-width: 58px;
+        width: 76px;
         flex: 0 0 auto;
         align-items: center;
         justify-content: center;
-        border: 0;
+        border: 0.5px solid transparent;
         border-radius: 14px;
         background: rgba(0, 122, 255, 0.08);
         color: #007aff;
@@ -492,10 +497,15 @@
         line-height: 1;
         padding: 0 12px;
         white-space: nowrap;
-        transition: transform 150ms ease, background 150ms ease, opacity 150ms ease;
+        transition: transform 150ms ease, background 150ms ease, border-color 150ms ease, color 150ms ease, opacity 150ms ease;
       }
 
-      .calendar-pill-button.is-added,
+      .calendar-pill-button.is-added {
+        border: 0.5px solid #007aff;
+        background: #fff;
+        color: #007aff;
+      }
+
       .calendar-pill-button.is-muted {
         background: rgba(0, 0, 0, 0.05);
         color: #8e8e93;
@@ -810,6 +820,40 @@
         margin-bottom: 12px;
       }
 
+      .selected-pill {
+        display: inline-flex;
+        min-height: 28px;
+        align-items: center;
+        gap: 5px;
+        border: 0;
+        border-radius: 999px;
+        background: rgba(0, 122, 255, 0.1);
+        color: #007aff;
+        padding: 0 8px 0 10px;
+        font-family: inherit;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1;
+        transition: background 150ms ease, transform 150ms ease;
+      }
+
+      .selected-pill::after {
+        content: "×";
+        display: grid;
+        width: 16px;
+        height: 16px;
+        place-items: center;
+        border-radius: 50%;
+        background: rgba(0, 122, 255, 0.14);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1;
+      }
+
+      .selected-pill:active {
+        transform: scale(0.96);
+      }
+
       .calendar-preview {
         margin-bottom: 12px;
         border-radius: 20px;
@@ -1072,8 +1116,8 @@
           <button class="plain-button" id="copyButton" type="button">复制订阅链接</button>
         </div>
         <ol class="subscription-steps">
-          <li>如果一键订阅没反应，请先点“复制订阅链接”；在微信或小红书里，请点击右上角使用 Safari 打开后再试。</li>
-          <li>手动添加：复制后打开日历 App → 日历 → 添加日历 → 添加订阅日历 → 粘贴链接。</li>
+          <li>如果一键订阅点击没有反应，请使用 Safari 打开此页面。</li>
+          <li>手动添加日历：复制链接->打开日历 App->日历->添加日历->添加订阅日历->粘贴链接->查找->订阅。</li>
         </ol>
       </div>
     </section>
@@ -1157,6 +1201,12 @@
           renderCalendarPreview();
         });
         copyButton.addEventListener("click", copySubscriptionLink);
+        selectedList.addEventListener("click", (event) => {
+          if (!(event.target instanceof Element)) return;
+          const button = event.target.closest("[data-action='remove-selected']");
+          if (!button) return;
+          removeSelectedMarket(button.dataset.id);
+        });
         subscribeButton.addEventListener("click", (event) => {
           if (!orderedSelectedIds().length) {
             event.preventDefault();
@@ -1305,13 +1355,14 @@
 
       function marketTimeBadge(market) {
         if (isAlwaysOpenMarket(market)) {
-          return '<span class="time-badge is-soon">今天开集</span>';
+          return '<span class="time-badge is-today">今天开集</span>';
         }
         const nextEvent = nextEventForMarket(market.id);
         if (!nextEvent) return '<span class="time-badge">日期待补充</span>';
         const diffDays = daysUntil(nextEvent.date);
         const label = diffDays === 0 ? "今天开集" : diffDays === 1 ? "明天开集" : diffDays === 2 ? "后天开集" : `${diffDays}天后开集`;
-        return `<span class="time-badge${diffDays >= 0 && diffDays <= 7 ? " is-soon" : ""}">${escapeHtml(label)}</span>`;
+        const statusClass = diffDays === 0 ? " is-today" : diffDays === 1 ? " is-tomorrow" : "";
+        return `<span class="time-badge${statusClass}">${escapeHtml(label)}</span>`;
       }
 
       function marketKicker(market) {
@@ -1486,7 +1537,7 @@
           `;
         }
         return `
-          <button class="calendar-pill-button${isAdded ? " is-added" : ""}" type="button" data-action="toggle" data-id="${escapeHtml(id)}" aria-label="${isAdded ? "已订阅" : "订阅"}">${isAdded ? "已订阅" : "订阅"}</button>
+          <button class="calendar-pill-button${isAdded ? " is-added" : ""}" type="button" data-action="toggle" data-id="${escapeHtml(id)}" aria-label="${isAdded ? "已订阅，点击取消订阅" : "订阅"}">${isAdded ? "✓ 已订阅" : "订阅"}</button>
         `;
       }
 
@@ -1582,7 +1633,13 @@
         panelTitle.textContent = `已订阅 ${count} 个集市`;
         selectedList.innerHTML = ids.map((id) => {
           const market = markets.find((item) => item.id === id);
-          return market ? `<span class="tag">${escapeHtml(market.label || market.name)}</span>` : "";
+          if (!market) return "";
+          const label = market.label || market.name;
+          return `
+            <button class="selected-pill" type="button" data-action="remove-selected" data-id="${escapeHtml(id)}" aria-label="移除${escapeHtml(label)}">
+              ${escapeHtml(label)}
+            </button>
+          `;
         }).join("");
         updateSubscribePanelMode();
         if (!subscribePanel.hidden) {
@@ -1590,8 +1647,18 @@
         }
       }
 
+      function removeSelectedMarket(id) {
+        if (!selected.has(id)) return;
+        const market = markets.find((item) => item.id === id);
+        selected.delete(id);
+        saveSelection();
+        renderRoute();
+        updateSubscription();
+        showToast(`已移除${market?.label || market?.name || "这个集市"}`);
+      }
+
       function updateSubscribePanelMode() {
-        copyButton.textContent = "复制订阅链接";
+        copyButton.textContent = "复制日历订阅链接";
         subscribeButton.textContent = "一键订阅 Apple 日历";
         const webcalUrl = buildSubscriptionLink("webcal");
         subscribeButton.href = webcalUrl || "#";
