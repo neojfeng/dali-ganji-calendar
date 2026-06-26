@@ -7,6 +7,7 @@ import sys
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 from zoneinfo import ZoneInfo
 
 try:
@@ -151,7 +152,7 @@ def build_event_records(markets: list[dict[str, Any]], start: date, end: date) -
         if not is_calendar_market(market):
             continue
 
-        location = clean(market.get("location")) or clean(market.get("location_name"))
+        location = calendar_location(market)
         for event_date in market_dates(market, start, end):
             events.append(
                 {
@@ -186,8 +187,7 @@ def public_market_records(markets: list[dict[str, Any]]) -> list[dict[str, Any]]
                 "id": clean(market.get("id")),
                 "name": name,
                 "label": calendar_label(name),
-                "location_name": clean(market.get("location_name")),
-                "location": clean(market.get("location")),
+                "location": calendar_location(market),
                 "old_town_trip": clean(market.get("old_town_trip")),
                 "area": clean(market.get("area")) or "其他",
                 "summary": clean(market.get("summary")),
@@ -303,15 +303,31 @@ def calendar_label(name: str) -> str:
 def description_for(market: dict[str, Any]) -> str:
     summary = clean(market.get("summary"))
     schedule_text = clean(market.get("schedule_text")) or "时间待补充"
-    place = clean(market.get("location")) or clean(market.get("location_name")) or "地点待补充"
+    place = calendar_location(market)
+    navigation_url = amap_url(market)
 
     lines = []
     if summary:
         lines.append(summary)
     lines.append(f"时间：{schedule_text}")
     lines.append(f"地点：{place}")
+    if navigation_url:
+        lines.append(f"导航（高德）：{navigation_url}")
     lines.append(f"更多赶集攻略或重新订阅日历，请访问：{GUIDE_URL}")
     return "\n".join(lines)
+
+
+def calendar_location(market: dict[str, Any]) -> str:
+    return clean(market.get("location")) or clean(market.get("name")) or "地点待补充"
+
+
+def amap_url(market: dict[str, Any]) -> str:
+    query = quote(calendar_location(market) or "大理赶集")
+    lat = market.get("lat")
+    lng = market.get("lng")
+    if isinstance(lat, (int, float)) and isinstance(lng, (int, float)):
+        return f"https://uri.amap.com/marker?position={lng},{lat}&name={query}"
+    return f"https://uri.amap.com/search?keyword={query}&city=大理"
 
 
 def clean(value: Any) -> str:
@@ -370,8 +386,6 @@ def build_ics_from_events(events: list[dict[str, Any]], calendar_name: str = CAL
         add_property(lines, "SUMMARY", event.get("summary"))
         add_property(lines, "LOCATION", event.get("location"))
         add_property(lines, "DESCRIPTION", event.get("description"))
-        if event.get("lat") is not None and event.get("lng") is not None:
-            lines.append(f"GEO:{event.get('lat')};{event.get('lng')}")
         lines.append("TRANSP:TRANSPARENT")
         lines.append("END:VEVENT")
 

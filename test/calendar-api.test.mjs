@@ -107,7 +107,7 @@ test("market detail back button restores the home scroll position", async () => 
 
 test("source market data uses unified schedule objects and location fields", async () => {
   const markets = JSON.parse(await readFile(new URL("../data/markets.json", import.meta.url), "utf8"));
-  const deprecatedFields = ["market_type", "calendar_enabled", "schedule_type", "lunar_days", "weekday", "month_days", "address"];
+  const deprecatedFields = ["market_type", "calendar_enabled", "schedule_type", "lunar_days", "weekday", "month_days", "address", "location_name"];
 
   assert.ok(markets.every((market) => market.schedule && typeof market.schedule.type === "string"));
   for (const market of markets) {
@@ -128,8 +128,9 @@ test("frontend filters and market location labels match current groups", async (
   assert.match(html, /下关市区集市/);
   assert.match(html, /其他乡镇集市/);
   for (const market of markets) {
-    assert.doesNotMatch(market.location_name, /\/|一带|附近|或/, `${market.id} location_name should be a short map label`);
+    assert.doesNotMatch(market.location, /\/|一带|附近|或/, `${market.id} location should be a short map label`);
   }
+  assert.doesNotMatch(html, /location_name/);
 });
 
 test("mobileconfig endpoint installs a subscribed calendar account", async () => {
@@ -160,20 +161,23 @@ test("generated ICS contains selected markets and excludes unselected markets", 
   assert.doesNotMatch(ics, /银桥街/);
 });
 
-test("calendar event descriptions stay focused on market basics", () => {
-  const event = calendarData.events.find((item) => item.description);
+test("calendar event descriptions use short places and include Gaode navigation", () => {
+  const event = calendarData.events.find((item) => item.market_id === "chuangdanchang");
   assert.ok(event);
   const description = event?.description ?? "";
 
+  assert.equal(event.location, "床单厂艺术区");
   assert.match(description, /时间：/);
-  assert.match(description, /地点：/);
   assert.match(description, new RegExp(`地点：${escapeRegExp(event.location)}`));
+  assert.match(description, /导航（高德）：https:\/\/uri\.amap\.com\/marker\?position=/);
   assert.match(description, /更多赶集攻略或重新订阅日历，请访问：https:\/\/ganji\.neojfeng\.store\//);
-  assert.doesNotMatch(description, /导航：|提醒：|数据说明：/);
+  assert.doesNotMatch(description, /大理市大理古城苍坪街56号/);
+  assert.doesNotMatch(description, /提醒：|数据说明：/);
 });
 
 test("generated market payloads omit deprecated address fields", () => {
   assert.ok(calendarData.markets.every((market) => !Object.hasOwn(market, "address")));
+  assert.ok(calendarData.markets.every((market) => !Object.hasOwn(market, "location_name")));
   assert.ok(calendarData.markets.every((market) => typeof market.location === "string" && market.location.length > 0));
 });
 
