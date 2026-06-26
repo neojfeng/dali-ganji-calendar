@@ -1,15 +1,15 @@
 # 大理赶集攻略 + 动态 Apple 日历订阅
 
-这是一个移动端优先的“大理赶集攻略”小工具。首页、详情页、图片和公开数据保持静态化；用户选择常去集市后，页面生成短订阅 URL，由 EdgeOne Edge Function 动态返回对应 ICS 日历。
+这是一个移动端优先的“大理赶集攻略”小工具。首页、详情页、图片和公开数据保持静态化；用户选择常去集市后，页面生成短订阅 URL，由 Vercel Serverless Function 动态返回对应 ICS 日历。
 
 ## 项目结构
 
 1. `data/markets.json` 是唯一的集市配置源。
 2. `scripts/generate_events.py` 生成未来 18 个月事件到 `public/events.json`，并生成前端使用的 `public/markets.json`。
-3. `scripts/generate_calendar_data.py` 生成 `edge-functions/_data/calendar-data.js`，供 Edge Function import。
+3. `scripts/generate_calendar_data.py` 生成 `lib/calendar-data.js`，供日历 API import。
 4. `scripts/build-static.mjs` 把 `public/` 复制到 `dist/`。
-5. `edge-functions/api/calendar.ics.js` 根据 `s` token 动态生成 ICS。
-6. `edge-functions/api/calendar.mobileconfig.js` 可作为 iOS 配置描述文件备选入口，但页面主按钮默认使用 `webcal://` 订阅源。
+5. `api/calendar.ics.js` 根据 `s` token 动态生成 ICS。
+6. `api/calendar.mobileconfig.js` 可作为 iOS 配置描述文件备选入口，但页面主按钮默认使用 `webcal://` 订阅源。
 
 订阅链接格式：
 
@@ -27,7 +27,7 @@ token 不依赖数据库，也不保存攻略内容。它直接记录用户选�
 3. 解码时只保留当前仍可订阅的 `market id`。
 4. 更新攻略、地点或赶集规则后，订阅链接不变；Apple 日历下次刷新订阅源时会拿到最新 ICS。
 
-共享函数在 `edge-functions/_shared/calendar.js`：
+共享函数在 `lib/calendar.js`：
 
 - `getSubscribableMarkets(markets)`
 - `encodeSelectionToToken(selectedMarketIds, markets)`
@@ -58,7 +58,7 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 ```
 
-构建静态输出和 Edge 数据模块：
+构建静态输出和日历 API 数据模块：
 
 ```bash
 npm run build
@@ -85,7 +85,7 @@ http://localhost:8000
 http://localhost:8000/?market=sanyuejie
 ```
 
-本地完整调试 Edge Function 可使用 EdgeOne Makers：
+本地完整调试 Vercel API 可使用 Vercel CLI：
 
 ```bash
 npm run dev
@@ -121,7 +121,7 @@ Content-Type: text/calendar; charset=utf-8
 Cache-Control: public, max-age=3600
 ```
 
-## EdgeOne Pages / Makers 部署
+## Vercel 部署
 
 建议配置：
 
@@ -132,11 +132,11 @@ Cache-Control: public, max-age=3600
 - Output Directory: `dist`
 - Node Version: `20` 或 `22`
 
-Edge Function 文件位于：
+Vercel Function 文件位于：
 
 ```text
-edge-functions/api/calendar.ics.js
-edge-functions/api/calendar.mobileconfig.js
+api/calendar.ics.js
+api/calendar.mobileconfig.js
 ```
 
 目标访问路由：

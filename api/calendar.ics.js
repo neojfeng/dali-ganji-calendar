@@ -1,10 +1,10 @@
-import { calendarData } from "../edge-functions/_data/calendar-data.js";
+import { calendarData } from "../lib/calendar-data.js";
 import {
   buildIcsForMarketIds,
   decodePathSelectionToMarketIds,
   decodeTokenToMarketIds,
   emptyCalendar
-} from "../edge-functions/_shared/calendar.js";
+} from "../lib/calendar.js";
 
 const HEADERS = {
   "Content-Type": "text/calendar; charset=utf-8",

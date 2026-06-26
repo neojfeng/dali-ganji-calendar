@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate an importable JS data module for the Edge Function."""
+"""Generate an importable JS data module for the calendar API."""
 
 from __future__ import annotations
 
@@ -20,11 +20,11 @@ from calendar_data import (
 )
 
 
-DEFAULT_OUTPUT = ROOT / "edge-functions" / "_data" / "calendar-data.js"
+DEFAULT_OUTPUT = ROOT / "lib" / "calendar-data.js"
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Generate edge-functions/_data/calendar-data.js")
+    parser = argparse.ArgumentParser(description="Generate lib/calendar-data.js")
     parser.add_argument("--data", type=Path, default=DEFAULT_DATA_PATH)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--start-date", help="Override generation start date, YYYY-MM-DD.")

@@ -2,9 +2,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { test } from "node:test";
 
-import { calendarData } from "../edge-functions/_data/calendar-data.js";
-import { handleRequest } from "../edge-functions/api/calendar.ics.js";
-import { handleRequest as handleMobileConfigRequest } from "../edge-functions/api/calendar.mobileconfig.js";
+import { calendarData } from "../lib/calendar-data.js";
 import vercelHandler from "../api/calendar.ics.js";
 import vercelMobileConfigHandler from "../api/calendar.mobileconfig.js";
 import {
@@ -14,7 +12,7 @@ import {
   encodeSelectionToToken,
   getSubscribableMarkets,
   normalizeSelectedMarketIds
-} from "../edge-functions/_shared/calendar.js";
+} from "../lib/calendar.js";
 
 test("selection token round-trips and ignores click order", () => {
   const selected = ["yinqiaojie", "sanyuejie", "fengyijie"];
@@ -50,46 +48,30 @@ test("disabled, daily, and unscheduled markets are not subscribable", () => {
   assert.deepEqual(normalizeSelectedMarketIds(fixtureMarkets.map((market) => market.id), fixtureMarkets), ["ok", "creative", "interval"]);
 });
 
-test("calendar API returns text/calendar for a valid token", async () => {
+test("Vercel API handler returns text/calendar for a valid token", async () => {
   const selected = getSubscribableMarkets(calendarData.markets).slice(0, 1).map((market) => market.id);
-  const token = encodeSelectionToToken(selected, calendarData.markets);
-  const response = await handleRequest(new Request(`https://example.com/api/calendar.ics?s=${token}`));
-  const body = await response.text();
-
-  assert.equal(response.status, 200);
-  assert.equal(response.headers.get("Content-Type"), "text/calendar; charset=utf-8");
-  assert.equal(response.headers.get("Cache-Control"), "public, max-age=3600");
-  assert.match(body, /BEGIN:VCALENDAR/);
-  assert.match(body, /PRODID:-\/\/Jfeng\/\/Dali Ganji Calendar\/\/ZH-CN/);
-  assert.match(body, /X-WR-CALNAME:大理赶集日历/);
-  assert.match(body, /X-WR-TIMEZONE:Asia\/Shanghai/);
-  assert.match(body, new RegExp(`UID:${selected[0]}-`));
-  assert.doesNotMatch(body, /<!doctype html/i);
-});
-
-test("Vercel API handler returns the same dynamic ICS response", async () => {
-  const selected = ["sanyuejie", "yinqiaojie"];
   const token = encodeSelectionToToken(selected, calendarData.markets);
   const response = await invokeVercelHandler(`/api/calendar.ics?s=${token}`);
 
   assert.equal(response.statusCode, 200);
   assert.equal(response.headers["Content-Type"], "text/calendar; charset=utf-8");
   assert.equal(response.headers["Cache-Control"], "public, max-age=3600");
+  assert.match(response.body, /BEGIN:VCALENDAR/);
   assert.match(response.body, /PRODID:-\/\/Jfeng\/\/Dali Ganji Calendar\/\/ZH-CN/);
-  assert.match(response.body, /三月街/);
-  assert.match(response.body, /银桥街/);
-  assert.doesNotMatch(response.body, /北门菜市场/);
+  assert.match(response.body, /X-WR-CALNAME:大理赶集日历/);
+  assert.match(response.body, /X-WR-TIMEZONE:Asia\/Shanghai/);
+  assert.match(response.body, new RegExp(`UID:${selected[0]}-`));
+  assert.doesNotMatch(response.body, /<!doctype html/i);
 });
 
 test("clean calendar feed URL works with comma-separated market ids", async () => {
   const path = "/calendars/sanyuejie,yinqiaojie.ics";
-  const edgeResponse = await handleRequest(new Request(`https://example.com${path}`));
   const vercelResponse = await invokeVercelHandler(path);
-  const edgeBody = await edgeResponse.text();
 
-  assert.equal(edgeResponse.status, 200);
-  assert.match(edgeBody, /三月街/);
+  assert.equal(vercelResponse.statusCode, 200);
+  assert.match(vercelResponse.body, /三月街/);
   assert.match(vercelResponse.body, /银桥街/);
+  assert.doesNotMatch(vercelResponse.body, /北门菜市场/);
 });
 
 test("frontend builds webcal and HTTPS subscription links from the selection token", async () => {
@@ -153,26 +135,21 @@ test("frontend filters and market location labels match current groups", async (
 test("mobileconfig endpoint installs a subscribed calendar account", async () => {
   const token = encodeSelectionToToken(["sanyuejie", "yinqiaojie"], calendarData.markets);
   const encodedToken = encodeURIComponent(token);
-  const edgeResponse = await handleMobileConfigRequest(new Request("https://example.com/calendars/sanyuejie,yinqiaojie.mobileconfig"));
-  const edgeBody = await edgeResponse.text();
   const vercelResponse = await invokeVercelHandler("/calendars/sanyuejie,yinqiaojie.mobileconfig", vercelMobileConfigHandler);
 
-  assert.equal(edgeResponse.status, 200);
-  assert.equal(edgeResponse.headers.get("Content-Type"), "application/x-apple-aspen-config; charset=utf-8");
-  assert.match(edgeBody, /com\.apple\.subscribedcalendar\.account/);
-  assert.match(edgeBody, new RegExp(`https://example\\.com/api/calendar\\.ics\\?s=${encodedToken}`));
-  assert.match(edgeBody, /大理赶集日历/);
+  assert.equal(vercelResponse.statusCode, 200);
   assert.equal(vercelResponse.headers["Content-Type"], "application/x-apple-aspen-config; charset=utf-8");
   assert.match(vercelResponse.body, /com\.apple\.subscribedcalendar\.account/);
+  assert.match(vercelResponse.body, new RegExp(`https://example\\.com/api/calendar\\.ics\\?s=${encodedToken}`));
+  assert.match(vercelResponse.body, /大理赶集日历/);
 });
 
 test("calendar API returns an empty calendar for an invalid token without crashing", async () => {
-  const response = await handleRequest(new Request("https://example.com/api/calendar.ics?s=!!!!"));
-  const body = await response.text();
+  const response = await invokeVercelHandler("/api/calendar.ics?s=!!!!");
 
-  assert.equal(response.status, 200);
-  assert.match(body, /BEGIN:VCALENDAR/);
-  assert.doesNotMatch(body, /BEGIN:VEVENT/);
+  assert.equal(response.statusCode, 200);
+  assert.match(response.body, /BEGIN:VCALENDAR/);
+  assert.doesNotMatch(response.body, /BEGIN:VEVENT/);
 });
 
 test("generated ICS contains selected markets and excludes unselected markets", () => {

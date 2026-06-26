@@ -1,10 +1,10 @@
-import { calendarData } from "../edge-functions/_data/calendar-data.js";
+import { calendarData } from "../lib/calendar-data.js";
 import {
   buildMobileConfigProfile,
   decodePathSelectionToMarketIds,
   decodeTokenToMarketIds,
   encodeSelectionToToken
-} from "../edge-functions/_shared/calendar.js";
+} from "../lib/calendar.js";
 
 const HEADERS = {
   "Content-Type": "application/x-apple-aspen-config; charset=utf-8",
