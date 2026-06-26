@@ -1107,6 +1107,7 @@
       let activeFilter = "近期开集";
       let hasLocation = false;
       let previewMonthOffset = 0;
+      let homeScrollY = 0;
       let toastTimer;
 
       init();
@@ -1130,6 +1131,9 @@
       }
 
       function bindGlobalEvents() {
+        if ("scrollRestoration" in window.history) {
+          window.history.scrollRestoration = "manual";
+        }
         locationButton.addEventListener("click", useLocation);
         openPanelButton.addEventListener("click", () => {
           subscribePanel.hidden = false;
@@ -1159,7 +1163,10 @@
             showToast("请先订阅一个集市");
           }
         });
-        window.addEventListener("popstate", renderRoute);
+        window.addEventListener("popstate", (event) => {
+          renderRoute();
+          restoreScrollFromHistory(event.state);
+        });
       }
 
       function heroTemplate() {
@@ -1870,6 +1877,8 @@
 
       function openDetail(id) {
         const url = new URL(window.location.href);
+        homeScrollY = currentScrollY();
+        window.history.replaceState({ view: "home", scrollY: homeScrollY }, "", window.location.href);
         url.searchParams.set("market", id);
         window.history.pushState({}, "", url);
         renderRoute();
@@ -1879,9 +1888,29 @@
       function openHome() {
         const url = new URL(window.location.href);
         url.searchParams.delete("market");
-        window.history.pushState({}, "", url);
+        window.history.pushState({ view: "home", scrollY: homeScrollY }, "", url);
         renderHome();
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        restoreHomeScroll(homeScrollY);
+      }
+
+      function currentScrollY() {
+        return window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      }
+
+      function restoreScrollFromHistory(state) {
+        const marketId = new URLSearchParams(window.location.search).get("market");
+        if (marketId) {
+          window.scrollTo({ top: 0, behavior: "auto" });
+          return;
+        }
+        const savedScrollY = Number.isFinite(state?.scrollY) ? state.scrollY : homeScrollY;
+        restoreHomeScroll(savedScrollY);
+      }
+
+      function restoreHomeScroll(scrollY) {
+        window.requestAnimationFrame(() => {
+          window.scrollTo({ top: Math.max(0, Number(scrollY) || 0), behavior: "auto" });
+        });
       }
 
       function openNavigation(id) {

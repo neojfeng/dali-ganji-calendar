@@ -114,6 +114,15 @@ test("frontend treats daily markets as always-open instead of pending verificati
   assert.match(html, /每天开集/);
 });
 
+test("market detail back button restores the home scroll position", async () => {
+  const html = await readFile(new URL("../public/index.html", import.meta.url), "utf8");
+
+  assert.match(html, /let homeScrollY = 0/);
+  assert.match(html, /window\.history\.replaceState\(\{ view: "home", scrollY: homeScrollY \}/);
+  assert.match(html, /window\.history\.pushState\(\{ view: "home", scrollY: homeScrollY \}/);
+  assert.match(html, /function restoreHomeScroll/);
+});
+
 test("source market data uses unified schedule objects", async () => {
   const markets = JSON.parse(await readFile(new URL("../data/markets.json", import.meta.url), "utf8"));
   const deprecatedFields = ["market_type", "calendar_enabled", "schedule_type", "lunar_days", "weekday", "month_days"];
