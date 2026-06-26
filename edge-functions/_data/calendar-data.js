@@ -5,8 +5,8 @@ export const calendarData = {
       "id": "sanyuejie",
       "name": "三月街",
       "label": "三月街",
-      "location_name": "大理古城三月街",
-      "address": "大理市大理古城苍山门对面，西门外三月街一带",
+      "location_name": "三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "old_town_trip": "1 km，步行约 10-15min / 打车约 ¥10",
       "area": "古城周边集市",
       "summary": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。",
@@ -30,8 +30,8 @@ export const calendarData = {
         "不想遇到游客摊位",
         "赶集日之外专程前往"
       ],
-      "lat": 25.6957,
-      "lng": 100.1546,
+      "lat": 25.693274,
+      "lng": 100.153299,
       "image": "/images/markets/sanyuejie.jpg",
       "image_alt": "三月街集市牌坊和热闹摊位插画",
       "images": [
@@ -103,8 +103,8 @@ export const calendarData = {
       "id": "chuangdanchang",
       "name": "床单厂集市",
       "label": "床单厂",
-      "location_name": "大理床单厂艺术区",
-      "address": "大理市大理古城苍坪街56号，床单厂创意园一带",
+      "location_name": "床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "old_town_trip": "古城内，步行约 10-15min / 打车约 ¥10",
       "area": "古城周边集市",
       "summary": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。",
@@ -129,8 +129,8 @@ export const calendarData = {
         "预算很低",
         "工作日专程前往"
       ],
-      "lat": 25.6918,
-      "lng": 100.1628,
+      "lat": 25.689852,
+      "lng": 100.165624,
       "image": "/images/markets/chuangdanchang.jpg",
       "image_alt": "床单厂集市的文创摊位和老厂房插画",
       "images": [
@@ -199,7 +199,7 @@ export const calendarData = {
       "name": "北门菜市场",
       "label": "北门菜市场",
       "location_name": "北门菜市场",
-      "address": "大理市大理古城北门片区，博爱路与平等路附近",
+      "location": "大理市大理古城北门片区，博爱路与平等路附近",
       "old_town_trip": "古城内/北门附近，步行约 5-15min / 打车约 ¥10",
       "area": "古城周边集市",
       "summary": "大理古城北门附近的日常菜市场，早上最热闹，适合买新鲜菌子、乳扇、酱菜、蔬果和早餐小吃。",
@@ -223,8 +223,8 @@ export const calendarData = {
         "想淘文创手作",
         "追求网红拍照感"
       ],
-      "lat": 25.6998,
-      "lng": 100.1657,
+      "lat": 25.698182,
+      "lng": 100.157064,
       "image": "/images/markets/beimen_nongmao.jpg",
       "image_alt": "古城北门农贸市场的鲜花蔬果和早餐摊插画",
       "images": [
@@ -286,7 +286,7 @@ export const calendarData = {
       "name": "南门绿玉农贸市场",
       "label": "南门绿玉农贸市场",
       "location_name": "南门绿玉农贸市场",
-      "address": "大理市大理镇绿玉路111号，古城南门/博爱门以南一带",
+      "location": "大理市大理镇绿玉路111号，古城南门/博爱门以南一带",
       "old_town_trip": "1 km，步行约 10-15min / 打车约 ¥10",
       "area": "古城周边集市",
       "summary": "大理古城南门附近的熟食型菜市场，下午小吃更集中，卷粉、鸡脚、破酥包和熟食摊适合一路试吃。",
@@ -310,8 +310,8 @@ export const calendarData = {
         "讨厌油烟和拥挤",
         "想逛文创手作"
       ],
-      "lat": 25.6878,
-      "lng": 100.1618,
+      "lat": 25.683475,
+      "lng": 100.164275,
       "image": "/images/markets/nanmen_lvyu.jpg",
       "image_alt": "南门绿玉农贸市场的下午熟食小吃摊插画",
       "images": [
@@ -379,8 +379,8 @@ export const calendarData = {
       "id": "yinqiaojie",
       "name": "银桥街",
       "label": "银桥街",
-      "location_name": "银桥镇农贸市场",
-      "address": "大理市银桥镇银桥街、银桥镇农贸市场一带",
+      "location_name": "头铺农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "old_town_trip": "10 km，打车约 20min / ¥30",
       "area": "银桥/喜洲片区",
       "summary": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。",
@@ -404,8 +404,8 @@ export const calendarData = {
         "想买精致文创",
         "赶集日之外专程前往"
       ],
-      "lat": 25.7828,
-      "lng": 100.1396,
+      "lat": 25.756939,
+      "lng": 100.123102,
       "image": "/images/markets/yinqiaojie.jpg",
       "image_alt": "银桥街集市的田园和集市摊位插画",
       "images": [
@@ -473,8 +473,8 @@ export const calendarData = {
       "id": "xizhou_longjie",
       "name": "喜洲龙街",
       "label": "喜洲龙街",
-      "location_name": "作邑农贸市场",
-      "address": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
+      "location_name": "喜洲镇作邑村",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "old_town_trip": "25 km，打车约 40min / ¥60",
       "area": "银桥/喜洲片区",
       "summary": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。",
@@ -498,8 +498,8 @@ export const calendarData = {
         "时间很紧",
         "期待精致文创市集"
       ],
-      "lat": 25.8258,
-      "lng": 100.1378,
+      "lat": 25.826604,
+      "lng": 100.122204,
       "image": "/images/markets/xizhou_longjie.jpg",
       "image_alt": "喜洲龙街集市的古镇乡土摊位插画",
       "images": [
@@ -568,8 +568,8 @@ export const calendarData = {
       "id": "wanqiaojie",
       "name": "湾桥街",
       "label": "湾桥街",
-      "location_name": "湾桥镇农贸市场",
-      "address": "大理市湾桥镇湾桥街/镇农贸市场",
+      "location_name": "湾桥农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "old_town_trip": "18 km，打车约 30min / ¥45",
       "area": "银桥/喜洲片区",
       "summary": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。",
@@ -593,8 +593,8 @@ export const calendarData = {
         "不想跑远路",
         "想买文创手作"
       ],
-      "lat": 25.8546,
-      "lng": 100.1275,
+      "lat": 25.791214,
+      "lng": 100.121132,
       "image": "/images/markets/wanqiaojie.jpg",
       "image_alt": "湾桥街集市的乡镇街道和农产品插画",
       "images": [
@@ -659,7 +659,7 @@ export const calendarData = {
       "name": "下关花鸟市场",
       "label": "下关花鸟市场",
       "location_name": "大理花鸟市场",
-      "address": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "old_town_trip": "17 km，打车约 35min / ¥45",
       "area": "下关市区集市",
       "summary": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。",
@@ -683,8 +683,8 @@ export const calendarData = {
         "只在古城活动",
         "想要固定摊位和稳定品质"
       ],
-      "lat": 25.6269,
-      "lng": 100.2258,
+      "lat": 25.629002,
+      "lng": 100.209937,
       "image": "/images/markets/xiaguan_huaniao.jpg",
       "image_alt": "下关花鸟市场周日旧货和绿植摊位插画",
       "images": [
@@ -751,7 +751,7 @@ export const calendarData = {
       "name": "泰兴综合市场",
       "label": "泰兴综合市场",
       "location_name": "泰兴综合市场",
-      "address": "大理市下关建设路滇西商务中心附近",
+      "location": "大理市下关建设路滇西商务中心附近",
       "old_town_trip": "16 km，打车约 30min / ¥45",
       "area": "下关市区集市",
       "summary": "建设路滇西商务中心附近的下关市区综合市场，水果、蔬菜、生鲜和日常采购集中，适合住下关时按筐买水果。",
@@ -775,8 +775,8 @@ export const calendarData = {
         "想买文创手作",
         "不方便去下关"
       ],
-      "lat": 25.5909,
-      "lng": 100.2302,
+      "lat": 25.587209,
+      "lng": 100.228742,
       "image": "/images/markets/taixing_zonghe.jpg",
       "image_alt": "泰兴综合市场的整筐水果和综合摊位插画",
       "images": [
@@ -834,8 +834,8 @@ export const calendarData = {
       "id": "daguanyi_nongmao",
       "name": "大关邑农贸市场",
       "label": "大关邑农贸市场",
-      "location_name": "大关邑农贸市场",
-      "address": "大理市下关兴建北路大关邑片区",
+      "location_name": "大关邑综合农贸市场",
+      "location": "大理市下关兴建北路大关邑片区",
       "old_town_trip": "16 km，打车约 30-35min / ¥45",
       "area": "下关市区集市",
       "summary": "兴建北路一带的下关本地农贸市场，物价相对低，上午烟火气更足，适合吃米线和买日常生鲜。",
@@ -859,8 +859,8 @@ export const calendarData = {
         "想逛文艺市集",
         "对菜市环境要求很高"
       ],
-      "lat": 25.6035,
-      "lng": 100.2256,
+      "lat": 25.600049,
+      "lng": 100.227681,
       "image": "/images/markets/daguanyi_nongmao.jpg",
       "image_alt": "大关邑农贸市场的本地菜市和早餐米线摊插画",
       "images": [
@@ -918,8 +918,8 @@ export const calendarData = {
       "id": "shaxijie",
       "name": "沙溪街",
       "label": "沙溪街",
-      "location_name": "沙溪古镇",
-      "address": "大理州剑川县沙溪古镇寺登街及周边街巷",
+      "location_name": "沙溪古镇寺登街",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "old_town_trip": "约 130 km，自驾约 2.5-3h",
       "area": "其他乡镇集市",
       "summary": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。",
@@ -943,8 +943,8 @@ export const calendarData = {
         "下午才到沙溪",
         "只想逛精致文创"
       ],
-      "lat": 26.3202,
-      "lng": 99.8513,
+      "lat": 26.315982,
+      "lng": 99.852755,
       "image": "/images/markets/shaxijie.jpg",
       "image_alt": "沙溪古镇周五街集和茶马古道街巷插画",
       "images": [
@@ -1007,7 +1007,7 @@ export const calendarData = {
       "name": "凤仪街",
       "label": "凤仪街",
       "location_name": "凤仪农贸市场",
-      "address": "大理市凤仪镇凤中路、凤仪主街巷道一带",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "old_town_trip": "20 km，打车约 35min / ¥50",
       "area": "其他乡镇集市",
       "summary": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。",
@@ -1031,8 +1031,8 @@ export const calendarData = {
         "时间很紧",
         "想要高颜值文艺市集"
       ],
-      "lat": 25.5916,
-      "lng": 100.2918,
+      "lat": 25.583781,
+      "lng": 100.313555,
       "image": "/images/markets/fengyijie.jpg",
       "image_alt": "凤仪街集市的乡镇街巷和摊位插画",
       "images": [
@@ -1102,8 +1102,8 @@ export const calendarData = {
       "id": "wasejie",
       "name": "挖色街",
       "label": "挖色街",
-      "location_name": "挖色街",
-      "address": "大理市挖色镇环海路边、挖色街一带",
+      "location_name": "挖色农贸市场",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "old_town_trip": "约 40 km，自驾约 1h / 环海东线顺路更合适",
       "area": "其他乡镇集市",
       "summary": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。",
@@ -1127,8 +1127,8 @@ export const calendarData = {
         "想买精致伴手礼",
         "赶集日之外专程前往"
       ],
-      "lat": 25.815,
-      "lng": 100.251,
+      "lat": 25.823475,
+      "lng": 100.225725,
       "image": "/images/markets/wasejie.jpg",
       "image_alt": "挖色街洱海东岸环海路边乡镇集插画",
       "images": [
@@ -1195,7 +1195,7 @@ export const calendarData = {
       "name": "海东街",
       "label": "海东街",
       "location_name": "海东镇向阳街",
-      "address": "大理市海东镇向阳街及周边街巷",
+      "location": "大理市海东镇向阳街及周边街巷",
       "old_town_trip": "约 35 km，自驾约 50-60min / 环海东线顺路更合适",
       "area": "其他乡镇集市",
       "summary": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。",
@@ -1219,8 +1219,8 @@ export const calendarData = {
         "想买文创手作",
         "赶集日之外专程前往"
       ],
-      "lat": 25.746,
-      "lng": 100.246,
+      "lat": 25.710856,
+      "lng": 100.260177,
       "image": "/images/markets/haidongjie.jpg",
       "image_alt": "海东镇向阳街本地赶集和洱海东岸插画",
       "images": [
@@ -1285,8 +1285,8 @@ export const calendarData = {
       "id": "shuanglangjie",
       "name": "双廊街",
       "label": "双廊街",
-      "location_name": "双廊镇文化街",
-      "address": "大理市双廊镇文化街及周边街巷",
+      "location_name": "双廊农贸市场",
+      "location": "大理市双廊镇文化街及周边街巷",
       "old_town_trip": "约 50 km，自驾约 1-1.5h / 环海路线顺路更合适",
       "area": "其他乡镇集市",
       "summary": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。",
@@ -1310,8 +1310,8 @@ export const calendarData = {
         "不能确认当天是否赶集",
         "想买精致文创"
       ],
-      "lat": 25.909,
-      "lng": 100.177,
+      "lat": 25.901256,
+      "lng": 100.198633,
       "image": "/images/markets/shuanglangjie.jpg",
       "image_alt": "双廊镇文化街洱海边赶集插画",
       "images": [
@@ -1370,30 +1370,17 @@ export const calendarData = {
   ],
   "events": [
     {
-      "market_id": "shaxijie",
-      "market_name": "沙溪街",
-      "market_label": "沙溪街",
-      "market_index": 10,
-      "date": "2026-06-26",
-      "summary": "沙溪街",
-      "location": "沙溪古镇",
-      "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
-      "uid": "shaxijie-2026-06-26@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
-    },
-    {
       "market_id": "chuangdanchang",
       "market_name": "床单厂集市",
       "market_label": "床单厂",
       "market_index": 1,
       "date": "2026-06-27",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-06-27@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -1402,11 +1389,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-06-27",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-06-27@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "chuangdanchang",
@@ -1415,11 +1402,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-06-28",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-06-28@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -1428,11 +1415,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-06-28",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-06-28@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "shuanglangjie",
@@ -1441,11 +1428,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-06-28",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-06-28@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "haidongjie",
@@ -1454,11 +1441,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-06-29",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-06-29@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -1467,11 +1454,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-06-30",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-06-30@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -1480,11 +1467,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-06-30",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-06-30@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -1493,11 +1480,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-06-30",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-06-30@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -1506,11 +1493,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-06-30",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-06-30@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "wanqiaojie",
@@ -1519,11 +1506,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-07-02",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-07-02@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shaxijie",
@@ -1532,11 +1519,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-07-03",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-07-03@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -1545,11 +1532,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-07-04",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-07-04@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -1558,11 +1545,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-07-04",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-07-04@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shuanglangjie",
@@ -1571,11 +1558,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-07-04",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-07-04@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -1584,11 +1571,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-07-05",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-07-05@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -1597,11 +1584,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-07-05",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-07-05@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -1610,11 +1597,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-07-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-07-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -1623,11 +1610,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-07-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-07-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -1636,11 +1623,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-07-05",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-07-05@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -1649,11 +1636,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-07-07",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-07-07@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -1662,11 +1649,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-07-07",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-07-07@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "wanqiaojie",
@@ -1675,11 +1662,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-07-10",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-07-10@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shaxijie",
@@ -1688,11 +1675,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-07-10",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-07-10@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "fengyijie",
@@ -1701,11 +1688,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-07-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-07-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -1714,11 +1701,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-07-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-07-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -1727,11 +1714,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-07-10",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-07-10@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shuanglangjie",
@@ -1740,11 +1727,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-07-10",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-07-10@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -1753,11 +1740,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-07-11",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-07-11@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -1766,11 +1753,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-07-12",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-07-12@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -1779,11 +1766,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-07-12",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-07-12@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -1792,11 +1779,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-07-12",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-07-12@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -1805,11 +1792,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-07-14",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-07-14@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -1818,11 +1805,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-07-15",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-07-15@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -1831,11 +1818,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-07-15",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-07-15@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -1844,11 +1831,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-07-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-07-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -1857,11 +1844,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-07-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-07-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -1870,11 +1857,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-07-16",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-07-16@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -1883,11 +1870,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-07-17",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-07-17@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shaxijie",
@@ -1896,11 +1883,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-07-17",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-07-17@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -1909,11 +1896,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-07-18",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-07-18@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -1922,11 +1909,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-07-18",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-07-18@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "chuangdanchang",
@@ -1935,11 +1922,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-07-19",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-07-19@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -1948,11 +1935,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-07-19",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-07-19@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -1961,11 +1948,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-07-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-07-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -1974,11 +1961,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-07-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-07-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -1987,11 +1974,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-07-21",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-07-21@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -2000,11 +1987,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-07-22",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-07-22@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -2013,11 +2000,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-07-22",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-07-22@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shuanglangjie",
@@ -2026,11 +2013,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-07-22",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-07-22@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -2039,11 +2026,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-07-24",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-07-24@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shaxijie",
@@ -2052,11 +2039,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-07-24",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-07-24@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -2065,11 +2052,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-07-25",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-07-25@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "fengyijie",
@@ -2078,11 +2065,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-07-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-07-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -2091,11 +2078,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-07-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-07-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "chuangdanchang",
@@ -2104,11 +2091,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-07-26",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-07-26@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -2117,11 +2104,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-07-26",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-07-26@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -2130,11 +2117,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-07-26",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-07-26@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -2143,11 +2130,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-07-28",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-07-28@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shuanglangjie",
@@ -2156,11 +2143,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-07-28",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-07-28@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "sanyuejie",
@@ -2169,11 +2156,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-07-29",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-07-29@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -2182,11 +2169,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-07-29",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-07-29@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -2195,11 +2182,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-07-30",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-07-30@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -2208,11 +2195,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-07-30",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-07-30@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "wanqiaojie",
@@ -2221,11 +2208,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-07-31",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-07-31@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shaxijie",
@@ -2234,11 +2221,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-07-31",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-07-31@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -2247,11 +2234,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-08-01",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-08-01@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -2260,11 +2247,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-08-02",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-08-02@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -2273,11 +2260,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-08-02",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-08-02@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -2286,11 +2273,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-08-02",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-08-02@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -2299,11 +2286,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-08-03",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-08-03@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shuanglangjie",
@@ -2312,11 +2299,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-08-03",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-08-03@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "sanyuejie",
@@ -2325,11 +2312,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-08-05",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-08-05@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -2338,11 +2325,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-08-05",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-08-05@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -2351,11 +2338,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-08-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-08-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -2364,11 +2351,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-08-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-08-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shaxijie",
@@ -2377,11 +2364,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-08-07",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-08-07@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -2390,11 +2377,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-08-08",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-08-08@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -2403,11 +2390,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-08-08",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-08-08@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "haidongjie",
@@ -2416,11 +2403,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-08-08",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-08-08@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "chuangdanchang",
@@ -2429,11 +2416,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-08-09",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-08-09@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -2442,11 +2429,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-08-09",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-08-09@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "shuanglangjie",
@@ -2455,11 +2442,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-08-09",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-08-09@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "yinqiaojie",
@@ -2468,11 +2455,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-08-10",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-08-10@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -2481,11 +2468,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-08-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-08-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -2494,11 +2481,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-08-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-08-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -2507,11 +2494,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-08-13",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-08-13@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -2520,11 +2507,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-08-14",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-08-14@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -2533,11 +2520,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-08-14",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-08-14@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -2546,11 +2533,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-08-14",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-08-14@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -2559,11 +2546,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-08-15",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-08-15@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "fengyijie",
@@ -2572,11 +2559,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-08-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-08-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -2585,11 +2572,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-08-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-08-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -2598,11 +2585,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-08-15",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-08-15@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -2611,11 +2598,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-08-16",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-08-16@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -2624,11 +2611,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-08-16",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-08-16@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -2637,11 +2624,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-08-16",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-08-16@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "yinqiaojie",
@@ -2650,11 +2637,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-08-17",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-08-17@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -2663,11 +2650,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-08-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-08-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -2676,11 +2663,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-08-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-08-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -2689,11 +2676,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-08-20",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-08-20@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -2702,11 +2689,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-08-21",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-08-21@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -2715,11 +2702,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-08-21",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-08-21@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -2728,11 +2715,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-08-21",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-08-21@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "shuanglangjie",
@@ -2741,11 +2728,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-08-21",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-08-21@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -2754,11 +2741,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-08-22",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-08-22@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -2767,11 +2754,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-08-23",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-08-23@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -2780,11 +2767,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-08-23",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-08-23@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -2793,11 +2780,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-08-23",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-08-23@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "yinqiaojie",
@@ -2806,11 +2793,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-08-25",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-08-25@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -2819,11 +2806,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-08-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-08-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -2832,11 +2819,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-08-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-08-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -2845,11 +2832,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-08-27",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-08-27@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shuanglangjie",
@@ -2858,11 +2845,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-08-27",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-08-27@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "sanyuejie",
@@ -2871,11 +2858,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-08-28",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-08-28@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -2884,11 +2871,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-08-28",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-08-28@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -2897,11 +2884,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-08-28",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-08-28@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -2910,11 +2897,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-08-29",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-08-29@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -2923,11 +2910,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-08-30",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-08-30@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -2936,11 +2923,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-08-30",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-08-30@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -2949,11 +2936,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-08-30",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-08-30@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -2962,11 +2949,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-08-30",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-08-30@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -2975,11 +2962,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-08-30",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-08-30@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "yinqiaojie",
@@ -2988,11 +2975,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-09-01",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-09-01@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "haidongjie",
@@ -3001,11 +2988,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-09-02",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-09-02@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shuanglangjie",
@@ -3014,11 +3001,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-09-02",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-09-02@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "sanyuejie",
@@ -3027,11 +3014,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-09-04",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-09-04@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -3040,11 +3027,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-09-04",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-09-04@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -3053,11 +3040,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-09-04",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-09-04@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -3066,11 +3053,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-09-05",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-09-05@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "fengyijie",
@@ -3079,11 +3066,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-09-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-09-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -3092,11 +3079,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-09-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-09-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "chuangdanchang",
@@ -3105,11 +3092,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-09-06",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-09-06@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -3118,11 +3105,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-09-06",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-09-06@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "wanqiaojie",
@@ -3131,11 +3118,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-09-07",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-09-07@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "haidongjie",
@@ -3144,11 +3131,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-09-07",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-09-07@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shuanglangjie",
@@ -3157,11 +3144,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-09-08",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-09-08@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "yinqiaojie",
@@ -3170,11 +3157,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-09-09",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-09-09@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -3183,11 +3170,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-09-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-09-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -3196,11 +3183,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-09-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-09-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shaxijie",
@@ -3209,11 +3196,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-09-11",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-09-11@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "haidongjie",
@@ -3222,11 +3209,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-09-11",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-09-11@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -3235,11 +3222,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-09-12",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-09-12@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -3248,11 +3235,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-09-12",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-09-12@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -3261,11 +3248,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-09-12",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-09-12@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "chuangdanchang",
@@ -3274,11 +3261,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-09-13",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-09-13@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -3287,11 +3274,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-09-13",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-09-13@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "wanqiaojie",
@@ -3300,11 +3287,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-09-14",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-09-14@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shuanglangjie",
@@ -3313,11 +3300,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-09-14",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-09-14@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "yinqiaojie",
@@ -3326,11 +3313,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-09-15",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-09-15@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -3339,11 +3326,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-09-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-09-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -3352,11 +3339,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-09-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-09-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shaxijie",
@@ -3365,11 +3352,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-09-18",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-09-18@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "haidongjie",
@@ -3378,11 +3365,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-09-18",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-09-18@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -3391,11 +3378,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-09-19",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-09-19@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -3404,11 +3391,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-09-19",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-09-19@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -3417,11 +3404,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-09-19",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-09-19@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "chuangdanchang",
@@ -3430,11 +3417,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-09-20",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-09-20@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -3443,11 +3430,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-09-20",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-09-20@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -3456,11 +3443,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-09-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-09-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -3469,11 +3456,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-09-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-09-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -3482,11 +3469,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-09-20",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-09-20@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -3495,11 +3482,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-09-21",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-09-21@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "yinqiaojie",
@@ -3508,11 +3495,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-09-23",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-09-23@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -3521,11 +3508,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-09-25",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-09-25@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "fengyijie",
@@ -3534,11 +3521,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-09-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-09-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -3547,11 +3534,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-09-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-09-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -3560,11 +3547,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-09-25",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-09-25@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -3573,11 +3560,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-09-26",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-09-26@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -3586,11 +3573,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-09-26",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-09-26@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -3599,11 +3586,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-09-26",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-09-26@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shuanglangjie",
@@ -3612,11 +3599,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-09-26",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-09-26@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -3625,11 +3612,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-09-27",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-09-27@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -3638,11 +3625,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-09-27",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-09-27@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "wanqiaojie",
@@ -3651,11 +3638,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-09-28",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-09-28@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "yinqiaojie",
@@ -3664,11 +3651,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-09-30",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-09-30@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -3677,11 +3664,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-09-30",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-09-30@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -3690,11 +3677,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-09-30",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-09-30@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -3703,11 +3690,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-10-01",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-10-01@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shaxijie",
@@ -3716,11 +3703,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-10-02",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-10-02@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "shuanglangjie",
@@ -3729,11 +3716,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-10-02",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-10-02@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "sanyuejie",
@@ -3742,11 +3729,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-10-03",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-10-03@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -3755,11 +3742,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-10-03",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-10-03@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -3768,11 +3755,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-10-03",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-10-03@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "chuangdanchang",
@@ -3781,11 +3768,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-10-04",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-10-04@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -3794,11 +3781,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-10-04",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-10-04@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -3807,11 +3794,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-10-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-10-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -3820,11 +3807,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-10-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-10-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "wanqiaojie",
@@ -3833,11 +3820,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-10-06",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-10-06@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "haidongjie",
@@ -3846,11 +3833,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-10-06",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-10-06@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "yinqiaojie",
@@ -3859,11 +3846,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-10-08",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-10-08@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shuanglangjie",
@@ -3872,11 +3859,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-10-08",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-10-08@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "shaxijie",
@@ -3885,11 +3872,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-10-09",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-10-09@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -3898,11 +3885,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-10-10",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-10-10@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "fengyijie",
@@ -3911,11 +3898,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-10-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-10-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -3924,11 +3911,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-10-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-10-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -3937,11 +3924,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-10-10",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-10-10@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -3950,11 +3937,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-10-11",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-10-11@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -3963,11 +3950,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-10-11",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-10-11@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -3976,11 +3963,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-10-11",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-10-11@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -3989,11 +3976,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-10-11",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-10-11@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "wanqiaojie",
@@ -4002,11 +3989,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-10-13",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-10-13@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "yinqiaojie",
@@ -4015,11 +4002,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-10-14",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-10-14@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shuanglangjie",
@@ -4028,11 +4015,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-10-14",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-10-14@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "fengyijie",
@@ -4041,11 +4028,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-10-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-10-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -4054,11 +4041,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-10-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-10-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shaxijie",
@@ -4067,11 +4054,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-10-16",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-10-16@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -4080,11 +4067,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-10-17",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-10-17@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "haidongjie",
@@ -4093,11 +4080,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-10-17",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-10-17@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -4106,11 +4093,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-10-18",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-10-18@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -4119,11 +4106,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-10-18",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-10-18@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -4132,11 +4119,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-10-18",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-10-18@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -4145,11 +4132,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-10-18",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-10-18@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "wanqiaojie",
@@ -4158,11 +4145,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-10-20",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-10-20@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "fengyijie",
@@ -4171,11 +4158,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-10-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-10-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -4184,11 +4171,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-10-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-10-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -4197,11 +4184,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-10-20",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-10-20@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "yinqiaojie",
@@ -4210,11 +4197,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-10-22",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-10-22@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -4223,11 +4210,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-10-23",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-10-23@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -4236,11 +4223,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-10-24",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-10-24@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "haidongjie",
@@ -4249,11 +4236,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-10-24",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-10-24@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -4262,11 +4249,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-10-25",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-10-25@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -4275,11 +4262,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-10-25",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-10-25@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -4288,11 +4275,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-10-25",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-10-25@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -4301,11 +4288,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-10-25",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-10-25@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -4314,11 +4301,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-10-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-10-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -4327,11 +4314,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-10-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-10-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -4340,11 +4327,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-10-26",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-10-26@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -4353,11 +4340,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-10-27",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-10-27@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "yinqiaojie",
@@ -4366,11 +4353,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-10-29",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-10-29@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -4379,11 +4366,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-10-30",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-10-30@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "fengyijie",
@@ -4392,11 +4379,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-10-30",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-10-30@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -4405,11 +4392,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-10-30",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-10-30@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -4418,11 +4405,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-10-30",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-10-30@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "chuangdanchang",
@@ -4431,11 +4418,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-10-31",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-10-31@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "sanyuejie",
@@ -4444,11 +4431,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-11-01",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-11-01@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -4457,11 +4444,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-11-01",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-11-01@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -4470,11 +4457,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-11-01",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-11-01@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -4483,11 +4470,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-11-01",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-11-01@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "shuanglangjie",
@@ -4496,11 +4483,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-11-01",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-11-01@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -4509,11 +4496,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-11-04",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-11-04@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "haidongjie",
@@ -4522,11 +4509,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-11-04",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-11-04@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "fengyijie",
@@ -4535,11 +4522,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-11-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-11-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -4548,11 +4535,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-11-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-11-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "yinqiaojie",
@@ -4561,11 +4548,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-11-06",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-11-06@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -4574,11 +4561,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-11-06",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-11-06@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -4587,11 +4574,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-11-07",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-11-07@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "shuanglangjie",
@@ -4600,11 +4587,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-11-07",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-11-07@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -4613,11 +4600,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-11-08",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-11-08@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -4626,11 +4613,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-11-08",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-11-08@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -4639,11 +4626,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-11-09",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-11-09@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -4652,11 +4639,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-11-10",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-11-10@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -4665,11 +4652,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-11-10",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-11-10@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -4678,11 +4665,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-11-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-11-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -4691,11 +4678,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-11-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-11-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "wanqiaojie",
@@ -4704,11 +4691,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-11-12",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-11-12@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "yinqiaojie",
@@ -4717,11 +4704,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-11-13",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-11-13@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -4730,11 +4717,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-11-13",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-11-13@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "shuanglangjie",
@@ -4743,11 +4730,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-11-13",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-11-13@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -4756,11 +4743,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-11-14",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-11-14@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -4769,11 +4756,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-11-15",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-11-15@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -4782,11 +4769,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-11-15",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-11-15@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -4795,11 +4782,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-11-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-11-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -4808,11 +4795,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-11-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-11-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -4821,11 +4808,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-11-16",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-11-16@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -4834,11 +4821,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-11-17",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-11-17@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -4847,11 +4834,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-11-17",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-11-17@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "wanqiaojie",
@@ -4860,11 +4847,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-11-19",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-11-19@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shuanglangjie",
@@ -4873,11 +4860,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-11-19",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-11-19@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "shaxijie",
@@ -4886,11 +4873,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-11-20",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-11-20@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "fengyijie",
@@ -4899,11 +4886,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-11-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-11-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -4912,11 +4899,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-11-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-11-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "chuangdanchang",
@@ -4925,11 +4912,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-11-21",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-11-21@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -4938,11 +4925,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-11-21",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-11-21@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "chuangdanchang",
@@ -4951,11 +4938,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-11-22",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-11-22@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -4964,11 +4951,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-11-22",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-11-22@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -4977,11 +4964,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-11-23",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-11-23@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -4990,11 +4977,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-11-24",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-11-24@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -5003,11 +4990,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-11-24",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-11-24@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -5016,11 +5003,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-11-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-11-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -5029,11 +5016,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-11-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-11-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -5042,11 +5029,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-11-25",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-11-25@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -5055,11 +5042,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-11-26",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-11-26@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shaxijie",
@@ -5068,11 +5055,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-11-27",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-11-27@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -5081,11 +5068,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-11-28",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-11-28@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -5094,11 +5081,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-11-28",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-11-28@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "chuangdanchang",
@@ -5107,11 +5094,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-11-29",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-11-29@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -5120,11 +5107,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-11-29",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-11-29@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -5133,11 +5120,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-11-29",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-11-29@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "fengyijie",
@@ -5146,11 +5133,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-11-30",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-11-30@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -5159,11 +5146,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-11-30",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-11-30@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "sanyuejie",
@@ -5172,11 +5159,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-12-01",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-12-01@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -5185,11 +5172,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-12-01",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-12-01@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shuanglangjie",
@@ -5198,11 +5185,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-12-01",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-12-01@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -5211,11 +5198,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-12-04",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-12-04@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shaxijie",
@@ -5224,11 +5211,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-12-04",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-12-04@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "haidongjie",
@@ -5237,11 +5224,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-12-04",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-12-04@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "chuangdanchang",
@@ -5250,11 +5237,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-12-05",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-12-05@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "fengyijie",
@@ -5263,11 +5250,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-12-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-12-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -5276,11 +5263,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-12-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-12-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "chuangdanchang",
@@ -5289,11 +5276,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-12-06",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-12-06@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -5302,11 +5289,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-12-06",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-12-06@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -5315,11 +5302,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-12-06",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-12-06@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "shuanglangjie",
@@ -5328,11 +5315,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-12-07",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-12-07@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "haidongjie",
@@ -5341,11 +5328,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-12-09",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-12-09@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -5354,11 +5341,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-12-10",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-12-10@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -5367,11 +5354,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-12-10",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-12-10@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -5380,11 +5367,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-12-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-12-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -5393,11 +5380,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-12-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-12-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shaxijie",
@@ -5406,11 +5393,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-12-11",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-12-11@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -5419,11 +5406,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-12-12",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-12-12@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -5432,11 +5419,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-12-12",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-12-12@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "chuangdanchang",
@@ -5445,11 +5432,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-12-13",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-12-13@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -5458,11 +5445,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-12-13",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-12-13@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -5471,11 +5458,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-12-13",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-12-13@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "shuanglangjie",
@@ -5484,11 +5471,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-12-13",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-12-13@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "fengyijie",
@@ -5497,11 +5484,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-12-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-12-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -5510,11 +5497,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-12-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-12-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -5523,11 +5510,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-12-16",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-12-16@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -5536,11 +5523,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-12-17",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-12-17@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -5549,11 +5536,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-12-17",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-12-17@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -5562,11 +5549,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-12-18",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-12-18@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -5575,11 +5562,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-12-19",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-12-19@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -5588,11 +5575,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-12-19",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-12-19@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shuanglangjie",
@@ -5601,11 +5588,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-12-19",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-12-19@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -5614,11 +5601,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-12-20",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-12-20@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -5627,11 +5614,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-12-20",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-12-20@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -5640,11 +5627,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-12-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-12-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -5653,11 +5640,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-12-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-12-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "yinqiaojie",
@@ -5666,11 +5653,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-12-21",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-12-21@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "haidongjie",
@@ -5679,11 +5666,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-12-23",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-12-23@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -5692,11 +5679,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-12-24",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-12-24@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -5705,11 +5692,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-12-24",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-12-24@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -5718,11 +5705,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2026-12-25",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2026-12-25@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "fengyijie",
@@ -5731,11 +5718,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-12-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-12-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -5744,11 +5731,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-12-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-12-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -5757,11 +5744,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-12-25",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-12-25@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -5770,11 +5757,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-12-26",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-12-26@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -5783,11 +5770,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2026-12-26",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2026-12-26@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "chuangdanchang",
@@ -5796,11 +5783,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2026-12-27",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2026-12-27@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -5809,11 +5796,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2026-12-27",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2026-12-27@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "yinqiaojie",
@@ -5822,11 +5809,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2026-12-28",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2026-12-28@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "haidongjie",
@@ -5835,11 +5822,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2026-12-29",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2026-12-29@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "fengyijie",
@@ -5848,11 +5835,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2026-12-30",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2026-12-30@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -5861,11 +5848,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2026-12-30",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2026-12-30@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "sanyuejie",
@@ -5874,11 +5861,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2026-12-31",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2026-12-31@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -5887,11 +5874,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2026-12-31",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2026-12-31@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shuanglangjie",
@@ -5900,11 +5887,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2026-12-31",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2026-12-31@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "shaxijie",
@@ -5913,11 +5900,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-01-01",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-01-01@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -5926,11 +5913,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-01-02",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-01-02@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -5939,11 +5926,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-01-03",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-01-03@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -5952,11 +5939,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-01-03",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-01-03@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -5965,11 +5952,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-01-03",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-01-03@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -5978,11 +5965,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-01-03",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-01-03@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "yinqiaojie",
@@ -5991,11 +5978,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-01-05",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-01-05@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -6004,11 +5991,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-01-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-01-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -6017,11 +6004,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-01-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-01-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -6030,11 +6017,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-01-06",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-01-06@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "shaxijie",
@@ -6043,11 +6030,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-01-08",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-01-08@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "haidongjie",
@@ -6056,11 +6043,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-01-08",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-01-08@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -6069,11 +6056,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-01-09",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-01-09@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -6082,11 +6069,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-01-09",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-01-09@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -6095,11 +6082,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-01-09",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-01-09@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "chuangdanchang",
@@ -6108,11 +6095,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-01-10",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-01-10@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -6121,11 +6108,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-01-10",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-01-10@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -6134,11 +6121,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-01-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-01-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -6147,11 +6134,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-01-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-01-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "wanqiaojie",
@@ -6160,11 +6147,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-01-11",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-01-11@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "yinqiaojie",
@@ -6173,11 +6160,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-01-12",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-01-12@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shuanglangjie",
@@ -6186,11 +6173,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-01-12",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-01-12@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "shaxijie",
@@ -6199,11 +6186,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-01-15",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-01-15@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "fengyijie",
@@ -6212,11 +6199,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-01-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-01-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -6225,11 +6212,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-01-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-01-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -6238,11 +6225,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-01-15",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-01-15@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -6251,11 +6238,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-01-16",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-01-16@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -6264,11 +6251,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-01-16",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-01-16@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -6277,11 +6264,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-01-16",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-01-16@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "chuangdanchang",
@@ -6290,11 +6277,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-01-17",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-01-17@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -6303,11 +6290,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-01-17",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-01-17@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "wanqiaojie",
@@ -6316,11 +6303,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-01-18",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-01-18@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shuanglangjie",
@@ -6329,11 +6316,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-01-18",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-01-18@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "yinqiaojie",
@@ -6342,11 +6329,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-01-20",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-01-20@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -6355,11 +6342,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-01-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-01-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -6368,11 +6355,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-01-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-01-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shaxijie",
@@ -6381,11 +6368,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-01-22",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-01-22@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "haidongjie",
@@ -6394,11 +6381,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-01-22",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-01-22@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -6407,11 +6394,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-01-23",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-01-23@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -6420,11 +6407,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-01-23",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-01-23@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -6433,11 +6420,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-01-23",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-01-23@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "chuangdanchang",
@@ -6446,11 +6433,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-01-24",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-01-24@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -6459,11 +6446,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-01-24",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-01-24@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "shuanglangjie",
@@ -6472,11 +6459,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-01-24",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-01-24@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -6485,11 +6472,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-01-25",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-01-25@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "fengyijie",
@@ -6498,11 +6485,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-01-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-01-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -6511,11 +6498,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-01-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-01-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "yinqiaojie",
@@ -6524,11 +6511,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-01-27",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-01-27@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "haidongjie",
@@ -6537,11 +6524,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-01-28",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-01-28@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shaxijie",
@@ -6550,11 +6537,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-01-29",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-01-29@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "sanyuejie",
@@ -6563,11 +6550,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-01-30",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-01-30@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -6576,11 +6563,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-01-30",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-01-30@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -6589,11 +6576,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-01-30",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-01-30@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -6602,11 +6589,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-01-30",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-01-30@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -6615,11 +6602,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-01-30",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-01-30@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -6628,11 +6615,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-01-30",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-01-30@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -6641,11 +6628,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-01-31",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-01-31@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -6654,11 +6641,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-01-31",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-01-31@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "wanqiaojie",
@@ -6667,11 +6654,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-02-02",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-02-02@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "haidongjie",
@@ -6680,11 +6667,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-02-02",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-02-02@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "yinqiaojie",
@@ -6693,11 +6680,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-02-04",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-02-04@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -6706,11 +6693,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-02-05",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-02-05@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "fengyijie",
@@ -6719,11 +6706,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-02-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-02-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -6732,11 +6719,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-02-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-02-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -6745,11 +6732,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-02-05",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-02-05@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -6758,11 +6745,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-02-06",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-02-06@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "haidongjie",
@@ -6771,11 +6758,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-02-06",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-02-06@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -6784,11 +6771,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-02-07",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-02-07@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -6797,11 +6784,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-02-07",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-02-07@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -6810,11 +6797,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-02-07",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-02-07@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -6823,11 +6810,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-02-07",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-02-07@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "wanqiaojie",
@@ -6836,11 +6823,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-02-09",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-02-09@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "yinqiaojie",
@@ -6849,11 +6836,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-02-10",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-02-10@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -6862,11 +6849,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-02-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-02-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -6875,11 +6862,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-02-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-02-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -6888,11 +6875,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-02-11",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-02-11@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "shaxijie",
@@ -6901,11 +6888,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-02-12",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-02-12@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -6914,11 +6901,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-02-13",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-02-13@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "haidongjie",
@@ -6927,11 +6914,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-02-13",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-02-13@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -6940,11 +6927,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-02-14",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-02-14@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -6953,11 +6940,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-02-14",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-02-14@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -6966,11 +6953,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-02-14",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-02-14@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -6979,11 +6966,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-02-14",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-02-14@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -6992,11 +6979,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-02-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-02-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -7005,11 +6992,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-02-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-02-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "wanqiaojie",
@@ -7018,11 +7005,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-02-16",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-02-16@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shuanglangjie",
@@ -7031,11 +7018,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-02-17",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-02-17@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "yinqiaojie",
@@ -7044,11 +7031,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-02-18",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-02-18@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -7057,11 +7044,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-02-19",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-02-19@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -7070,11 +7057,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-02-20",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-02-20@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "fengyijie",
@@ -7083,11 +7070,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-02-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-02-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -7096,11 +7083,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-02-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-02-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -7109,11 +7096,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-02-20",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-02-20@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -7122,11 +7109,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-02-21",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-02-21@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -7135,11 +7122,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-02-21",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-02-21@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -7148,11 +7135,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-02-21",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-02-21@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -7161,11 +7148,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-02-21",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-02-21@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "wanqiaojie",
@@ -7174,11 +7161,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-02-23",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-02-23@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shuanglangjie",
@@ -7187,11 +7174,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-02-23",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-02-23@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "yinqiaojie",
@@ -7200,11 +7187,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-02-25",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-02-25@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -7213,11 +7200,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-02-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-02-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -7226,11 +7213,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-02-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-02-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shaxijie",
@@ -7239,11 +7226,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-02-26",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-02-26@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "haidongjie",
@@ -7252,11 +7239,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-02-26",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-02-26@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "chuangdanchang",
@@ -7265,11 +7252,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-02-27",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-02-27@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "sanyuejie",
@@ -7278,11 +7265,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-02-28",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-02-28@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -7291,11 +7278,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-02-28",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-02-28@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -7304,11 +7291,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-02-28",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-02-28@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -7317,11 +7304,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-02-28",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-02-28@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "shuanglangjie",
@@ -7330,11 +7317,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-03-01",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-03-01@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -7343,11 +7330,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-03-03",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-03-03@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "haidongjie",
@@ -7356,11 +7343,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-03-03",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-03-03@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "yinqiaojie",
@@ -7369,11 +7356,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-03-05",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-03-05@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -7382,11 +7369,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-03-05",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-03-05@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "fengyijie",
@@ -7395,11 +7382,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-03-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-03-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -7408,11 +7395,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-03-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-03-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "chuangdanchang",
@@ -7421,11 +7408,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-03-06",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-03-06@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -7434,11 +7421,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-03-07",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-03-07@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -7447,11 +7434,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-03-07",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-03-07@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "shuanglangjie",
@@ -7460,11 +7447,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-03-07",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-03-07@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "haidongjie",
@@ -7473,11 +7460,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-03-08",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-03-08@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -7486,11 +7473,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-03-09",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-03-09@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -7499,11 +7486,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-03-09",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-03-09@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -7512,11 +7499,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-03-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-03-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -7525,11 +7512,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-03-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-03-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "wanqiaojie",
@@ -7538,11 +7525,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-03-11",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-03-11@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "yinqiaojie",
@@ -7551,11 +7538,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-03-12",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-03-12@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -7564,11 +7551,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-03-12",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-03-12@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -7577,11 +7564,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-03-13",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-03-13@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "shuanglangjie",
@@ -7590,11 +7577,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-03-13",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-03-13@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -7603,11 +7590,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-03-14",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-03-14@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -7616,11 +7603,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-03-14",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-03-14@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -7629,11 +7616,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-03-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-03-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -7642,11 +7629,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-03-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-03-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -7655,11 +7642,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-03-15",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-03-15@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -7668,11 +7655,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-03-16",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-03-16@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -7681,11 +7668,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-03-16",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-03-16@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "wanqiaojie",
@@ -7694,11 +7681,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-03-18",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-03-18@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shaxijie",
@@ -7707,11 +7694,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-03-19",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-03-19@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "shuanglangjie",
@@ -7720,11 +7707,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-03-19",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-03-19@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -7733,11 +7720,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-03-20",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-03-20@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -7746,11 +7733,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-03-20",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-03-20@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -7759,11 +7746,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-03-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-03-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -7772,11 +7759,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-03-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-03-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "chuangdanchang",
@@ -7785,11 +7772,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-03-21",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-03-21@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -7798,11 +7785,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-03-21",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-03-21@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -7811,11 +7798,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-03-22",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-03-22@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -7824,11 +7811,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-03-23",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-03-23@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -7837,11 +7824,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-03-23",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-03-23@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "wanqiaojie",
@@ -7850,11 +7837,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-03-25",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-03-25@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "fengyijie",
@@ -7863,11 +7850,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-03-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-03-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -7876,11 +7863,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-03-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-03-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -7889,11 +7876,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-03-25",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-03-25@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "shaxijie",
@@ -7902,11 +7889,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-03-26",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-03-26@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -7915,11 +7902,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-03-27",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-03-27@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -7928,11 +7915,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-03-27",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-03-27@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "chuangdanchang",
@@ -7941,11 +7928,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-03-28",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-03-28@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -7954,11 +7941,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-03-28",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-03-28@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -7967,11 +7954,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-03-28",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-03-28@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -7980,11 +7967,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-03-30",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-03-30@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -7993,11 +7980,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-03-30",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-03-30@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -8006,11 +7993,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-03-30",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-03-30@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -8019,11 +8006,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-03-30",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-03-30@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -8032,11 +8019,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-03-31",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-03-31@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -8045,11 +8032,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-04-02",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-04-02@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shaxijie",
@@ -8058,11 +8045,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-04-02",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-04-02@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "haidongjie",
@@ -8071,11 +8058,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-04-02",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-04-02@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "chuangdanchang",
@@ -8084,11 +8071,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-04-03",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-04-03@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -8097,11 +8084,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-04-04",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-04-04@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -8110,11 +8097,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-04-04",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-04-04@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -8123,11 +8110,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-04-04",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-04-04@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -8136,11 +8123,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-04-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-04-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -8149,11 +8136,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-04-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-04-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -8162,11 +8149,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-04-06",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-04-06@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "haidongjie",
@@ -8175,11 +8162,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-04-07",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-04-07@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -8188,11 +8175,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-04-08",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-04-08@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -8201,11 +8188,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-04-08",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-04-08@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -8214,11 +8201,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-04-09",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-04-09@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -8227,11 +8214,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-04-10",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-04-10@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -8240,11 +8227,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-04-10",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-04-10@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "fengyijie",
@@ -8253,11 +8240,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-04-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-04-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -8266,11 +8253,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-04-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-04-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "chuangdanchang",
@@ -8279,11 +8266,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-04-11",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-04-11@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -8292,11 +8279,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-04-11",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-04-11@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -8305,11 +8292,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-04-11",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-04-11@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "shuanglangjie",
@@ -8318,11 +8305,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-04-12",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-04-12@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "haidongjie",
@@ -8331,11 +8318,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-04-14",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-04-14@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -8344,11 +8331,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-04-15",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-04-15@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -8357,11 +8344,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-04-15",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-04-15@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -8370,11 +8357,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-04-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-04-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -8383,11 +8370,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-04-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-04-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shaxijie",
@@ -8396,11 +8383,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-04-16",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-04-16@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -8409,11 +8396,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-04-17",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-04-17@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -8422,11 +8409,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-04-17",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-04-17@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "chuangdanchang",
@@ -8435,11 +8422,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-04-18",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-04-18@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -8448,11 +8435,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-04-18",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-04-18@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "shuanglangjie",
@@ -8461,11 +8448,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-04-18",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-04-18@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "yinqiaojie",
@@ -8474,11 +8461,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-04-19",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-04-19@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -8487,11 +8474,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-04-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-04-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -8500,11 +8487,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-04-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-04-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -8513,11 +8500,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-04-21",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-04-21@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -8526,11 +8513,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-04-22",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-04-22@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -8539,11 +8526,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-04-22",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-04-22@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -8552,11 +8539,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-04-23",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-04-23@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -8565,11 +8552,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-04-24",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-04-24@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -8578,11 +8565,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-04-24",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-04-24@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shuanglangjie",
@@ -8591,11 +8578,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-04-24",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-04-24@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -8604,11 +8591,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-04-25",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-04-25@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -8617,11 +8604,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-04-25",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-04-25@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -8630,11 +8617,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-04-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-04-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -8643,11 +8630,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-04-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-04-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "yinqiaojie",
@@ -8656,11 +8643,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-04-26",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-04-26@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "haidongjie",
@@ -8669,11 +8656,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-04-27",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-04-27@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -8682,11 +8669,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-04-29",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-04-29@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -8695,11 +8682,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-04-29",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-04-29@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -8708,11 +8695,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-04-30",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-04-30@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "fengyijie",
@@ -8721,11 +8708,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-04-30",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-04-30@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -8734,11 +8721,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-04-30",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-04-30@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -8747,11 +8734,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-04-30",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-04-30@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -8760,11 +8747,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-05-01",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-05-01@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -8773,11 +8760,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-05-02",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-05-02@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -8786,11 +8773,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-05-02",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-05-02@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -8799,11 +8786,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-05-02",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-05-02@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -8812,11 +8799,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-05-02",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-05-02@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "yinqiaojie",
@@ -8825,11 +8812,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-05-04",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-05-04@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -8838,11 +8825,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-05-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-05-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -8851,11 +8838,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-05-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-05-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -8864,11 +8851,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-05-06",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-05-06@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shuanglangjie",
@@ -8877,11 +8864,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-05-06",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-05-06@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "sanyuejie",
@@ -8890,11 +8877,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-05-07",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-05-07@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -8903,11 +8890,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-05-07",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-05-07@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -8916,11 +8903,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-05-07",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-05-07@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -8929,11 +8916,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-05-08",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-05-08@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -8942,11 +8929,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-05-09",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-05-09@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -8955,11 +8942,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-05-09",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-05-09@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -8968,11 +8955,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-05-09",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-05-09@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "yinqiaojie",
@@ -8981,11 +8968,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-05-10",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-05-10@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -8994,11 +8981,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-05-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-05-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -9007,11 +8994,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-05-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-05-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -9020,11 +9007,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-05-12",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-05-12@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "haidongjie",
@@ -9033,11 +9020,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-05-13",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-05-13@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -9046,11 +9033,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-05-14",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-05-14@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -9059,11 +9046,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-05-14",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-05-14@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -9072,11 +9059,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-05-14",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-05-14@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -9085,11 +9072,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-05-15",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-05-15@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "fengyijie",
@@ -9098,11 +9085,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-05-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-05-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -9111,11 +9098,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-05-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-05-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "chuangdanchang",
@@ -9124,11 +9111,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-05-16",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-05-16@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -9137,11 +9124,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-05-16",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-05-16@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -9150,11 +9137,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-05-16",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-05-16@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "yinqiaojie",
@@ -9163,11 +9150,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-05-18",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-05-18@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shuanglangjie",
@@ -9176,11 +9163,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-05-18",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-05-18@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "fengyijie",
@@ -9189,11 +9176,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-05-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-05-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -9202,11 +9189,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-05-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-05-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -9215,11 +9202,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-05-20",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-05-20@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -9228,11 +9215,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-05-21",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-05-21@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -9241,11 +9228,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-05-21",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-05-21@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -9254,11 +9241,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-05-21",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-05-21@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -9267,11 +9254,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-05-22",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-05-22@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -9280,11 +9267,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-05-23",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-05-23@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -9293,11 +9280,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-05-23",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-05-23@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -9306,11 +9293,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-05-23",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-05-23@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "shuanglangjie",
@@ -9319,11 +9306,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-05-24",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-05-24@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "yinqiaojie",
@@ -9332,11 +9319,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-05-25",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-05-25@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -9345,11 +9332,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-05-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-05-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -9358,11 +9345,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-05-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-05-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -9371,11 +9358,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-05-26",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-05-26@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -9384,11 +9371,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-05-28",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-05-28@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -9397,11 +9384,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-05-28",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-05-28@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -9410,11 +9397,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-05-28",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-05-28@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -9423,11 +9410,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-05-29",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-05-29@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -9436,11 +9423,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-05-30",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-05-30@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -9449,11 +9436,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-05-30",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-05-30@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -9462,11 +9449,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-05-30",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-05-30@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -9475,11 +9462,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-05-30",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-05-30@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -9488,11 +9475,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-05-30",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-05-30@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -9501,11 +9488,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-05-31",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-05-31@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "haidongjie",
@@ -9514,11 +9501,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-05-31",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-05-31@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "yinqiaojie",
@@ -9527,11 +9514,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-06-02",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-06-02@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -9540,11 +9527,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-06-04",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-06-04@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -9553,11 +9540,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-06-05",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-06-05@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "fengyijie",
@@ -9566,11 +9553,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-06-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-06-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -9579,11 +9566,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-06-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-06-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -9592,11 +9579,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-06-05",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-06-05@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shuanglangjie",
@@ -9605,11 +9592,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-06-05",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-06-05@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "sanyuejie",
@@ -9618,11 +9605,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-06-06",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-06-06@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -9631,11 +9618,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-06-06",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-06-06@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -9644,11 +9631,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-06-06",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-06-06@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -9657,11 +9644,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-06-06",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-06-06@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "wanqiaojie",
@@ -9670,11 +9657,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-06-08",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-06-08@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "yinqiaojie",
@@ -9683,11 +9670,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-06-09",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-06-09@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -9696,11 +9683,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-06-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-06-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -9709,11 +9696,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-06-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-06-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shaxijie",
@@ -9722,11 +9709,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-06-11",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-06-11@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "shuanglangjie",
@@ -9735,11 +9722,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-06-11",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-06-11@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -9748,11 +9735,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-06-12",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-06-12@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "haidongjie",
@@ -9761,11 +9748,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-06-12",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-06-12@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -9774,11 +9761,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-06-13",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-06-13@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -9787,11 +9774,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-06-13",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-06-13@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -9800,11 +9787,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-06-13",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-06-13@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -9813,11 +9800,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-06-13",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-06-13@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "wanqiaojie",
@@ -9826,11 +9813,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-06-15",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-06-15@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "fengyijie",
@@ -9839,11 +9826,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-06-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-06-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -9852,11 +9839,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-06-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-06-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "yinqiaojie",
@@ -9865,11 +9852,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-06-17",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-06-17@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shuanglangjie",
@@ -9878,11 +9865,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-06-17",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-06-17@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "shaxijie",
@@ -9891,11 +9878,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-06-18",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-06-18@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -9904,11 +9891,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-06-19",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-06-19@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "haidongjie",
@@ -9917,11 +9904,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-06-19",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-06-19@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -9930,11 +9917,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-06-20",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-06-20@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -9943,11 +9930,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-06-20",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-06-20@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -9956,11 +9943,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-06-20",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-06-20@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -9969,11 +9956,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-06-20",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-06-20@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -9982,11 +9969,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-06-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-06-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -9995,11 +9982,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-06-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-06-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "wanqiaojie",
@@ -10008,11 +9995,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-06-22",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-06-22@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shuanglangjie",
@@ -10021,11 +10008,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-06-23",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-06-23@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "yinqiaojie",
@@ -10034,11 +10021,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-06-24",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-06-24@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -10047,11 +10034,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-06-25",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-06-25@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "fengyijie",
@@ -10060,11 +10047,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-06-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-06-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -10073,11 +10060,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-06-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-06-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -10086,11 +10073,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-06-25",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-06-25@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "chuangdanchang",
@@ -10099,11 +10086,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-06-26",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-06-26@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "sanyuejie",
@@ -10112,11 +10099,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-06-27",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-06-27@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -10125,11 +10112,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-06-27",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-06-27@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -10138,11 +10125,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-06-27",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-06-27@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -10151,11 +10138,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-06-27",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-06-27@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "shuanglangjie",
@@ -10164,11 +10151,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-06-29",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-06-29@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -10177,11 +10164,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-06-30",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-06-30@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "fengyijie",
@@ -10190,11 +10177,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-06-30",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-06-30@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -10203,11 +10190,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-06-30",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-06-30@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -10216,11 +10203,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-06-30",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-06-30@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "yinqiaojie",
@@ -10229,11 +10216,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-07-02",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-07-02@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -10242,11 +10229,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-07-02",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-07-02@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -10255,11 +10242,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-07-03",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-07-03@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -10268,11 +10255,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-07-04",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-07-04@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -10281,11 +10268,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-07-04",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-07-04@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -10294,11 +10281,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-07-04",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-07-04@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -10307,11 +10294,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-07-05",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-07-05@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -10320,11 +10307,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-07-05",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-07-05@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -10333,11 +10320,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-07-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-07-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -10346,11 +10333,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-07-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-07-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -10359,11 +10346,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-07-05",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-07-05@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -10372,11 +10359,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-07-07",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-07-07@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "yinqiaojie",
@@ -10385,11 +10372,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-07-08",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-07-08@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -10398,11 +10385,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-07-09",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-07-09@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -10411,11 +10398,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-07-10",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-07-10@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "fengyijie",
@@ -10424,11 +10411,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-07-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-07-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -10437,11 +10424,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-07-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-07-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "chuangdanchang",
@@ -10450,11 +10437,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-07-11",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-07-11@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -10463,11 +10450,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-07-11",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-07-11@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -10476,11 +10463,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-07-11",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-07-11@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shuanglangjie",
@@ -10489,11 +10476,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-07-11",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-07-11@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "sanyuejie",
@@ -10502,11 +10489,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-07-12",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-07-12@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -10515,11 +10502,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-07-12",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-07-12@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "wanqiaojie",
@@ -10528,11 +10515,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-07-14",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-07-14@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "fengyijie",
@@ -10541,11 +10528,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-07-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-07-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -10554,11 +10541,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-07-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-07-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "yinqiaojie",
@@ -10567,11 +10554,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-07-16",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-07-16@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -10580,11 +10567,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-07-16",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-07-16@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -10593,11 +10580,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-07-17",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-07-17@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "shuanglangjie",
@@ -10606,11 +10593,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-07-17",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-07-17@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -10619,11 +10606,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-07-18",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-07-18@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -10632,11 +10619,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-07-18",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-07-18@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -10645,11 +10632,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-07-18",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-07-18@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -10658,11 +10645,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-07-19",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-07-19@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -10671,11 +10658,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-07-19",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-07-19@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -10684,11 +10671,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-07-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-07-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -10697,11 +10684,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-07-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-07-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "wanqiaojie",
@@ -10710,11 +10697,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-07-21",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-07-21@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "yinqiaojie",
@@ -10723,11 +10710,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-07-23",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-07-23@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -10736,11 +10723,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-07-23",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-07-23@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "shuanglangjie",
@@ -10749,11 +10736,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-07-23",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-07-23@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -10762,11 +10749,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-07-24",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-07-24@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "haidongjie",
@@ -10775,11 +10762,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-07-24",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-07-24@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "chuangdanchang",
@@ -10788,11 +10775,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-07-25",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-07-25@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -10801,11 +10788,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-07-25",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-07-25@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -10814,11 +10801,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-07-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-07-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -10827,11 +10814,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-07-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-07-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "sanyuejie",
@@ -10840,11 +10827,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-07-26",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-07-26@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -10853,11 +10840,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-07-26",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-07-26@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "wanqiaojie",
@@ -10866,11 +10853,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-07-29",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-07-29@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "haidongjie",
@@ -10879,11 +10866,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-07-29",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-07-29@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shuanglangjie",
@@ -10892,11 +10879,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-07-29",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-07-29@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "shaxijie",
@@ -10905,11 +10892,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-07-30",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-07-30@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "fengyijie",
@@ -10918,11 +10905,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-07-30",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-07-30@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -10931,11 +10918,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-07-30",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-07-30@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "chuangdanchang",
@@ -10944,11 +10931,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-07-31",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-07-31@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -10957,11 +10944,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-07-31",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-07-31@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "chuangdanchang",
@@ -10970,11 +10957,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-08-01",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-08-01@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -10983,11 +10970,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-08-01",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-08-01@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -10996,11 +10983,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-08-02",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-08-02@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -11009,11 +10996,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-08-03",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-08-03@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -11022,11 +11009,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-08-03",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-08-03@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shuanglangjie",
@@ -11035,11 +11022,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-08-04",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-08-04@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -11048,11 +11035,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-08-05",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-08-05@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "fengyijie",
@@ -11061,11 +11048,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-08-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-08-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -11074,11 +11061,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-08-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-08-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "yinqiaojie",
@@ -11087,11 +11074,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-08-06",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-08-06@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -11100,11 +11087,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-08-06",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-08-06@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -11113,11 +11100,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-08-07",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-08-07@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -11126,11 +11113,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-08-08",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-08-08@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -11139,11 +11126,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-08-08",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-08-08@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -11152,11 +11139,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-08-09",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-08-09@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -11165,11 +11152,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-08-10",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-08-10@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -11178,11 +11165,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-08-10",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-08-10@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -11191,11 +11178,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-08-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-08-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -11204,11 +11191,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-08-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-08-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -11217,11 +11204,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-08-10",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-08-10@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -11230,11 +11217,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-08-12",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-08-12@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shaxijie",
@@ -11243,11 +11230,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-08-13",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-08-13@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -11256,11 +11243,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-08-14",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-08-14@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -11269,11 +11256,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-08-14",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-08-14@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "chuangdanchang",
@@ -11282,11 +11269,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-08-15",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-08-15@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -11295,11 +11282,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-08-15",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-08-15@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -11308,11 +11295,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-08-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-08-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -11321,11 +11308,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-08-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-08-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -11334,11 +11321,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-08-16",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-08-16@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shuanglangjie",
@@ -11347,11 +11334,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-08-16",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-08-16@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "sanyuejie",
@@ -11360,11 +11347,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-08-17",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-08-17@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -11373,11 +11360,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-08-17",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-08-17@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "wanqiaojie",
@@ -11386,11 +11373,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-08-19",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-08-19@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shaxijie",
@@ -11399,11 +11386,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-08-20",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-08-20@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "fengyijie",
@@ -11412,11 +11399,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-08-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-08-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -11425,11 +11412,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-08-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-08-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "chuangdanchang",
@@ -11438,11 +11425,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-08-21",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-08-21@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -11451,11 +11438,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-08-21",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-08-21@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "chuangdanchang",
@@ -11464,11 +11451,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-08-22",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-08-22@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -11477,11 +11464,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-08-22",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-08-22@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -11490,11 +11477,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-08-22",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-08-22@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shuanglangjie",
@@ -11503,11 +11490,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-08-22",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-08-22@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "sanyuejie",
@@ -11516,11 +11503,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-08-24",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-08-24@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -11529,11 +11516,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-08-24",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-08-24@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -11542,11 +11529,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-08-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-08-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -11555,11 +11542,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-08-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-08-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "wanqiaojie",
@@ -11568,11 +11555,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-08-27",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-08-27@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shaxijie",
@@ -11581,11 +11568,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-08-27",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-08-27@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "haidongjie",
@@ -11594,11 +11581,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-08-27",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-08-27@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "chuangdanchang",
@@ -11607,11 +11594,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-08-28",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-08-28@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "shuanglangjie",
@@ -11620,11 +11607,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-08-28",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-08-28@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -11633,11 +11620,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-08-29",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-08-29@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -11646,11 +11633,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-08-29",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-08-29@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -11659,11 +11646,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-08-29",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-08-29@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -11672,11 +11659,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-08-30",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-08-30@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -11685,11 +11672,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-08-30",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-08-30@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -11698,11 +11685,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-09-01",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-09-01@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -11711,11 +11698,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-09-02",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-09-02@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -11724,11 +11711,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-09-02",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-09-02@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -11737,11 +11724,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-09-03",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-09-03@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "shuanglangjie",
@@ -11750,11 +11737,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-09-03",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-09-03@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -11763,11 +11750,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-09-04",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-09-04@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -11776,11 +11763,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-09-04",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-09-04@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "chuangdanchang",
@@ -11789,11 +11776,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-09-05",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-09-05@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -11802,11 +11789,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-09-05",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-09-05@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -11815,11 +11802,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-09-05",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-09-05@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -11828,11 +11815,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-09-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-09-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -11841,11 +11828,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-09-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-09-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -11854,11 +11841,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-09-08",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-09-08@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -11867,11 +11854,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-09-09",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-09-09@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -11880,11 +11867,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-09-09",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-09-09@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shuanglangjie",
@@ -11893,11 +11880,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-09-09",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-09-09@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "shaxijie",
@@ -11906,11 +11893,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-09-10",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-09-10@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "fengyijie",
@@ -11919,11 +11906,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-09-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-09-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -11932,11 +11919,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-09-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-09-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "chuangdanchang",
@@ -11945,11 +11932,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-09-11",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-09-11@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -11958,11 +11945,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-09-11",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-09-11@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "chuangdanchang",
@@ -11971,11 +11958,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-09-12",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-09-12@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -11984,11 +11971,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-09-12",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-09-12@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "yinqiaojie",
@@ -11997,11 +11984,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-09-13",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-09-13@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -12010,11 +11997,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-09-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-09-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -12023,11 +12010,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-09-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-09-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -12036,11 +12023,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-09-15",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-09-15@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shuanglangjie",
@@ -12049,11 +12036,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-09-15",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-09-15@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "sanyuejie",
@@ -12062,11 +12049,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-09-16",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-09-16@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -12075,11 +12062,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-09-16",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-09-16@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -12088,11 +12075,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-09-17",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-09-17@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -12101,11 +12088,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-09-18",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-09-18@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -12114,11 +12101,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-09-18",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-09-18@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "chuangdanchang",
@@ -12127,11 +12114,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-09-19",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-09-19@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -12140,11 +12127,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-09-19",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-09-19@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "yinqiaojie",
@@ -12153,11 +12140,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-09-20",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-09-20@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -12166,11 +12153,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-09-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-09-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -12179,11 +12166,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-09-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-09-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -12192,11 +12179,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-09-21",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-09-21@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shuanglangjie",
@@ -12205,11 +12192,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-09-21",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-09-21@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "sanyuejie",
@@ -12218,11 +12205,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-09-23",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-09-23@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -12231,11 +12218,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-09-23",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-09-23@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -12244,11 +12231,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-09-24",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-09-24@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -12257,11 +12244,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-09-25",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-09-25@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "fengyijie",
@@ -12270,11 +12257,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-09-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-09-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -12283,11 +12270,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-09-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-09-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "chuangdanchang",
@@ -12296,11 +12283,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-09-26",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-09-26@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -12309,11 +12296,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-09-26",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-09-26@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -12322,11 +12309,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-09-26",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-09-26@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -12335,11 +12322,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-09-26",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-09-26@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shuanglangjie",
@@ -12348,11 +12335,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-09-27",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-09-27@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "yinqiaojie",
@@ -12361,11 +12348,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-09-28",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-09-28@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -12374,11 +12361,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-09-30",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-09-30@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -12387,11 +12374,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-09-30",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-09-30@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -12400,11 +12387,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-09-30",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-09-30@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -12413,11 +12400,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-10-01",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-10-01@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -12426,11 +12413,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-10-01",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-10-01@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -12439,11 +12426,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-10-01",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-10-01@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -12452,11 +12439,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-10-02",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-10-02@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -12465,11 +12452,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-10-03",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-10-03@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -12478,11 +12465,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-10-03",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-10-03@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -12491,11 +12478,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-10-03",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-10-03@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "shuanglangjie",
@@ -12504,11 +12491,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-10-03",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-10-03@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "yinqiaojie",
@@ -12517,11 +12504,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-10-04",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-10-04@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -12530,11 +12517,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-10-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-10-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -12543,11 +12530,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-10-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-10-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -12556,11 +12543,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-10-07",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-10-07@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -12569,11 +12556,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-10-08",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-10-08@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -12582,11 +12569,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-10-08",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-10-08@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -12595,11 +12582,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-10-08",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-10-08@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -12608,11 +12595,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-10-09",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-10-09@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "shuanglangjie",
@@ -12621,11 +12608,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-10-09",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-10-09@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -12634,11 +12621,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-10-10",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-10-10@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -12647,11 +12634,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-10-10",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-10-10@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -12660,11 +12647,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-10-10",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-10-10@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -12673,11 +12660,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-10-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-10-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -12686,11 +12673,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-10-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-10-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "yinqiaojie",
@@ -12699,11 +12686,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-10-12",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-10-12@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "haidongjie",
@@ -12712,11 +12699,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-10-14",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-10-14@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -12725,11 +12712,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-10-15",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-10-15@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -12738,11 +12725,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-10-15",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-10-15@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -12751,11 +12738,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-10-15",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-10-15@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "fengyijie",
@@ -12764,11 +12751,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-10-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-10-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -12777,11 +12764,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-10-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-10-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -12790,11 +12777,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-10-15",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-10-15@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -12803,11 +12790,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-10-16",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-10-16@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -12816,11 +12803,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-10-17",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-10-17@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "wanqiaojie",
@@ -12829,11 +12816,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-10-17",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-10-17@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -12842,11 +12829,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-10-17",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-10-17@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "yinqiaojie",
@@ -12855,11 +12842,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-10-19",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-10-19@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -12868,11 +12855,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-10-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-10-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -12881,11 +12868,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-10-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-10-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -12894,11 +12881,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-10-20",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-10-20@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shuanglangjie",
@@ -12907,11 +12894,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-10-21",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-10-21@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "sanyuejie",
@@ -12920,11 +12907,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-10-22",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-10-22@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -12933,11 +12920,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-10-22",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-10-22@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shaxijie",
@@ -12946,11 +12933,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-10-22",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-10-22@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -12959,11 +12946,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-10-23",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-10-23@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -12972,11 +12959,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-10-24",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-10-24@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -12985,11 +12972,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-10-24",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-10-24@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "wanqiaojie",
@@ -12998,11 +12985,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-10-25",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-10-25@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "fengyijie",
@@ -13011,11 +12998,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-10-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-10-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -13024,11 +13011,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-10-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-10-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -13037,11 +13024,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-10-25",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-10-25@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "yinqiaojie",
@@ -13050,11 +13037,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-10-27",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-10-27@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shuanglangjie",
@@ -13063,11 +13050,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-10-27",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-10-27@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "shaxijie",
@@ -13076,11 +13063,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-10-29",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-10-29@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "haidongjie",
@@ -13089,11 +13076,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-10-29",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-10-29@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -13102,11 +13089,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-10-30",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-10-30@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -13115,11 +13102,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-10-30",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-10-30@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -13128,11 +13115,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-10-30",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-10-30@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -13141,11 +13128,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-10-30",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-10-30@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -13154,11 +13141,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-10-30",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-10-30@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "chuangdanchang",
@@ -13167,11 +13154,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-10-31",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-10-31@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -13180,11 +13167,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-10-31",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-10-31@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "wanqiaojie",
@@ -13193,11 +13180,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-11-01",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-11-01@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "yinqiaojie",
@@ -13206,11 +13193,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-11-02",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-11-02@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shuanglangjie",
@@ -13219,11 +13206,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-11-02",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-11-02@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "shaxijie",
@@ -13232,11 +13219,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-11-05",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-11-05@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "fengyijie",
@@ -13245,11 +13232,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-11-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-11-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -13258,11 +13245,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-11-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-11-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -13271,11 +13258,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-11-05",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-11-05@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -13284,11 +13271,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-11-06",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-11-06@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -13297,11 +13284,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-11-06",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-11-06@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -13310,11 +13297,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-11-06",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-11-06@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "chuangdanchang",
@@ -13323,11 +13310,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-11-07",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-11-07@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -13336,11 +13323,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-11-07",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-11-07@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "wanqiaojie",
@@ -13349,11 +13336,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-11-08",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-11-08@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shuanglangjie",
@@ -13362,11 +13349,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-11-08",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-11-08@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "yinqiaojie",
@@ -13375,11 +13362,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-11-10",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-11-10@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -13388,11 +13375,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-11-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-11-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -13401,11 +13388,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-11-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-11-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shaxijie",
@@ -13414,11 +13401,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-11-12",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-11-12@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "haidongjie",
@@ -13427,11 +13414,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-11-12",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-11-12@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -13440,11 +13427,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-11-13",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-11-13@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -13453,11 +13440,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-11-13",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-11-13@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -13466,11 +13453,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-11-13",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-11-13@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "chuangdanchang",
@@ -13479,11 +13466,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-11-14",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-11-14@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -13492,11 +13479,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-11-14",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-11-14@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "shuanglangjie",
@@ -13505,11 +13492,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-11-14",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-11-14@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -13518,11 +13505,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-11-15",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-11-15@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "fengyijie",
@@ -13531,11 +13518,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-11-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-11-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -13544,11 +13531,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-11-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-11-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "yinqiaojie",
@@ -13557,11 +13544,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-11-17",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-11-17@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "haidongjie",
@@ -13570,11 +13557,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-11-18",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-11-18@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shaxijie",
@@ -13583,11 +13570,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-11-19",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-11-19@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "sanyuejie",
@@ -13596,11 +13583,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-11-20",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-11-20@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "chuangdanchang",
@@ -13609,11 +13596,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-11-20",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-11-20@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xizhou_longjie",
@@ -13622,11 +13609,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-11-20",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-11-20@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -13635,11 +13622,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-11-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-11-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -13648,11 +13635,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-11-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-11-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -13661,11 +13648,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-11-20",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-11-20@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -13674,11 +13661,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-11-21",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-11-21@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -13687,11 +13674,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-11-21",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-11-21@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "wanqiaojie",
@@ -13700,11 +13687,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-11-23",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-11-23@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "haidongjie",
@@ -13713,11 +13700,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-11-23",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-11-23@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "yinqiaojie",
@@ -13726,11 +13713,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-11-25",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-11-25@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -13739,11 +13726,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-11-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-11-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -13752,11 +13739,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-11-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-11-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shaxijie",
@@ -13765,11 +13752,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-11-26",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-11-26@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "shuanglangjie",
@@ -13778,11 +13765,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-11-26",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-11-26@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "chuangdanchang",
@@ -13791,11 +13778,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-11-27",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-11-27@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -13804,11 +13791,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-11-28",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-11-28@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -13817,11 +13804,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-11-28",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-11-28@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -13830,11 +13817,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-11-28",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-11-28@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -13843,11 +13830,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-11-29",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-11-29@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -13856,11 +13843,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-11-29",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-11-29@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -13869,11 +13856,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-11-30",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-11-30@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -13882,11 +13869,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-11-30",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-11-30@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "wanqiaojie",
@@ -13895,11 +13882,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-12-01",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-12-01@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "yinqiaojie",
@@ -13908,11 +13895,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-12-02",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-12-02@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shuanglangjie",
@@ -13921,11 +13908,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-12-02",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-12-02@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "shaxijie",
@@ -13934,11 +13921,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-12-03",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-12-03@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -13947,11 +13934,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-12-04",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-12-04@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -13960,11 +13947,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-12-05",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-12-05@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -13973,11 +13960,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-12-05",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-12-05@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "fengyijie",
@@ -13986,11 +13973,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-12-05",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-12-05@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -13999,11 +13986,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-12-05",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-12-05@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "haidongjie",
@@ -14012,11 +13999,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-12-05",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-12-05@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -14025,11 +14012,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-12-06",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-12-06@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -14038,11 +14025,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-12-06",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-12-06@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "wanqiaojie",
@@ -14051,11 +14038,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-12-08",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-12-08@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "shuanglangjie",
@@ -14064,11 +14051,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-12-08",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-12-08@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "yinqiaojie",
@@ -14077,11 +14064,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-12-10",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-12-10@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -14090,11 +14077,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-12-10",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-12-10@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "fengyijie",
@@ -14103,11 +14090,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-12-10",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-12-10@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -14116,11 +14103,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-12-10",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-12-10@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "chuangdanchang",
@@ -14129,11 +14116,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-12-11",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-12-11@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "chuangdanchang",
@@ -14142,11 +14129,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-12-12",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-12-12@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -14155,11 +14142,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-12-12",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-12-12@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "haidongjie",
@@ -14168,11 +14155,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-12-12",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-12-12@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "sanyuejie",
@@ -14181,11 +14168,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-12-13",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-12-13@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -14194,11 +14181,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-12-13",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-12-13@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "shuanglangjie",
@@ -14207,11 +14194,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-12-14",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-12-14@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -14220,11 +14207,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-12-15",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-12-15@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "fengyijie",
@@ -14233,11 +14220,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-12-15",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-12-15@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -14246,11 +14233,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-12-15",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-12-15@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "yinqiaojie",
@@ -14259,11 +14246,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-12-17",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-12-17@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "shaxijie",
@@ -14272,11 +14259,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-12-17",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-12-17@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -14285,11 +14272,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-12-18",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-12-18@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "haidongjie",
@@ -14298,11 +14285,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-12-18",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-12-18@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "chuangdanchang",
@@ -14311,11 +14298,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-12-19",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-12-19@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "xiaguan_huaniao",
@@ -14324,11 +14311,11 @@ export const calendarData = {
       "market_index": 7,
       "date": "2027-12-19",
       "summary": "下关花鸟市场",
-      "location": "大理花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
       "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xiaguan_huaniao-2027-12-19@dali-ganji-calendar",
-      "lat": 25.6269,
-      "lng": 100.2258
+      "lat": 25.629002,
+      "lng": 100.209937
     },
     {
       "market_id": "sanyuejie",
@@ -14337,11 +14324,11 @@ export const calendarData = {
       "market_index": 0,
       "date": "2027-12-20",
       "summary": "三月街",
-      "location": "大理古城三月街",
+      "location": "大理市大理古城苍山门对面，西门外三月街一带",
       "description": "大理古城苍山门对面的千年传统大集，是大理最热闹的赶集点之一，小吃、特产、手作和本地采购都集中。\n时间：农历初二、初九、十六、二十三赶集；农历三月十五至二十一为三月街民族节大集\n地点：大理市大理古城苍山门对面，西门外三月街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "sanyuejie-2027-12-20@dali-ganji-calendar",
-      "lat": 25.6957,
-      "lng": 100.1546
+      "lat": 25.693274,
+      "lng": 100.153299
     },
     {
       "market_id": "xizhou_longjie",
@@ -14350,11 +14337,11 @@ export const calendarData = {
       "market_index": 5,
       "date": "2027-12-20",
       "summary": "喜洲龙街",
-      "location": "作邑农贸市场",
+      "location": "大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km",
       "description": "作邑农贸市场一带的喜洲传统赶集点，以本地人囤货为主，小吃多、游客较少，适合看古镇周边乡土生活。\n时间：农历初二、初九、十六、二十三赶集\n地点：大理市喜洲镇作邑农贸市场一带，喜洲古镇往南约 3.5 km\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "xizhou_longjie-2027-12-20@dali-ganji-calendar",
-      "lat": 25.8258,
-      "lng": 100.1378
+      "lat": 25.826604,
+      "lng": 100.122204
     },
     {
       "market_id": "fengyijie",
@@ -14363,11 +14350,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-12-20",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-12-20@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -14376,11 +14363,11 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-12-20",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-12-20@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
     },
     {
       "market_id": "shuanglangjie",
@@ -14389,11 +14376,11 @@ export const calendarData = {
       "market_index": 14,
       "date": "2027-12-20",
       "summary": "双廊街",
-      "location": "双廊镇文化街",
+      "location": "大理市双廊镇文化街及周边街巷",
       "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shuanglangjie-2027-12-20@dali-ganji-calendar",
-      "lat": 25.909,
-      "lng": 100.177
+      "lat": 25.901256,
+      "lng": 100.198633
     },
     {
       "market_id": "wanqiaojie",
@@ -14402,11 +14389,11 @@ export const calendarData = {
       "market_index": 6,
       "date": "2027-12-23",
       "summary": "湾桥街",
-      "location": "湾桥镇农贸市场",
+      "location": "大理市湾桥镇湾桥街/镇农贸市场",
       "description": "湾桥镇农贸市场一带的洱海西线乡镇集，原生态感强，蔬菜水果性价比高，适合顺路感受本地采购。\n时间：农历初四、十一、十八、二十六赶集\n地点：大理市湾桥镇湾桥街/镇农贸市场\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wanqiaojie-2027-12-23@dali-ganji-calendar",
-      "lat": 25.8546,
-      "lng": 100.1275
+      "lat": 25.791214,
+      "lng": 100.121132
     },
     {
       "market_id": "haidongjie",
@@ -14415,11 +14402,11 @@ export const calendarData = {
       "market_index": 13,
       "date": "2027-12-23",
       "summary": "海东街",
-      "location": "海东镇向阳街",
+      "location": "大理市海东镇向阳街及周边街巷",
       "description": "海东镇向阳街一带的传统街集，农历固定日赶集，洱海东岸本地采购氛围浓，有很直接的烟火气。\n时间：农历初一、初八、十五、二十一、二十六赶集\n地点：大理市海东镇向阳街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "haidongjie-2027-12-23@dali-ganji-calendar",
-      "lat": 25.746,
-      "lng": 100.246
+      "lat": 25.710856,
+      "lng": 100.260177
     },
     {
       "market_id": "shaxijie",
@@ -14428,11 +14415,11 @@ export const calendarData = {
       "market_index": 10,
       "date": "2027-12-24",
       "summary": "沙溪街",
-      "location": "沙溪古镇",
+      "location": "大理州剑川县沙溪古镇寺登街及周边街巷",
       "description": "沙溪古镇每周五上午的传统街集，茶马古道古镇背景很强，赶集氛围原生态，适合专门安排半天到一天。\n时间：每周五 8:00-12:00 赶集\n地点：大理州剑川县沙溪古镇寺登街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "shaxijie-2027-12-24@dali-ganji-calendar",
-      "lat": 26.3202,
-      "lng": 99.8513
+      "lat": 26.315982,
+      "lng": 99.852755
     },
     {
       "market_id": "chuangdanchang",
@@ -14441,11 +14428,11 @@ export const calendarData = {
       "market_index": 1,
       "date": "2027-12-25",
       "summary": "床单厂集市",
-      "location": "大理床单厂艺术区",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
       "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "chuangdanchang-2027-12-25@dali-ganji-calendar",
-      "lat": 25.6918,
-      "lng": 100.1628
+      "lat": 25.689852,
+      "lng": 100.165624
     },
     {
       "market_id": "yinqiaojie",
@@ -14454,11 +14441,11 @@ export const calendarData = {
       "market_index": 4,
       "date": "2027-12-25",
       "summary": "银桥街",
-      "location": "银桥镇农贸市场",
+      "location": "大理市银桥镇银桥街、银桥镇农贸市场一带",
       "description": "银桥镇农贸市场一带的本地人私藏乡镇集，蔬菜水果价格友好，小吃摊更偏日常生活。\n时间：农历初五、十三、二十、二十八赶集\n地点：大理市银桥镇银桥街、银桥镇农贸市场一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "yinqiaojie-2027-12-25@dali-ganji-calendar",
-      "lat": 25.7828,
-      "lng": 100.1396
+      "lat": 25.756939,
+      "lng": 100.123102
     },
     {
       "market_id": "fengyijie",
@@ -14467,11 +14454,11 @@ export const calendarData = {
       "market_index": 11,
       "date": "2027-12-25",
       "summary": "凤仪街",
-      "location": "凤仪农贸市场",
+      "location": "大理市凤仪镇凤中路、凤仪主街巷道一带",
       "description": "凤仪镇凤中路和主街一带逢五逢十的大集，离机场和下关较近，规模大，游客少，本地采购氛围浓。\n时间：每月公历逢五、逢十赶集\n地点：大理市凤仪镇凤中路、凤仪主街巷道一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "fengyijie-2027-12-25@dali-ganji-calendar",
-      "lat": 25.5916,
-      "lng": 100.2918
+      "lat": 25.583781,
+      "lng": 100.313555
     },
     {
       "market_id": "wasejie",
@@ -14480,20 +14467,59 @@ export const calendarData = {
       "market_index": 12,
       "date": "2027-12-25",
       "summary": "挖色街",
-      "location": "挖色街",
+      "location": "大理市挖色镇环海路边、挖色街一带",
       "description": "挖色镇环海路边逢五逢十的本地采购集，靠近洱海东岸，适合环海东线时顺路体验乡镇生活。\n时间：每月公历逢五、逢十赶集\n地点：大理市挖色镇环海路边、挖色街一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
       "uid": "wasejie-2027-12-25@dali-ganji-calendar",
-      "lat": 25.815,
-      "lng": 100.251
+      "lat": 25.823475,
+      "lng": 100.225725
+    },
+    {
+      "market_id": "chuangdanchang",
+      "market_name": "床单厂集市",
+      "market_label": "床单厂",
+      "market_index": 1,
+      "date": "2027-12-26",
+      "summary": "床单厂集市",
+      "location": "大理市大理古城苍坪街56号，床单厂创意园一带",
+      "description": "古城床单厂创意园里的周末创意市集，原创手作、小众艺术品、古着饰品和咖啡轻食更集中。\n时间：每周六、周日 10:00-20:00，具体以当期市集公告为准\n地点：大理市大理古城苍坪街56号，床单厂创意园一带\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
+      "uid": "chuangdanchang-2027-12-26@dali-ganji-calendar",
+      "lat": 25.689852,
+      "lng": 100.165624
+    },
+    {
+      "market_id": "xiaguan_huaniao",
+      "market_name": "下关花鸟市场",
+      "market_label": "下关花鸟市场",
+      "market_index": 7,
+      "date": "2027-12-26",
+      "summary": "下关花鸟市场",
+      "location": "大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近",
+      "description": "下关北市区花鸟市场周日会叠加旧货、二手杂货、古玩和蔬果摊位，是大理更猎奇、更本地的淘宝型集市。\n时间：每周日赶集；天气冷时约 8:00-13:00，天气暖会更早出摊；平日主要为花鸟绿植市场\n地点：大理市下关北市区，大丽线与惠洱路交叉口往南约 50 米，大理兰花苑附近\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
+      "uid": "xiaguan_huaniao-2027-12-26@dali-ganji-calendar",
+      "lat": 25.629002,
+      "lng": 100.209937
+    },
+    {
+      "market_id": "shuanglangjie",
+      "market_name": "双廊街",
+      "market_label": "双廊街",
+      "market_index": 14,
+      "date": "2027-12-26",
+      "summary": "双廊街",
+      "location": "大理市双廊镇文化街及周边街巷",
+      "description": "双廊镇文化街一带的洱海边街集，按 1 月 5 日起每隔 6 天循环赶集，适合在双廊住宿或环海北段顺路体验。\n时间：每隔 6 天一次，以 2026-01-05 为循环锚点\n地点：大理市双廊镇文化街及周边街巷\n更多赶集攻略或重新订阅日历，请访问：https://ganji.neojfeng.store/",
+      "uid": "shuanglangjie-2027-12-26@dali-ganji-calendar",
+      "lat": 25.901256,
+      "lng": 100.198633
     }
   ],
-  "generatedAt": "2026-06-25T17:10:39.424787+00:00",
+  "generatedAt": "2026-06-26T16:26:15.849756+00:00",
   "calendarMeta": {
     "name": "大理赶集日历",
     "timezone": "Asia/Shanghai",
     "monthsAhead": 18,
-    "startDate": "2026-06-26",
-    "endDate": "2027-12-26"
+    "startDate": "2026-06-27",
+    "endDate": "2027-12-27"
   }
 };
 export default calendarData;

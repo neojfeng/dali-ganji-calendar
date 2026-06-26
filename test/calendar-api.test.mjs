@@ -123,12 +123,14 @@ test("market detail back button restores the home scroll position", async () => 
   assert.match(html, /function restoreHomeScroll/);
 });
 
-test("source market data uses unified schedule objects", async () => {
+test("source market data uses unified schedule objects and location fields", async () => {
   const markets = JSON.parse(await readFile(new URL("../data/markets.json", import.meta.url), "utf8"));
-  const deprecatedFields = ["market_type", "calendar_enabled", "schedule_type", "lunar_days", "weekday", "month_days"];
+  const deprecatedFields = ["market_type", "calendar_enabled", "schedule_type", "lunar_days", "weekday", "month_days", "address"];
 
   assert.ok(markets.every((market) => market.schedule && typeof market.schedule.type === "string"));
   for (const market of markets) {
+    assert.equal(typeof market.location, "string", `${market.id} should include location`);
+    assert.ok(market.location.length > 0, `${market.id} location should not be empty`);
     for (const field of deprecatedFields) {
       assert.equal(Object.hasOwn(market, field), false, `${market.id} should not include ${field}`);
     }
@@ -182,12 +184,20 @@ test("generated ICS contains selected markets and excludes unselected markets", 
 });
 
 test("calendar event descriptions stay focused on market basics", () => {
-  const description = calendarData.events.find((event) => event.description)?.description ?? "";
+  const event = calendarData.events.find((item) => item.description);
+  assert.ok(event);
+  const description = event?.description ?? "";
 
   assert.match(description, /时间：/);
   assert.match(description, /地点：/);
+  assert.match(description, new RegExp(`地点：${escapeRegExp(event.location)}`));
   assert.match(description, /更多赶集攻略或重新订阅日历，请访问：https:\/\/ganji\.neojfeng\.store\//);
   assert.doesNotMatch(description, /导航：|提醒：|数据说明：/);
+});
+
+test("generated market payloads omit deprecated address fields", () => {
+  assert.ok(calendarData.markets.every((market) => !Object.hasOwn(market, "address")));
+  assert.ok(calendarData.markets.every((market) => typeof market.location === "string" && market.location.length > 0));
 });
 
 test("weekdays schedule type treats 0 as Sunday", () => {
@@ -255,4 +265,8 @@ async function invokeVercelHandler(url, handler = vercelHandler) {
     }
   );
   return result;
+}
+
+function escapeRegExp(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
 }

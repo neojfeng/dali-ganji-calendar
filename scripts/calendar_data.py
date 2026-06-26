@@ -151,7 +151,7 @@ def build_event_records(markets: list[dict[str, Any]], start: date, end: date) -
         if not is_calendar_market(market):
             continue
 
-        location = clean(market.get("location_name")) or clean(market.get("address"))
+        location = clean(market.get("location")) or clean(market.get("location_name"))
         for event_date in market_dates(market, start, end):
             events.append(
                 {
@@ -187,7 +187,7 @@ def public_market_records(markets: list[dict[str, Any]]) -> list[dict[str, Any]]
                 "name": name,
                 "label": calendar_label(name),
                 "location_name": clean(market.get("location_name")),
-                "address": clean(market.get("address")),
+                "location": clean(market.get("location")),
                 "old_town_trip": clean(market.get("old_town_trip")),
                 "area": clean(market.get("area")) or "其他",
                 "summary": clean(market.get("summary")),
@@ -303,7 +303,7 @@ def calendar_label(name: str) -> str:
 def description_for(market: dict[str, Any]) -> str:
     summary = clean(market.get("summary"))
     schedule_text = clean(market.get("schedule_text")) or "时间待补充"
-    place = clean(market.get("address")) or clean(market.get("location_name")) or "地点待补充"
+    place = clean(market.get("location")) or clean(market.get("location_name")) or "地点待补充"
 
     lines = []
     if summary:
