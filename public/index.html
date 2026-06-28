@@ -1009,55 +1009,82 @@
 
       .map-sheet-panel {
         width: min(420px, 100%);
-        border: 1px solid rgba(0, 0, 0, 0.08);
-        border-radius: 22px;
-        background: rgba(255, 255, 255, 0.96);
-        box-shadow: var(--shadow-strong);
-        padding: 10px;
+      }
+
+      .map-sheet-card {
+        overflow: hidden;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 8px 28px rgba(29, 29, 31, 0.14);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+
+      .map-sheet-head {
+        display: grid;
+        min-height: 58px;
+        align-content: center;
+        padding: 8px 16px 7px;
+        text-align: center;
       }
 
       .map-sheet-title {
-        margin: 4px 6px 0;
+        margin: 0;
         color: #1c1c1e;
-        font-size: 15px;
-        font-weight: 750;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.25;
       }
 
       .map-sheet-place {
-        margin: 3px 6px 10px;
+        margin: 2px 0 0;
         overflow: hidden;
         color: var(--muted);
         font-size: 12px;
+        line-height: 1.25;
         text-overflow: ellipsis;
         white-space: nowrap;
       }
 
       .map-sheet-actions {
-        display: grid;
-        gap: 8px;
+        border-top: 0.5px solid rgba(0, 0, 0, 0.08);
       }
 
       .map-choice-button,
       .map-sheet-close {
-        min-height: 46px;
+        min-height: 54px;
         border: 0;
-        border-radius: 15px;
         font: inherit;
-        font-size: 15px;
-        font-weight: 700;
+        font-size: 17px;
         cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
       }
 
       .map-choice-button {
-        background: rgba(0, 122, 255, 0.1);
-        color: var(--accent);
+        display: block;
+        width: 100%;
+        background: transparent;
+        color: #007aff;
+        font-weight: 400;
+      }
+
+      .map-choice-button + .map-choice-button {
+        border-top: 0.5px solid rgba(0, 0, 0, 0.08);
+      }
+
+      .map-choice-button:active,
+      .map-sheet-close:active {
+        background: rgba(0, 0, 0, 0.05);
       }
 
       .map-sheet-close {
         width: 100%;
         margin-top: 8px;
-        background: rgba(142, 142, 147, 0.12);
-        color: #3d3d42;
+        border-radius: 14px;
+        background: #fff;
+        color: #007aff;
+        font-weight: 600;
+        box-shadow: 0 8px 28px rgba(29, 29, 31, 0.12);
       }
 
       .subscription-steps {
@@ -1189,12 +1216,16 @@
 
     <section class="map-sheet" id="mapSheet" aria-label="选择地图" hidden>
       <div class="map-sheet-panel" role="dialog" aria-modal="true" aria-labelledby="mapSheetTitle">
-        <p class="map-sheet-title" id="mapSheetTitle">选择地图</p>
-        <p class="map-sheet-place" id="mapSheetPlace"></p>
-        <div class="map-sheet-actions">
-          <button class="map-choice-button" type="button" data-map-action="amap">高德地图</button>
-          <button class="map-choice-button" type="button" data-map-action="baidu">百度地图</button>
-          <button class="map-choice-button" type="button" data-map-action="copy">复制地点名</button>
+        <div class="map-sheet-card">
+          <div class="map-sheet-head">
+            <p class="map-sheet-title" id="mapSheetTitle">选择地图</p>
+            <p class="map-sheet-place" id="mapSheetPlace"></p>
+          </div>
+          <div class="map-sheet-actions">
+            <button class="map-choice-button" type="button" data-map-action="amap">高德地图</button>
+            <button class="map-choice-button" type="button" data-map-action="baidu">百度地图</button>
+            <button class="map-choice-button" type="button" data-map-action="copy">复制地点名</button>
+          </div>
         </div>
         <button class="map-sheet-close" id="closeMapSheetButton" type="button">取消</button>
       </div>
