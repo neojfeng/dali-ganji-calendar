@@ -107,12 +107,14 @@ test("market detail back button restores the home scroll position", async () => 
 
 test("source market data uses unified schedule objects and location fields", async () => {
   const markets = JSON.parse(await readFile(new URL("../data/markets.json", import.meta.url), "utf8"));
-  const deprecatedFields = ["market_type", "calendar_enabled", "schedule_type", "lunar_days", "weekday", "month_days", "address", "location_name"];
+  const deprecatedFields = ["market_type", "calendar_enabled", "schedule_type", "lunar_days", "weekday", "month_days", "address", "location_name", "lat", "lng"];
 
   assert.ok(markets.every((market) => market.schedule && typeof market.schedule.type === "string"));
   for (const market of markets) {
     assert.equal(typeof market.location, "string", `${market.id} should include location`);
     assert.ok(market.location.length > 0, `${market.id} location should not be empty`);
+    assert.equal(typeof market.amap_lat, "number", `${market.id} should include Gaode latitude`);
+    assert.equal(typeof market.amap_lng, "number", `${market.id} should include Gaode longitude`);
     for (const field of deprecatedFields) {
       assert.equal(Object.hasOwn(market, field), false, `${market.id} should not include ${field}`);
     }
@@ -161,15 +163,20 @@ test("generated ICS contains selected markets and excludes unselected markets", 
   assert.doesNotMatch(ics, /银桥街/);
 });
 
-test("calendar event descriptions use short places and include Gaode navigation", () => {
+test("calendar event descriptions use short places without navigation links", () => {
   const event = calendarData.events.find((item) => item.market_id === "chuangdanchang");
   assert.ok(event);
   const description = event?.description ?? "";
 
   assert.equal(event.location, "床单厂艺术区");
+  assert.equal(Object.hasOwn(event, "lat"), false);
+  assert.equal(Object.hasOwn(event, "lng"), false);
+  assert.equal(Object.hasOwn(event, "amap_lat"), false);
+  assert.equal(Object.hasOwn(event, "amap_lng"), false);
   assert.match(description, /时间：/);
   assert.match(description, new RegExp(`地点：${escapeRegExp(event.location)}`));
-  assert.match(description, /导航（高德）：https:\/\/uri\.amap\.com\/marker\?position=/);
+  assert.doesNotMatch(description, /导航（高德）/);
+  assert.doesNotMatch(description, /https:\/\/uri\.amap\.com/);
   assert.match(description, /更多赶集攻略或重新订阅日历，请访问：https:\/\/ganji\.neojfeng\.store\//);
   assert.doesNotMatch(description, /大理市大理古城苍坪街56号/);
   assert.doesNotMatch(description, /提醒：|数据说明：/);
@@ -178,7 +185,11 @@ test("calendar event descriptions use short places and include Gaode navigation"
 test("generated market payloads omit deprecated address fields", () => {
   assert.ok(calendarData.markets.every((market) => !Object.hasOwn(market, "address")));
   assert.ok(calendarData.markets.every((market) => !Object.hasOwn(market, "location_name")));
+  assert.ok(calendarData.markets.every((market) => !Object.hasOwn(market, "lat")));
+  assert.ok(calendarData.markets.every((market) => !Object.hasOwn(market, "lng")));
   assert.ok(calendarData.markets.every((market) => typeof market.location === "string" && market.location.length > 0));
+  assert.ok(calendarData.markets.every((market) => typeof market.amap_lat === "number"));
+  assert.ok(calendarData.markets.every((market) => typeof market.amap_lng === "number"));
 });
 
 test("weekdays schedule type treats 0 as Sunday", () => {

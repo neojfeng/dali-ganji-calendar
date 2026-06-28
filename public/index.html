@@ -731,7 +731,8 @@
       }
 
       .bottom-bar[hidden],
-      .subscribe-panel[hidden] {
+      .subscribe-panel[hidden],
+      .map-sheet[hidden] {
         display: none;
       }
 
@@ -995,6 +996,70 @@
         cursor: not-allowed;
       }
 
+      .map-sheet {
+        position: fixed;
+        inset: 0;
+        z-index: 48;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background: rgba(29, 29, 31, 0.28);
+        padding: 12px 12px calc(12px + env(safe-area-inset-bottom));
+      }
+
+      .map-sheet-panel {
+        width: min(420px, 100%);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: var(--shadow-strong);
+        padding: 10px;
+      }
+
+      .map-sheet-title {
+        margin: 4px 6px 0;
+        color: #1c1c1e;
+        font-size: 15px;
+        font-weight: 750;
+      }
+
+      .map-sheet-place {
+        margin: 3px 6px 10px;
+        overflow: hidden;
+        color: var(--muted);
+        font-size: 12px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .map-sheet-actions {
+        display: grid;
+        gap: 8px;
+      }
+
+      .map-choice-button,
+      .map-sheet-close {
+        min-height: 46px;
+        border: 0;
+        border-radius: 15px;
+        font: inherit;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .map-choice-button {
+        background: rgba(0, 122, 255, 0.1);
+        color: var(--accent);
+      }
+
+      .map-sheet-close {
+        width: 100%;
+        margin-top: 8px;
+        background: rgba(142, 142, 147, 0.12);
+        color: #3d3d42;
+      }
+
       .subscription-steps {
         margin: 10px 0 0;
         padding-left: 20px;
@@ -1122,6 +1187,19 @@
       </div>
     </section>
 
+    <section class="map-sheet" id="mapSheet" aria-label="选择地图" hidden>
+      <div class="map-sheet-panel" role="dialog" aria-modal="true" aria-labelledby="mapSheetTitle">
+        <p class="map-sheet-title" id="mapSheetTitle">选择地图</p>
+        <p class="map-sheet-place" id="mapSheetPlace"></p>
+        <div class="map-sheet-actions">
+          <button class="map-choice-button" type="button" data-map-action="amap">高德地图</button>
+          <button class="map-choice-button" type="button" data-map-action="baidu">百度地图</button>
+          <button class="map-choice-button" type="button" data-map-action="copy">复制地点名</button>
+        </div>
+        <button class="map-sheet-close" id="closeMapSheetButton" type="button">取消</button>
+      </div>
+    </section>
+
     <script>
       const STORAGE_KEY = "dali-ganji-selected-markets";
       const PLACEHOLDER_IMAGE = new URL("images/markets/placeholder.jpg", window.location.href).toString();
@@ -1143,6 +1221,9 @@
       const calendarPreviewEmpty = document.querySelector("#calendarPreviewEmpty");
       const prevMonthButton = document.querySelector("#prevMonthButton");
       const nextMonthButton = document.querySelector("#nextMonthButton");
+      const mapSheet = document.querySelector("#mapSheet");
+      const mapSheetPlace = document.querySelector("#mapSheetPlace");
+      const closeMapSheetButton = document.querySelector("#closeMapSheetButton");
       const inAppBrowser = isRestrictedInAppBrowser();
 
       let markets = [];
@@ -1152,6 +1233,7 @@
       let hasLocation = false;
       let previewMonthOffset = 0;
       let homeScrollY = 0;
+      let navigationMarket = null;
       let toastTimer;
 
       init();
@@ -1201,6 +1283,14 @@
           renderCalendarPreview();
         });
         copyButton.addEventListener("click", copySubscriptionLink);
+        closeMapSheetButton.addEventListener("click", closeNavigationSheet);
+        mapSheet.addEventListener("click", (event) => {
+          if (event.target === mapSheet) closeNavigationSheet();
+          if (!(event.target instanceof Element)) return;
+          const button = event.target.closest("[data-map-action]");
+          if (!button) return;
+          handleMapSheetAction(button.dataset.mapAction);
+        });
         selectedList.addEventListener("click", (event) => {
           if (!(event.target instanceof Element)) return;
           const button = event.target.closest("[data-action='remove-selected']");
@@ -1216,6 +1306,9 @@
         window.addEventListener("popstate", (event) => {
           renderRoute();
           restoreScrollFromHistory(event.state);
+        });
+        window.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") closeNavigationSheet();
         });
       }
 
@@ -1268,7 +1361,7 @@
       function weekTemplate() {
         const now = startOfToday();
         const end = new Date(now);
-        end.setDate(now.getDate() + 7);
+        end.setDate(now.getDate() + 3);
         const marketById = new Map(markets.map((market) => [market.id, market]));
         const marketIndexById = new Map(markets.map((market, index) => [market.id, index]));
         const eventsByMarket = new Map();
@@ -1302,11 +1395,10 @@
         });
         const weekItems = recentItems
           .filter((item) => item.market?.id)
-          .sort((a, b) => a.date.localeCompare(b.date) || a.index - b.index)
-          .slice(0, 8);
+          .sort((a, b) => a.date.localeCompare(b.date) || a.index - b.index);
 
         if (weekItems.length === 0) {
-          return '<div class="empty">未来 7 天暂时没有已验证的赶集数据。</div>';
+          return '<div class="empty">未来 3 天暂时没有已验证的赶集数据。</div>';
         }
 
         return weekItems.map(({ market }) => {
@@ -1844,10 +1936,11 @@
           const position = await getUserLocation();
           const { latitude, longitude } = position.coords;
           markets = markets.map((market) => {
-            if (typeof market.lat !== "number" || typeof market.lng !== "number") return market;
+            const coords = amapCoords(market);
+            if (!coords) return market;
             return {
               ...market,
-              distanceKm: calculateDistanceKm(latitude, longitude, market.lat, market.lng)
+              distanceKm: calculateDistanceKm(latitude, longitude, coords.lat, coords.lng)
             };
           });
           hasLocation = true;
@@ -1983,24 +2076,74 @@
       function openNavigation(id) {
         const market = markets.find((item) => item.id === id);
         if (!market) return;
-        const link = amapLink(market) || baiduMapLink(market);
+        navigationMarket = market;
+        mapSheetPlace.textContent = market.location || market.name || "大理赶集";
+        mapSheet.hidden = false;
+      }
+
+      function closeNavigationSheet() {
+        if (!mapSheet || mapSheet.hidden) return;
+        mapSheet.hidden = true;
+        navigationMarket = null;
+      }
+
+      async function handleMapSheetAction(action) {
+        const market = navigationMarket;
+        if (!market) return;
+        if (action === "copy") {
+          const place = market.location || market.name || "大理赶集";
+          try {
+            await writeClipboard(place);
+            showToast("地点名已复制");
+          } catch (error) {
+            window.prompt("请复制地点名", place);
+            showToast("暂时无法复制地点名");
+          } finally {
+            closeNavigationSheet();
+          }
+          return;
+        }
+
+        const link = action === "baidu" ? baiduMapLink(market) : amapLink(market);
+        closeNavigationSheet();
         window.open(link, "_blank", "noopener");
       }
 
       function amapLink(market) {
         const query = encodeURIComponent(market.location || market.name || "大理赶集");
-        if (typeof market.lat === "number" && typeof market.lng === "number") {
-          return `https://uri.amap.com/marker?position=${market.lng},${market.lat}&name=${query}`;
+        const coords = amapCoords(market);
+        if (coords) {
+          return `https://uri.amap.com/marker?position=${coords.lng},${coords.lat}&name=${query}`;
         }
         return `https://uri.amap.com/search?keyword=${query}&city=大理`;
       }
 
       function baiduMapLink(market) {
         const query = encodeURIComponent(market.location || market.name || "大理赶集");
-        if (typeof market.lat === "number" && typeof market.lng === "number") {
-          return `https://api.map.baidu.com/marker?location=${market.lat},${market.lng}&title=${query}&content=${query}&output=html`;
+        const coords = amapCoords(market);
+        if (coords) {
+          const baiduCoords = gcj02ToBd09(coords.lat, coords.lng);
+          return `https://api.map.baidu.com/marker?location=${baiduCoords.lat},${baiduCoords.lng}&title=${query}&content=${query}&output=html`;
         }
         return `https://map.baidu.com/search/${query}`;
+      }
+
+      function amapCoords(market) {
+        if (typeof market?.amap_lat === "number" && typeof market?.amap_lng === "number") {
+          return { lat: market.amap_lat, lng: market.amap_lng };
+        }
+        return null;
+      }
+
+      function gcj02ToBd09(lat, lng) {
+        const x = lng;
+        const y = lat;
+        const z = Math.sqrt(x * x + y * y) + 0.00002 * Math.sin(y * Math.PI * 3000 / 180);
+        const theta = Math.atan2(y, x) + 0.000003 * Math.cos(x * Math.PI * 3000 / 180);
+        return {
+          lat: z * Math.sin(theta) + 0.006,
+          lng: z * Math.cos(theta) + 0.0065
+        };
       }
 
       function imageTag(market) {

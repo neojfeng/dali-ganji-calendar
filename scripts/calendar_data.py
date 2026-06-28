@@ -7,7 +7,6 @@ import sys
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
-from urllib.parse import quote
 from zoneinfo import ZoneInfo
 
 try:
@@ -165,8 +164,6 @@ def build_event_records(markets: list[dict[str, Any]], start: date, end: date) -
                     "location": location,
                     "description": description_for(market),
                     "uid": f"{market_id}-{event_date.isoformat()}@{DOMAIN}",
-                    "lat": market.get("lat"),
-                    "lng": market.get("lng"),
                 }
             )
 
@@ -194,8 +191,8 @@ def public_market_records(markets: list[dict[str, Any]]) -> list[dict[str, Any]]
                 "tags": clean_list(market.get("tags")),
                 "best_for": clean_list(market.get("best_for")),
                 "not_for": clean_list(market.get("not_for")),
-                "lat": market.get("lat"),
-                "lng": market.get("lng"),
+                "amap_lat": market.get("amap_lat"),
+                "amap_lng": market.get("amap_lng"),
                 "image": primary_image,
                 "image_alt": primary_alt,
                 "images": images,
@@ -304,30 +301,17 @@ def description_for(market: dict[str, Any]) -> str:
     summary = clean(market.get("summary"))
     schedule_text = clean(market.get("schedule_text")) or "时间待补充"
     place = calendar_location(market)
-    navigation_url = amap_url(market)
-
     lines = []
     if summary:
         lines.append(summary)
     lines.append(f"时间：{schedule_text}")
     lines.append(f"地点：{place}")
-    if navigation_url:
-        lines.append(f"导航（高德）：{navigation_url}")
     lines.append(f"更多赶集攻略或重新订阅日历，请访问：{GUIDE_URL}")
     return "\n".join(lines)
 
 
 def calendar_location(market: dict[str, Any]) -> str:
     return clean(market.get("location")) or clean(market.get("name")) or "地点待补充"
-
-
-def amap_url(market: dict[str, Any]) -> str:
-    query = quote(calendar_location(market) or "大理赶集")
-    lat = market.get("lat")
-    lng = market.get("lng")
-    if isinstance(lat, (int, float)) and isinstance(lng, (int, float)):
-        return f"https://uri.amap.com/marker?position={lng},{lat}&name={query}"
-    return f"https://uri.amap.com/search?keyword={query}&city=大理"
 
 
 def clean(value: Any) -> str:

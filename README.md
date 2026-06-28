@@ -163,7 +163,7 @@ api/calendar.mobileconfig.js
 1. 在 `data/markets.json` 追加对象。
 2. 填写稳定的 `id`，后续不要随意修改；它会进入事件 UID 和订阅 token。
 3. 填写 `schedule`，它是程序计算营业日期和订阅能力的唯一日期规则。
-4. 补充 `summary`、攻略字段、地点、坐标和图片。
+4. 补充 `summary`、攻略字段、地点、`amap_lat` / `amap_lng` 高德坐标和图片。
 5. 运行 `npm run build` 和 `npm test`。
 
 支持的日期规则：

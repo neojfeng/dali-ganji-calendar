@@ -27,8 +27,8 @@
       "不想遇到游客摊位",
       "赶集日之外专程前往"
     ],
-    "lat": 25.693274,
-    "lng": 100.153299,
+    "amap_lat": 25.693274,
+    "amap_lng": 100.153299,
     "image": "/images/markets/sanyuejie.jpg",
     "image_alt": "三月街集市牌坊和热闹摊位插画",
     "images": [
@@ -125,8 +125,8 @@
       "预算很低",
       "工作日专程前往"
     ],
-    "lat": 25.689852,
-    "lng": 100.165624,
+    "amap_lat": 25.689852,
+    "amap_lng": 100.165624,
     "image": "/images/markets/chuangdanchang.jpg",
     "image_alt": "床单厂集市的文创摊位和老厂房插画",
     "images": [
@@ -218,8 +218,8 @@
       "想淘文创手作",
       "追求网红拍照感"
     ],
-    "lat": 25.698182,
-    "lng": 100.157064,
+    "amap_lat": 25.698182,
+    "amap_lng": 100.157064,
     "image": "/images/markets/beimen_nongmao.jpg",
     "image_alt": "古城北门农贸市场的鲜花蔬果和早餐摊插画",
     "images": [
@@ -304,8 +304,8 @@
       "讨厌油烟和拥挤",
       "想逛文创手作"
     ],
-    "lat": 25.683475,
-    "lng": 100.164275,
+    "amap_lat": 25.683475,
+    "amap_lng": 100.164275,
     "image": "/images/markets/nanmen_lvyu.jpg",
     "image_alt": "南门绿玉农贸市场的下午熟食小吃摊插画",
     "images": [
@@ -397,8 +397,8 @@
       "想买精致文创",
       "赶集日之外专程前往"
     ],
-    "lat": 25.756939,
-    "lng": 100.123102,
+    "amap_lat": 25.756939,
+    "amap_lng": 100.123102,
     "image": "/images/markets/yinqiaojie.jpg",
     "image_alt": "银桥街集市的田园和集市摊位插画",
     "images": [
@@ -490,8 +490,8 @@
       "时间很紧",
       "期待精致文创市集"
     ],
-    "lat": 25.826604,
-    "lng": 100.122204,
+    "amap_lat": 25.826604,
+    "amap_lng": 100.122204,
     "image": "/images/markets/xizhou_longjie.jpg",
     "image_alt": "喜洲龙街集市的古镇乡土摊位插画",
     "images": [
@@ -584,8 +584,8 @@
       "不想跑远路",
       "想买文创手作"
     ],
-    "lat": 25.791214,
-    "lng": 100.121132,
+    "amap_lat": 25.791214,
+    "amap_lng": 100.121132,
     "image": "/images/markets/wanqiaojie.jpg",
     "image_alt": "湾桥街集市的乡镇街道和农产品插画",
     "images": [
@@ -673,8 +673,8 @@
       "只在古城活动",
       "想要固定摊位和稳定品质"
     ],
-    "lat": 25.629002,
-    "lng": 100.209937,
+    "amap_lat": 25.629002,
+    "amap_lng": 100.209937,
     "image": "/images/markets/xiaguan_huaniao.jpg",
     "image_alt": "下关花鸟市场周日旧货和绿植摊位插画",
     "images": [
@@ -764,8 +764,8 @@
       "想买文创手作",
       "不方便去下关"
     ],
-    "lat": 25.587209,
-    "lng": 100.228742,
+    "amap_lat": 25.587209,
+    "amap_lng": 100.228742,
     "image": "/images/markets/taixing_zonghe.jpg",
     "image_alt": "泰兴综合市场的整筐水果和综合摊位插画",
     "images": [
@@ -847,8 +847,8 @@
       "想逛文艺市集",
       "对菜市环境要求很高"
     ],
-    "lat": 25.600049,
-    "lng": 100.227681,
+    "amap_lat": 25.600049,
+    "amap_lng": 100.227681,
     "image": "/images/markets/daguanyi_nongmao.jpg",
     "image_alt": "大关邑农贸市场的本地菜市和早餐米线摊插画",
     "images": [
@@ -930,8 +930,8 @@
       "下午才到沙溪",
       "只想逛精致文创"
     ],
-    "lat": 26.315982,
-    "lng": 99.852755,
+    "amap_lat": 26.315982,
+    "amap_lng": 99.852755,
     "image": "/images/markets/shaxijie.jpg",
     "image_alt": "沙溪古镇周五街集和茶马古道街巷插画",
     "images": [
@@ -1017,8 +1017,8 @@
       "时间很紧",
       "想要高颜值文艺市集"
     ],
-    "lat": 25.583781,
-    "lng": 100.313555,
+    "amap_lat": 25.583781,
+    "amap_lng": 100.313555,
     "image": "/images/markets/fengyijie.jpg",
     "image_alt": "凤仪街集市的乡镇街巷和摊位插画",
     "images": [
@@ -1112,8 +1112,8 @@
       "想买精致伴手礼",
       "赶集日之外专程前往"
     ],
-    "lat": 25.823475,
-    "lng": 100.225725,
+    "amap_lat": 25.823475,
+    "amap_lng": 100.225725,
     "image": "/images/markets/wasejie.jpg",
     "image_alt": "挖色街洱海东岸环海路边乡镇集插画",
     "images": [
@@ -1203,8 +1203,8 @@
       "想买文创手作",
       "赶集日之外专程前往"
     ],
-    "lat": 25.710856,
-    "lng": 100.260177,
+    "amap_lat": 25.710856,
+    "amap_lng": 100.260177,
     "image": "/images/markets/haidongjie.jpg",
     "image_alt": "海东镇向阳街本地赶集和洱海东岸插画",
     "images": [
@@ -1293,8 +1293,8 @@
       "不能确认当天是否赶集",
       "想买精致文创"
     ],
-    "lat": 25.901256,
-    "lng": 100.198633,
+    "amap_lat": 25.901256,
+    "amap_lng": 100.198633,
     "image": "/images/markets/shuanglangjie.jpg",
     "image_alt": "双廊镇文化街洱海边赶集插画",
     "images": [
