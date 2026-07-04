@@ -87,6 +87,12 @@
         font-size: 15px;
       }
 
+      .lead a {
+        color: var(--accent);
+        font-weight: 600;
+        text-decoration: none;
+      }
+
       .browser-notice {
         margin: 0;
         border-radius: 16px;
@@ -1146,7 +1152,7 @@
     <main id="app">
       <section class="hero" aria-labelledby="pageTitle">
         <h1 id="pageTitle">大理赶集攻略</h1>
-        <p class="lead">点击集市查看攻略，订阅集市可添加到 Apple 日历</p>
+        <p class="lead">点击集市查看攻略，订阅集市可添加到 Apple 日历。由 <a href="https://www.neojfeng.store/" target="_blank" rel="noopener">Neo 的数字手作店</a> 制作</p>
         <div class="location-row">
           <button class="pill-button" id="locationButton" type="button">
             <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -1347,7 +1353,7 @@
         return `
           <section class="hero" aria-labelledby="pageTitle">
             <h1 id="pageTitle">大理赶集攻略</h1>
-            <p class="lead">点击集市查看攻略，订阅集市可添加到 Apple 日历</p>
+            <p class="lead">点击集市查看攻略，订阅集市可添加到 Apple 日历。由 <a href="https://www.neojfeng.store/" target="_blank" rel="noopener">Neo 的数字手作店</a> 制作</p>
             ${inAppBrowserNoticeTemplate()}
             <div class="location-row">
               <button class="pill-button" id="locationButton" type="button">
