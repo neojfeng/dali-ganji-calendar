@@ -81,7 +81,7 @@ test("frontend builds webcal and HTTPS subscription links from the selection tok
   assert.match(html, /webcal:\/\/\$\{host\}\$\{path\}/);
   assert.match(html, /https:\/\/\$\{host\}\$\{path\}/);
   assert.match(html, /\/api\/calendar\.ics\?s=\$\{encodeURIComponent\(token\)\}/);
-  assert.match(html, /请先订阅一个集市/);
+  assert.match(html, /请至少保留一个集市/);
   assert.doesNotMatch(html, /data:text\/calendar/);
   assert.doesNotMatch(html, /new Blob/);
   assert.doesNotMatch(html, /calendars\/\$\{ids\.join/);
@@ -93,7 +93,7 @@ test("frontend treats daily markets as always-open instead of pending verificati
   assert.match(html, /function isAlwaysOpenMarket/);
   assert.match(html, /market\?\.schedule\?\.type === "daily"/);
   assert.match(html, /if \(isAlwaysOpenMarket\(market\)\)/);
-  assert.match(html, /每天开集/);
+  assert.match(html, /今天开集/);
 });
 
 test("market detail back button restores the home scroll position", async () => {

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>大理赶集攻略</title>
-    <meta name="description" content="查大理赶集时间、地点、距离和攻略，选择常去集市订阅到 iPhone 日历。">
+    <meta name="description" content="查大理赶集时间、地点和攻略，一键查看本月赶集日历并订阅到 iPhone 日历。">
     <style>
       :root {
         color-scheme: light;
@@ -361,6 +361,11 @@
       .time-badge.is-tomorrow {
         background: rgba(255, 149, 0, 0.12);
         color: #b26800;
+      }
+
+      .market-type-tag {
+        flex: 0 0 auto;
+        white-space: nowrap;
       }
 
       .schedule,
@@ -746,45 +751,36 @@
         width: min(720px, 100%);
         margin: 0 auto;
         pointer-events: auto;
-        border: var(--bar-line);
-        background: rgba(255, 255, 255, 0.8);
-        box-shadow: var(--shadow-strong);
-        backdrop-filter: blur(24px);
-        -webkit-backdrop-filter: blur(24px);
       }
 
       .panel-inner {
-        width: min(720px, 100%);
+        width: min(1080px, 100%);
         min-height: 100%;
         margin: 0 auto;
       }
 
       .bar-inner {
-        display: flex;
-        min-height: 66px;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-        border-radius: 22px;
-        padding: 10px 12px 10px 16px;
+        display: block;
       }
 
-      .bar-count,
       .panel-title {
         margin: 0;
         font-weight: 700;
-      }
-
-      .bar-sub {
-        margin: 2px 0 0;
-        color: var(--muted);
-        font-size: 12px;
       }
 
       .subscribe-button {
         min-height: 44px;
         background: var(--accent);
         color: #fff;
+      }
+
+      .bottom-bar .subscribe-button {
+        width: 100%;
+        min-height: 56px;
+        border-radius: 18px;
+        box-shadow: var(--shadow-strong);
+        font-size: 16px;
+        font-weight: 750;
       }
 
       .panel-inner {
@@ -818,6 +814,13 @@
         font-size: 30px;
         line-height: 1.12;
         letter-spacing: 0;
+      }
+
+      .panel-note {
+        margin: 5px 0 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.35;
       }
 
       .selected-list {
@@ -857,34 +860,76 @@
         line-height: 1;
       }
 
+      .selected-pill.is-reset {
+        background: rgba(29, 29, 31, 0.07);
+        color: var(--text);
+      }
+
+      .selected-pill.is-reset::after {
+        display: none;
+      }
+
       .selected-pill:active {
         transform: scale(0.96);
       }
 
       .calendar-preview {
-        margin-bottom: 12px;
-        border-radius: 20px;
-        background: rgba(29, 29, 31, 0.04);
-        padding: 10px;
+        margin: 0 -6px 12px;
+        overflow-x: auto;
+        border-radius: 0;
+        background: #fffdf8;
+        padding: 0;
+        box-shadow: 0 18px 50px rgba(90, 55, 10, 0.08);
+      }
+
+      .calendar-preview-poster {
+        width: min(100%, 1068px);
+        min-width: 720px;
+        margin: 0 auto;
+        background:
+          radial-gradient(circle at 18% 9%, rgba(255, 244, 218, 0.72) 0, rgba(255, 244, 218, 0) 30%),
+          radial-gradient(circle at 82% 8%, rgba(255, 242, 211, 0.8) 0, rgba(255, 242, 211, 0) 32%),
+          #fffdf8;
+        color: #050505;
+        padding: 26px 8px 8px;
       }
 
       .calendar-preview-head {
-        display: flex;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
         align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-        margin-bottom: 8px;
+        gap: 28px;
+        padding: 0 72px 20px;
+      }
+
+      .calendar-brand-title {
+        margin: 0;
+        font-size: clamp(44px, 5.9vw, 64px);
+        font-weight: 950;
+        letter-spacing: 0;
+        line-height: 0.98;
+        white-space: nowrap;
       }
 
       .calendar-preview-title {
+        display: inline-flex;
+        min-height: 80px;
+        align-items: center;
         margin: 0;
-        font-size: 15px;
-        font-weight: 700;
+        border-radius: 12px;
+        background: linear-gradient(180deg, #ff6a00 0%, #ff4200 100%);
+        color: #fff;
+        font-size: clamp(34px, 4.5vw, 50px);
+        font-weight: 900;
+        line-height: 1;
+        padding: 0 24px;
+        white-space: nowrap;
       }
 
       .calendar-nav {
         display: flex;
-        gap: 6px;
+        align-items: center;
+        gap: 10px;
       }
 
       .calendar-nav button {
@@ -894,95 +939,197 @@
         place-items: center;
         border: 0;
         border-radius: 50%;
-        background: rgba(29, 29, 31, 0.08);
-        color: var(--text);
-        font-size: 18px;
-        font-weight: 600;
+        background: #ff6a00;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 800;
         line-height: 1;
       }
 
       .calendar-nav button:disabled {
-        color: var(--subtle);
+        background: #d8d8d8;
         cursor: not-allowed;
-        opacity: 0.46;
+        opacity: 0.55;
       }
 
       .calendar-weekdays,
       .calendar-grid {
         display: grid;
         grid-template-columns: repeat(7, minmax(0, 1fr));
-        gap: 4px;
+      }
+
+      .calendar-weekdays {
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
+        background: linear-gradient(180deg, #ff6c00 0%, #f55a00 100%);
       }
 
       .calendar-weekday {
-        color: var(--subtle);
-        font-size: 11px;
-        font-weight: 600;
+        min-height: 45px;
+        border-right: 1px solid rgba(255, 255, 255, 0.62);
+        color: #fff;
+        font-size: 26px;
+        font-weight: 850;
+        line-height: 45px;
         text-align: center;
       }
 
-      .calendar-day {
-        min-height: 48px;
-        border-radius: 12px;
-        background: rgba(255, 255, 255, 0.72);
-        color: var(--text);
-        padding: 5px;
+      .calendar-weekday:last-child {
+        border-right: 0;
+      }
+
+      .calendar-grid {
+        border: 1px solid #eadfd0;
+        border-top: 0;
+        border-radius: 0 0 10px 10px;
         overflow: hidden;
+      }
+
+      .calendar-day {
+        position: relative;
+        min-height: 156px;
+        border-top: 1px solid #eadfd0;
+        border-right: 1px solid #eadfd0;
+        background: rgba(255, 255, 255, 0.58);
+        color: #050505;
+        padding: 13px 10px 8px;
+        overflow: hidden;
+      }
+
+      .calendar-day:nth-child(-n + 7) {
+        border-top: 0;
+      }
+
+      .calendar-day:nth-child(7n) {
+        border-right: 0;
       }
 
       .calendar-day.is-outside {
-        color: var(--subtle);
-        opacity: 0.46;
-      }
-
-      .calendar-day.is-today {
-        box-shadow: inset 0 0 0 1.5px rgba(0, 122, 255, 0.34);
-      }
-
-      .calendar-day.has-events {
-        background: #fff;
-        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
-      }
-
-      .calendar-day.has-events.is-today {
-        box-shadow: inset 0 0 0 1.5px rgba(0, 122, 255, 0.34);
+        color: #a9a9a9;
       }
 
       .calendar-date {
-        display: block;
-        margin-bottom: 3px;
-        font-size: 11px;
-        font-weight: 600;
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+        min-height: 40px;
+        margin-bottom: 9px;
+        white-space: nowrap;
+      }
+
+      .calendar-date-number {
+        display: inline-grid;
+        min-width: 42px;
+        height: 42px;
+        place-items: center;
+        border-radius: 50%;
+        font-size: 40px;
+        font-weight: 900;
         line-height: 1;
       }
 
+      .calendar-day.is-outside .calendar-date-number {
+        color: #aaa;
+        min-width: auto;
+        width: auto;
+        padding: 0 4px;
+      }
+
+      .calendar-day.is-today .calendar-date-number {
+        background: #ff2f24;
+        color: #fff;
+        font-size: 28px;
+      }
+
+      .calendar-lunar {
+        color: #3b3b3b;
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 1;
+      }
+
+      .calendar-day.is-outside .calendar-lunar {
+        color: #9c9c9c;
+      }
+
       .calendar-event {
-        display: block;
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        min-height: 31px;
+        align-items: center;
+        gap: 4px;
         overflow: hidden;
         border-radius: 999px;
-        background: rgba(0, 122, 255, 0.1);
-        color: #007aff;
-        font-size: 9px;
-        font-weight: 600;
-        line-height: 1.2;
-        margin-top: 2px;
-        padding: 2px 4px;
-        text-overflow: ellipsis;
+        background: #ffe7c6;
+        color: #512000;
+        font-size: 15px;
+        font-weight: 800;
+        line-height: 1;
+        margin-top: 6px;
+        padding: 3px 6px 3px 4px;
         white-space: nowrap;
+      }
+
+      .calendar-event::before {
+        content: "集";
+        display: grid;
+        width: 23px;
+        height: 23px;
+        flex: 0 0 auto;
+        place-items: center;
+        border-radius: 50%;
+        background: #ff6a00;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 900;
+        line-height: 1;
+      }
+
+      .calendar-event-text {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       .calendar-more {
         display: block;
-        color: var(--muted);
-        font-size: 9px;
-        font-weight: 600;
-        margin-top: 1px;
+        color: #4e4e4e;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1;
+        margin: 10px 0 0 43px;
       }
 
       .calendar-preview-empty {
         margin: 8px 0 0;
-        color: var(--muted);
-        font-size: 12px;
+        color: #6f6f6f;
+        font-size: 14px;
+      }
+
+      .calendar-preview-note {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin: 10px 6px 0;
+        color: #5e5e5e;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.35;
+      }
+
+      .calendar-preview-note::before {
+        content: "集";
+        display: grid;
+        width: 22px;
+        height: 22px;
+        flex: 0 0 auto;
+        place-items: center;
+        border-radius: 50%;
+        background: #ff6a00;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 900;
       }
 
       .panel-actions {
@@ -1152,7 +1299,7 @@
     <main id="app">
       <section class="hero" aria-labelledby="pageTitle">
         <h1 id="pageTitle">大理赶集攻略</h1>
-        <p class="lead">点击集市查看攻略，订阅集市可添加到 Apple 日历。由 <a href="https://www.neojfeng.store/" target="_blank" rel="noopener">Neo 的数字手作店</a> 制作</p>
+        <p class="lead">点击查看赶集攻略和赶集日历，可导入到 Apple 系统日历。由 <a href="https://www.neojfeng.store/" target="_blank" rel="noopener">Neo 的数字手作店</a> 制作</p>
         <div class="location-row">
           <button class="pill-button" id="locationButton" type="button">
             <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -1171,46 +1318,48 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-    <section class="bottom-bar" id="bottomBar" aria-label="已订阅的集市" hidden>
+    <section class="bottom-bar" id="bottomBar" aria-label="赶集日历" hidden>
       <div class="bar-inner">
-        <div>
-          <p class="bar-count" id="barCount">已订阅 0 个集市</p>
-        </div>
-        <button class="subscribe-button" id="openPanelButton" type="button">生成日历</button>
+        <button class="subscribe-button" id="openPanelButton" type="button">查看赶集日历</button>
       </div>
     </section>
 
-    <section class="subscribe-panel" id="subscribePanel" aria-label="生成日历订阅" hidden>
+    <section class="subscribe-panel" id="subscribePanel" aria-label="赶集日历订阅" hidden>
       <div class="panel-inner">
         <div class="panel-head">
           <button class="panel-close" id="closePanelButton" type="button" aria-label="返回上一页">返回</button>
           <div class="panel-title-group">
-            <p class="panel-title" id="panelTitle">已订阅 0 个集市</p>
+            <p class="panel-title" id="panelTitle">已包含 0 个集市</p>
+            <p class="panel-note">赶集日历不含常开集市。</p>
           </div>
         </div>
         <div class="selected-list" id="selectedList"></div>
         <div class="calendar-preview" aria-label="日历预览">
-          <div class="calendar-preview-head">
-            <p class="calendar-preview-title" id="calendarPreviewTitle">日历预览</p>
-            <div class="calendar-nav">
-              <button id="prevMonthButton" type="button" aria-label="上一个月">‹</button>
-              <button id="nextMonthButton" type="button" aria-label="下一个月">›</button>
+          <div class="calendar-preview-poster">
+            <div class="calendar-preview-head">
+              <p class="calendar-brand-title">大理赶集日历</p>
+              <div class="calendar-nav">
+                <button id="prevMonthButton" type="button" aria-label="上一个月">‹</button>
+                <p class="calendar-preview-title" id="calendarPreviewTitle">日历预览</p>
+                <button id="nextMonthButton" type="button" aria-label="下一个月">›</button>
+              </div>
             </div>
+            <div class="calendar-weekdays" aria-hidden="true">
+              <span class="calendar-weekday">周一</span>
+              <span class="calendar-weekday">周二</span>
+              <span class="calendar-weekday">周三</span>
+              <span class="calendar-weekday">周四</span>
+              <span class="calendar-weekday">周五</span>
+              <span class="calendar-weekday">周六</span>
+              <span class="calendar-weekday">周日</span>
+            </div>
+            <div class="calendar-grid" id="calendarPreviewGrid"></div>
+            <p class="calendar-preview-empty" id="calendarPreviewEmpty" hidden>这个月没有已包含集市的赶集日。</p>
+            <p class="calendar-preview-note">注：橙色“集”表示赶集日，部分日期含多个赶集地，+X个表示还有X个赶集地。</p>
           </div>
-          <div class="calendar-weekdays" aria-hidden="true">
-            <span class="calendar-weekday">一</span>
-            <span class="calendar-weekday">二</span>
-            <span class="calendar-weekday">三</span>
-            <span class="calendar-weekday">四</span>
-            <span class="calendar-weekday">五</span>
-            <span class="calendar-weekday">六</span>
-            <span class="calendar-weekday">日</span>
-          </div>
-          <div class="calendar-grid" id="calendarPreviewGrid"></div>
-          <p class="calendar-preview-empty" id="calendarPreviewEmpty" hidden>这个月没有已订阅集市的赶集日。</p>
         </div>
         <div class="panel-actions">
-          <a class="subscribe-button" id="subscribeButton" href="#" rel="noopener">一键订阅 Apple 日历</a>
+          <a class="subscribe-button" id="subscribeButton" href="#" rel="noopener">订阅到 Apple 日历</a>
           <button class="plain-button" id="copyButton" type="button">复制订阅链接</button>
         </div>
         <ol class="subscription-steps">
@@ -1238,14 +1387,20 @@
     </section>
 
     <script>
-      const STORAGE_KEY = "dali-ganji-selected-markets";
+      const STORAGE_KEY = "dali-ganji-included-markets-v2";
       const PLACEHOLDER_IMAGE = new URL("images/markets/placeholder.jpg", window.location.href).toString();
       const FILTERS = ["近期开集", "离我最近", "全部", "古城周边集市", "银桥/喜洲片区", "下关市区集市", "其他乡镇集市"];
+      const LUNAR_DATE_FORMATTER = (() => {
+        try {
+          return new Intl.DateTimeFormat("zh-CN-u-ca-chinese", { month: "long", day: "numeric" });
+        } catch (error) {
+          return null;
+        }
+      })();
       const app = document.querySelector("#app");
       const locationButton = document.querySelector("#locationButton");
       const toast = document.querySelector("#toast");
       const bottomBar = document.querySelector("#bottomBar");
-      const barCount = document.querySelector("#barCount");
       const openPanelButton = document.querySelector("#openPanelButton");
       const subscribePanel = document.querySelector("#subscribePanel");
       const panelTitle = document.querySelector("#panelTitle");
@@ -1285,7 +1440,7 @@
           if (!marketsResponse.ok || !eventsResponse.ok) throw new Error("data load failed");
           markets = await marketsResponse.json();
           events = await eventsResponse.json();
-          selected = restoreSelection();
+          selected = restoreIncludedMarkets();
           renderRoute();
           updateSubscription();
         } catch (error) {
@@ -1330,14 +1485,18 @@
         });
         selectedList.addEventListener("click", (event) => {
           if (!(event.target instanceof Element)) return;
-          const button = event.target.closest("[data-action='remove-selected']");
+          const button = event.target.closest("[data-action='remove-selected'], [data-action='restore-all']");
           if (!button) return;
+          if (button.dataset.action === "restore-all") {
+            restoreAllMarkets();
+            return;
+          }
           removeSelectedMarket(button.dataset.id);
         });
         subscribeButton.addEventListener("click", (event) => {
           if (!orderedSelectedIds().length) {
             event.preventDefault();
-            showToast("请先订阅一个集市");
+            showToast("请至少保留一个集市");
           }
         });
         window.addEventListener("popstate", (event) => {
@@ -1353,7 +1512,7 @@
         return `
           <section class="hero" aria-labelledby="pageTitle">
             <h1 id="pageTitle">大理赶集攻略</h1>
-            <p class="lead">点击集市查看攻略，订阅集市可添加到 Apple 日历。由 <a href="https://www.neojfeng.store/" target="_blank" rel="noopener">Neo 的数字手作店</a> 制作</p>
+            <p class="lead">点击查看赶集攻略和赶集日历，可导入到 Apple 系统日历。由 <a href="https://www.neojfeng.store/" target="_blank" rel="noopener">Neo 的数字手作店</a> 制作</p>
             ${inAppBrowserNoticeTemplate()}
             <div class="location-row">
               <button class="pill-button" id="locationButton" type="button">
@@ -1471,9 +1630,9 @@
             <div class="card-main-row">
               <div class="market-heading">
                 <h3 class="market-name">${escapeHtml(market.name || "集市")}</h3>
-                ${marketTimeBadge(market)}
+                ${marketTypeTag(market)}
               </div>
-              ${calendarButton(market.id)}
+              ${marketTimeBadge(market)}
             </div>
             <p class="location-line">${listLocationLineHtml(market)}</p>
             <p class="summary">${escapeHtml(market.summary || options.fallbackSummary || "")}</p>
@@ -1492,6 +1651,11 @@
         const label = diffDays === 0 ? "今天开集" : diffDays === 1 ? "明天开集" : diffDays === 2 ? "后天开集" : `${diffDays}天后开集`;
         const statusClass = diffDays === 0 ? " is-today" : diffDays === 1 ? " is-tomorrow" : "";
         return `<span class="time-badge${statusClass}">${escapeHtml(label)}</span>`;
+      }
+
+      function marketTypeTag(market) {
+        if (!isAlwaysOpenMarket(market)) return "";
+        return '<span class="tag market-type-tag">常开集市</span>';
       }
 
       function marketKicker(market) {
@@ -1523,11 +1687,9 @@
               <div class="card-main-row">
                 <div class="market-heading">
                   <h1 class="detail-title">${escapeHtml(market.name)}</h1>
-                  ${marketTimeBadge(market)}
+                  ${marketTypeTag(market)}
                 </div>
-                <div class="detail-icon-actions">
-                  ${calendarButton(market.id)}
-                </div>
+                ${marketTimeBadge(market)}
               </div>
               <p class="location-line">${detailLocationLineHtml(market)}</p>
               <p class="summary">${escapeHtml(market.summary || "")}</p>
@@ -1634,8 +1796,6 @@
             const action = button.dataset.action;
             const id = button.dataset.id;
             if (action === "detail") openDetail(id);
-            if (action === "toggle") toggleMarket(id);
-            if (action === "always-open") showAlwaysOpenToast();
             if (action === "home") openHome();
             if (action === "navigate") openNavigation(id);
           });
@@ -1651,47 +1811,11 @@
         });
       }
 
-      function calendarButton(id) {
-        const market = markets.find((item) => item.id === id);
-        const canSubscribe = market && isSubscribableMarket(market);
-        const isAdded = selected.has(id);
-        if (isAlwaysOpenMarket(market)) {
-          return `
-            <button class="calendar-pill-button is-muted" type="button" data-action="always-open" data-id="${escapeHtml(id)}" aria-label="每天开集，不用加入日历">每天开集</button>
-          `;
-        }
-        if (!canSubscribe) {
-          return `
-            <button class="calendar-pill-button is-muted" type="button" disabled aria-label="日期待核实，暂不能加入日历">待核</button>
-          `;
-        }
-        return `
-          <button class="calendar-pill-button${isAdded ? " is-added" : ""}" type="button" data-action="toggle" data-id="${escapeHtml(id)}" aria-label="${isAdded ? "已订阅，点击取消订阅" : "订阅"}">${isAdded ? "✓ 已订阅" : "订阅"}</button>
-        `;
-      }
-
       function navigationButton(id) {
         return `
           <button class="card-icon-button" type="button" data-action="navigate" data-id="${escapeHtml(id)}" aria-label="导航">
             ${navigationIcon()}
           </button>
-        `;
-      }
-
-      function plusIcon() {
-        return `
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 5v14"></path>
-            <path d="M5 12h14"></path>
-          </svg>
-        `;
-      }
-
-      function checkIcon() {
-        return `
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="m5 12 4 4 10-10"></path>
-          </svg>
         `;
       }
 
@@ -1715,34 +1839,18 @@
         return items;
       }
 
-      function restoreSelection() {
+      function restoreIncludedMarkets() {
+        const allIds = allSubscribableMarketIds();
         try {
-          const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
-          const validIds = new Set(getSubscribableMarkets(markets).map((market) => market.id));
-          return new Set(saved.filter((id) => validIds.has(id)));
+          const raw = localStorage.getItem(STORAGE_KEY);
+          if (!raw) return new Set(allIds);
+          const saved = JSON.parse(raw);
+          const validIds = new Set(allIds);
+          const included = Array.isArray(saved) ? saved.filter((id) => validIds.has(id)) : allIds;
+          return new Set(included);
         } catch (error) {
-          return new Set();
+          return new Set(allIds);
         }
-      }
-
-      function toggleMarket(id) {
-        const market = markets.find((item) => item.id === id);
-        if (isAlwaysOpenMarket(market)) {
-          showAlwaysOpenToast();
-          return;
-        }
-        if (!isSubscribableMarket(market)) {
-          showToast("这个地点暂时不能订阅");
-          return;
-        }
-        if (selected.has(id)) {
-          selected.delete(id);
-        } else {
-          selected.add(id);
-        }
-        saveSelection();
-        renderRoute();
-        updateSubscription();
       }
 
       function saveSelection() {
@@ -1750,17 +1858,13 @@
         localStorage.setItem(STORAGE_KEY, JSON.stringify(ordered));
       }
 
-      function showAlwaysOpenToast() {
-        showToast("这个集市每天都开放，不用赶日子哦");
-      }
-
       function updateSubscription() {
         const ids = orderedSelectedIds();
         const count = ids.length;
-        bottomBar.hidden = count === 0 || !subscribePanel.hidden;
-        barCount.textContent = `已订阅 ${count} 个集市`;
-        panelTitle.textContent = `已订阅 ${count} 个集市`;
-        selectedList.innerHTML = ids.map((id) => {
+        const total = allSubscribableMarketIds().length;
+        bottomBar.hidden = !subscribePanel.hidden;
+        panelTitle.textContent = `已包含 ${count} 个集市`;
+        const selectedPills = ids.map((id) => {
           const market = markets.find((item) => item.id === id);
           if (!market) return "";
           const label = market.label || market.name;
@@ -1770,6 +1874,8 @@
             </button>
           `;
         }).join("");
+        const resetPill = count < total ? '<button class="selected-pill is-reset" type="button" data-action="restore-all">恢复全部</button>' : "";
+        selectedList.innerHTML = selectedPills + resetPill;
         updateSubscribePanelMode();
         if (!subscribePanel.hidden) {
           renderCalendarPreview();
@@ -1786,9 +1892,17 @@
         showToast(`已移除${market?.label || market?.name || "这个集市"}`);
       }
 
+      function restoreAllMarkets() {
+        selected = new Set(allSubscribableMarketIds());
+        saveSelection();
+        renderRoute();
+        updateSubscription();
+        showToast("已恢复全部集市");
+      }
+
       function updateSubscribePanelMode() {
         copyButton.textContent = "复制日历订阅链接";
-        subscribeButton.textContent = "一键订阅 Apple 日历";
+        subscribeButton.textContent = "订阅到 Apple 日历";
         const webcalUrl = buildSubscriptionLink("webcal");
         subscribeButton.href = webcalUrl || "#";
         subscribeButton.setAttribute("aria-disabled", webcalUrl ? "false" : "true");
@@ -1829,7 +1943,7 @@
           const day = new Date(gridStart);
           day.setDate(gridStart.getDate() + index);
           const iso = dateToIso(day);
-          const dayEvents = eventsByDate.get(iso) || [];
+          const dayEvents = sortPreviewEvents(eventsByDate.get(iso) || []);
           const isOutside = day.getMonth() !== monthStart.getMonth();
           const classes = [
             "calendar-day",
@@ -1839,13 +1953,55 @@
           ].filter(Boolean).join(" ");
           cells.push(`
             <div class="${classes}" aria-label="${escapeHtml(calendarCellLabel(day, dayEvents))}">
-              <span class="calendar-date">${day.getDate()}</span>
-              ${dayEvents.slice(0, 2).map((event) => `<span class="calendar-event">${escapeHtml(event.market_label || event.market_name)}</span>`).join("")}
-              ${dayEvents.length > 2 ? `<span class="calendar-more">+${dayEvents.length - 2}</span>` : ""}
+              <span class="calendar-date">
+                <span class="calendar-date-number">${escapeHtml(calendarDateText(day, monthStart))}</span>
+                <span class="calendar-lunar">${escapeHtml(lunarDateText(day))}</span>
+              </span>
+              ${dayEvents.slice(0, 3).map((event) => `
+                <span class="calendar-event">
+                  <span class="calendar-event-text">${escapeHtml(event.market_label || event.market_name)}</span>
+                </span>
+              `).join("")}
+              ${dayEvents.length > 3 ? `<span class="calendar-more">+ ${dayEvents.length - 3}个</span>` : ""}
             </div>
           `);
         }
         return cells.join("");
+      }
+
+      function sortPreviewEvents(dayEvents) {
+        const marketOrder = new Map(markets.map((market, index) => [market.id, index]));
+        return [...dayEvents].sort((first, second) => {
+          return (marketOrder.get(first.market_id) ?? 9999) - (marketOrder.get(second.market_id) ?? 9999);
+        });
+      }
+
+      function calendarDateText(day, monthStart) {
+        const isOutside = day.getMonth() !== monthStart.getMonth();
+        if (isOutside && day.getDate() === 1) return `${day.getMonth() + 1}月${day.getDate()}日`;
+        return String(day.getDate());
+      }
+
+      function lunarDateText(day) {
+        if (!LUNAR_DATE_FORMATTER) return "";
+        const parts = LUNAR_DATE_FORMATTER.formatToParts(day);
+        const month = parts.find((part) => part.type === "month")?.value || "";
+        const date = parts.find((part) => part.type === "day")?.value || "";
+        const lunarDay = normalizeLunarDay(date);
+        if (!lunarDay) return "";
+        return lunarDay === "初一" ? `${month}初一` : lunarDay;
+      }
+
+      function normalizeLunarDay(value) {
+        const text = String(value || "").replace(/\s/g, "");
+        const numeric = Number(text);
+        if (!Number.isNaN(numeric) && numeric > 0) return lunarDayName(numeric);
+        return text.replace(/^廿十$/, "三十");
+      }
+
+      function lunarDayName(day) {
+        const names = ["", "初一", "初二", "初三", "初四", "初五", "初六", "初七", "初八", "初九", "初十", "十一", "十二", "十三", "十四", "十五", "十六", "十七", "十八", "十九", "二十", "廿一", "廿二", "廿三", "廿四", "廿五", "廿六", "廿七", "廿八", "廿九", "三十"];
+        return names[day] || String(day);
       }
 
       function calendarCellLabel(day, dayEvents) {
@@ -1860,6 +2016,10 @@
 
       function orderedSelectedIds() {
         return normalizeSelectedMarketIds(Array.from(selected), markets);
+      }
+
+      function allSubscribableMarketIds() {
+        return getSubscribableMarkets(markets).map((market) => String(market.id));
       }
 
       function buildSubscriptionLink(protocol) {
@@ -1916,7 +2076,7 @@
       async function copySubscriptionLink() {
         const link = buildSubscriptionLink("https");
         if (!link) {
-          showToast("请先订阅一个集市");
+          showToast("请至少保留一个集市");
           return;
         }
         try {

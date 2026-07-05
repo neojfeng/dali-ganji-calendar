@@ -1,6 +1,6 @@
 # 大理赶集攻略 + 动态 Apple 日历订阅
 
-这是一个移动端优先的“大理赶集攻略”小工具。首页、详情页、图片和公开数据保持静态化；用户选择常去集市后，页面生成短订阅 URL，由 Vercel Serverless Function 动态返回对应 ICS 日历。
+这是一个移动端优先的“大理赶集攻略”小工具。首页、详情页、图片和公开数据保持静态化；用户进入日历页时默认包含全部可订阅集市，也可以手动删除不需要的集市，页面生成短订阅 URL，由 Vercel Serverless Function 动态返回对应 ICS 日历。
 
 ## 项目结构
 
@@ -20,7 +20,7 @@ webcal://example.com/api/calendar.ics?s=sanyuejie,yinqiaojie
 
 ## 选择 Token
 
-token 不依赖数据库，也不保存攻略内容。它直接记录用户选择的稳定 `market id`：
+token 不依赖数据库，也不保存攻略内容。它直接记录当前日历包含的稳定 `market id`：
 
 1. 单个集市：`s=sanyuejie`
 2. 多个集市：`s=sanyuejie,yinqiaojie`
@@ -148,9 +148,9 @@ api/calendar.mobileconfig.js
 
 ## iPhone 日历订阅
 
-1. 打开首页，选择一个或多个集市。
-2. 点击底部“生成日历”。
-3. Safari 中点“一键订阅 Apple 日历”，页面会打开 `webcal://` 订阅链接。
+1. 打开首页，点击底部“查看赶集日历”。
+2. 日历默认包含全部可订阅集市；如有不需要的集市，可在顶部标签里删除。
+3. Safari 中点“订阅到 Apple 日历”，页面会打开 `webcal://` 订阅链接。
 4. 按系统提示订阅日历。
 5. 添加后可在 iPhone 日历列表中单独关闭显示或删除。
 
