@@ -1450,18 +1450,17 @@
 
         .calendar-event {
           min-width: 0;
-          align-items: flex-start;
+          align-items: center;
           border-radius: 7px;
-          font-size: 9.5px;
+          font-size: 11px;
           letter-spacing: 0;
-          line-height: 1.08;
+          line-height: 1.12;
+          padding: 3px;
           white-space: normal;
         }
 
         .calendar-event::before {
-          width: 14px;
-          height: 14px;
-          font-size: 9px;
+          display: none;
         }
 
         .calendar-event-text {
@@ -1472,7 +1471,14 @@
           word-break: break-all;
         }
 
+        .calendar-more {
+          margin: 4px 0 0;
+          text-align: center;
+          white-space: nowrap;
+        }
+
         .calendar-preview-note {
+          display: none;
           align-items: flex-start;
           margin-right: 2px;
           margin-left: 2px;
